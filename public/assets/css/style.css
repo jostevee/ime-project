@@ -136,6 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+/*
 #preloader {
   position: fixed;
   top: 0;
@@ -178,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(360deg);
   }
 }
+*/
 
 
 /*--------------------------------------------------------------
@@ -315,6 +317,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     visibility: visible;
     opacity: 1;
+    cursor: pointer;
     right: 20px;
     top: 20px;
     z-index: 999; /* 996 */
@@ -1083,48 +1086,147 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-page .social-links a:hover {
   background: #1c84e3;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
 
 /*--------------------------------------------------------------
-# Modal Sign In Section
+# Modal Sign In - Sign Up - Menu Section
 --------------------------------------------------------------*/
-.modal-signin-signup {
-  /* color: #F3EC9E; */
+.modal-signin-signup-menu {
   background: #F3EC9E;
+  border-radius: 20px;
 }
 
-.modal-signin-signup .icon-close i {
+.modal-signin-signup-menu .icon-close i {
   font-size: 35px;
   cursor: pointer;
   color: #1C3B51;
   transition: all ease-in-out 0.4s;
 }
 
-.modal-signin-signup .icon-close i:hover {
+.modal-signin-signup-menu .icon-close i:hover {
   color: #678FAD;
 }
 
-.modal-signin-signup .btn-modal {
+.modal-signin-signup-menu .btn-modal {
   background: #1C3B51; /* rgba(255, 255, 255, 0.2); */
   cursor: pointer;
   padding: 6px 40px 6px 40px;
-  color: #F3EC9E; /* #fff */
+  /* color: #F3EC9E; */ /* #fff */
   font-size: 23px;
-  margin: 30px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   border-radius: 30px;
   transition: all ease-in-out 0.4s;
 }
 
-.modal-signin-signup .btn-modal:hover {
+.modal-signin-signup-menu .btn-modal:hover {
   padding: 6px 60px 6px 60px;
 }
 
+.modal-signin-signup-menu .menu-modal-row {
+  margin: 0px 20px;
+}
+
+/* ABOUT ICON */
+.about-icon {
+  content: url('../img/menu_bar/about_icon.png');
+  height: 100px;
+  width: 100px; 
+  margin: 15px;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.menu-modal-icon:hover .about-icon {
+  height: 147px;
+  width: 147px;
+}
+
+/* SPEAKER ICON */
+.speaker-icon {
+  content: url('../img/menu_bar/speaker_icon.png');
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.menu-modal-icon:hover .speaker-icon {
+  height: 147px;
+  width: 147px;
+}
+
+/* SCHEDULE ICON */
+.schedule-icon {
+  content: url('../img/menu_bar/schedule_icon.png');
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.menu-modal-icon:hover .schedule-icon {
+  height: 147px;
+  width: 147px;
+}
+
+/* ON IME ICON */
+.on-ime-icon {
+  content: url('../img/menu_bar/on_ime_icon.png');
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.menu-modal-icon:hover .on-ime-icon {
+  height: 147px;
+  width: 147px;
+}
 
 
+/*--------------------------------------------------------------
+# Modal Pay Section
+--------------------------------------------------------------*/
+.modal-pay {
+  background: #1C3B51;
+  border-radius: 20px;
+}
 
+.modal-pay .icon-close i {
+  font-size: 35px;
+  cursor: pointer;
+  color: #F3EC9E;
+  transition: all ease-in-out 0.4s;
+}
+
+.modal-pay .icon-close i:hover {
+  color: #678FAD;
+}
+
+.modal-pay .btn-modal {
+  background: #F3EC9E; /* rgba(255, 255, 255, 0.2); */
+  cursor: pointer;
+  padding: 6px 40px 6px 40px;
+  /* color: #F3EC9E; */ /* #fff */
+  font-size: 23px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 30px;
+  transition: all ease-in-out 0.4s;
+}
+
+.modal-pay .btn-modal:hover {
+  padding: 6px 60px 6px 60px;
+}
+
+.modal-pay .menu-modal-row {
+  margin: 0px 20px;
+}
 
 
 
