@@ -1229,6 +1229,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/*--------------------------------------------------------------
+# Talkshow Room Section
+--------------------------------------------------------------*/
+.talkshow-room-page .talkshow-day-box {
+  margin: 30px 30px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  background: #173963;
+  box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;  
+  /* color: #fff; */
+}
+
+.talkshow-room-page .talkshow-room-btn-next, .talkshow-room-page .talkshow-room-btn-prev {
+  font-size: 25px;
+  background: #F3EC9E;
+  color: #1C3B51;
+  border-radius: 10px;
+  padding: 8px;
+  -webkit-filter: drop-shadow(1px 4px 0px #173963);
+  filter: drop-shadow(5px 6px 0px 0px #173963);
+  transition: all ease-in-out 0.4s;
+}
 
 
 

@@ -156,9 +156,6 @@
   /**
    * Speakers slider
    */
-  // Initialize total slide(s) variable
-  var totalSlidesSpeaker = 0;
-
   // Swiper function
   var speakerSwiper = new Swiper('.speaker-swiper', {
     speed: 600,
@@ -204,11 +201,9 @@
 
   // Get total slide(s)
   var totalSpeakerSwiper = $('.swiper-pagination-bullet').length;
-  console.log("totalSlides SpeakerSwiper: " + totalSpeakerSwiper);
 
   // Get index(es)
   var idx = speakerSwiper.activeIndex;
-  console.log('*** speakerSwiper.realIndex', idx);
   if (idx == 0){
     $(".speaker-btn-prev").css("visibility", "hidden");
     $(".speaker-btn-next").css("visibility", "visible");
@@ -226,7 +221,6 @@
   // Get index(es) when transition
   speakerSwiper.on('transitionEnd', function() {
     var idx = speakerSwiper.activeIndex;
-    console.log('*** speakerSwiper.realIndex', idx);
     if (idx == 0){
       $(".speaker-btn-prev").css("visibility", "hidden");
       $(".speaker-btn-next").css("visibility", "visible");
@@ -288,7 +282,6 @@
 
   // Get total slide(s)
   var totalScheduleSwiper = $('.swiper-pagination-schedule .swiper-pagination-bullet').length;
-  console.log("totalSlides ScheduleSwiper: " + totalScheduleSwiper);
 
   // Get index(es)
   var idx_schedule = scheduleSwiper.realIndex;
@@ -310,8 +303,6 @@
   // Get index(es) when transition
   scheduleSwiper.on('transitionEnd', function() {
     var idx_schedule = scheduleSwiper.realIndex;
-    console.log('*** scheduleSwiper.realIndex', idx_schedule);
-    console.log('*** scheduleSwiper.TOTAL', totalScheduleSwiper);
     if (idx_schedule == 0){
       $(".schedule-btn-prev").css("visibility", "hidden");
       $(".schedule-btn-next").css("visibility", "visible");
@@ -323,7 +314,6 @@
       $(".schedule-btn-next").css("visibility", "visible");
     }
   });
-
   
 
 

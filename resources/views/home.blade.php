@@ -126,7 +126,7 @@
                       </div>
                     </div>
                     <div class="col-12 d-flex justify-content-center my-2">
-                      <h5 class="text-center blue-title">PEMBINA HIMATEKA</h5>
+                      <h5 class="text-center blue-title">PEMBINA HIMITEKA</h5>
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                       <div class="name-box">
@@ -141,7 +141,7 @@
                       </div>
                     </div>
                     <div class="col-lg-12 d-flex justify-content-center my-2">
-                      <h5 class="text-center blue-title">KETUA HIMATEKA</h5>
+                      <h5 class="text-center blue-title">KETUA HIMITEKA</h5>
                     </div>
                     <div class="col-lg-12 d-flex justify-content-center">
                       <div class="name-box">
@@ -2101,8 +2101,8 @@
   <!-- <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script> -->
   <script src="{{ asset ('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset ('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-  <script src="{{ asset ('assets/vendor/php-email-form/validate.js') }}"></script>
-  <script src="{{ asset ('assets/vendor/purecounter/purecounter.js') }}"></script>
+  <!-- <script src="{{ asset ('assets/vendor/php-email-form/validate.js') }}"></script> -->
+  <!-- <script src="{{ asset ('assets/vendor/purecounter/purecounter.js') }}"></script> -->
   <script src="{{ asset ('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
   <!-- Template JS File(s) -->

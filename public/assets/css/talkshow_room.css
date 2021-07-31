@@ -1,0 +1,85 @@
+/**
+* Template Name: LB3Labs One - v1.0.0
+* Template URL: 
+* Author: LB3Labs Developer
+* License: 
+*/
+
+
+/*--------------------------------------------------------------
+# Talkshow Room Section
+--------------------------------------------------------------*/
+.talkshow-room-page .content {
+  padding: 10px;
+  border-radius: 20px;
+  /* background: #F3EC9E; */
+  /* color: #fff; */
+}
+
+.talkshow-room-page .talkshow-room-btn-next, .talkshow-room-page .talkshow-room-btn-prev {
+  font-size: 25px;
+  background: #F3EC9E;
+  color: #1C3B51;
+  border-radius: 25px;
+  padding: 8px;
+  -webkit-filter: drop-shadow(1px 4px 0px #1C3B51);
+  filter: drop-shadow(5px 6px 0px 0px #1C3B51);
+  transition: all ease-in-out 0.4s;
+}
+
+.talkshow-room-page .talkshow-room-btn-next:hover, .talkshow-room-page .talkshow-room-btn-prev:hover {
+  background: #BDB77B;
+}
+
+.talkshow-room-page .talkshow-room-day-box {
+  margin: 30px 30px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  background: #173963;
+  box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;  
+  /* color: #fff; */
+}
+
+.talkshow-room-page .talkshow-room-day-text-box {
+  margin: 30px 30px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  background: #F3EC9E;
+  /* box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;   */
+  /* color: #fff; */
+}
+
+.talkshow-room-page .talkshow-room-day-which-box {
+  margin: 0px 0px 0px 0px;
+  width: 100px;
+  padding: 5px 0px;
+  border-radius: 12px;
+  background: #173963;
+  box-shadow: -26px 0px 0px 0px #173963;
+  /* color: #fff; */
+}
+
+.talkshow-room-page .talkshow-room-day-theme-box {
+  margin: 30px 30px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  /* box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;   */
+  /* color: #fff; */
+}
+
+/*
+.talkshow-room-page .yellow-background-box {
+  background: #F3EC9E;
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+}
+*/
+
+.talkshow-room-page .talkshow-room-day-box .talkshow-room-pic-box {
+  margin: 20px 0px;
+  background: #FFF;
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+}
