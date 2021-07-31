@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Medpart extends Model
 {
     use HasFactory;
+    protected $table='medparts';
+    protected $primaryKey = 'id';
 }

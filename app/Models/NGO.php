@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class NGO extends Model
 {
     use HasFactory;
-    protected $table='faqs';
+    protected $table='ngos';
     protected $primaryKey = 'id';
 
-    public function writer() {
+    public function ngo() {
         return $this->belongsTo('App\Models\Writer', 'id');
     }
 }
