@@ -15,6 +15,10 @@ class CreateTalkshowDaysTable extends Migration
     {
         Schema::create('talkshow_days', function (Blueprint $table) {
             $table->id();
+            $table->string('day')->unique();
+            $table->string('theme')->unique();
+            // $table->string('email')->unique();
+            // $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
     }

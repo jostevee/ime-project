@@ -11,7 +11,7 @@ class NGO extends Model
     protected $table='ngos';
     protected $primaryKey = 'id';
 
-    public function ngo() {
-        return $this->belongsTo('App\Models\Writer', 'id');
-    }
+    // public function ngo() {
+    //     return $this->belongsTo('App\Models\Writer', 'id');
+    // }
 }

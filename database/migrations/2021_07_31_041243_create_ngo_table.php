@@ -13,8 +13,16 @@ class CreateNgoTable extends Migration
      */
     public function up()
     {
-        Schema::create('ngo', function (Blueprint $table) {
+        Schema::create('ngos', function (Blueprint $table) {
             $table->id();
+            $table->string('logo')->unique();
+            $table->string('name');
+            $table->string('info');
+            $table->string('video');
+            $table->string('ig')->unique();
+            $table->string('fb')->unique();
+            // $table->string('email')->unique();
+            // $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +34,6 @@ class CreateNgoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ngo');
+        Schema::dropIfExists('ngos');
     }
 }
