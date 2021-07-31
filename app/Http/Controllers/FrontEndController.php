@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Medpart;
+use App\Models\NGO;
+use App\Models\TalkshowDay;
+use App\Models\TalkshowDetail;
 
 class FrontEndController extends Controller
 {
@@ -14,15 +18,17 @@ class FrontEndController extends Controller
     }
 
     public function talkshow(){
-        //$event = Event::orderByDesc('created_at')->take(4)->get();
+        $data = TalkshowDay::orderByDesc('day_title')->get();
 
-        return view('talkshow'); //, compact('event')
+        return view('talkshow_room', compact('data')); //, compact('event')
     }
 
-    public function talkshow($id){
-        //$event = Event::orderByDesc('created_at')->take(4)->get();
+    public function talkshowDetails($id){
+        $data_root = TalkshowDay::where('id', $id)->firstOrFail();
+        $data = TalkshowDetail::where('id_talkshow', $id)->orderByDesc('created_at')->get();
+        // $event = Event::orderByDesc('created_at')->take(4)->get();
 
-        return view('talkshow_details'); //, compact('event')
+        return view('talkshow_details', compact('data', 'data_root')); //, compact('event')
     }
 
     public function games(){
@@ -32,13 +38,13 @@ class FrontEndController extends Controller
     }
 
     public function ngo(){
-        $ngo = Event::orderByDesc('created_at')->take(4)->get();
+        $ngo = NGO::orderByDesc('created_at')->take(4)->get();
 
-        return view('ngo'); //, compact('event')
+        return view('ngo', compact('ngo')); //, compact('event')
     }
 
     public function medpart(){
-        //$event = Event::orderByDesc('created_at')->take(4)->get();
+        $medpart = Medpart::orderByDesc('created_at')->get();
 
         return view('medpart'); //, compact('event')
     }

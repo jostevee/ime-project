@@ -15,6 +15,12 @@ class CreateMedpartTable extends Migration
     {
         Schema::create('medpart', function (Blueprint $table) {
             $table->id();
+            $table->string('logo')->unique();
+            $table->string('name');
+            $table->string('info');
+            $table->string('video');
+            $table->string('ig')->unique();
+            $table->string('fb')->unique();
             $table->timestamps();
         });
     }

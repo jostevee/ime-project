@@ -26,7 +26,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', function () {
 Route::get('/', function () {return redirect('/home');});
 Route::get('home', [FrontEndController::class, 'home']);
 Route::get('talkshow', [FrontEndController::class, 'talkshow']);
-Route::get('talkshow/{}', [FrontEndController::class, 'talkshowDetails']);
+Route::get('talkshow-details/{id}', [FrontEndController::class, 'talkshowDetails']);
 Route::get('games', [FrontEndController::class, 'games']);
 Route::get('ngo', [FrontEndController::class, 'ngo']);
 Route::get('medpart', [FrontEndController::class, 'medpart']);

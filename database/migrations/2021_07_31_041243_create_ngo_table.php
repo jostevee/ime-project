@@ -13,7 +13,7 @@ class CreateNgoTable extends Migration
      */
     public function up()
     {
-        Schema::create('ngos', function (Blueprint $table) {
+        Schema::create('ngo', function (Blueprint $table) {
             $table->id();
             $table->string('logo')->unique();
             $table->string('name');
@@ -34,6 +34,6 @@ class CreateNgoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ngos');
+        Schema::dropIfExists('ngo');
     }
 }

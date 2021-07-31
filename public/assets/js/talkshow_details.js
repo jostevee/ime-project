@@ -27,7 +27,7 @@
   var totalSlidesTalkshowRoom = 0;
 
   // Swiper function
-  var talkshowRoomSwiper = new Swiper('.talkshow-room-swiper', {
+  var talkshowRoomSwiper = new Swiper('talkshow-details-swiper', {
     speed: 600,
     loop: false,
     centeredSlides: true,
@@ -43,8 +43,8 @@
       bulletActiveClass: 'active'
     },
     navigation: {
-      nextEl: '.talkshow-room-btn-next',
-      prevEl: '.talkshow-room-btn-prev'
+      nextEl: 'talkshow-details-btn-next',
+      prevEl: 'talkshow-details-btn-prev'
     },  
     // navigation: {
     //   nextEl: '.swiper-button-next',
@@ -75,31 +75,31 @@
   // Get index(es)
   var idx = talkshowRoomSwiper.activeIndex;
   if (idx == 0){
-    $(".talkshow-room-btn-prev").css("visibility", "hidden");
-    $(".talkshow-room-btn-next").css("visibility", "visible");
+    $("talkshow-details-btn-prev").css("visibility", "hidden");
+    $("talkshow-details-btn-next").css("visibility", "visible");
   } else if (idx == 0 && totalTalkshowRoomSwiper == 1){
-    $(".talkshow-room-btn-next").css("visibility", "hidden");
-    $(".talkshow-room-btn-prev").css("visibility", "hidden");
+    $("talkshow-details-btn-next").css("visibility", "hidden");
+    $("talkshow-details-btn-prev").css("visibility", "hidden");
   } else if(idx+1 == totalTalkshowRoomSwiper) {
-    $(".talkshow-room-btn-next").css("visibility", "hidden");
-    $(".talkshow-room-btn-prev").css("visibility", "visible");
+    $("talkshow-details-btn-next").css("visibility", "hidden");
+    $("talkshow-details-btn-prev").css("visibility", "visible");
   } else {
-    $(".talkshow-room-btn-prev").css("visibility", "visible");
-    $(".talkshow-room-btn-next").css("visibility", "visible");
+    $("talkshow-details-btn-prev").css("visibility", "visible");
+    $("talkshow-details-btn-next").css("visibility", "visible");
   }
 
   // Get index(es) when transition
   talkshowRoomSwiper.on('transitionEnd', function() {
     var idx = talkshowRoomSwiper.activeIndex;
     if (idx == 0){
-      $(".talkshow-room-btn-prev").css("visibility", "hidden");
-      $(".talkshow-room-btn-next").css("visibility", "visible");
+      $("talkshow-details-btn-prev").css("visibility", "hidden");
+      $("talkshow-details-btn-next").css("visibility", "visible");
     } else if(idx+1 == totalTalkshowRoomSwiper) {
-      $(".talkshow-room-btn-next").css("visibility", "hidden");
-      $(".talkshow-room-btn-prev").css("visibility", "visible");
+      $("talkshow-details-btn-next").css("visibility", "hidden");
+      $("talkshow-details-btn-prev").css("visibility", "visible");
     } else {
-      $(".talkshow-room-btn-prev").css("visibility", "visible");
-      $(".talkshow-room-btn-next").css("visibility", "visible");
+      $("talkshow-details-btn-prev").css("visibility", "visible");
+      $("talkshow-details-btn-next").css("visibility", "visible");
     }
   });
 })()

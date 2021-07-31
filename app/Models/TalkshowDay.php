@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TalkshowDetails extends Model
+class TalkshowDay extends Model
 {
     use HasFactory;
-    protected $table='talkshow_details';
+    protected $table='talkshow_day';
     protected $primaryKey = 'id';
 
     public function details() {
-        return $this->hasMany('App\Models\TalkshowDays', 'id_talkshow');
+        return $this->belongsTo('App\Models\TalkshowDetail', 'id');
     }
 }

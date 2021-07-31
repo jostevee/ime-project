@@ -16,7 +16,7 @@ class CreateTalkshowTable extends Migration
         Schema::create('talkshow', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_talkshow');
-            $table->string('title');
+            $table->string('speaker');
             $table->string('time');
             $table->string('zoom');
             $table->string('youtube');

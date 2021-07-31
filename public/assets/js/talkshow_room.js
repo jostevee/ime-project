@@ -30,7 +30,7 @@
   var talkshowRoomSwiper = new Swiper('.talkshow-room-swiper', {
     speed: 600,
     loop: false,
-    centeredSlides: true,
+    centeredSlides: false,
     // autoplay: {
     //   delay: 5000,
     //   disableOnInteraction: false
@@ -74,10 +74,13 @@
 
   // Get index(es)
   var idx = talkshowRoomSwiper.activeIndex;
+  console.log('Ini adalah idx: ', idx);
+  console.log('Ini adalah total: ', totalTalkshowRoomSwiper);
   if (idx == 0){
     $(".talkshow-room-btn-prev").css("visibility", "hidden");
     $(".talkshow-room-btn-next").css("visibility", "visible");
   } else if (idx == 0 && totalTalkshowRoomSwiper == 1){
+    console.log('masuk sini');
     $(".talkshow-room-btn-next").css("visibility", "hidden");
     $(".talkshow-room-btn-prev").css("visibility", "hidden");
   } else if(idx+1 == totalTalkshowRoomSwiper) {

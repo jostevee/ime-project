@@ -1,14 +1,53 @@
 /**
-* Template Name: LB3Labs One - v1.0.0
+* Template Name: LB3Labs One - v1.1.0
 * Template URL: 
 * Author: LB3Labs Developer
 * License: 
 */
 
-
 /*--------------------------------------------------------------
 # Talkshow Room Section
 --------------------------------------------------------------*/
+.talkshow-room-page {
+  width: 100%;
+  height: fit-content; /*95vh*/
+  background: url("../img/talkshow/background_room.png");
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+@media (min-width: 1024px) {
+  .talkshow-room-page {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 992px) {
+  .talkshow-room-page {
+     /* 54vh */
+     background-attachment: fixed;
+     max-height: fit-content;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  .talkshow-room-page {
+    background-attachment: fixed;
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 20px;
+  }
+}
+
 .talkshow-room-page .content {
   padding: 10px;
   border-radius: 20px;
@@ -36,7 +75,8 @@
   padding: 25px 0px;
   border-radius: 20px;
   background: #173963;
-  box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;  
+  height: 300px;
+  box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;
   /* color: #fff; */
 }
 

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class NGO extends Model
 {
     use HasFactory;
-    protected $table='ngos';
+    protected $table='ngo';
     protected $primaryKey = 'id';
 
     // public function ngo() {

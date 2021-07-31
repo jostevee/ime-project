@@ -13,9 +13,9 @@ class CreateTalkshowDaysTable extends Migration
      */
     public function up()
     {
-        Schema::create('talkshow_days', function (Blueprint $table) {
+        Schema::create('talkshow_day', function (Blueprint $table) {
             $table->id();
-            $table->string('day')->unique();
+            $table->string('day_title')->unique();
             $table->string('theme')->unique();
             // $table->string('email')->unique();
             // $table->timestamp('email_verified_at')->nullable();
@@ -30,6 +30,6 @@ class CreateTalkshowDaysTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('talkshow_days');
+        Schema::dropIfExists('talkshow_day');
     }
 }
