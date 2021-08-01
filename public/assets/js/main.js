@@ -332,10 +332,10 @@
         // var x = $("#cloud1").position();
         $(this)
             .find(".bg-move-1")
-            .css({ left: leftPosition - 1000 });
+            .css({ left: windowTop - 300 });
         $(this)
             .find(".bg-move-2")
-            .css({ right: leftPosition - 1000 });
+            .css({ right: windowTop - 300 });
         
     });
   });

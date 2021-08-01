@@ -489,28 +489,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #cloud1 {
-  left: -400px;
   position: relative;
-  /* top: 10px;
-  width:170px;
-  height:99px; */
+  top: 10px;
+  /* width: 368px; */
+  height: 400px;
 }
 
 #cloud2{
-  right: -400px;
   position: relative;
-  /* position: relative; */
-  /* top: 10px;
-  width:170px;
-  height:99px; */
+  top: 10px;
+  /* width:170px; */
+  height:400px;
 }
 
 #cloud3{
   position: relative;
   top: 250px;
-  left: 300px;
-  /* width:170px;
-  height:99px; */
+  /* left: 300px; */
+  /* width:170px; */
+  height: 400px;
 }
 
 
@@ -659,6 +656,7 @@ h1, h2, h3, h4, h5, h6 {
 # Button (General)
 */
     .btn-general {
+      cursor: pointer;
       display: inline-block;
       background: #F3EC9E; /* rgba(255, 255, 255, 0.2); */
       padding: 6px 20px 8px 20px;
@@ -793,7 +791,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-move-1 {
-  position: fixed;
+  position: absolute;
   top: 0px;
   bottom: 0;
   right: auto;
@@ -804,8 +802,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-move-2 {
-  position: fixed;
-  top: 250px;
+  position: absolute;
+  top: 0px;
   bottom: 0;
   right: auto;
   width: fit-content;

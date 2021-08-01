@@ -17,12 +17,12 @@
             <div class="col-2 d-flex justify-content-end">
               <a class="icon-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></a>
             </div>
-            <div class="col-10 d-flex justify-content-center align-items-center mt-4">
+            <!-- <div class="col-10 d-flex justify-content-center align-items-center mt-4">
               <p class="text-center blue-strong">OR</p>
             </div>
             <div class="col-10 d-flex justify-content-center align-items-start">
               <a class="btn-modal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#emailLoginModal"><p class="text-center white-regular">Email</p></a>
-            </div>         
+            </div> -->
           </div>
 
           <!-- <div class="modal-footer">

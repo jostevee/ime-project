@@ -40,15 +40,14 @@
     
     <section class="main-page">
       <!-- ======= Clouds Section ======= -->
-      <div class="bg-move-1">
+      <div class="bg-move-1 d-flex justify-content-center">
         <img id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
         <img id="cloud3" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
       </div>
-      <div class="bg-move-2">
+      <div class="bg-move-2 d-flex justify-content-center">
         <img id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
       </div>
       
-
       <!-- Old version Cloud Section -->
       <!--
       <div id="frame">
@@ -133,14 +132,7 @@
         </div>
       </div>
 
-      <!-- ======= Clouds Section ======= -->
-      <!-- <div class="section bg-static d-flex justify-content-center">
-        <div class="bg-move">
-            <img id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
-            <img id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
-        </div>
-      </div> -->
-      
+      <!-- ======= Clouds Section ======= -->      
       <!-- Old version Cloud Section -->
       <!--
       <div id="frame">
@@ -433,10 +425,25 @@
 
           <div class="row d-flex justify-content-center mt-4">
             <div class="col-12">
-              <h1 class="blue-title">Island</h1>
+              <h1 class="blue-title">Main Room</h1>
             </div>
             <div class="col-lg-10 mt-4">
-              <div class="content d-flex justify-content-center">
+              <div class="content row d-flex justify-content-stretch">
+                <div class="col-4 d-flex justify-content-center">
+                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
+                </div>
               </div>
             </div>
           </div>

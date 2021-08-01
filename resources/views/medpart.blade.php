@@ -19,12 +19,12 @@
                 <h1 style="margin-top: 250px;">Ups... there are no data available</h1>
                 <h2>Please input some...</h2>
               @else
-                @foreach($data as $data_per_day)
-                <a href="medpart/{{$data->id}}" class="row medpart-list-box justify-content-center align-items-center col-lg-3 mb-2">
+                @foreach($data as $data_per_logo)
+                <a href="medpart/{{$data_per_logo->id}}" class="row medpart-list-box justify-content-center align-items-center col-lg-3 mb-2">
                   <div class="d-flex justify-content-center">
                     <div class="medpart-pic-box"></div>
                   </div>
-                  <h4 class="text-center blue-title medpart-name-box"></h4>
+                  <h4 class="text-center blue-title medpart-name-box">{{$data_per_logo->name}}</h4>
                 </a>
                 @endforeach
               @endif
