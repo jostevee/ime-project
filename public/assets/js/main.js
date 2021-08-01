@@ -204,10 +204,10 @@
 
   // Get index(es)
   var idx = speakerSwiper.activeIndex;
-  if (idx == 0){
+  if (idx == 0  && totalSpeakerSwiper > 1){
     $(".speaker-btn-prev").css("visibility", "hidden");
     $(".speaker-btn-next").css("visibility", "visible");
-  } else if (idx == 0 && totalSpeakerSwiper == 1){
+  } else if (totalSpeakerSwiper == 1){
     $(".speaker-btn-next").css("visibility", "hidden");
     $(".speaker-btn-prev").css("visibility", "hidden");
   } else if(idx+1 == totalSpeakerSwiper) {
@@ -221,9 +221,12 @@
   // Get index(es) when transition
   speakerSwiper.on('transitionEnd', function() {
     var idx = speakerSwiper.activeIndex;
-    if (idx == 0){
+    if (idx == 0  && totalSpeakerSwiper > 1){
       $(".speaker-btn-prev").css("visibility", "hidden");
       $(".speaker-btn-next").css("visibility", "visible");
+    } else if (totalSpeakerSwiper == 1){
+      $(".speaker-btn-next").css("visibility", "hidden");
+      $(".speaker-btn-prev").css("visibility", "hidden");
     } else if(idx+1 == totalSpeakerSwiper) {
       $(".speaker-btn-next").css("visibility", "hidden");
       $(".speaker-btn-prev").css("visibility", "visible");
@@ -286,10 +289,10 @@
   // Get index(es)
   var idx_schedule = scheduleSwiper.realIndex;
   console.log('*** scheduleSwiper.realIndex', idx);
-  if (idx_schedule == 0){
+  if (idx_schedule == 0  && totalScheduleSwiper > 1){
     $(".schedule-btn-prev").css("visibility", "hidden");
     $(".schedule-btn-next").css("visibility", "visible");
-  }  else if (idx_schedule == 0 && totalScheduleSwiper == 1){
+  } else if (totalScheduleSwiper == 1){
     $(".schedule-btn-next").css("visibility", "hidden");
     $(".schedule-btn-prev").css("visibility", "hidden");
   } else if(idx_schedule+1 == totalScheduleSwiper) {
@@ -302,10 +305,13 @@
 
   // Get index(es) when transition
   scheduleSwiper.on('transitionEnd', function() {
-    var idx_schedule = scheduleSwiper.realIndex;
-    if (idx_schedule == 0){
+    var idx = scheduleSwiper.realIndex;
+    if (idx == 0 && totalScheduleSwiper > 1){
       $(".schedule-btn-prev").css("visibility", "hidden");
       $(".schedule-btn-next").css("visibility", "visible");
+    } else if (totalScheduleSwiper == 1){
+      $(".schedule-btn-next").css("visibility", "hidden");
+      $(".schedule-btn-prev").css("visibility", "hidden");
     } else if(idx_schedule+1 == totalScheduleSwiper) {
       $(".schedule-btn-next").css("visibility", "hidden");
       $(".schedule-btn-prev").css("visibility", "visible");

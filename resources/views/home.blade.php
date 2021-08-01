@@ -6,6 +6,9 @@
 </head>
 
 <body>
+    @include('menu')
+    <a href="#about" class="to-bottom d-flex align-items-center justify-content-center"><i class="fas fa-arrow-down"></i></a>
+    
     <!-- ======= intro-page Section ======= -->
     <section id="intro" class="intro-page d-flex">
       <div class="container-fluid d-flex align-items-center">
@@ -32,11 +35,6 @@
           </div>
       </div>
       <!-- <img src="{{ asset ('assets/img/intro-page.png') }}"/> -->
-
-      <a class="menu d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#menuModal"><i class="fas fa-bars"></i></a>
-      <a href="#about" class="sound d-flex align-items-center justify-content-center"><i class="fas fa-volume-up"></i></a>
-      <a href="#about" class="to-bottom d-flex align-items-center justify-content-center"><i class="fas fa-arrow-down"></i></a>
-      <a href="#about" class="ig-btn d-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
     </section><!-- End intro-page Section -->
     
     
@@ -328,64 +326,6 @@
                         <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 5: Nama Pembicara</h4>
                       </div>
                     </div><!-- End day item -->
-                    
-                    <!-- Day item --> 
-                    <div class="swiper-slide d-flex align-items-center justify-content-center">
-                      <div class="col-11 row schedule-box">
-                        <div class="schedule-day d-flex justify-content-center">
-                          <p class="text-center white-strong">DAY 2</p>
-                        </div>
-
-                        <!-- Content(s) -->
-                        <div class="col-3 schedule-time d-flex justify-content-center">
-                          <p class="text-center yellow-strong mt-2">08.00</p>
-                        </div>
-                        <div class="col-8 schedule-desc d-flex justify-content-start">
-                          <p class="blue-strong mt-2">SESI 1: Nama Pembicara</p>
-                        </div>
-                        <div class="col-3 schedule-time d-flex justify-content-center">
-                          <p class="text-center yellow-strong mt-2">09.00</p>
-                        </div>
-                        <div class="col-8 schedule-desc d-flex justify-content-start">
-                          <p class="blue-strong mt-2">SESI 2: Nama Pembicara</p>
-                        </div>
-                        <div class="col-3 schedule-time d-flex justify-content-center">
-                          <p class="text-center yellow-strong mt-2">10.00</p>
-                        </div>
-                        <div class="col-8 schedule-desc d-flex justify-content-start">
-                          <p class="blue-strong mt-2">SESI 3: Nama Pembicara</p>
-                        </div>
-                      </div>
-                    </div><!-- End day item -->
-
-                    <!-- Day item --> 
-                    <div class="swiper-slide d-flex align-items-center justify-content-center">
-                      <div class="col-11 row schedule-box">
-                        <div class="schedule-day d-flex justify-content-center">
-                          <p class="text-center white-strong">DAY 3</p>
-                        </div>
-
-                        <!-- Content(s) -->
-                        <div class="col-3 schedule-time d-flex justify-content-center">
-                          <p class="text-center yellow-strong mt-2">08.00</p>
-                        </div>
-                        <div class="col-8 schedule-desc d-flex justify-content-start">
-                          <p class="blue-strong mt-2">SESI 1: Nama Pembicara</p>
-                        </div>
-                        <div class="col-3 schedule-time d-flex justify-content-center">
-                          <p class="text-center yellow-strong mt-2">09.00</p>
-                        </div>
-                        <div class="col-8 schedule-desc d-flex justify-content-start">
-                          <p class="blue-strong mt-2">SESI 2: Nama Pembicara</p>
-                        </div>
-                        <div class="col-3 schedule-time d-flex justify-content-center">
-                          <p class="text-center yellow-strong mt-2">10.00</p>
-                        </div>
-                        <div class="col-8 schedule-desc d-flex justify-content-start">
-                          <p class="blue-strong mt-2">SESI 3: Nama Pembicara</p>
-                        </div>
-                      </div>
-                    </div><!-- End day item -->
 
                   </div>
 
@@ -504,7 +444,7 @@
         <div class="row">
           <div class="col-lg-12 align-items-stretch">
             <div class="content">
-              <h3>Why Choose Optimus Consulting?</h3>
+              <h3>Why Choose Indonesia Marine Exhibition?</h3>
               <p>
                 We're proven to have a good track record in placing qualified talents to numerous kinds of industries. Preserving our clients’ trust thus able to
                 build a long-lasting relationship with them and value teamwork the most when it comes to delivering our services. Our works are the harmony
@@ -700,7 +640,7 @@
                   started his career as a LinkedIn Talent Solution associate and account executive
                   in an HR recruitment company. He then gained some international work experience
                   with his former IT solutions company. He then joined Dien Natalia establishing
-                  Optimus Consulting. Until now, he is really into his dynamic work-life at Optimus.
+                  Indonesia Marine Exhibition. Until now, he is really into his dynamic work-life at Optimus.
 
           <div class="col-lg-6 mt-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
             <div class="member d-flex align-items-start">
@@ -763,7 +703,7 @@
                   HR-tech startups in Indonesia. This exposure to the “new world” had this
                   eye-opening effect on him: he came to realize that the world is so full of
                   opportunities that need to be explored. His grit and curious traits are what
-                  brought him to this far: enjoying the whale of a time in Optimus Consulting. 
+                  brought him to this far: enjoying the whale of a time in Indonesia Marine Exhibition. 
 
         </div>
 

@@ -1,5 +1,7 @@
-<!-- ======= Footer Section ======= -->
-<section id="footer" class="footer-page d-flex">
+<!-- ======= Footer ======= -->
+  <section class="footer">
+  <!-- ======= Footer Section ======= -->
+  <section id="footer" class="footer-page d-flex">
     <div class="container d-flex align-items-center justify-content-center">
 
         <div class="col-12 row d-flex mt-4">
@@ -29,4 +31,26 @@
         </div>
 
     </div>
-</section><!-- End Footer Section -->
+  </section><!-- End Footer Section -->
+    
+  </footer><!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="{{ asset ('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset ('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ asset ('assets/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ asset ('assets/vendor/purecounter/purecounter.js') }}"></script>
+  <script src="{{ asset ('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+	AOS.init();
+  </script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ asset ('assets/js/main.js') }}"></script>
+
+</body>
+
+</html>

@@ -55,6 +55,17 @@
   /* color: #fff; */
 }
 
+.talkshow-details-page .talkshow-details-people-box {
+  margin: 30px 60px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  background: #F3EC9E;
+  min-height: 300px;
+  max-width: 240px;
+  box-shadow: 35px 0px 0px -10px #173963, -35px 0px 0px -10px #173963;
+  /* color: #fff; */
+}
+
 .talkshow-details-page .talkshow-details-btn-next, .talkshow-details-page .talkshow-details-btn-prev {
   font-size: 25px;
   background: #F3EC9E;
@@ -115,10 +126,50 @@
 }
 */
 
-.talkshow-details-page .talkshow-details-day-box .talkshow-details-pic-box {
+.talkshow-details-page .talkshow-details-people-box .talkshow-details-pic-box {
   margin: 20px 0px;
   background: #FFF;
   border-radius: 75px;
   width: 150px;
   height: 150px;
+}
+
+/**
+* Youtube Button
+*/
+.talkshow-details-page .youtube {
+  content: url('../img/youtube_dark_blue.png');
+  cursor: pointer;
+  margin:  10px;
+  border-radius: 25px;
+  width: 75px;
+  height: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.talkshow-details-page .youtube:hover {
+  content: url('../img/youtube_light_blue.png');
+  width: 85px;
+  height: 60px;
+  /* background: #436279; */
+}
+
+/**
+* Zoom Button
+*/
+.talkshow-details-page .zoom {
+  content: url('../img/zoom_dark_blue.png');
+  cursor: pointer;
+  margin:  10px;
+  border-radius: 25px;
+  width: 75px;
+  height: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.talkshow-details-page .zoom:hover {
+  content: url('../img/zoom_light_blue.png');
+  width: 85px;
+  height: 60px;
+  /* background: #436279; */
 }

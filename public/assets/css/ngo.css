@@ -1,0 +1,123 @@
+/**
+* Template Name: LB3Labs One - v1.1.0
+* Template URL: 
+* Author: LB3Labs Developer
+* License: 
+*/
+
+/*--------------------------------------------------------------
+# NGO Section
+--------------------------------------------------------------*/
+.ngo-page {
+  width: 100%;
+  height: fit-content; /*95vh*/
+  background: url("../img/ngo/background.png");
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+@media (min-width: 1024px) {
+  .ngo-page {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 992px) {
+  .ngo-page {
+     /* 54vh */
+     background-attachment: fixed;
+     max-height: fit-content;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  .ngo-page {
+    background-attachment: fixed;
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 20px;
+  }
+}
+
+.ngo-page .content {
+  padding: 10px;
+  border-radius: 20px;
+  /* background: #F3EC9E; */
+  /* color: #fff; */
+}
+
+.ngo-page .ngo-list-box {
+  margin: 30px 60px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  /* background: #F3EC9E; */
+  min-height: 300px;
+  max-width: 240px;
+  /* box-shadow: 35px 0px 0px -10px #173963, -35px 0px 0px -10px #173963; */
+  /* color: #fff; */
+}
+
+.ngo-page .ngo-list-box .ngo-name-box {
+  margin: 7px 30px;
+  /* padding: 0px 0px; */
+  border-radius: 20px;
+  background: #F3EC9E;
+  /* color: #fff; */
+}
+
+.ngo-page .ngo-list-box .ngo-pic-box {
+  margin: 20px 0px;
+  background: #F3EC9E;
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+}
+
+/**
+* Youtube Button
+*/
+.ngo-page .youtube {
+  content: url('../img/youtube_dark_blue.png');
+  cursor: pointer;
+  margin:  10px;
+  border-radius: 25px;
+  width: 75px;
+  height: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.ngo-page .youtube:hover {
+  content: url('../img/youtube_light_blue.png');
+  width: 85px;
+  height: 60px;
+  /* background: #436279; */
+}
+
+/**
+* Zoom Button
+*/
+.ngo-page .zoom {
+  content: url('../img/zoom_dark_blue.png');
+  cursor: pointer;
+  margin:  10px;
+  border-radius: 25px;
+  width: 75px;
+  height: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.ngo-page .zoom:hover {
+  content: url('../img/zoom_light_blue.png');
+  width: 85px;
+  height: 60px;
+  /* background: #436279; */
+}

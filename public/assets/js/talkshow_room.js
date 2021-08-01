@@ -30,7 +30,7 @@
   var talkshowRoomSwiper = new Swiper('.talkshow-room-swiper', {
     speed: 600,
     loop: false,
-    centeredSlides: false,
+    centeredSlides: true,
     // autoplay: {
     //   delay: 5000,
     //   disableOnInteraction: false
@@ -74,16 +74,13 @@
 
   // Get index(es)
   var idx = talkshowRoomSwiper.activeIndex;
-  console.log('Ini adalah idx: ', idx);
-  console.log('Ini adalah total: ', totalTalkshowRoomSwiper);
-  if (idx == 0){
+  if (idx == 0 && totalTalkshowRoomSwiper > 1){
     $(".talkshow-room-btn-prev").css("visibility", "hidden");
     $(".talkshow-room-btn-next").css("visibility", "visible");
-  } else if (idx == 0 && totalTalkshowRoomSwiper == 1){
-    console.log('masuk sini');
+  } else if (totalTalkshowRoomSwiper == 1){
     $(".talkshow-room-btn-next").css("visibility", "hidden");
     $(".talkshow-room-btn-prev").css("visibility", "hidden");
-  } else if(idx+1 == totalTalkshowRoomSwiper) {
+  } else if (idx+1 == totalTalkshowRoomSwiper) {
     $(".talkshow-room-btn-next").css("visibility", "hidden");
     $(".talkshow-room-btn-prev").css("visibility", "visible");
   } else {
@@ -94,10 +91,13 @@
   // Get index(es) when transition
   talkshowRoomSwiper.on('transitionEnd', function() {
     var idx = talkshowRoomSwiper.activeIndex;
-    if (idx == 0){
+    if (idx == 0 && totalTalkshowRoomSwiper > 1){
       $(".talkshow-room-btn-prev").css("visibility", "hidden");
       $(".talkshow-room-btn-next").css("visibility", "visible");
-    } else if(idx+1 == totalTalkshowRoomSwiper) {
+    } else if (totalTalkshowRoomSwiper == 1) {
+      $(".talkshow-room-btn-next").css("visibility", "hidden");
+      $(".talkshow-room-btn-prev").css("visibility", "hidden");
+    } else if (idx+1 == totalTalkshowRoomSwiper) {
       $(".talkshow-room-btn-next").css("visibility", "hidden");
       $(".talkshow-room-btn-prev").css("visibility", "visible");
     } else {

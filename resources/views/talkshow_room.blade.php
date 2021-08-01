@@ -6,7 +6,9 @@
   <link href="{{ asset ('assets/css/talkshow_room.css') }}" rel="stylesheet" type="text/css">
 </head>
 
-<body>  
+<body>
+    @include('menu')
+
     <section class="talkshow-room-page">
       <!-- ======= Speaker Section ======= -->
       <section id="talkshow-room-page" class="d-flex">
@@ -27,40 +29,41 @@
                   <i class="talkshow-room-btn-prev fas fa-arrow-left"></i>
                 </div>
 
-                <div class="swiper-container talkshow-room-swiper col-9 d-flex align-items-center justify-content-stretch">
-                  <div class="swiper-wrapper d-flex">
+                @if ($data->count() == 0)
+                  <h1 style="margin-top: 250px;">Welcome to IME</h1>
+                  <h2>Indonesia Marine</h2>
 
-                  @if ($data->count() == 0)
-                    <h1 style="margin-top: 250px;">Welcome to IME</h1>
-                    <h2>Indonesia Marine</h2>
-                  @else
+                @else
+                  <div class="swiper-container talkshow-room-swiper col-9 d-flex align-items-center justify-content-stretch">
+                    <div class="swiper-wrapper d-flex">
+
                     @foreach($data as $data)
-                    <a href="talkshow-details/{{$data->id}}" class="swiper-slide">
-                      <div class="row talkshow-room-day-box">
-                        <div class="d-flex justify-content-center">
-                          <div class="talkshow-room-pic-box">
+                      <a href="talkshow/{{$data->id}}" class="swiper-slide">
+                        <div class="row talkshow-room-day-box">
+                          <div class="d-flex justify-content-center">
+                            <div class="talkshow-room-pic-box">
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row talkshow-room-day-text-box d-flex justify-content-start">
-                        <div class="talkshow-room-day-which-box">
-                          <h3 class="text-start yellow-strong">{{$data->day_title}}</h3>
+                        <div class="row talkshow-room-day-text-box d-flex justify-content-start">
+                          <div class="talkshow-room-day-which-box">
+                            <h3 class="text-start yellow-strong">{{$data->day_title}}</h3>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center my-2">
+                            <h5 class="text-center blue-strong">{{$data->theme}}</h5>
+                          </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center my-2">
-                          <h5 class="text-center blue-strong">{{$data->theme}}</h5>
-                        </div>
-                      </div>
-                    </a><!-- End Talkshow item -->
+                      </a><!-- End Talkshow item -->
                     @endforeach
-                  @endif
 
+                    </div>
+
+                    <!-- Swiper buttons -->
+                      <!-- <div class="swiper-button-next"></div> -->
+                      <!-- <div class="swiper-button-prev"></div> -->
+                      <div class="swiper-pagination-talkshow-room" style="visibility: hidden;"></div>
                   </div>
-
-                  <!-- Swiper buttons -->
-                    <!-- <div class="swiper-button-next"></div> -->
-                    <!-- <div class="swiper-button-prev"></div> -->
-                    <div class="swiper-pagination-talkshow-room" style="visibility: hidden;"></div>
-                </div>
+                @endif
                 
                 <!-- we put an arrow into the outside swiper swiper -->
                 <div class="col-1 d-flex align-items-center justify-content-center">
@@ -134,6 +137,8 @@
 
       <!-- <img src="{{ asset ('assets/img/about.png') }}"/> -->
     </section><!-- End Section -->
+
+    @include('modals')
 </body>
 
 @include('default_footer')

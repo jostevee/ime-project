@@ -17,6 +17,10 @@ class FrontEndController extends Controller
         return view('home'); //, compact('event')
     }
 
+    public function about(){
+        return redirect('/home#about');
+    }
+
     public function talkshow(){
         $data = TalkshowDay::orderByDesc('day_title')->get();
 
@@ -38,15 +42,15 @@ class FrontEndController extends Controller
     }
 
     public function ngo(){
-        $ngo = NGO::orderByDesc('created_at')->take(4)->get();
+        $data = NGO::orderByDesc('created_at')->get();
 
-        return view('ngo', compact('ngo')); //, compact('event')
+        return view('ngo', compact('data')); //, compact('event')
     }
 
     public function medpart(){
-        $medpart = Medpart::orderByDesc('created_at')->get();
+        $data = Medpart::orderByDesc('id')->get();
 
-        return view('medpart'); //, compact('event')
+        return view('medpart', compact('data')); //, compact('event')
     }
 
     public function donation(){
@@ -59,5 +63,10 @@ class FrontEndController extends Controller
         //$event = Event::orderByDesc('created_at')->take(4)->get();
 
         return view('merchandise'); //, compact('event')
+    }
+
+    // Login landing page
+    public function landingLogin() {
+        return view('writer/login');
     }
 }
