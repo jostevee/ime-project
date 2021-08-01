@@ -1,0 +1,29 @@
+.btn-signout {
+    display: inline-block;
+    cursor: pointer;
+    background: #F3EC9E; /* rgba(255, 255, 255, 0.2); */
+    padding: 20px;
+    color: #1C3B51; /* #fff */
+    /* color: #437099; */
+    font-size: 14px;
+    margin: 0px 0px 0px 25px;
+    border-radius: 20px;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .btn-signout i {
+    font-size: 14px;
+  }
+  
+  .btn-signout:hover {
+    padding: 20px 50px 20px 50px;
+    color: #F3EC9E; /* #173963 */
+    background: #1C3B51; /* #fff */
+    /* background: #3291e6; */
+  }
+  
+  .btn-signout i {
+    font-size: 28px;
+    color: #FFF;
+    line-height: 0;
+  }

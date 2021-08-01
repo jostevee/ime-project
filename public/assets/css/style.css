@@ -489,6 +489,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #cloud1 {
+  left: -400px;
   position: relative;
   /* top: 10px;
   width:170px;
@@ -496,9 +497,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #cloud2{
+  right: -400px;
   position: relative;
+  /* position: relative; */
   /* top: 10px;
   width:170px;
+  height:99px; */
+}
+
+#cloud3{
+  position: relative;
+  top: 250px;
+  left: 300px;
+  /* width:170px;
   height:99px; */
 }
 
@@ -739,9 +750,10 @@ h1, h2, h3, h4, h5, h6 {
 # Main Page
 --------------------------------------------------------------*/
 .main-page {
+  position: relative;
   width: 100%;
   height: fit-content; /*95vh*/
-  background: url("../img/all_general_main_page/background.png");
+  background: url("../img/all_general_main_page/background_blue.png");
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 38px 0px 0px 0px;
@@ -778,6 +790,28 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center center;
     padding-top: 20px;
   }
+}
+
+.bg-move-1 {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  right: auto;
+  width: fit-content;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-move-2 {
+  position: fixed;
+  top: 250px;
+  bottom: 0;
+  right: auto;
+  width: fit-content;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -954,7 +988,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .schedule-page .schedule-box {
-  margin: 10px 10px;
+  margin: 10px 60px;
   padding: 25px 0px;
   border-radius: 20px;
   background: #F3EC9E;

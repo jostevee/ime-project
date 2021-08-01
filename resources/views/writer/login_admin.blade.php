@@ -13,13 +13,13 @@
 </head>
 
 <body>
-  <section class="d-flex align-items-center" style="height: 20vh;"> <!-- background: url(assets/img/bg-img.jpeg); -->
+  <section class="d-flex align-items-center" style="height: 10vh;"> <!-- background: url(assets/img/bg-img.jpeg); -->
   </section>
 
   <main id="main">
 
     <!-- ======= Services Section ======= -->
-    <section id="login-admin" class="login-admin hero" style="min-height: 350px;">
+    <section id="login-admin" class="login-admin my-4" style="min-height: 350px;">
       <div class="container">
 
         <!--
@@ -39,7 +39,7 @@
                   <div class="mt-4 mt-xl-0 ">
                     <h2>Welcome!</h2>
                     <p>
-                      Please log-in to continue to the Writer's Page
+                      Please log-in to continue to the Admin's Page
                     </p>
                   </div>
                 </div>

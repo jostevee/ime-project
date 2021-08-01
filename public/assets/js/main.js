@@ -320,6 +320,34 @@
       $(".schedule-btn-next").css("visibility", "visible");
     }
   });
+
+
+  $(window).on("load resize scroll", function() {
+    $(".main-page").each(function() {
+        var windowTop = $(window).scrollTop();
+        var elementTop = $(this).offset().top;
+        var leftPosition = windowTop - elementTop;
+        var rightPosition = elementTop - windowTop;
+
+        // var x = $("#cloud1").position();
+        $(this)
+            .find(".bg-move-1")
+            .css({ left: leftPosition - 1000 });
+        $(this)
+            .find(".bg-move-2")
+            .css({ right: leftPosition - 1000 });
+        
+    });
+  });
+
+
+
+
+
+
+
+
+
   
 
 

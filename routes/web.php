@@ -25,6 +25,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('test', [FrontEndController::class, 'test']);
+
 Route::get('/', function () {return redirect('/home');});
 Route::get('about', [FrontEndController::class, 'about']);
 Route::get('home', [FrontEndController::class, 'home']);
@@ -44,6 +46,7 @@ Route::get('authorized/google/callback', [LoginWithGoogleController::class, 'han
 
 // Login landing page
 Route::get('/panel', [FrontEndController::class, 'landingLogin'])->name('not-login');
+Route::get('/writer', function () {return redirect('/panel');});
 
 // Writer Auth
 Route::get('/login-admin', [LoginController::class, 'login']); //->name('login');
@@ -62,6 +65,14 @@ Route::middleware('auth:admin')->group(function () {
     Route::post('/writer/ngo/edit/{id}', [WriterController::class, 'updateNGO']);
     Route::post('/writer/ngo/delete/{id}', [WriterController::class, 'deleteNGO']);
     Route::get('/writer/ngo/{id}', [WriterController::class, 'lookNGO']);
+
+    Route::get('/writer/medpart/list', [WriterController::class, 'myMedpart']);
+    Route::get('/writer/medpart/add', [WriterController::class, 'addMedpart']);
+    Route::post('/writer/medpart/add', [WriterController::class, 'saveMedpart']);
+    Route::get('/writer/medpart/edit/{id}', [WriterController::class, 'editMedpart']);
+    Route::post('/writer/medpart/edit/{id}', [WriterController::class, 'updateMedpart']);
+    Route::post('/writer/medpart/delete/{id}', [WriterController::class, 'deleteMedpart']);
+    Route::get('/writer/medpart/{id}', [WriterController::class, 'lookMedpart']);
 
     Route::get('/writer/job/list', [WriterController::class, 'myCareer']);
     Route::get('/writer/job/add', [WriterController::class, 'addCareer']);

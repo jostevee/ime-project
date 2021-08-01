@@ -8,30 +8,30 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link active">Home</a></li>
-            <li class="dropdown"><a class="nav-link">NGO</a>
+          <li><a class="nav-link" href="/writer">Home</a></li>
+            <li class="dropdown"><a class="nav-link scrollto" href="#ngo">NGO</a>
               <ul>
                 <li><a class="nav-link" href="/writer/ngo/add">Add NGO</a></li>
                 <li><a class="nav-link" href="/writer/ngo/list">List NGO</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a class="nav-link">Speaker</a>
+            <li class="dropdown"><a class="nav-link scrollto" href="#medpart">Medpart</a>
               <ul>
-                <li><a class="nav-link" href="/writer/ngo/add">Add NGO</a></li>
-                <li><a class="nav-link" href="/writer/ngo/list">List NGO</a></li>
+                <li><a class="nav-link" href="/writer/medpart/add">Add Medpart</a></li>
+                <li><a class="nav-link" href="/writer/medpart/list">List Medpart</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a class="nav-link">FAQs</a>
+            <li class="dropdown"><a class="nav-link">Talkshow Day</a>
               <ul>
-                <li><a class="nav-link" href="/writer/faq/add">Add FAQ</a></li>
-                <li><a class="nav-link" href="/writer/faq/list">List FAQ</a></li>
+                <li><a class="nav-link" href="#">Add Day</a></li>
+                <li><a class="nav-link" href="#">List Day</a></li>
               </ul>
             </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="/logout" class="appointment-btn scrollto">Sign Out</a>
+      <a href="/logout" class="btn-signout d-flex align-items-center"><i class="fas fa-sign-out-alt"></i></a>
       <!-- <a href="contact-us" class="appointment-btn scrollto"><i class="bi bi-whatsapp"></i></a> -->
       <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> -->
 

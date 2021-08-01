@@ -59,12 +59,12 @@
   <main id="main">
 
     <!-- Edit Post -->
-    <section id="ngo" class="services general-form bg-light py-4">
+    <section id="medpart" class="services general-form bg-light py-4">
         <div class="container">
         <!-- container-fluid -->
 
             <div class="section-title">
-              <h2>Edit NGO</h2>
+              <h2>Edit Medpart</h2>
             </div>
 
 	        <div class="row">
@@ -113,10 +113,9 @@
 				        <input type="file" name="img_link_update" id="img_link" class="form-control-file">
 			          </div> -->
 			          <div class="mt-4">
-                  <button type="submit">Save</button>
-                  <a style="cursor: pointer;" onclick="location.href='/writer/ngo/list';">Cancel</a>
-                  <!-- onclick="window.history.back();" -->
-                </div>
+                          <button type="submit">Save</button>
+                          <button type="cancel" onclick="window.history.back();">Cancel</button>
+                      </div>
 			        </form>
 		        </div>
 				        {{--

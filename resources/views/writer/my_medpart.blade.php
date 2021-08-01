@@ -23,6 +23,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   -->
 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <!-- include summernote css/js -->
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
@@ -67,11 +70,11 @@
   <main id="main">
 
     <!-- Postingan Saya -->
-    <section id="ngo" class="mypost bg-light py-4">
+    <section id="medpart" class="mypost bg-light py-4">
       <div class="container">
 
         <div class="section-title">
-          <h2>My NGO</h2>
+          <h2>My Medpart</h2>
         </div>
 
         <div class="container-fluid">
@@ -89,9 +92,9 @@
                 </div>
               @endif
               <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
-              <a href="/writer/ngo/add" class="mb-3 btn btn-outline-info ml-2">Add NGO</a>
-              <p style="text-align: right;">NGO total =
-                {{$ngo->count()}}
+              <a href="/writer/medpart/add" class="mb-3 btn btn-outline-info ml-2">Add Medpart</a>
+              <p style="text-align: right;">Medpart total =
+                {{$medpart->count()}}
               </p>
               @php
               $id = 1;
@@ -108,10 +111,10 @@
                   <th>Publish date</th>
                   <th width="5%"></th>
                 </tr>
-                @forelse($ngo as $data)
+                @forelse($medpart as $data)
                   <tr>
                     <td>{{$id++}}</td>
-                    <td><img src="/assets/img/ngo_list/{{ $data->logo }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
+                    <td><img src="/assets/img/medpart_list/{{ $data->logo }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
                     <td>{{$data->name}}</td>
                     <td>{{$data->info}}</td>
                     <td>{{$data->video}}</td>

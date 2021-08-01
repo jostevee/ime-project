@@ -39,13 +39,24 @@
     
     
     <section class="main-page">
-      <!-- Clouds Section -->
+      <!-- ======= Clouds Section ======= -->
+      <div class="bg-move-1">
+        <img id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+        <img id="cloud3" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+      </div>
+      <div class="bg-move-2">
+        <img id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+      </div>
+      
+
+      <!-- Old version Cloud Section -->
+      <!--
       <div id="frame">
         <div id="slider">
           <img class="cloud" id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
           <img class="cloud" id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
         </div>
-      </div>
+      </div> -->
 
       <!-- ======= About Section ======= -->
       <div id="about" class="general-div-section about-page d-flex my-4">
@@ -122,13 +133,22 @@
         </div>
       </div>
 
-      <!-- Clouds Section -->
+      <!-- ======= Clouds Section ======= -->
+      <!-- <div class="section bg-static d-flex justify-content-center">
+        <div class="bg-move">
+            <img id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+            <img id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+        </div>
+      </div> -->
+      
+      <!-- Old version Cloud Section -->
+      <!--
       <div id="frame">
         <div id="slider">
           <img class="cloud" id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
           <img class="cloud" id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
         </div>
-      </div>
+      </div> -->
 
       <!-- ======= Speaker Section ======= -->
       <section id="speaker" class="general speaker-page d-flex my-4">
@@ -403,8 +423,12 @@
         </div>
       </section><!-- End Schedule Section -->
 
-      <!-- ======= Islan Main Section ======= -->
+      <!-- ======= Island Main Section ======= -->
+      <div class="section bg-static">
+        <div class="bg-move"></div>
+      </div>
       <section id="island-main" class="general island-main-page d-flex my-4">
+        <div class="maps"></div>
         <div class="container"><!-- class="d-flex align-items-center" -->
 
           <div class="row d-flex justify-content-center mt-4">

@@ -7,6 +7,7 @@ use App\Models\Medpart;
 use App\Models\NGO;
 use App\Models\TalkshowDay;
 use App\Models\TalkshowDetail;
+use Auth;
 
 class FrontEndController extends Controller
 {
@@ -15,6 +16,10 @@ class FrontEndController extends Controller
         //$event = Event::orderByDesc('created_at')->take(4)->get();
 
         return view('home'); //, compact('event')
+    }
+
+    public function test(){
+        return view('test');
     }
 
     public function about(){
@@ -67,6 +72,10 @@ class FrontEndController extends Controller
 
     // Login landing page
     public function landingLogin() {
-        return view('writer/login');
+        if(Auth::guard('admin')->user() != null){
+            return redirect('/writer');
+        } else {
+            return redirect('/login-admin');
+        }
     }
 }

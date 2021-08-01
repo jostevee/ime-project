@@ -21,7 +21,7 @@ class LoginController extends Controller
     }
 
     public function login(){
-        return view('writer/login');
+        return view('writer/login_admin');
     }
 
     public function loginAdmin(){
