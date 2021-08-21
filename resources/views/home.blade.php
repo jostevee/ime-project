@@ -447,19 +447,19 @@
             </div>
             <div class="col-lg-10 mt-4">
               <div class="content row d-flex justify-content-stretch">
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
                   <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
                   <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
                   <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
                   <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
                   <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
                 </div>
               </div>
