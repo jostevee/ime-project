@@ -193,7 +193,8 @@
 
       1024: {
         slidesPerView: 3,
-        spaceBetween: 10 //20
+        spaceBetween: 10, //20
+        centeredSlides: false
       }
     }
   });
