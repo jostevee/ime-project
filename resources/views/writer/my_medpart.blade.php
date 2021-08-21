@@ -88,6 +88,7 @@
               @php
               $id = 1;
               @endphp
+              <div class="table-responsive">
               <table class="table table-striped">
                 <tr>
                   <th>No.</th>
@@ -124,6 +125,7 @@
                   </tr>
                 @endforelse
               </table>
+              </div>
             </div>
           </div>
         </div> 
