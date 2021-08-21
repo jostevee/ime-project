@@ -159,7 +159,7 @@
                   <i class="speaker-btn-prev fas fa-arrow-left"></i>
                 </div>
 
-                <div class="swiper-container speaker-swiper col-9 d-flex align-items-center justify-content-stretch">
+                <div class="col-10 swiper-container speaker-swiper col-9 d-flex align-items-center justify-content-stretch">
                   <div class="swiper-wrapper d-flex">
 
                     @foreach($data_speaker as $data)
