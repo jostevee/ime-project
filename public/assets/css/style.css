@@ -526,7 +526,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   .intro-page  {
     /* background-attachment: fixed; */
+
+    /* background-cover */
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -536,7 +543,14 @@ h1, h2, h3, h4, h5, h6 {
   .intro-page  {
      /* 54vh */
      max-height: fit-content;
-     background-size: cover;
+
+     /* background-cover */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
      background-repeat: no-repeat;
      background-position: center center;
      padding-top: 20px;
@@ -546,7 +560,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-height: 600px) {
   .intro-page  {
     height: fit-content;
+    
+    /* background-cover */
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
     background-repeat: no-repeat;
     background-position: center center;
     padding-top: 20px;
@@ -761,7 +782,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   .main-page {
     background-attachment: fixed;
+    
+    /* background-cover */
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+    
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -772,7 +800,14 @@ h1, h2, h3, h4, h5, h6 {
      /* 54vh */
      background-attachment: fixed;
      max-height: fit-content;
-     background-size: cover;
+     
+     /* background-cover */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
      background-repeat: no-repeat;
      background-position: center center;
      padding-top: 20px;
@@ -783,6 +818,14 @@ h1, h2, h3, h4, h5, h6 {
   .main-page {
     background-attachment: fixed;
     height: fit-content;
+
+    /* background-cover */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
