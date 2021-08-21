@@ -26,7 +26,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('google7582d4fd2d46f6e4.html', function () {return redirect('/');});
+
 Route::get('/', function () {return redirect('/home');});
+Route::get('/home', [FrontEndController::class, 'home']);
 Route::get('about', [FrontEndController::class, 'about']);
 Route::get('speaker', [FrontEndController::class, 'speaker']);
 Route::get('schedule', [FrontEndController::class, 'schedule']);
