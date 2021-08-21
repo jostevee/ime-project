@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="google-site-verification" content="fVKUPUMUQKlR6HBx4M7K7WNr68EVI1kGTQLw4EwdRUU" />
 
 <title>Indonesia Marine Exhibition</title>
 <meta content="" name="description">
