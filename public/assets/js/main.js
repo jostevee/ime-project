@@ -187,9 +187,8 @@
       },
 
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 10, //20
-        centeredSlides: true
       },
 
       1024: {
