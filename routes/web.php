@@ -26,7 +26,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('test', [FrontEndController::class, 'test']);
+Route::get('google7582d4fd2d46f6e4.html', function () {return redirect('/');});
 
 Route::get('/', function () {return redirect('/home');});
 Route::get('about', [FrontEndController::class, 'about']);
