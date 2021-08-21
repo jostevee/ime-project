@@ -1,5 +1,4 @@
 @php
-  $userwriter = Auth::guard('web')->user();
   $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
@@ -59,12 +58,12 @@
   <main id="main">
 
     <!-- Edit Post -->
-    <section id="ngo" class="services general-form bg-light py-4">
+    <section id="talkshow-day" class="services general-form bg-light py-4">
       <div class="container">
       <!-- container-fluid -->
 
-          <div class="section-title my-4">
-            <h2>Edit NGO</h2>
+          <div class="section-title">
+            <h2>Edit Talkshow Day</h2>
           </div>
 
 	        <div class="row">
@@ -84,24 +83,12 @@
                     </div>
                   @endif
                     <div class="form-group">
-                      <label for="title">Name</label>
-                      <input type="text" name="name" id="name" class="form-control" value="{{ $ngo->name }}" required>
+                      <label for="title">Title</label>
+                      <input type="text" name="title" id="title" class="form-control" value="{{ $talkshow_day->title }}" required>
                     </div>
                     <div class="form-group mt-4">
-                      <label for="title">Info</label>
-                      <input type="text" name="info" id="info" class="form-control" value="{{ $ngo->info }}" required>
-                    </div>
-                    <div class="form-group col-4 mt-4">
-                      <label for="title">Video</label>
-                      <input type="text" name="video" id="video" class="form-control" value="{{ $ngo->video }}" required>
-                    </div>
-                    <div class="form-group col-4 mt-4">
-                      <label for="title">IG</label>
-                      <input type="text" name="ig" id="ig" class="form-control" value="{{ $ngo->ig }}" required>
-                    </div>
-                    <div class="form-group col-4 mt-4">
-                      <label for="title">FB</label>
-                      <input type="text" name="fb" id="fb" class="form-control" value="{{ $ngo->fb }}" required>
+                      <label for="title">Theme</label>
+                      <input type="text" name="theme" id="theme" class="form-control" value="{{ $talkshow_day->theme }}" required>
                     </div>
 
                     <!--
@@ -114,8 +101,8 @@
                     </div> -->
                     <div class="mt-4">
                       <button type="submit">Save</button>
-                      <a class="cancel" onclick="location.href='/writer/ngo/list';">Cancel</a>
-                      <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->                  <!-- onclick="window.history.back();" -->
+                      <a class="cancel" onclick="location.href='/writer/talkshow-day/list';">Cancel</a>
+                      <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
                     </div>
 			            </form>
 		            </div>

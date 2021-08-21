@@ -1,6 +1,6 @@
 @php
   $userwriter = Auth::guard('web')->user();
-  $useradmin = Auth::guard('admin')->user();
+  $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -17,14 +17,12 @@
 
   <!-- Template for Summernote WYSIWYG -->
   <!-- include libraries(jQuery, bootstrap) -->
-  <!--
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+ 
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
   <!-- include summernote css/js -->
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
@@ -52,7 +50,7 @@
     </div>
   </div> -->
 
-  @include('nav_backend')
+  @include('writer/nav_backend')
 
   <!-- ======= Hero Section ======= -->
   <!--
@@ -73,7 +71,7 @@
     <section id="medpart" class="services general-form bg-light py-4">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title my-4">
           <h2>Add Medpart</h2>
         </div>
 
@@ -81,53 +79,53 @@
         <div class="col-lg-12 align-items-stretch">
           <div class="icon-boxes d-flex flex-column justify-content-center">
             <div class="row">
-	  	        <form method="POST" autocomplete="on" enctype="multipart/form-data" class="php-general-form">
+	  	        <form method="POST" autocomplete="on" enctype="multipart/form-data" class="php-general-form row">
   			      @csrf
 		          @if (session('error'))
-                    <div class="alert alert-danger">
-                      {{ session('error') }}
-                    </div>
-                  @endif
-                  @if (session('success'))
-                    <div class="alert alert-success">
-                      {{ session('success') }}
-                    </div>
-                  @endif
-		  	    <div class="form-group">
-				      <label for="title">Name</label>
-			    	  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name here" required>
-			      </div>
-            <div class="form-group mt-4">
-				      <label for="title">Info</label>
-			    	  <input type="text" name="info" id="info" class="form-control" placeholder="Enter your info here" required>
-			      </div>
-            <div class="form-group mt-4">
-				      <label for="title">Video</label>
-			    	  <input type="text" name="video" id="video" class="form-control" placeholder="Enter your Video here" required>
-			      </div>
-            <div class="form-group mt-4">
-				      <label for="title">IG</label>
-			    	  <input type="text" name="ig" id="ig" class="form-control" placeholder="Enter your IG here" required>
-			      </div>
-            <div class="form-group mt-4">
-				      <label for="title">FB</label>
-			    	  <input type="text" name="fb" id="fb" class="form-control" placeholder="Enter your FB here" required>
-			      </div>
-			      <div class="form-group mt-4">
-				    <label for="img_link">Choose an image</label>
-                  </div>
-                  <div class="form-group mt-2 mb-4">
-				    <input type="file" name="img_link" id="img_link" class="form-control-file">
-			      </div>
-                  <div class="mt-4 mt-xl-0">
-                    <button type="submit">Add Medpart</button>
-                    <button type="cancel" onclick="window.history.back();">Cancel</button>
-                  </div>
-		        </form>
+                <div class="alert alert-danger">
+                  {{ session('error') }}
+                </div>
+              @endif
+              @if (session('success'))
+                <div class="alert alert-success">
+                  {{ session('success') }}
+                </div>
+              @endif
+                <div class="form-group">
+                  <label for="title">Name</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Enter Medpart name here" required>
+                </div>
+                <div class="form-group mt-4">
+                  <label for="title">Info</label>
+                  <input type="text" name="info" id="info" class="form-control" placeholder="Enter Medpart info here" required>
+                </div>
+                <div class="form-group col-4 mt-4">
+                  <label for="title">Video</label>
+                  <input type="text" name="video" id="video" class="form-control" placeholder="Enter Medpart video link here" required>
+                </div>
+                <div class="form-group col-4 mt-4">
+                  <label for="title">IG</label>
+                  <input type="text" name="ig" id="ig" class="form-control" placeholder="Enter Medpart Instagram page here" required>
+                </div>
+                <div class="form-group col-4 mt-4">
+                  <label for="title">FB</label>
+                  <input type="text" name="fb" id="fb" class="form-control" placeholder="Enter Medpart Facebook page here" required>
+                </div>
+                <div class="form-group mt-4">
+                  <label for="img_link">Choose an image</label>
+                </div>
+                <div class="form-group my-4">
+				          <input type="file" name="img_link" id="img_link" class="form-control-file">
+			          </div>
+                <div class="mt-4">
+                  <button type="submit">Add Medpart</button>
+                  <a class="cancel" onclick="location.href='/writer/medpart/list';">Cancel</a>
+                  <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
+                </div>
+		          </form>
+		        </div>
 		      </div>
-		    </div>
 	      </div>
-        </div>
         </div>
 
       </div>

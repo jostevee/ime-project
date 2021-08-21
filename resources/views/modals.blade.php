@@ -149,12 +149,13 @@
             <div class="col-2 d-flex justify-content-end">
               <a class="icon-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></a>
             </div>
+            <!--
             <div class="col-10 d-flex justify-content-center align-items-center mt-4">
               <p class="text-center blue-strong">OR</p>
             </div>
             <div class="col-10 d-flex justify-content-center align-items-start">
               <a class="btn-modal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registrationModal"><p class="text-center white-regular">Email</p></a>
-            </div>         
+            </div> -->
           </div>
 
           <!-- <div class="modal-footer">
@@ -277,19 +278,19 @@
 
           <div class="modal-body align-items-center justify-content-center row">
             <div class="col-4 col-md-3 col-lg-2 menu-modal-row">
-              <a data-bs-dismiss="modal" onclick="location.href='#about';"><div class="menu-modal-icon d-flex justify-content-center"><i class="about-icon"></i></div></a>
+              <a data-bs-dismiss="modal" onclick="location.href='about';"><div class="menu-modal-icon d-flex justify-content-center"><i class="about-icon"></i></div></a>
               <p class="d-flex justify-content-center text-center black-strong mt-2" style="font-size: 24px;">About</p>
             </div>
             <div class="col-4 col-md-3 col-lg-2 menu-modal-row">
-              <div class="menu-modal-icon d-flex justify-content-center"><i class="speaker-icon"></i></div>
+              <a data-bs-dismiss="modal" onclick="location.href='speaker';"><div class="menu-modal-icon d-flex justify-content-center"><i class="speaker-icon"></i></div></a>
               <p class="d-flex justify-content-center text-center black-strong mt-2" style="font-size: 24px;">Speakers</p>
             </div>
             <div class="col-4 col-md-3 col-lg-2 menu-modal-row">
-              <div class="menu-modal-icon d-flex justify-content-center"><i class="schedule-icon"></i></div>
+              <a data-bs-dismiss="modal" onclick="location.href='schedule';"><div class="menu-modal-icon d-flex justify-content-center"><i class="schedule-icon"></i></div></a>
               <p class="d-flex justify-content-center text-center black-strong mt-2" style="font-size: 24px;">Schedule</p>
             </div>
             <div class="col-4 col-md-3 col-lg-2 menu-modal-row">
-              <div class="menu-modal-icon d-flex justify-content-center"><i class="on-ime-icon"></i></div>
+              <a data-bs-dismiss="modal" onclick="location.href='#about';"><div class="menu-modal-icon d-flex justify-content-center"><i class="on-ime-icon"></i></div></a>
               <p class="d-flex justify-content-center text-center black-strong mt-2" style="font-size: 24px;">On IME</p>
             </div>
           </div>

@@ -37,11 +37,6 @@
 <!-- Zoom CSS -->
 <link href="{{ asset ('assets/css/zoom.css') }}" rel="stylesheet" type="text/css">
 
-<!-- Google's Sign In Method -->
-<script src="https://apis.google.com/js/api:client.js"></script>
-<script src="{{ asset ('assets/js/google_signin.js') }}"></script>
-<!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
-
 <!-- Google's Material Design Icons -->
 <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 

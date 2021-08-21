@@ -162,20 +162,38 @@
                 <div class="swiper-container speaker-swiper col-9 d-flex align-items-center justify-content-stretch">
                   <div class="swiper-wrapper d-flex">
 
+                    @foreach($data_speaker as $data)
+                      <div class="swiper-slide">
+                        <div class="row speaker-people-box">
+                          <div class="d-flex justify-content-center">
+                            <img src="/assets/img/talkshow_speaker_list/{{ $data->image }}" class="speaker-pic-box" />
+                          </div>
+                          <div class="d-flex justify-content-center align-items-start my-2">
+                            <p class="text-center blue-regular">{{ $data->name }}</p>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-start my-2">
+                            <p class="text-center blue-regular">{{ $data->organization }}</p>
+                          </div>
+                        </div>
+                      </div><!-- End speaker item -->
+                    @endforeach
+                    
+
+                    <!--
                     <div class="swiper-slide">
                       <div class="row speaker-people-box">
                         <div class="d-flex justify-content-center">
                           <div class="speaker-pic-box">
                           </div>
                         </div>
-                        <div class="d-flex justify-content-center align-items-start my-2">
+                        <div class="d-flex justify-content-center my-2">
                           <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                         </div>
                         <div class="d-flex justify-content-center align-items-start my-2">
                           <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                         </div>
                       </div>
-                    </div><!-- End speaker item -->
+                    </div><!-- End speaker item
 
                     <div class="swiper-slide">
                       <div class="row speaker-people-box">
@@ -186,26 +204,11 @@
                         <div class="d-flex justify-content-center my-2">
                           <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                         </div>
-                        <div class="d-flex justify-content-center align-items-start my-2">
-                          <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                        </div>
-                      </div>
-                    </div><!-- End speaker item -->
-
-                    <div class="swiper-slide">
-                      <div class="row speaker-people-box">
-                        <div class="d-flex justify-content-center">
-                          <div class="speaker-pic-box">
-                          </div>
-                        </div>
-                        <div class="d-flex justify-content-center my-2">
-                          <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                        </div>
                         <div class="d-flex justify-content-center my-2">
                           <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                         </div>
                       </div>
-                    </div><!-- End speaker item -->
+                    </div><!-- End speaker item
 
                     <div class="swiper-slide">
                       <div class="row speaker-people-box">
@@ -318,26 +321,41 @@
                 <div class="swiper-container schedule-swiper col-9 d-flex align-items-center justify-content-center">
                   <div class="swiper-wrapper">
 
-                    <!-- Day item --> 
-                    <div class="swiper-slide d-flex align-items-center justify-content-center">
-                      <div class="col-11 row schedule-box">
-                        <div class="schedule-day d-flex justify-content-center py-3">
-                          <h3 class="text-center white-strong">DAY 1</h3>
-                        </div>
+                    @foreach($data_day as $data_day)
+                      <!-- Day item --> 
+                      <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <div class="col-11 row schedule-box">
+                          <div class="schedule-day d-flex justify-content-center py-3">
+                            <h3 class="text-center white-strong">{{ $data_day->title }}</h3>
+                          </div>
 
-                        <!-- Content(s) -->
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">08.00</h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 1: Nama Pembicara</h4>
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">09.00</h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 2: Nama Pembicara</h4>
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">10.00</h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 3: Nama Pembicara</h4>
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">11.00</h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 4: Nama Pembicara</h4>
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">12.00</h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 5: Nama Pembicara</h4>
-                      </div>
-                    </div><!-- End day item -->
+                          @forelse($data_detail as $data_detail)
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              {{ $data_detail }}
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              SESI 1: Nama Pembicara
+                            </h4>
+                          @empty
+                            <h4 class="col-12 schedule-desc d-flex justify-content-center py-3 text-center blue-regular">
+                              Please add activity to this day, thank you!
+                            </h4>
+                          @endforelse
+
+                          <!--
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">09.00</h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 2: Nama Pembicara</h4>
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">10.00</h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 3: Nama Pembicara</h4>
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">11.00</h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 4: Nama Pembicara</h4>
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">12.00</h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 5: Nama Pembicara</h4>
+                          -->
+                        </div>
+                      </div><!-- End day item -->
+                    @endforeach
 
                   </div>
 

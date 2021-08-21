@@ -85,7 +85,7 @@
                         </div>
 
                         <!--
-                        @if(request()->segment(1)!='admin')
+                        @if (request()->segment(1)!='writer')
                           <div class="row pt-2">
                           <div class="col text-center">
                               <h6>Tidak punya akun? <a href="signup"><i>Buat akun</i></a></h6>

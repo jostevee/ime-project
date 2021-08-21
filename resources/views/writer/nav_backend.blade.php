@@ -4,7 +4,7 @@
 
       <!-- <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a class="logo me-auto"><img src="{{ asset ('assets/img/logo_optimus_navbar.png') }}" width="250" alt="" class="img-fluid"><!-- <h4>Optimus</h4> --></a>
+      <a class="logo me-auto"><img src="{{ asset ('assets/img/intro_page/ime_logo_transparent_new.png') }}" alt="" class="img-fluid"><!-- <h4>Optimus</h4> --></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -21,10 +21,16 @@
                 <li><a class="nav-link" href="/writer/medpart/list">List Medpart</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a class="nav-link">Talkshow Day</a>
+            <li class="dropdown"><a class="nav-link scrollto" href="#talkshow-day">Talkshow Day</a>
               <ul>
-                <li><a class="nav-link" href="#">Add Day</a></li>
-                <li><a class="nav-link" href="#">List Day</a></li>
+                <li><a class="nav-link" href="/writer/talkshow-day/add">Add Day</a></li>
+                <li><a class="nav-link" href="/writer/talkshow-day/list">List Day</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="nav-link scrollto" href="#talkshow-speaker">Talkshow Speaker</a>
+              <ul>
+                <li><a class="nav-link" href="/writer/talkshow-speaker/add">Add Speaker</a></li>
+                <li><a class="nav-link" href="/writer/talkshow-speaker/list">List Speaker</a></li>
               </ul>
             </li>
         </ul>

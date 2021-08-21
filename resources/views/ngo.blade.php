@@ -17,7 +17,7 @@
             <div class="row col-12 justify-content-center mx-4">
               @if ($data->count() == 0)
                 <h1 style="margin-top: 250px;">Ups... there are no data available</h1>
-                <h2>Please input some...</h2>
+                <h2>Please try again :)</h2>
               @else
                 @foreach($data as $data)
                 <a href="ngo/{{$data->id}}" class="row ngo-list-box justify-content-center align-items-center col-lg-3 mb-2">

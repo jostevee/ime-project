@@ -1,5 +1,4 @@
 @php
-  $userwriter = Auth::guard('web')->user();
   $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
@@ -42,7 +41,7 @@
   </div> -->
 
   @include('writer/nav_backend')
-  
+
   <!-- ======= Hero Section ======= -->
   <!--
   <section id="hero" class="d-flex align-items-center">
@@ -58,19 +57,21 @@
 
   <main id="main">
 
-    <!-- Postingan Saya -->
-    <section id="ngo" class="mypost bg-light py-4">
+    <!-- Add Event -->
+    <section id="talkshow-day" class="services general-form bg-light py-4">
       <div class="container">
 
         <div class="section-title my-4">
-          <h2>My NGO</h2>
+          <h2>Add Talkshow Day</h2>
         </div>
 
-        <div class="container-fluid">
-          <div class="card"> <!-- class="card w-50 m-auto" -->
-            <!-- <div class="card-header">Category List</div> -->
-            <div class="card-body">
-              @if (session('error'))
+        <div class="row">
+        <div class="col-lg-12 align-items-stretch">
+          <div class="icon-boxes d-flex flex-column justify-content-center">
+            <div class="row">
+	  	        <form method="POST" autocomplete="on" enctype="multipart/form-data" class="php-general-form row">
+  			      @csrf
+		          @if (session('error'))
                 <div class="alert alert-danger">
                   {{ session('error') }}
                 </div>
@@ -80,54 +81,52 @@
                   {{ session('success') }}
                 </div>
               @endif
-              <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
-              <a href="/writer/ngo/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add NGO</a>
-              <p style="text-align: right;">NGO total =
-                {{ $ngo->count() }}
-              </p>
-              @php
-              $id = 1;
-              @endphp
-              <table class="table table-striped">
-                <tr>
-                  <th>No.</th>
-                  <th>Logo</th>
-                  <th>Name</th>
-                  <th>Info</th>
-                  <th>Video</th>
-                  <th>IG</th>
-                  <th>FB</th>
-                  <th>Publish date</th>
-                  <th width="5%"></th>
-                </tr>
-                @forelse($ngo as $data)
-                  <tr>
-                    <td>{{$id++}}</td>
-                    <td><img src="/assets/img/ngo_list/{{ $data->logo }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->info}}</td>
-                    <td>{{$data->video}}</td>
-                    <td>{{$data->ig}}</td>
-                    <td>{{$data->fb}}</td>
-                    <td>{{ $data->created_at }}</td>
-                    <td>
-                      <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
-                      <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
-                      <form action="delete/{{ $data->id }}" method="POST">@csrf
-                        <button class="btn btn-danger col-12" type="submit">Delete</button>
-                      </form>
-                    </td>
-                  </tr>
-                @empty
-                  <tr>
-                    <td colspan="9" align="center"><i>No data available</i></td>
-                  </tr>
-                @endforelse
-              </table>
-            </div>
-          </div>
-        </div> 
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" name="title" id="title" class="form-control" placeholder="Enter Title here" required>
+                </div>
+                <div class="form-group mt-4">
+                  <label for="title">Theme</label>
+                  <input type="text" name="theme" id="theme" class="form-control" placeholder="Enter Theme here" required>
+                </div>
+                <!--
+                <div class="form-group mt-4">
+                  <label for="img_link">Choose an image</label>
+                </div>
+                <div class="form-group my-4">
+                  <input type="file" name="img_link" id="img_link" class="form-control-file">
+                </div> -->
+                <div class="mt-4">
+                  <button type="submit">Add Talkshow Day</button>
+                  <a class="cancel" onclick="location.href='/writer/talkshow-day/list';">Cancel</a>
+                  <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
+                </div>
+		          </form>
+		        </div>
+		      </div>
+	      </div>
+        </div>
+
+      </div>
     </section>
+
+    <script>
+        $(document).ready(function() {
+            $('#content').summernote({
+                toolbar: [
+                    //['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    //['fontname', ['fontname']],
+                    //['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    //['table', ['table']],
+                    ['insert', ['link']],
+                    ['fontsize', ['fontsize']],
+                ],
+                height: 450,
+            });
+        });
+    </script>
 
   </main>
 

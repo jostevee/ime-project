@@ -47,9 +47,9 @@ return [
             'hash' => false,
         ],
 
-        'admin' => [
+        'writer' => [
             'driver' => 'session',
-            'provider' => 'admins'
+            'provider' => 'writer'
         ]
     ],
 
@@ -76,7 +76,7 @@ return [
             'model' => App\Models\User::class,
         ],
 
-        'admins' => [
+        'writer' => [
             'driver' => 'eloquent',
             'model' => App\Models\Writer::class,
         ],
@@ -110,8 +110,8 @@ return [
             'throttle' => 60,
         ],
 
-        'admins' => [
-            'provider' => 'admins',
+        'writer' => [
+            'provider' => 'writer',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,

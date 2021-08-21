@@ -1,6 +1,6 @@
 @php
   $userwriter = Auth::guard('web')->user();
-  $useradmin = Auth::guard('admin')->user();
+  $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -113,7 +113,7 @@
     <section id="services" class="services hero">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title my-4">
             <h2>{{$data->title}}</h2>
             <p class="mt-3">Writer name: {{$data->writer->name}}<br /><small>Categori: <a href="/category/{{$data->id_category}}">{{$data->category->category}}</a> | Latest Update: {{\Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $data->updated_at)->format('d F Y, H:i:s')}}</small> </p>
         </div>

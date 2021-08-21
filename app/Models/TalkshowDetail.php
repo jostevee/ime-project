@@ -8,10 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class TalkshowDetail extends Model
 {
     use HasFactory;
-    protected $table='talkshow';
+    protected $table = 'talkshow';
     protected $primaryKey = 'id';
 
-    public function details() {
-        return $this->hasMany('App\Models\TalkshowDay', 'id_talkshow');
+    public function day() {
+        return $this->belongsTo('App\Models\TalkshowDay', 'id_day');
+    }
+
+    public function speaker() {
+        return $this->belongsTo('App\Models\Speaker', 'id_speaker');
     }
 }

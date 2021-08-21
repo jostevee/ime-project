@@ -751,7 +751,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   height: fit-content; /*95vh*/
-  background: url("../img/all_general_main_page/background_blue.png");
+  background: url("../img/all_general_main_page/background.png");
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 38px 0px 0px 0px;
@@ -1260,6 +1260,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/*--------------------------------------------------------------
+# PHP General Form Section
+--------------------------------------------------------------*/
+.general-form .php-general-form .btn-link {
+  background: #1C3851;
+  border: 0;
+  padding: 10px 35px;
+  color: #FFF;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.general-form .php-general-form .btn-link:hover {
+  background: #F3EC9E;
+  color: #1C3851;
+  padding: 10px 75px;
+}
+
+.general-form .php-general-form button[type="submit"] {
+  background: #1C3851;
+  border: 0;
+  padding: 10px 35px;
+  color: #FFF;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.general-form .php-general-form button[type="submit"]:hover {
+  background: #F3EC9E;
+  color: #1C3851;
+  padding: 10px 75px;
+}
+
+.general-form .php-general-form .cancel {
+  background: #1C3851;
+  border: 0;
+  padding: 15px 35px;
+  cursor: pointer;
+  color: #FFF;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.general-form .php-general-form .cancel:hover {
+  background: #F3EC9E;
+  color: #1C3851;
+  padding: 15px 75px;
+}
 
 
 
@@ -1327,7 +1375,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
 #header {
   background: #fff;
   transition: all 0.5s;
@@ -1507,7 +1554,6 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Mobile Navigation 
 */
-
 .mobile-nav-toggle {
   color: #2c4964;
   font-size: 28px;
@@ -1698,10 +1744,10 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 
-
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+/*
 .why-us .content {
   padding: 30px;
   background: #173963;
@@ -1741,8 +1787,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgb(44 73 100 / 50%); /*  0px 2px 15px rgba(0, 0, 0, 0.1); */
-  /* border: 6px solid #d5e1ed; */
+  box-shadow: 0px 2px 15px rgb(44 73 100 / 50%); /*  0px 2px 15px rgba(0, 0, 0, 0.1);
+  /* border: 6px solid #d5e1ed; 
   padding: 40px 30px;
   width: 100%;
 }
@@ -1781,16 +1827,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .why-us .icon-box:hover .icon i {
-  /* color: #173963; */
+  /* color: #173963; 
   color: #fff;
 }
+*/
+
 
 /*--------------------------------------------------------------
 # About
---------------------------------------------------------------
+-------------------------------------------------------------- */
+/*
 .about .btn-get-started {
-  /* font-family: "Hurme Geometric Sans 3", sans-serif; /* Raleway */
-  /* text-transform: uppercase;
+  /* font-family: "Hurme Geometric Sans 3", sans-serif; /* Raleway
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1812,7 +1861,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #a0bcd5; /* rgba(255, 255, 255, 0.2); 
   padding: 6px 20px 8px 20px;
   margin-top: 12px;
-  color: #fff; /* #fff */
+  color: #fff; /* #fff
   /* color: #437099; 
   font-size: 14px;
   border-radius: 50px;
@@ -1826,7 +1875,7 @@ h1, h2, h3, h4, h5, h6 {
 .about .learn-more .more-btn:hover {
   padding: 6px 30px 8px 30px;
   color: #fff; /* #173963 
-  background: #173963; /* #fff */
+  background: #173963; /* #fff
   /* background: #3291e6; 
 }
 
@@ -1995,6 +2044,8 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
   }
 }
+*/
+
 
 /*--------------------------------------------------------------
 # Counts

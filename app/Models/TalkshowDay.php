@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class TalkshowDay extends Model
 {
     use HasFactory;
-    protected $table='talkshow_day';
+    protected $table = 'talkshow_day';
     protected $primaryKey = 'id';
 
-    public function details() {
-        return $this->belongsTo('App\Models\TalkshowDetail', 'id');
+    public function talkshow_detail() {
+        return $this->hasMany('App\Models\TalkshowDetail', 'id_day');
     }
 }

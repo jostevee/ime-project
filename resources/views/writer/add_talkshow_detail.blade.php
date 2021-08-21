@@ -1,5 +1,4 @@
 @php
-  $userwriter = Auth::guard('web')->user();
   $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
@@ -59,11 +58,11 @@
   <main id="main">
 
     <!-- Add Event -->
-    <section id="ngo" class="services general-form bg-light py-4">
+    <section id="talkshow-detail" class="services general-form bg-light py-4">
       <div class="container">
 
         <div class="section-title my-4">
-          <h2>Add NGO</h2>
+          <h2>Add Talkshow Detail</h2>
         </div>
 
         <div class="row">
@@ -82,26 +81,46 @@
                   {{ session('success') }}
                 </div>
               @endif
-                <div class="form-group">
-                  <label for="title">Name</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Enter NGO name here" required>
+                <div class="form-group col-6">
+                  <label for="title">Talkshow Day</label>
+                  <select class="form-select" id="day" name="day" required>
+                    <option value="">Select talkshow day...</option>
+                    @foreach($data_day as $data)
+                      <option value="{{ $data->id }}">{{ $data->title }}</option>
+                    @endforeach
+                  </select>
                 </div>
-                <div class="form-group mt-4">
-                  <label for="title">Info</label>
-                  <input type="text" name="info" id="info" class="form-control" placeholder="Enter NGO info here" required>
+                <div class="form-group col-6">
+                  <label for="kategori">Talkshow Speaker</label>
+                  <select class="form-select" id="speaker" name="speaker" required>
+                    <option value="">Select talkshow speaker...</option>
+                    @foreach($data_speaker as $data)
+                      <option value="{{ $data->id }}">{{ $data->name }}</option>
+                    @endforeach
+                  </select>
                 </div>
-                <div class="form-group col-4 mt-4">
-                  <label for="title">Video</label>
-                  <input type="text" name="video" id="video" class="form-control" placeholder="Enter NGO video link here" required>
+                <div class="form-group col-6 mt-4">
+                  <label for="title">From time</label>
+                  <div class="md-form">
+                    <input placeholder="Selected time" type="text" id="input_starttime" class="form-control timepicker">
+                    <label for="input_starttime">Twelve hour clock</label>
+                  </div>
                 </div>
-                <div class="form-group col-4 mt-4">
-                  <label for="title">IG</label>
-                  <input type="text" name="ig" id="ig" class="form-control" placeholder="Enter NGO Instagram page here" required>
+                <div class="form-group col-6 mt-4">
+                  <label for="title">To time</label>
+                  <input type="text" name="to_time" id="to_time" class="form-control" placeholder="Enter talkshow end time here" required>
                 </div>
-                <div class="form-group col-4 mt-4">
-                  <label for="title">FB</label>
-                  <input type="text" name="fb" id="fb" class="form-control" placeholder="Enter NGO Facebook page here" required>
-                </div>
+                <div class="bootstrap-timepicker">
+                  <div class="form-group">
+                    <label>Time picker:</label>
+                    <div class="input-group input-group-lg">
+                      <input type="text" class="form-control timepicker">
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
                 <div class="form-group mt-4">
                   <label for="img_link">Choose an image</label>
                 </div>
@@ -109,8 +128,8 @@
                   <input type="file" name="img_link" id="img_link" class="form-control-file">
                 </div>
                 <div class="mt-4">
-                  <button type="submit">Add NGO</button>
-                  <a class="cancel" onclick="location.href='/writer/ngo/list';">Cancel</a>
+                  <button type="submit">Add Talkshow Speaker</button>
+                  <a class="cancel" onclick="location.href='/writer/talkshow-speaker/list';">Cancel</a>
                   <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
                 </div>
 		          </form>

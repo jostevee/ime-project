@@ -1,5 +1,4 @@
 @php
-  $userwriter = Auth::guard('web')->user();
   $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
@@ -59,11 +58,11 @@
   <main id="main">
 
     <!-- Postingan Saya -->
-    <section id="ngo" class="mypost bg-light py-4">
+    <section id="talkshow-speaker" class="mypost bg-light py-4">
       <div class="container">
 
         <div class="section-title my-4">
-          <h2>My NGO</h2>
+          <h2>My Talkshow Speaker</h2>
         </div>
 
         <div class="container-fluid">
@@ -81,9 +80,9 @@
                 </div>
               @endif
               <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
-              <a href="/writer/ngo/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add NGO</a>
-              <p style="text-align: right;">NGO total =
-                {{ $ngo->count() }}
+              <a href="/writer/talkshow-speaker/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Talkshow Speaker</a>
+              <p style="text-align: right;">Talkshow Speaker total =
+                {{ $talkshow_speaker->count() }}
               </p>
               @php
               $id = 1;
@@ -91,24 +90,18 @@
               <table class="table table-striped">
                 <tr>
                   <th>No.</th>
-                  <th>Logo</th>
+                  <th width="20%">Image</th>
                   <th>Name</th>
-                  <th>Info</th>
-                  <th>Video</th>
-                  <th>IG</th>
-                  <th>FB</th>
+                  <th>Organization</th>
                   <th>Publish date</th>
-                  <th width="5%"></th>
+                  <th width="15%"></th>
                 </tr>
-                @forelse($ngo as $data)
+                @forelse($talkshow_speaker as $data)
                   <tr>
-                    <td>{{$id++}}</td>
-                    <td><img src="/assets/img/ngo_list/{{ $data->logo }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->info}}</td>
-                    <td>{{$data->video}}</td>
-                    <td>{{$data->ig}}</td>
-                    <td>{{$data->fb}}</td>
+                    <td>{{ $id++ }}</td>
+                    <td><img src="/assets/img/talkshow_speaker_list/{{ $data->image }}" alt="" style="width: 100px; height: 100px;" class="img-fluid" style="border-radius: 20px;"/></td> 
+                    <td>{{ $data->name }}</td>
+                    <td>{{ $data->organization }}</td>
                     <td>{{ $data->created_at }}</td>
                     <td>
                       <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
@@ -120,7 +113,7 @@
                   </tr>
                 @empty
                   <tr>
-                    <td colspan="9" align="center"><i>No data available</i></td>
+                    <td colspan="6" align="center">No data available</td>
                   </tr>
                 @endforelse
               </table>

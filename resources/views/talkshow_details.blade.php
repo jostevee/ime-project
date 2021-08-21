@@ -16,7 +16,7 @@
 
           <div class="row d-flex justify-content-center mt-4">
             <div class="col-12 mt-4">
-              <h1 class="text-center yellow-title">{{$data_root->day_title}}</h1>
+              <h1 class="text-center yellow-title">{{$data_root->title}}</h1>
             </div>
 
             <div class="col-12 mt-1">

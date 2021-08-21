@@ -6,6 +6,7 @@ use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\WriterController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +30,8 @@ Route::get('test', [FrontEndController::class, 'test']);
 
 Route::get('/', function () {return redirect('/home');});
 Route::get('about', [FrontEndController::class, 'about']);
+Route::get('speaker', [FrontEndController::class, 'speaker']);
+Route::get('schedule', [FrontEndController::class, 'schedule']);
 Route::get('home', [FrontEndController::class, 'home']);
 Route::get('talkshow', [FrontEndController::class, 'talkshow']);
 Route::get('talkshow/{id}', [FrontEndController::class, 'talkshowDetails']);
@@ -51,13 +54,14 @@ Route::get('/writer', function () {return redirect('/panel');});
 // Writer Auth
 Route::get('/login-admin', [LoginController::class, 'login']); //->name('login');
 Route::post('/login-admin', [LoginController::class, 'authAdmin']);
-Route::get('/signup', [LoginController::class, 'signup']);
-Route::post('/signup', [LoginController::class, 'registerWriter']);
+Route::get('/sign-up', [LoginController::class, 'signup']);
+Route::post('/sign-up', [LoginController::class, 'registerWriter']);
 Route::get('/logout', [LoginController::class, 'logout']);
 
 // Writer - Admin
-Route::middleware('auth:admin')->group(function () {
+Route::middleware('auth:writer')->group(function () {
     Route::get('/writer', [WriterController::class, 'index']);
+
     Route::get('/writer/ngo/list', [WriterController::class, 'myNGO']);
     Route::get('/writer/ngo/add', [WriterController::class, 'addNGO']);
     Route::post('/writer/ngo/add', [WriterController::class, 'saveNGO']);
@@ -74,20 +78,30 @@ Route::middleware('auth:admin')->group(function () {
     Route::post('/writer/medpart/delete/{id}', [WriterController::class, 'deleteMedpart']);
     Route::get('/writer/medpart/{id}', [WriterController::class, 'lookMedpart']);
 
-    Route::get('/writer/job/list', [WriterController::class, 'myCareer']);
-    Route::get('/writer/job/add', [WriterController::class, 'addCareer']);
-    Route::post('/writer/job/add', [WriterController::class, 'saveCareer']);
-    Route::get('/writer/job/edit/{id}', [WriterController::class, 'editCareer']);
-    Route::post('/writer/job/edit/{id}', [WriterController::class, 'updateCareer']);
-    Route::post('/writer/job/delete/{id}', [WriterController::class, 'deleteCareer']);
-    Route::get('/writer/job/{id}', [WriterController::class, 'lookCareer']);
-    Route::get('/writer/faq/list', [WriterController::class, 'myFAQ']);
-    Route::get('/writer/faq/add', [WriterController::class, 'addFAQ']);
-    Route::post('/writer/faq/add', [WriterController::class, 'saveFAQ']);
-    Route::get('/writer/faq/edit/{id}', [WriterController::class, 'editFAQ']);
-    Route::post('/writer/faq/edit/{id}', [WriterController::class, 'updateFAQ']);
-    Route::post('/writer/faq/delete/{id}', [WriterController::class, 'deleteFAQ']);
-    Route::get('/writer/faq/{id}', [WriterController::class, 'lookFAQ']);
+    Route::get('/writer/talkshow-day/list', [WriterController::class, 'myTalkshowDay']);
+    Route::get('/writer/talkshow-day/add', [WriterController::class, 'addTalkshowDay']);
+    Route::post('/writer/talkshow-day/add', [WriterController::class, 'saveTalkshowDay']);
+    Route::get('/writer/talkshow-day/edit/{id}', [WriterController::class, 'editTalkshowDay']);
+    Route::post('/writer/talkshow-day/edit/{id}', [WriterController::class, 'updateTalkshowDay']);
+    Route::post('/writer/talkshow-day/delete/{id}', [WriterController::class, 'deleteTalkshowDay']);
+    Route::get('/writer/talkshow-day/{id}', [WriterController::class, 'lookTalkshowDay']);
+
+    Route::get('/writer/talkshow-speaker/list', [WriterController::class, 'myTalkshowSpeaker']);
+    Route::get('/writer/talkshow-speaker/add', [WriterController::class, 'addTalkshowSpeaker']);
+    Route::post('/writer/talkshow-speaker/add', [WriterController::class, 'saveTalkshowSpeaker']);
+    Route::get('/writer/talkshow-speaker/edit/{id}', [WriterController::class, 'editTalkshowSpeaker']);
+    Route::post('/writer/talkshow-speaker/edit/{id}', [WriterController::class, 'updateTalkshowSpeaker']);
+    Route::post('/writer/talkshow-speaker/delete/{id}', [WriterController::class, 'deleteTalkshowSpeaker']);
+    Route::get('/writer/talkshow-speaker/{id}', [WriterController::class, 'lookTalkshowSpeaker']);
+
+    Route::get('/writer/talkshow-detail/list', [WriterController::class, 'myTalkshowDetail']);
+    Route::get('/writer/talkshow-detail/add', [WriterController::class, 'addTalkshowDetail']);
+    Route::post('/writer/talkshow-detail/add', [WriterController::class, 'saveTalkshowDetail']);
+    Route::get('/writer/talkshow-detail/edit/{id}', [WriterController::class, 'editTalkshowDetail']);
+    Route::post('/writer/talkshow-detail/edit/{id}', [WriterController::class, 'updateTalkshowDetail']);
+    Route::post('/writer/talkshow-detail/delete/{id}', [WriterController::class, 'deleteTalkshowDetail']);
+    Route::get('/writer/talkshow-detail/{id}', [WriterController::class, 'lookTalkshowDetail']);
+
     Route::get('/writer/editAccount/{id}', [WriterController::class, 'editAccount']);
     Route::post('/writer/editAccount/{id}', [WriterController::class, 'updateAccount']);
 });

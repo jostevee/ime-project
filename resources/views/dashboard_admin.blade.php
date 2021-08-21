@@ -1,6 +1,6 @@
 @php
   $userwriter = Auth::guard('web')->user();
-  $useradmin = Auth::guard('admin')->user();
+  $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,7 @@
     </div>
   </div> -->
 
-  @include('nav_backend')
+  @include('writer/nav_backend')
 
   <!-- ======= Hero Section ======= -->
   <!--

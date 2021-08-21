@@ -1,6 +1,6 @@
 @php
   $userwriter = Auth::guard('web')->user();
-  $useradmin = Auth::guard('admin')->user();
+  $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -14,17 +14,6 @@
   <meta content="" name="keywords">
 
   @include('header_backend')
-
-  <!-- Template for Summernote WYSIWYG -->
-  <!-- include libraries(jQuery, bootstrap) -->
-  <!--
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- include summernote css/js -->
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
@@ -52,7 +41,7 @@
     </div>
   </div> -->
 
-  @include('nav_backend')
+  @include('writer/nav_backend')
   
   <!-- ======= Hero Section ======= -->
   <!--
@@ -73,13 +62,13 @@
     <section id="medpart" class="mypost bg-light py-4">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title my-4">
           <h2>My Medpart</h2>
         </div>
 
         <div class="container-fluid">
           <div class="card"> <!-- class="card w-50 m-auto" -->
-            <div class="card-header">Category List</div>
+            <!-- <div class="card-header">Category List</div> -->
             <div class="card-body">
               @if (session('error'))
                 <div class="alert alert-danger">
@@ -92,9 +81,9 @@
                 </div>
               @endif
               <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
-              <a href="/writer/medpart/add" class="mb-3 btn btn-outline-info ml-2">Add Medpart</a>
+              <a href="/writer/medpart/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Medpart</a>
               <p style="text-align: right;">Medpart total =
-                {{$medpart->count()}}
+                {{ $medpart->count() }}
               </p>
               @php
               $id = 1;
@@ -131,7 +120,7 @@
                   </tr>
                 @empty
                   <tr>
-                    <td colspan="6" align="center">No data available</td>
+                    <td colspan="9" align="center"><i>No data available</i></td>
                   </tr>
                 @endforelse
               </table>

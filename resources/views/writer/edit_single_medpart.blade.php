@@ -1,6 +1,6 @@
 @php
   $userwriter = Auth::guard('web')->user();
-  $useradmin = Auth::guard('admin')->user();
+  $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +41,7 @@
     </div>
   </div> -->
 
-  @include('nav_backend')
+  @include('writer/nav_backend')
 
   <!-- ======= Hero Section ======= -->
   <!--
@@ -60,72 +60,72 @@
 
     <!-- Edit Post -->
     <section id="medpart" class="services general-form bg-light py-4">
-        <div class="container">
-        <!-- container-fluid -->
+      <div class="container">
+      <!-- container-fluid -->
 
-            <div class="section-title">
-              <h2>Edit Medpart</h2>
-            </div>
+          <div class="section-title my-4">
+            <h2>Edit Medpart</h2>
+          </div>
 
 	        <div class="row">
             <div class="col-lg-12 align-items-stretch">
               <div class="icon-boxes d-flex flex-column justify-content-center">
                 <div class="row">
-			        <form method="POST" autocomplete="on" class="php-general-form">
-                      @csrf
+			            <form method="POST" autocomplete="on" class="php-general-form row">
+                  @csrf
 		              @if (session('error'))
-                        <div class="alert alert-danger">
-                          {{ session('error') }}
-                        </div>
-                      @endif
-                      @if (session('success'))
-                        <div class="alert alert-success">
-                          {{ session('success') }}
-                        </div>
-                      @endif
-                <div class="form-group">
-                  <label for="title">Name</label>
-                  <input type="text" name="name" id="name" class="form-control" value="{{$data->name}}" required>
-                </div>
-                <div class="form-group mt-4">
-                  <label for="title">Info</label>
-                  <input type="text" name="info" id="info" class="form-control" value="{{$data->info}}" required>
-                </div>
-                <div class="form-group mt-4">
-                  <label for="title">Video</label>
-                  <input type="text" name="video" id="video" class="form-control" value="{{$data->video}}" required>
-                </div>
-                <div class="form-group mt-4">
-                  <label for="title">IG</label>
-                  <input type="text" name="ig" id="ig" class="form-control" value="{{$data->ig}}" required>
-                </div>
-                <div class="form-group mt-4">
-                  <label for="title">FB</label>
-                  <input type="text" name="fb" id="fb" class="form-control" value="{{$data->fb}}" required>
-                </div>
+                    <div class="alert alert-danger">
+                      {{ session('error') }}
+                    </div>
+                  @endif
+                  @if (session('success'))
+                    <div class="alert alert-success">
+                      {{ session('success') }}
+                    </div>
+                  @endif
+                    <div class="form-group">
+                      <label for="title">Name</label>
+                      <input type="text" name="name" id="name" class="form-control" value="{{ $medpart->name }}" required>
+                    </div>
+                    <div class="form-group mt-4">
+                      <label for="title">Info</label>
+                      <input type="text" name="info" id="info" class="form-control" value="{{ $medpart->info }}" required>
+                    </div>
+                    <div class="form-group col-4 mt-4">
+                      <label for="title">Video</label>
+                      <input type="text" name="video" id="video" class="form-control" value="{{ $medpart->video }}" required>
+                    </div>
+                    <div class="form-group col-4 mt-4">
+                      <label for="title">IG</label>
+                      <input type="text" name="ig" id="ig" class="form-control" value="{{ $medpart->ig }}" required>
+                    </div>
+                    <div class="form-group col-4 mt-4">
+                      <label for="title">FB</label>
+                      <input type="text" name="fb" id="fb" class="form-control" value="{{ $medpart->fb }}" required>
+                    </div>
 
-                      <!--
-                      <div class="form-group mt-4">
-				        <label for="img_link_update">Choose an image</label>
-                      </div> -->
-                      <!--
-                      <div class="form-group mt-2">
-				        <input type="file" name="img_link_update" id="img_link" class="form-control-file">
-			          </div> -->
-			          <div class="mt-4">
-                          <button type="submit">Save</button>
-                          <button type="cancel" onclick="window.history.back();">Cancel</button>
-                      </div>
-			        </form>
-		        </div>
+                  <!--
+                  <div class="form-group mt-4">
+				            <label for="img_link_update">Choose an image</label>
+                  </div> -->
+                  <!--
+                  <div class="form-group mt-2">
+				            <input type="file" name="img_link_update" id="img_link" class="form-control-file">
+			            </div> -->
+			            <div class="mt-4">
+                    <button type="submit">Save</button>
+                    <a class="cancel" onclick="location.href='/writer/medpart/list';">Cancel</a>
+                    <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
+                  </div>
+			          </form>
+		          </div>
 				        {{--
 
 			        --}}
-		      </div>
+		        </div>
 	        </div>
-            </div>
 
-        </div>
+      </div>
     </section>
 
     <script>

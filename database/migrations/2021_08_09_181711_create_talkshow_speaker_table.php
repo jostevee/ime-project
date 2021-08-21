@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTalkshowTable extends Migration
+class CreateTalkshowSpeakerTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class CreateTalkshowTable extends Migration
      */
     public function up()
     {
-        Schema::create('talkshow', function (Blueprint $table) {
+        Schema::create('talkshow_speaker', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_day');
-            $table->unsignedBigInteger('id_speaker');
-            $table->integer('from_time');
-            $table->integer('to_time');
-            $table->string('zoom');
-            $table->string('youtube');
+            $table->string('image');
+            $table->string('name');
+            $table->string('organization');
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class CreateTalkshowTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('talkshow');
+        Schema::dropIfExists('talkshow_speaker');
     }
 }

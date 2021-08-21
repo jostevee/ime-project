@@ -37,7 +37,13 @@
     </div>
 </section><!-- End Footer Section -->
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>   -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Google's Sign In Method -->
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script src="{{ asset ('assets/js/google_signin.js') }}"></script>
+<!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
 
 <!-- Vendor JS Files -->
 <script src="{{ asset ('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -57,3 +63,4 @@
 
 <!-- Template Main JS File -->
 <script src="{{ asset ('assets/js/main.js') }}"></script>
+<script src="{{ asset ('assets/js/timepicker.js') }}"></script>

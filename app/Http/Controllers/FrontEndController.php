@@ -2,20 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Medpart;
 use App\Models\NGO;
-use App\Models\TalkshowDay;
 use App\Models\TalkshowDetail;
+use App\Models\TalkshowDay;
+use App\Models\TalkshowSpeaker;
 use Auth;
+
+// use Illuminate\Support\Facades\Auth;
 
 class FrontEndController extends Controller
 {
     // This is a controller for all of IME's frontend pages
     public function home(){
         //$event = Event::orderByDesc('created_at')->take(4)->get();
+        $data_speaker = TalkshowSpeaker::all();
+        $data_day = TalkshowDay::orderByDesc('title')->get();
+        $data_detail = TalkshowDetail::orderByDesc('from_time')->get();
 
-        return view('home'); //, compact('event')
+        return view('home', compact('data_speaker', 'data_day', 'data_detail')); //, compact('event')
     }
 
     public function test(){
@@ -26,15 +33,24 @@ class FrontEndController extends Controller
         return redirect('/home#about');
     }
 
+    public function speaker(){
+        return redirect('/home#speaker');
+    }
+
+    public function schedule(){
+        return redirect('/home#schedule');
+    }
+    
+
     public function talkshow(){
-        $data = TalkshowDay::orderByDesc('day_title')->get();
+        $data = TalkshowDay::orderByDesc('title')->get();
 
         return view('talkshow_room', compact('data')); //, compact('event')
     }
 
     public function talkshowDetails($id){
         $data_root = TalkshowDay::where('id', $id)->firstOrFail();
-        $data = TalkshowDetail::where('id_talkshow', $id)->orderByDesc('created_at')->get();
+        $data = TalkshowDetail::where('id_day', $id)->orderByDesc('created_at')->get();
         // $event = Event::orderByDesc('created_at')->take(4)->get();
 
         return view('talkshow_details', compact('data', 'data_root')); //, compact('event')
@@ -72,10 +88,10 @@ class FrontEndController extends Controller
 
     // Login landing page
     public function landingLogin() {
-        if(Auth::guard('admin')->user() != null){
+        if(Auth::guard('writer')->user() != null){
             return redirect('/writer');
         } else {
-            return redirect('/login-admin');
+            return redirect()->intended('/login-admin');
         }
     }
 }

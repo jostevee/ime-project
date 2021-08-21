@@ -1,5 +1,4 @@
 @php
-  $userwriter = Auth::guard('web')->user();
   $useradmin = Auth::guard('writer')->user();
 @endphp
 <!DOCTYPE html>
@@ -14,7 +13,7 @@
   <meta content="" name="keywords">
 
   @include('header_backend')
-
+  
   <!-- include summernote css/js -->
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
@@ -59,11 +58,11 @@
   <main id="main">
 
     <!-- Postingan Saya -->
-    <section id="ngo" class="mypost bg-light py-4">
+    <section id="talkshow-day" class="mypost bg-light py-4">
       <div class="container">
 
         <div class="section-title my-4">
-          <h2>My NGO</h2>
+          <h2>My Talkshow Day</h2>
         </div>
 
         <div class="container-fluid">
@@ -81,9 +80,9 @@
                 </div>
               @endif
               <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
-              <a href="/writer/ngo/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add NGO</a>
-              <p style="text-align: right;">NGO total =
-                {{ $ngo->count() }}
+              <a href="/writer/talkshow-day/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Talkshow Day</a>
+              <p style="text-align: right;">Talkshow Day total =
+                {{ $talkshow_day->count() }}
               </p>
               @php
               $id = 1;
@@ -91,24 +90,16 @@
               <table class="table table-striped">
                 <tr>
                   <th>No.</th>
-                  <th>Logo</th>
-                  <th>Name</th>
-                  <th>Info</th>
-                  <th>Video</th>
-                  <th>IG</th>
-                  <th>FB</th>
+                  <th>Title</th>
+                  <th>Theme</th>
                   <th>Publish date</th>
-                  <th width="5%"></th>
+                  <th width="15%"></th>
                 </tr>
-                @forelse($ngo as $data)
+                @forelse($talkshow_day as $data)
                   <tr>
-                    <td>{{$id++}}</td>
-                    <td><img src="/assets/img/ngo_list/{{ $data->logo }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->info}}</td>
-                    <td>{{$data->video}}</td>
-                    <td>{{$data->ig}}</td>
-                    <td>{{$data->fb}}</td>
+                    <td>{{ $id++ }}</td>
+                    <td>{{ $data->title }}</td>
+                    <td>{{ $data->theme }}</td>
                     <td>{{ $data->created_at }}</td>
                     <td>
                       <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
@@ -120,7 +111,7 @@
                   </tr>
                 @empty
                   <tr>
-                    <td colspan="9" align="center"><i>No data available</i></td>
+                    <td colspan="6" align="center"><i>No data available</i></td>
                   </tr>
                 @endforelse
               </table>
