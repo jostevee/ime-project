@@ -682,6 +682,7 @@ h1, h2, h3, h4, h5, h6 {
       background: #F3EC9E; /* rgba(255, 255, 255, 0.2); */
       padding: 6px 20px 8px 20px;
       margin-top: 12px;
+      width: inherit;
       color: #1C3B51; /* #fff */
       /* color: #437099; */
       font-size: 14px;

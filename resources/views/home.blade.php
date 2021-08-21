@@ -447,7 +447,7 @@
             </div>
             <div class="col-lg-10 mt-4">
               <div class="content row d-flex justify-content-stretch">
-                <div class="col-12 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-stretch">
                   <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
                 </div>
                 <div class="col-12 d-flex justify-content-center">
