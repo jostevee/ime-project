@@ -87,34 +87,36 @@
               @php
               $id = 1;
               @endphp
-              <table class="table table-striped">
-                <tr>
-                  <th>No.</th>
-                  <th>Title</th>
-                  <th>Theme</th>
-                  <th>Publish date</th>
-                  <th width="15%"></th>
-                </tr>
-                @forelse($talkshow_day as $data)
+              <div class="table-responsive">
+                <table class="table table-striped">
                   <tr>
-                    <td>{{ $id++ }}</td>
-                    <td>{{ $data->title }}</td>
-                    <td>{{ $data->theme }}</td>
-                    <td>{{ $data->created_at }}</td>
-                    <td>
-                      <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
-                      <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
-                      <form action="delete/{{ $data->id }}" method="POST">@csrf
-                        <button class="btn btn-danger col-12" type="submit">Delete</button>
-                      </form>
-                    </td>
+                    <th>No.</th>
+                    <th>Title</th>
+                    <th>Theme</th>
+                    <th>Publish date</th>
+                    <th width="15%"></th>
                   </tr>
-                @empty
-                  <tr>
-                    <td colspan="6" align="center"><i>No data available</i></td>
-                  </tr>
-                @endforelse
-              </table>
+                  @forelse($talkshow_day as $data)
+                    <tr>
+                      <td>{{ $id++ }}</td>
+                      <td>{{ $data->title }}</td>
+                      <td>{{ $data->theme }}</td>
+                      <td>{{ $data->created_at }}</td>
+                      <td>
+                        <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
+                        <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
+                        <form action="delete/{{ $data->id }}" method="POST">@csrf
+                          <button class="btn btn-danger col-12" type="submit">Delete</button>
+                        </form>
+                      </td>
+                    </tr>
+                  @empty
+                    <tr>
+                      <td colspan="6" align="center"><i>No data available</i></td>
+                    </tr>
+                  @endforelse
+                </table>
+              </div>
             </div>
           </div>
         </div> 

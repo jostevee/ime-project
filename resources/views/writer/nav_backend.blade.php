@@ -37,7 +37,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="/logout" class="btn-signout d-flex align-items-center"><i class="fas fa-sign-out-alt"></i></a>
+      <a href="/logout" class="btn-signout d-flex align-items-center mx-3"><i class="fas fa-sign-out-alt"></i></a>
       <!-- <a href="contact-us" class="appointment-btn scrollto"><i class="bi bi-whatsapp"></i></a> -->
       <!-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> -->
 

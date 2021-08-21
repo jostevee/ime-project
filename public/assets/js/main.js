@@ -160,7 +160,7 @@
   var speakerSwiper = new Swiper('.speaker-swiper', {
     speed: 600,
     loop: false,
-    centeredSlides: false,
+    centeredSlides: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -189,7 +189,7 @@
       768: {
         slidesPerView: 2,
         spaceBetween: 10, //20
-        centeredSlides: false
+        centeredSlides: true
       },
 
       1024: {

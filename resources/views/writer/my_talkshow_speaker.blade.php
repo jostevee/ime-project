@@ -87,36 +87,38 @@
               @php
               $id = 1;
               @endphp
-              <table class="table table-striped">
-                <tr>
-                  <th>No.</th>
-                  <th width="20%">Image</th>
-                  <th>Name</th>
-                  <th>Organization</th>
-                  <th>Publish date</th>
-                  <th width="15%"></th>
-                </tr>
-                @forelse($talkshow_speaker as $data)
+              <div class="table-responsive">
+                <table class="table-reponsive table-striped">
                   <tr>
-                    <td>{{ $id++ }}</td>
-                    <td><img src="/assets/img/talkshow_speaker_list/{{ $data->image }}" alt="" style="width: 100px; height: 100px;" class="img-fluid" style="border-radius: 20px;"/></td> 
-                    <td>{{ $data->name }}</td>
-                    <td>{{ $data->organization }}</td>
-                    <td>{{ $data->created_at }}</td>
-                    <td>
-                      <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
-                      <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
-                      <form action="delete/{{ $data->id }}" method="POST">@csrf
-                        <button class="btn btn-danger col-12" type="submit">Delete</button>
-                      </form>
-                    </td>
+                    <th>No.</th>
+                    <th width="20%">Image</th>
+                    <th>Name</th>
+                    <th>Organization</th>
+                    <th>Publish date</th>
+                    <th width="15%"></th>
                   </tr>
-                @empty
-                  <tr>
-                    <td colspan="6" align="center">No data available</td>
-                  </tr>
-                @endforelse
-              </table>
+                  @forelse($talkshow_speaker as $data)
+                    <tr>
+                      <td>{{ $id++ }}</td>
+                      <td><img src="/assets/img/talkshow_speaker_list/{{ $data->image }}" alt="" style="width: 100px; height: 100px;" class="img-fluid" style="border-radius: 20px;"/></td> 
+                      <td>{{ $data->name }}</td>
+                      <td>{{ $data->organization }}</td>
+                      <td>{{ $data->created_at }}</td>
+                      <td>
+                        <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
+                        <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
+                        <form action="delete/{{ $data->id }}" method="POST">@csrf
+                          <button class="btn btn-danger col-12" type="submit">Delete</button>
+                        </form>
+                      </td>
+                    </tr>
+                  @empty
+                    <tr>
+                      <td colspan="6" align="center">No data available</td>
+                    </tr>
+                  @endforelse
+                </table>
+              </div>
             </div>
           </div>
         </div> 

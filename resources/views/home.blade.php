@@ -318,7 +318,7 @@
                   <i class="schedule-btn-prev fas fa-arrow-left"></i>
                 </div>
 
-                <div class="swiper-container schedule-swiper col-9 d-flex align-items-center justify-content-center">
+                <div class="col-10 swiper-container schedule-swiper col-9 d-flex align-items-center justify-content-center">
                   <div class="swiper-wrapper">
 
                     @foreach($data_day as $data_day)
@@ -448,19 +448,19 @@
             <div class="col-lg-10 mt-4">
               <div class="content row d-flex justify-content-stretch">
                 <div class="col-4 d-flex justify-content-center">
-                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
+                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
                 </div>
                 <div class="col-4 d-flex justify-content-center">
-                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
+                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
                 </div>
                 <div class="col-4 d-flex justify-content-center">
-                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
+                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
-                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
+                <div class="col-6 d-flex justify-content-center">
+                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
-                  <p class="btn-general blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
+                <div class="col-6 d-flex justify-content-center">
+                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
                 </div>
               </div>
             </div>

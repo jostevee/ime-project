@@ -88,42 +88,44 @@
               @php
               $id = 1;
               @endphp
-              <table class="table table-striped">
-                <tr>
-                  <th>No.</th>
-                  <th>Logo</th>
-                  <th>Name</th>
-                  <th>Info</th>
-                  <th>Video</th>
-                  <th>IG</th>
-                  <th>FB</th>
-                  <th>Publish date</th>
-                  <th width="5%"></th>
-                </tr>
-                @forelse($ngo as $data)
+              <div class="table-responsive">
+                <table class="table table-striped">
                   <tr>
-                    <td>{{$id++}}</td>
-                    <td><img src="/assets/img/ngo_list/{{ $data->logo }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->info}}</td>
-                    <td>{{$data->video}}</td>
-                    <td>{{$data->ig}}</td>
-                    <td>{{$data->fb}}</td>
-                    <td>{{ $data->created_at }}</td>
-                    <td>
-                      <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
-                      <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
-                      <form action="delete/{{ $data->id }}" method="POST">@csrf
-                        <button class="btn btn-danger col-12" type="submit">Delete</button>
-                      </form>
-                    </td>
+                    <th>No.</th>
+                    <th>Logo</th>
+                    <th>Name</th>
+                    <th>Info</th>
+                    <th>Video</th>
+                    <th>IG</th>
+                    <th>FB</th>
+                    <th>Publish date</th>
+                    <th width="5%"></th>
                   </tr>
-                @empty
-                  <tr>
-                    <td colspan="9" align="center"><i>No data available</i></td>
-                  </tr>
-                @endforelse
-              </table>
+                  @forelse($ngo as $data)
+                    <tr>
+                      <td>{{$id++}}</td>
+                      <td><img src="/assets/img/ngo_list/{{ $data->logo }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
+                      <td>{{$data->name}}</td>
+                      <td>{{$data->info}}</td>
+                      <td>{{$data->video}}</td>
+                      <td>{{$data->ig}}</td>
+                      <td>{{$data->fb}}</td>
+                      <td>{{ $data->created_at }}</td>
+                      <td>
+                        <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
+                        <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
+                        <form action="delete/{{ $data->id }}" method="POST">@csrf
+                          <button class="btn btn-danger col-12" type="submit">Delete</button>
+                        </form>
+                      </td>
+                    </tr>
+                  @empty
+                    <tr>
+                      <td colspan="9" align="center"><i>No data available</i></td>
+                    </tr>
+                  @endforelse
+                </table>
+              </div>
             </div>
           </div>
         </div> 
