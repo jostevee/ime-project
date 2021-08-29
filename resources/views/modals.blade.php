@@ -1,5 +1,5 @@
-<!-- Modal 1 Signin -->
-<div class="modal fade" id="signinModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- Modal 1 Signin -->
+    <div class="modal fade" id="signinModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered"> <!--  modal-fullscreen-md-down -->
         <div class="modal-content modal-signin-signup-menu">
 
@@ -268,7 +268,7 @@
     </div>
 
     <!-- Modal Menu -->
-    <div class="modal right fade" id="menuModal" data-bs-keyboard="true" tabindex="-1" aria-labelledby="emailLoginModalLabel" aria-hidden="true">
+    <div class="modal fade" id="menuModal" data-bs-keyboard="true" tabindex="-1" aria-labelledby="emailLoginModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered"> <!--  modal-fullscreen-md-down -->
         <div class="modal-content modal-signin-signup-menu">
 
@@ -407,6 +407,113 @@
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Understood</button>
           </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Medpart -->
+    <div class="modal fade" id="medpartModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down"> <!--  modal-fullscreen-md-down -->
+        <div class="modal-content modal-signin-signup-menu">
+
+          <!-- <div class="modal-header"> -->
+            <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+          <!-- </div> -->
+
+          <form method="POST" action="{{ route('register') }}">
+            @csrf
+            <div class="modal-body row">
+
+              <h6 id="id_section"></h6>
+              <h6 id="name_section"></h6>
+              <h6 id="info_section"></h6>
+              <h6 id="video_section"></h6>
+              <h6 id="ig_section"></h6>
+
+              <!-- Validation error message -->
+              <x-jet-validation-errors class="mb-4" />
+
+              <!-- Name -->
+              <div class="col-10 d-flex my-2">
+                <div class="col-3 d-flex align-items-center justify-content-end text-end">
+                  <x-jet-label for="name" value="{{ __('Name') }}" />
+                </div>
+                <div class="col-9 d-flex align-items-center mx-2">
+                  <x-jet-input id="name" class="w-100" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                </div>
+              </div>
+
+              <!-- Close button -->
+              <div class="col-2 d-flex justify-content-end">
+                <a class="icon-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></a>
+              </div>
+
+              <!-- Email -->
+              <div class="col-10 d-flex my-2">
+                <div class="col-3 d-flex align-items-center justify-content-end text-end">
+                  <x-jet-label for="email" value="{{ __('Email') }}" />
+                </div>
+                <div class="col-9 d-flex align-items-center mx-2">
+                  <x-jet-input id="email" class="w-100" type="email" name="email" :value="old('email')" required />
+                </div>
+              </div>
+
+              <!-- Password -->
+              <div class="col-10 d-flex my-2">
+                <div class="col-3 d-flex align-items-center justify-content-end text-end">
+                  <x-jet-label for="password" value="{{ __('Password') }}" />
+                </div>
+                <div class="col-9 d-flex align-items-center mx-2">
+                  <x-jet-input id="password" class="w-100" type="password" name="password" required autocomplete="new-password" />
+                </div>
+              </div>
+
+              <!-- Confirm Password -->
+              <div class="col-10 d-flex my-2">
+                <div class="col-3 d-flex align-items-center justify-content-end text-end">
+                  <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
+                </div>
+                <div class="col-9 d-flex align-items-center mx-2">
+                  <x-jet-input id="password_confirmation" class="w-100" type="password" name="password_confirmation" required autocomplete="new-password" />
+                </div>
+              </div>
+              
+              @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
+                <div class="col-11 d-flex justify-content-center align-items-start">
+                  <x-jet-label for="terms">
+                    <div class="flex items-center">
+                      <x-jet-checkbox name="terms" id="terms"/>
+                      <div class="ml-2">
+                        {!! __('I agree to the :terms_of_service and :privacy_policy', [
+                            'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Terms of Service').'</a>',
+                            'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Privacy Policy').'</a>',
+                        ]) !!}
+                      </div>
+                    </div>
+                  </x-jet-label>
+                </div>
+              @endif
+
+              <!-- Register -->
+              <div class="col-12 d-flex justify-content-center my-2">
+                  <button class="btn-modal">
+                    <p class="text-center white-regular">
+                      {{ __('Register') }}
+                    </p>
+                  </button>
+              </div>
+
+              <!-- Already Register -->
+              <div class="col-12 d-flex justify-content-center">
+                <button class="btn-modal" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#emailLoginModal">
+                  <p class="text-center white-regular" style="font-size: 14px;">
+                    Already Registered?
+                  </p>
+                </button>
+              </div>
+            </div>
+          </form>
 
         </div>
       </div>

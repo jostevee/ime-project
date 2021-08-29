@@ -30,6 +30,26 @@
         // document.getElementById("registrationModal").showModal();
     });        
   }
+
+  $("#medpartModalId").click(function () {
+    var id = $("#id").val();
+    var name = $("#name").val();
+    var info = $("#info").val();
+    var video = $("#video").val();
+    var ig = $("#ig").val();
+
+    var str_id = "You Have Entered " + "ID: " + id;
+    var str_name = "You Have Entered " + "NAME: " + name;
+    var str_info = "You Have Entered " + "INFO: " + info;
+    var str_video = "You Have Entered " + "VIDEO: " + video;
+    var str_ig = "You Have Entered " + "IG: " + ig;
+
+    $("#id_section").html(str_id);
+    $("#name_section").html(str_name);
+    $("#info_section").html(str_info);
+    $("#video_section").html(str_video);
+    $("#ig_section").html(str_ig);
+  });
 </script>
 
 <!-- Zoom Js -->

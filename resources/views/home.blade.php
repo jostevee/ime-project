@@ -476,13 +476,7 @@
 
     @include('modals')
 
-
-
-
-
-
-
-              
+     
 
   <!-- <main id="main"> -->
 

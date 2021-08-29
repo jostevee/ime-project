@@ -20,12 +20,22 @@
                 <h2>Please try again :)</h2>
               @else
                 @foreach($data as $data_per_logo)
-                <a href="medpart/{{$data_per_logo->id}}" class="row medpart-list-box justify-content-center align-items-center col-lg-3 mb-2">
+                <a href="" id="medpartModalId" data-bs-toggle="modal" data-bs-target="#medpartModal" class="row medpart-list-box justify-content-center align-items-center col-lg-3 mb-2">
+                <!-- medpart/{{$data_per_logo->id}} -->
                   <div class="d-flex justify-content-center">
                     <div class="medpart-pic-box"></div>
                   </div>
                   <h4 class="text-center blue-title medpart-name-box">{{$data_per_logo->name}}</h4>
                 </a>
+
+                <!-- For Data to Medpart Modal -->
+                <input type="text" id="id" value="{{ $data_per_logo->id }}" hidden>
+                <input type="text" id="name" value="{{ $data_per_logo->name }}" hidden>
+                <input type="text" id="info" value="{{ $data_per_logo->info }}" hidden>
+                <input type="text" id="video" value="{{ $data_per_logo->video }}" hidden>
+                <input type="text" id="ig" value="{{ $data_per_logo->ig }}" hidden>
+
+
                 @endforeach
               @endif
             </div>
