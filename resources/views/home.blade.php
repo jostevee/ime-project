@@ -10,7 +10,7 @@
       if (Auth::guard('web')->user() != null){
         $userwriter = Auth::guard('web')->user()->done_paid;
       } else {
-        $userwriter = 0;
+        $userwriter = -1;
       }
       /* $useradmin = Auth::guard('writer')->user(); */
     @endphp
@@ -28,19 +28,33 @@
             <div class="col-lg-12 d-flex align-items-center justify-content-center">
               <h4 style="color: #fff;" class="text-center">" PENTINGNYA MENJAGA KERAGAMAN DAN IDENTITAS LAUT INDONESIA "</h4>
             </div>
-            <div class="col-lg-12 d-flex align-items-center justify-content-center">
-              <a class="btn-signin" data-bs-toggle="modal" data-bs-target="#signinModal"><h4 style="font-size: 30px;">LOG IN</h4></a>
-            </div>
-            <div class="col-lg-12 d-flex align-items-center justify-content-center">
-              <h6 style="color: #1C3B51;">OR</h6>
-            </div>
-            <div class="col-lg-12 d-flex align-items-center justify-content-center">
-              <a class="btn-signup" data-bs-toggle="modal" data-bs-target="#signupModal"><h4 style="font-size: 30px;">SIGN UP</h4></a>
-            </div>
+            @if ($userwriter == -1)
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <a class="btn-signin" data-bs-toggle="modal" data-bs-target="#signinModal"><h4 style="font-size: 30px;">LOG IN</h4></a>
+              </div>
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <h6 style="color: #1C3B51;">OR</h6>
+              </div>
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <a class="btn-signup" data-bs-toggle="modal" data-bs-target="#signupModal"><h4 style="font-size: 30px;">SIGN UP</h4></a>
+              </div>
+            @else
+              <!-- Authentication -->
+              <form method="POST" action="{{ route('logout') }}">
+              @csrf
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                  <a class="btn-signin" href="{{ route('logout') }}" onclick="event.preventDefault();this.closest('form').submit();">
+                    <h4 style="font-size: 30px;">LOG OUT</h4>
+                  </a>
+                </div>
+              </form>
+            @endif
+
             <!--
             <div class="col-lg-12 d-flex align-items-center justify-content-center ">
               <a href="#about" class="btn-general">Sign Up</a>
             </div> -->
+
           </div>
       </div>
       <!-- <img src="{{ asset ('assets/img/intro-page.png') }}"/> -->
