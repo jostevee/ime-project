@@ -7,7 +7,11 @@
 
 <body>
     @php
-      $userwriter = Auth::guard('web')->user()->done_paid;
+      if (Auth::guard('web')->user() != null){
+        $userwriter = Auth::guard('web')->user()->done_paid;
+      } else {
+        $userwriter = 0;
+      }
       /* $useradmin = Auth::guard('writer')->user(); */
     @endphp
 

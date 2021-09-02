@@ -301,8 +301,8 @@ class WriterController extends Controller
       public function updateTalkshowSpeaker(Request $request, $id){
         $talkshow_speaker = TalkshowSpeaker::where('id', $id)->firstOrFail();
         $talkshow_speaker->name = $request->input('name');
-        $talkshow_speaker->speaker = $request->input('speaker');
-        $talkshow_speaker->organization = $request->input('org');
+        // $talkshow_speaker->speaker = $request->input('speaker');
+        $talkshow_speaker->organization = $request->input('organization');
         
         $talkshow_speaker->save();
 
