@@ -980,12 +980,29 @@ h1, h2, h3, h4, h5, h6 {
   height: 200px;
 }
 
+/*
 .speaker-page .speaker-people-box .speaker-pic-box {
   margin: 20px 0px 0px 0px;
   background: #FFF;
   border-radius: 75px;
   width: 150px;
   height: 150px;
+}
+*/
+
+.speaker-page .speaker-people-box .speaker-pic-box {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.speaker-page .speaker-people-box .speaker-pic-box img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
 }
 
 /* .about-people-box {

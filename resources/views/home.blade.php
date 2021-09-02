@@ -191,7 +191,9 @@
                         <div class="swiper-slide">
                           <div class="row speaker-people-box">
                             <div class="d-flex justify-content-center">
-                              <img src="/assets/img/talkshow_speaker_list/{{ $data->image }}" class="speaker-pic-box" />
+                              <div class="speaker-pic-box">
+                                <img src="/assets/img/talkshow_speaker_list/{{ $data->image }}" />
+                              </div>
                             </div>
                             <div class="d-flex justify-content-center align-items-start my-2">
                               <p class="text-center blue-regular">{{ $data->name }}</p>
