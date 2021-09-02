@@ -77,11 +77,12 @@
               </div>
               <div class="col-lg-9 mt-4">
                 <p class="blue-strong">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia placerat commodo. Pellentesque euismod arcu orci,
-                  quis ornare enim blandit eu. Sed iaculis tempus neque, in tincidunt ligula rutrum a. Ut et ornare eros. Donec dignissim
-                  urna dolor, a lobortis leo auctor eget. Donec elementum neque augue, eu viverra tortor aliquet non. Mauris lacinia tellus
-                  neque, vel convallis urna eleifend at. Duis commodo luctus lectus, nec elementum nisl elementum quis. Morbi id nunc lacus.
-                  Proin metus mi, mattis at lacus ut, hendrerit vestibulum nibh. Aliquam erat volutpat.
+                Indonesia Marine Exhibition (IME) merupakan kegiatan pameran daring kelautan 
+                yang pertama dengan platform berupa website. Kegiatan ini memiliki tema utama 
+                “Pentingnya Menjaga Keragaman dan Identitas Laut Indonesia” yang pelaksanaanya 
+                dilakukan selama 2 hari, dimana pengunjung dapat berinteraksi dalam pelaksanaan 
+                kegiatannya, sehingga IME dapat menjadi suatu terobosan baru bagi mahasiswa kelautan, 
+                non-kelautan, lembaga pemerintahan, non-pemerintahan, dan masyarakat untuk lebih mengenal Kelautan Indonesia.
                 </p>
               </div>
               <div class="col-12 mt-4">
