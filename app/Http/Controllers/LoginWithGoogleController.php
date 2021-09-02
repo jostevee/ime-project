@@ -29,7 +29,7 @@ class LoginWithGoogleController extends Controller
                 return redirect()->intended('home');
                 // Auth::guard('customer')->login($newUser);
             } else if ($finduser) {
-                Auth::login($newUser);
+                Auth::login($finduser);
                 return redirect()->intended('home');
             } else {
                 $newUser = User::create([
