@@ -2660,7 +2660,7 @@ h1, h2, h3, h4, h5, h6 {
 .clients .client-item .client-img {
   min-width: 90px;
   /* border: 6px solid #fff; */
-  position: absolute;
+  /* position: absolute; */
   /* left: -45px; 
 }
 */
@@ -2741,7 +2741,7 @@ h1, h2, h3, h4, h5, h6 {
 .partners .partner-item .partner-img {
   min-width: 90px;
   /* border: 6px solid #fff; */
-  position: absolute;
+  /* position: absolute; */
   /* left: -45px; 
 }
 */
@@ -2798,8 +2798,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Recent Events
 --------------------------------------------------------------*/
+/*
 .recent-events .recent-event-wrap {
 }
+*/
 
 .recent-events .recent-event-item {
   box-sizing: content-box;
