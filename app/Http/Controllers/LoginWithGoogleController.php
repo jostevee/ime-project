@@ -26,10 +26,11 @@ class LoginWithGoogleController extends Controller
        
             if ($paiduser) {
                 Auth::login($paiduser);
-                return redirect()->intended('dashboard');
+                return redirect()->intended('home');
                 // Auth::guard('customer')->login($newUser);
             } else if ($finduser) {
-                return redirect()->intended('home#notpaid');
+                Auth::login($newUser);
+                return redirect()->intended('home');
             } else {
                 $newUser = User::create([
                     'name' => $user->name,
@@ -42,7 +43,7 @@ class LoginWithGoogleController extends Controller
                 Auth::login($newUser);
                 // $socialUserObject = $user->userFromToken($token);
 
-                return redirect()->intended('home#notpaid');
+                return redirect()->intended('home');
                 // return redirect()->intended('/dashboard');
                 // Auth::guard('customer')->login($newUser);    
             }
