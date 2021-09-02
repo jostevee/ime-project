@@ -965,11 +965,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .speaker-page .speaker-people-box {
+  width: 200px;
+  height: 300px;
   margin: 30px 30px;
   padding: 25px 0px;
   border-radius: 20px;
   background: #F3EC9E;
-  box-shadow: 35px 0px 0px -10px #173963, -35px 0px 0px -10px #173963;  
+  box-shadow: 35px 0px 0px -10px #173963, -35px 0px 0px -10px #173963;
   /* color: #fff; */
 }
 
@@ -999,10 +1001,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .speaker-page .speaker-people-box .speaker-pic-box img {
-  display: inline;
+  /* display: inline; */
   margin: 0 auto;
   height: 100%;
-  width: auto;
+  width: max-content;
 }
 
 /* .about-people-box {
