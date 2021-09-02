@@ -61,7 +61,7 @@
     </section><!-- End intro-page Section -->
     
 
-    @if ($userwriter == 1)
+    
       <section class="main-page">
         <!-- ======= Clouds Section ======= -->
         <div class="bg-move-1 d-flex justify-content-center">
@@ -458,185 +458,187 @@
           </div>
         </section><!-- End Schedule Section -->
 
-        <!-- ======= Island Main Section ======= -->
-        <section id="island-main" class="general island-main-page d-flex my-4">
-          <div class="container">
+        @if ($userwriter == 1)
+          <!-- ======= Island Main Section ======= -->
+          <section id="island-main" class="general island-main-page d-flex my-4">
+            <div class="container">
 
-            <div class="row justify-content-center mt-4">
-              <div class="col-12">
-                <h1 class="blue-title">Main Room</h1>
+              <div class="row justify-content-center mt-4">
+                <div class="col-12">
+                  <h1 class="blue-title">Main Room</h1>
+                </div>
+
+                <div class="col-lg-10 mt-4">
+                  <div id="container">
+                    <div id="box"></div>
+                    </div>
+                </div>
               </div>
 
-              <div class="col-lg-10 mt-4">
-                <div id="container">
-                  <div id="box"></div>
-                  </div>
-              </div>
-            </div>
+              <!--
+              <section id="talkshow-room">
+              </section>
+              <section id="games-room">
+              </section>
+              <section id="ngo-room">
+              </section>
+              <section id="medpart-room">
+              </section>
+              <section id="donation-room">
+              </section>
+              <section id="merchandise-room">
+              </section>
+            -->
+
 
             <!--
-            <section id="talkshow-room">
-            </section>
-            <section id="games-room">
-            </section>
-            <section id="ngo-room">
-            </section>
-            <section id="medpart-room">
-            </section>
-            <section id="donation-room">
-            </section>
-            <section id="merchandise-room">
-            </section>
-          -->
-
-
-          <!--
-            <div class="row d-flex justify-content-center mt-4">
-              <div class="col-12">
-                <h1 class="blue-title">Main Room</h1>
-              </div>
-              <div class="col-lg-10 mt-4">
-                <div class="content row d-flex justify-content-stretch">
-                  <div class="col-12 d-flex justify-content-stretch">
-                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
-                  </div>
-                  <div class="col-12 d-flex justify-content-center">
-                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
-                  </div>
-                  <div class="col-12 d-flex justify-content-center">
-                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
-                  </div>
-                  <div class="col-12 d-flex justify-content-center">
-                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
-                  </div>
-                  <div class="col-12 d-flex justify-content-center">
-                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
+              <div class="row d-flex justify-content-center mt-4">
+                <div class="col-12">
+                  <h1 class="blue-title">Main Room</h1>
+                </div>
+                <div class="col-lg-10 mt-4">
+                  <div class="content row d-flex justify-content-stretch">
+                    <div class="col-12 d-flex justify-content-stretch">
+                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
+                    </div>
                   </div>
                 </div>
               </div>
+            -->
+
             </div>
-          -->
+          </section><!-- End Island Main Section -->
 
-          </div>
-        </section><!-- End Island Main Section -->
+          <section id="talkshow-room" class="general island-page d-flex my-4">
+            <div class="container">
 
-        <section id="talkshow-room" class="general island-page d-flex my-4">
-          <div class="container">
-
-            <div class="row d-flex justify-content-center mt-4">
-              <div class="col-12">
-                <h1 class="text-center blue-title">Talkshow Room</h1>
+              <div class="row d-flex justify-content-center mt-4">
+                <div class="col-12">
+                  <h1 class="text-center blue-title">Talkshow Room</h1>
+                </div>
+                <!-- <div class="image"></div> -->
+                <img src="{{ asset ('assets/img/all_general_main_page/talkshow.png') }}" class="col-12 feature_image" alt="">
+                <p class="col-3 btn-general talkshow-btn text-center blue-title" onclick="location.href='talkshow';">GO IN</p>
               </div>
-              <!-- <div class="image"></div> -->
-              <img src="{{ asset ('assets/img/all_general_main_page/talkshow.png') }}" class="col-12 feature_image" alt="">
-              <p class="col-3 btn-general talkshow-btn text-center blue-title" onclick="location.href='talkshow';">GO IN</p>
+
             </div>
+          </section>
 
-          </div>
-        </section>
+          <section id="games-room" class="general island-page d-flex my-4">
+            <div class="container">
 
-        <section id="games-room" class="general island-page d-flex my-4">
-          <div class="container">
+              <div class="row d-flex justify-content-center mt-4">
+                <div class="col-12">
+                  <h1 class="text-center blue-title">Games Room</h1>
+                </div>
+                <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}" class="col-12 feature_image" alt="">
+                <p class="col-3 btn-general games-btn text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='games';">GO IN</p>
 
-            <div class="row d-flex justify-content-center mt-4">
-              <div class="col-12">
-                <h1 class="text-center blue-title">Games Room</h1>
-              </div>
-              <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}" class="col-12 feature_image" alt="">
-              <p class="col-3 btn-general games-btn text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='games';">GO IN</p>
+                <!--
+                <div class="col-12">
+                  <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}"class="img-fluid" alt="">
+                </div>
+                -->
 
-              <!--
-              <div class="col-12">
-                <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}"class="img-fluid" alt="">
-              </div>
-              -->
+              </div>  
 
-            </div>  
+            </div>
+          </section>
+          
+          <section id="ngo-room" class="general island-page d-flex my-4">
+            <div class="container">
 
-          </div>
-        </section>
-        
-        <section id="ngo-room" class="general island-page d-flex my-4">
-          <div class="container">
+              <div class="row d-flex justify-content-center mt-4">
+                <div class="col-12">
+                  <h1 class="text-center blue-title">NGO Room</h1>
+                </div>
+                <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}" class="col-12 feature_image" alt="">
+                <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='ngo';">GO IN</p>
+                
+                <!--
+                <div class="col-12">
+                  <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
+                </div>
+                -->
 
-            <div class="row d-flex justify-content-center mt-4">
-              <div class="col-12">
-                <h1 class="text-center blue-title">NGO Room</h1>
-              </div>
-              <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}" class="col-12 feature_image" alt="">
-              <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='ngo';">GO IN</p>
-              
-              <!--
-              <div class="col-12">
-                <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
-              </div>
-              -->
+              </div>  
 
-            </div>  
+            </div>
+          </section>
 
-          </div>
-        </section>
+          <section id="medpart-room" class="general island-page d-flex my-4">
+            <div class="container">
 
-        <section id="medpart-room" class="general island-page d-flex my-4">
-          <div class="container">
+              <div class="row d-flex justify-content-center mt-4">
+                <div class="col-12">
+                  <h1 class="text-center blue-title">Medpart Room</h1>
+                </div>
+                <img src="{{ asset ('assets/img/all_general_main_page/medpart.png') }}" class="col-12 feature_image" alt="">
+                <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='medpart';">GO IN</p>
+                
+                <!--
+                <div class="col-12">
+                  <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
+                </div>
+                -->
 
-            <div class="row d-flex justify-content-center mt-4">
-              <div class="col-12">
-                <h1 class="text-center blue-title">Medpart Room</h1>
-              </div>
-              <img src="{{ asset ('assets/img/all_general_main_page/medpart.png') }}" class="col-12 feature_image" alt="">
-              <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='medpart';">GO IN</p>
-              
-              <!--
-              <div class="col-12">
-                <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
-              </div>
-              -->
+              </div>  
 
-            </div>  
+            </div>
+          </section>
 
-          </div>
-        </section>
+          <section id="donation-room" class="general island-page d-flex my-4">
+            <div class="container">
 
-        <section id="donation-room" class="general island-page d-flex my-4">
-          <div class="container">
+              <div class="row d-flex justify-content-center mt-4">
+                <div class="col-12">
+                  <h1 class="text-center blue-title">Donation Room</h1>
+                </div>
+                <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}" class="col-12 feature_image" alt="">
+                <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='donation';">GO IN</p>
 
-            <div class="row d-flex justify-content-center mt-4">
-              <div class="col-12">
-                <h1 class="text-center blue-title">Donation Room</h1>
-              </div>
-              <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}" class="col-12 feature_image" alt="">
-              <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='donation';">GO IN</p>
+                <!--
+                <div class="col-12">
+                  <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}"class="img-fluid" alt="">
+                </div>
+                -->
+              </div>  
 
-              <!--
-              <div class="col-12">
-                <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}"class="img-fluid" alt="">
-              </div>
-              -->
-            </div>  
+            </div>
+          </section>
 
-          </div>
-        </section>
+          <section id="merchandise-room" class="general island-page d-flex my-4">
+            <div class="container">
 
-        <section id="merchandise-room" class="general island-page d-flex my-4">
-          <div class="container">
+              <div class="row d-flex justify-content-center mt-4">
+                <div class="col-12">
+                  <h1 class="text-center blue-title">Merchandise Room</h1>
+                </div>
+                <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}" class="col-12 feature_image" alt="">
+                <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='merchandise';">GO IN</p>
 
-            <div class="row d-flex justify-content-center mt-4">
-              <div class="col-12">
-                <h1 class="text-center blue-title">Merchandise Room</h1>
-              </div>
-              <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}" class="col-12 feature_image" alt="">
-              <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='merchandise';">GO IN</p>
+                <!--
+                <div class="col-12">
+                  <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}"class="img-fluid" alt="">
+                </div>
+                -->
+              </div>  
 
-              <!--
-              <div class="col-12">
-                <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}"class="img-fluid" alt="">
-              </div>
-              -->
-            </div>  
-
-          </div>
-        </section>
+            </div>
+          </section>
+        @endif
 
           
 
@@ -644,7 +646,6 @@
 
         <!-- <img src="{{ asset ('assets/img/about.png') }}"/> -->
       </section><!-- End About Section -->
-    @endif
 
     @include('modals')
 
