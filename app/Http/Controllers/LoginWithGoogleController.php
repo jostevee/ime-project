@@ -42,7 +42,8 @@ class LoginWithGoogleController extends Controller
                 Auth::login($newUser);
                 // $socialUserObject = $user->userFromToken($token);
 
-                return redirect()->intended('/dashboard');
+                return redirect()->intended('home#notpaid');
+                // return redirect()->intended('/dashboard');
                 // Auth::guard('customer')->login($newUser);    
             }
       
