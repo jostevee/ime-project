@@ -25,6 +25,36 @@ class FrontEndController extends Controller
         return view('home', compact('data_speaker', 'data_day', 'data_detail')); //, compact('event')
     }
 
+    public function savePayment(Request $request){
+        $ngo = new NGO();
+        $ngo->name = $request->input('name');
+        $ngo->info = $request->input('info');
+        $ngo->video = $request->input('video');
+        $ngo->ig = $request->input('ig');
+        $ngo->fb = $request->input('fb');
+
+        if ($request->hasFile('img_link')) {
+            $gambar = $request->file('img_link');
+            $fileName = time().$gambar->getClientOriginalName();
+
+            // Create 'img/event_list' directory if it isn't available yet
+            if(!is_dir('assets/img/ngo_list')) {
+                mkdir('assets/img/ngo_list', 0777, true);
+            }
+
+            // Move the file to the selected directory
+            $request->file('img_link')->move('assets/img/ngo_list', $fileName);
+
+            $ngo->logo = $fileName;
+        } else {
+            $ngo->logo = '';
+        }
+
+        $ngo->save();
+
+        return redirect('/writer/ngo/list');
+      }
+
     public function test(){
         return view('test');
     }
@@ -84,6 +114,12 @@ class FrontEndController extends Controller
         //$event = Event::orderByDesc('created_at')->take(4)->get();
 
         return view('merchandise'); //, compact('event')
+    }
+
+    public function misatoto(){
+        //$event = Event::orderByDesc('created_at')->take(4)->get();
+
+        return view('misatoto'); //, compact('event')
     }
 
     // Login landing page

@@ -88,7 +88,8 @@
                 </div>
                 <div class="form-group mt-4">
                   <label for="title">Info</label>
-                  <input type="text" name="info" id="info" class="form-control" placeholder="Enter NGO info here" required>
+                  <textarea type="text" name="info" id="content" class="form-control" rows="6" placeholder="Enter your info here" required></textarea>
+                  <!-- <input type="text" name="info" id="info" class="form-control" placeholder="Enter NGO info here" required> -->
                 </div>
                 <div class="form-group col-4 mt-4">
                   <label for="title">Video</label>
@@ -96,11 +97,11 @@
                 </div>
                 <div class="form-group col-4 mt-4">
                   <label for="title">IG</label>
-                  <input type="text" name="ig" id="ig" class="form-control" placeholder="Enter NGO Instagram page here" required>
+                  <input type="text" name="ig" id="ig" class="form-control" placeholder="Enter NGO Instagram page here">
                 </div>
                 <div class="form-group col-4 mt-4">
                   <label for="title">FB</label>
-                  <input type="text" name="fb" id="fb" class="form-control" placeholder="Enter NGO Facebook page here" required>
+                  <input type="text" name="fb" id="fb" class="form-control" placeholder="Enter NGO Facebook page here">
                 </div>
                 <div class="form-group mt-4">
                   <label for="img_link">Choose an image</label>

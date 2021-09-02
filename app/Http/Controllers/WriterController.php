@@ -187,7 +187,7 @@ class WriterController extends Controller
             }
             */
 
-        $ngo->save();
+        $medpart->save();
 
         return redirect('/writer/medpart/list');
       }

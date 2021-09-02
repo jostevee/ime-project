@@ -34,6 +34,8 @@ return [
         'client_id' => '621794480534-svn1o22u0u6bmt7mbdasteo8cdembe5h.apps.googleusercontent.com',
         'client_secret' => 'oSpCWfVdQTt7dZvPdcatqTYL',
         'redirect' => env('APP_URL').'/authorized/google/callback',
+        // 'redirect' => 'http://localhost:8000/authorized/google/callback',
+
     ],
 
 ];

@@ -521,6 +521,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/intro_page/background.png");
   margin-bottom: 0px;
   margin-top: 0px;
+  overflow-y: hidden;
 }
 
 @media (min-width: 1024px) {
@@ -773,7 +774,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   height: fit-content; /*95vh*/
-  background: url("../img/all_general_main_page/background.png");
+  background: url("../img/all_general_main_page/background_blue.png");
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 38px 0px 0px 0px;
@@ -1167,144 +1168,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*--------------------------------------------------------------
-# Modal Sign In - Sign Up - Menu Section
---------------------------------------------------------------*/
-.modal-signin-signup-menu {
-  background: #F3EC9E;
-  border-radius: 20px;
-}
-
-.modal-signin-signup-menu .icon-close i {
-  font-size: 35px;
-  cursor: pointer;
-  color: #1C3B51;
-  transition: all ease-in-out 0.4s;
-}
-
-.modal-signin-signup-menu .icon-close i:hover {
-  color: #678FAD;
-}
-
-.modal-signin-signup-menu .btn-modal {
-  background: #1C3B51; /* rgba(255, 255, 255, 0.2); */
-  cursor: pointer;
-  padding: 6px 40px 6px 40px;
-  /* color: #F3EC9E; */ /* #fff */
-  font-size: 23px;
-  margin: 10px 0px 0px 0px;
-  border-radius: 30px;
-  transition: all ease-in-out 0.4s;
-}
-
-.modal-signin-signup-menu .btn-modal:hover {
-  padding: 6px 60px 6px 60px;
-}
-
-.modal-signin-signup-menu .menu-modal-row {
-  margin: 0px 20px;
-}
-
-/* ABOUT ICON */
-.about-icon {
-  content: url('../img/menu_bar/about_icon.png');
-  height: 100px;
-  width: 100px; 
-  margin: 15px;
-  cursor: pointer;
-  transition: all ease-in-out 0.4s;
-}
-
-.menu-modal-icon:hover .about-icon {
-  height: 147px;
-  width: 147px;
-}
-
-/* SPEAKER ICON */
-.speaker-icon {
-  content: url('../img/menu_bar/speaker_icon.png');
-  height: 100px;
-  width: 100px;
-  margin: 15px;
-  cursor: pointer;
-  transition: all ease-in-out 0.4s;
-}
-
-.menu-modal-icon:hover .speaker-icon {
-  height: 147px;
-  width: 147px;
-}
-
-/* SCHEDULE ICON */
-.schedule-icon {
-  content: url('../img/menu_bar/schedule_icon.png');
-  height: 100px;
-  width: 100px;
-  margin: 15px;
-  cursor: pointer;
-  transition: all ease-in-out 0.4s;
-}
-
-.menu-modal-icon:hover .schedule-icon {
-  height: 147px;
-  width: 147px;
-}
-
-/* ON IME ICON */
-.on-ime-icon {
-  content: url('../img/menu_bar/on_ime_icon.png');
-  height: 100px;
-  width: 100px;
-  margin: 15px;
-  cursor: pointer;
-  transition: all ease-in-out 0.4s;
-}
-
-.menu-modal-icon:hover .on-ime-icon {
-  height: 147px;
-  width: 147px;
-}
-
-
-/*--------------------------------------------------------------
-# Modal Pay Section
---------------------------------------------------------------*/
-.modal-pay {
-  background: #1C3B51;
-  border-radius: 20px;
-}
-
-.modal-pay .icon-close i {
-  font-size: 35px;
-  cursor: pointer;
-  color: #F3EC9E;
-  transition: all ease-in-out 0.4s;
-}
-
-.modal-pay .icon-close i:hover {
-  color: #678FAD;
-}
-
-.modal-pay .btn-modal {
-  background: #F3EC9E; /* rgba(255, 255, 255, 0.2); */
-  cursor: pointer;
-  padding: 6px 40px 6px 40px;
-  /* color: #F3EC9E; */ /* #fff */
-  font-size: 23px;
-  margin: 10px 0px 0px 0px;
-  border-radius: 30px;
-  transition: all ease-in-out 0.4s;
-}
-
-.modal-pay .btn-modal:hover {
-  padding: 6px 60px 6px 60px;
-}
-
-.modal-pay .menu-modal-row {
-  margin: 0px 20px;
-}
-
-
-/*--------------------------------------------------------------
 # PHP General Form Section
 --------------------------------------------------------------*/
 .general-form .php-general-form .btn-link {
@@ -1352,6 +1215,162 @@ h1, h2, h3, h4, h5, h6 {
   color: #1C3851;
   padding: 15px 75px;
 }
+
+
+/*--------------------------------------------------------------
+# Island Page Room Page
+--------------------------------------------------------------*/
+.island-page {
+  /* position: relative; */
+  width: 100%;
+  height: fit-content; /* 95vh */ /* fit-content */
+  /* background: url("../img/all_general_main_page/talkshow.png"); */
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 38px 0px 0px 0px;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .island-page {
+    /* background-attachment: initial; */
+    /* background-cover */
+
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    /* background-cover */
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 992px) {
+  .island-page {
+     /* 54vh */
+     /* background-attachment: initial; */
+
+     max-height: fit-content;
+     
+     /* background-cover */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  .island-page {
+    background-attachment: initial;
+    max-height: fit-content;
+
+    /* background-cover */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 20px;
+  }
+}
+
+.island-page .feature_image{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.island-page  .btn-general {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  background: #F3EC9E; /* rgba(255, 255, 255, 0.2); */
+  padding: 6px 20px 8px 20px;
+  margin-top: 12px;
+  width: inherit;
+  color: #1C3B51; /* #fff */
+  /* color: #437099; */
+  border-radius: 20px;
+  transition: all ease-in-out 0.4s;
+}
+
+.island-page .btn-general i {
+  font-size: 26px;
+}
+
+.island-page .btn-general:hover {
+  padding: 6px 30px 8px 30px;
+  color: #F3EC9E; /* #173963 */
+  background: #1C3B51; /* #fff */
+  /* background: #3291e6; */
+}
+
+.island-page .btn-general i {
+  font-size: 28px;
+  color: #FFF;
+  line-height: 0;
+}
+
+@media (min-width: 1024px) {
+  .island-page .talkshow-btn {
+    margin: 320px 0px 0px 90px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .island-page .talkshow-btn {
+    margin: 90px 0px 0px 90px;
+    font-size: 16px;
+  }
+}
+
+/*
+@media (max-height: 600px) {
+  .island-page .talkshow-btn {
+    margin: 90px 0px 0px 90px;
+
+  }
+}
+*/
+
+
+.talkshow-room-page .image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/all_general_main_page/talkshow.png");
+   /* background-cover */
+   background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   /* background-cover */
+   
+   background-repeat: no-repeat;
+   background-position: center center;
+
+}
+
+
+
+
+
+
+
 
 
 

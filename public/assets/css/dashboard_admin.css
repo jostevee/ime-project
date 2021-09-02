@@ -27,3 +27,7 @@
     color: #FFF;
     line-height: 0;
   }
+
+  textarea {
+    resize: none;
+  }

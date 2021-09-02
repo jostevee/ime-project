@@ -17,7 +17,7 @@ class CreateMedpartTable extends Migration
             $table->id();
             $table->string('logo')->unique();
             $table->string('name');
-            $table->string('info');
+            $table->text('info');
             $table->string('video');
             $table->string('ig')->unique();
             $table->string('fb')->unique();

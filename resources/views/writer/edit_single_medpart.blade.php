@@ -89,7 +89,8 @@
                     </div>
                     <div class="form-group mt-4">
                       <label for="title">Info</label>
-                      <input type="text" name="info" id="info" class="form-control" value="{{ $medpart->info }}" required>
+                      <textarea type="text" name="info" id="content" class="form-control" rows="6" placeholder="Enter your info here" required>{{ $ngo->info }}</textarea>
+                      <!-- <input type="text" name="info" id="info" class="form-control" placeholder="Enter NGO info here" required> -->
                     </div>
                     <div class="form-group col-4 mt-4">
                       <label for="title">Video</label>
@@ -97,11 +98,11 @@
                     </div>
                     <div class="form-group col-4 mt-4">
                       <label for="title">IG</label>
-                      <input type="text" name="ig" id="ig" class="form-control" value="{{ $medpart->ig }}" required>
+                      <input type="text" name="ig" id="ig" class="form-control" value="{{ $medpart->ig }}">
                     </div>
                     <div class="form-group col-4 mt-4">
                       <label for="title">FB</label>
-                      <input type="text" name="fb" id="fb" class="form-control" value="{{ $medpart->fb }}" required>
+                      <input type="text" name="fb" id="fb" class="form-control" value="{{ $medpart->fb }}">
                     </div>
 
                   <!--

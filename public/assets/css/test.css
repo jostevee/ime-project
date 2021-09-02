@@ -1,4 +1,3 @@
-
   .section {
     position: relative;
     max-width: 920px;
@@ -26,3 +25,49 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+/*
+.bg-move {
+  background-image:url('https://www.travelandleisure.com/sites/default/files/styles/tnl_redesign_article_landing_page/public/1453920892/DUBAI-554088081-ABOVE0116.jpg?itok=dcoZnCrc');
+  background-size: 100%;
+  display:block;
+  height:200px;
+  width:200px;
+  
+  }
+*/
+
+html, body{
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+} 
+
+#wrapper{
+  min-width: 10000px;
+}
+
+section{
+  min-height: 100vh;
+}
+
+#first{
+  color: whitesmoke;
+  background: url('1.jpg') no-repeat center;
+  background-size: cover;   
+}
+
+#first .background{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

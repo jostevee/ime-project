@@ -30,7 +30,7 @@
           <div class="col-lg-6 row d-flex justify-content-stretch mt-4">
             <div class="col-12 row">
               <p class="white-strong">&copy; Copyright 2021 <strong><span>Indonesia Marine Exhibition</span></strong>. All Rights Reserved</p>
-              <p class="white-strong">Crafted with &hearts; by <a href="https://lb3labs.my.id" class="white-strong">LB3Labs Developer</a></p>
+              <!-- <p class="white-strong">Crafted with &hearts; by <a href="https://lb3labs.my.id" class="white-strong">LB3Labs Developer</a></p> -->
             </div>
           </div>
         </div>

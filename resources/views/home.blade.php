@@ -6,6 +6,11 @@
 </head>
 
 <body>
+    @php
+      $userwriter = Auth::guard('web')->user()->done_paid;
+      /* $useradmin = Auth::guard('writer')->user(); */
+    @endphp
+
     @include('menu')
     <a href="#about" class="to-bottom d-flex align-items-center justify-content-center"><i class="fas fa-arrow-down"></i></a>
     
@@ -37,442 +42,590 @@
       <!-- <img src="{{ asset ('assets/img/intro-page.png') }}"/> -->
     </section><!-- End intro-page Section -->
     
-    
-    <section class="main-page">
-      <!-- ======= Clouds Section ======= -->
-      <div class="bg-move-1 d-flex justify-content-center">
-        <img id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
-        <img id="cloud3" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
-      </div>
-      <div class="bg-move-2 d-flex justify-content-center">
-        <img id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
-      </div>
-      
-      <!-- Old version Cloud Section -->
-      <!--
-      <div id="frame">
-        <div id="slider">
-          <img class="cloud" id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
-          <img class="cloud" id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+
+    @if ($userwriter == 1)
+      <section class="main-page">
+        <!-- ======= Clouds Section ======= -->
+        <div class="bg-move-1 d-flex justify-content-center">
+          <img id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+          <img id="cloud3" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
         </div>
-      </div> -->
+        <div class="bg-move-2 d-flex justify-content-center">
+          <img id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+        </div>
+        
+        <!-- Old version Cloud Section -->
+        <!--
+        <div id="frame">
+          <div id="slider">
+            <img class="cloud" id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+            <img class="cloud" id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+          </div>
+        </div> -->
 
-      <!-- ======= About Section ======= -->
-      <div id="about" class="general-div-section about-page d-flex my-4">
-        <div class="container d-flex align-items-center">
+        <!-- ======= About Section ======= -->
+        <div id="about" class="general-div-section about-page d-flex my-4">
+          <div class="container d-flex align-items-center">
 
-          <div class="row d-flex justify-content-center mt-4">
-            <div class="col-12">
-              <h1 class="blue-title">About</h1>
-            </div>
-            <div class="col-lg-9 mt-4">
-              <p class="blue-strong">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia placerat commodo. Pellentesque euismod arcu orci,
-                quis ornare enim blandit eu. Sed iaculis tempus neque, in tincidunt ligula rutrum a. Ut et ornare eros. Donec dignissim
-                urna dolor, a lobortis leo auctor eget. Donec elementum neque augue, eu viverra tortor aliquet non. Mauris lacinia tellus
-                neque, vel convallis urna eleifend at. Duis commodo luctus lectus, nec elementum nisl elementum quis. Morbi id nunc lacus.
-                Proin metus mi, mattis at lacus ut, hendrerit vestibulum nibh. Aliquam erat volutpat.
-              </p>
-            </div>
-            <div class="col-12 mt-4">
-              <div class="content">
-                <!-- <h3>IME</h3> -->
-                <div class="row d-flex justify-content-stretch">
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="blue-title">About</h1>
+              </div>
+              <div class="col-lg-9 mt-4">
+                <p class="blue-strong">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia placerat commodo. Pellentesque euismod arcu orci,
+                  quis ornare enim blandit eu. Sed iaculis tempus neque, in tincidunt ligula rutrum a. Ut et ornare eros. Donec dignissim
+                  urna dolor, a lobortis leo auctor eget. Donec elementum neque augue, eu viverra tortor aliquet non. Mauris lacinia tellus
+                  neque, vel convallis urna eleifend at. Duis commodo luctus lectus, nec elementum nisl elementum quis. Morbi id nunc lacus.
+                  Proin metus mi, mattis at lacus ut, hendrerit vestibulum nibh. Aliquam erat volutpat.
+                </p>
+              </div>
+              <div class="col-12 mt-4">
+                <div class="content">
+                  <!-- <h3>IME</h3> -->
+                  <div class="row d-flex justify-content-stretch">
 
-                  <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
-                    <div class="col-12 d-flex justify-content-center">
-                      <div class="video-box">
+                    <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
+                      <div class="col-12 d-flex justify-content-center">
+                        <div class="video-box">
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center my-2">
+                        <h5 class="text-center blue-title">PEMBINA HIMITEKA</h5>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center">
+                        <div class="name-box">
+                          <p class="text-center yellow-regular" style="font-size: 16px;">Nadya Cakasana, S.Kel., M.Si</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-12 d-flex justify-content-center my-2">
-                      <h5 class="text-center blue-title">PEMBINA HIMITEKA</h5>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                      <div class="name-box">
-                        <p class="text-center yellow-regular" style="font-size: 16px;">Nadya Cakasana, S.Kel., M.Si</p>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                      <div class="video-box">
+                    <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
+                      <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="video-box">
+                        </div>
+                      </div>
+                      <div class="col-lg-12 d-flex justify-content-center my-2">
+                        <h5 class="text-center blue-title">KETUA HIMITEKA</h5>
+                      </div>
+                      <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="name-box">
+                          <p class="text-center yellow-regular" style="font-size: 16px;">Jetli Alexandri Lasut</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 d-flex justify-content-center my-2">
-                      <h5 class="text-center blue-title">KETUA HIMITEKA</h5>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-center">
-                      <div class="name-box">
-                        <p class="text-center yellow-regular" style="font-size: 16px;">Jetli Alexandri Lasut</p>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                      <div class="video-box">
+                    <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
+                      <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="video-box">
+                        </div>
+                      </div>
+                      <div class="col-lg-12 d-flex justify-content-center my-2">
+                        <h5 class="text-center blue-title">KETUA IME 2021</h5>
+                      </div>
+                      <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="name-box">
+                          <p class="text-center yellow-regular" style="font-size: 16px;">Maulidya Qutrothunnada</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-12 d-flex justify-content-center my-2">
-                      <h5 class="text-center blue-title">KETUA IME 2021</h5>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-center">
-                      <div class="name-box">
-                        <p class="text-center yellow-regular" style="font-size: 16px;">Maulidya Qutrothunnada</p>
-                      </div>
-                    </div>
-                  </div>
 
-                </div>  
+                  </div>  
+                </div>
               </div>
             </div>
+
           </div>
-
         </div>
-      </div>
 
-      <!-- ======= Clouds Section ======= -->      
-      <!-- Old version Cloud Section -->
-      <!--
-      <div id="frame">
-        <div id="slider">
-          <img class="cloud" id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
-          <img class="cloud" id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
-        </div>
-      </div> -->
+        <!-- ======= Clouds Section ======= -->      
+        <!-- Old version Cloud Section -->
+        <!--
+        <div id="frame">
+          <div id="slider">
+            <img class="cloud" id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+            <img class="cloud" id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+          </div>
+        </div> -->
 
-      <!-- ======= Speaker Section ======= -->
-      <section id="speaker" class="general speaker-page d-flex my-4">
-        <div class="container"><!-- class="d-flex align-items-center" -->
+        <!-- ======= Speaker Section ======= -->
+        <section id="speaker" class="general speaker-page d-flex my-4">
+          <div class="container"><!-- class="d-flex align-items-center" -->
 
-          <div class="row d-flex justify-content-center mt-4">
-            <div class="col-12">
-              <h1 class="blue-title">Speakers</h1>
-            </div>
-            <div class="col-12 mt-4">
-              <div class="content row">
-                <!-- <div class="swiper-father"> -->
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="blue-title">Speakers</h1>
+              </div>
+              <div class="col-12 mt-4">
+                <div class="content row">
+                  <!-- <div class="swiper-father"> -->
 
-                <!-- we put an arrow into the outside swiper swiper -->
-                <div class="col-1 d-flex align-items-center justify-content-center">
-                  <i class="speaker-btn-prev fas fa-arrow-left"></i>
-                </div>
+                  <!-- we put an arrow into the outside swiper swiper -->
+                  <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="speaker-btn-prev fas fa-arrow-left"></i>
+                  </div>
 
-                <div class="col-10 swiper-container speaker-swiper col-9 d-flex align-items-center justify-content-stretch">
-                  <div class="swiper-wrapper d-flex">
+                  <div class="col-10 swiper-container speaker-swiper col-9 d-flex align-items-center justify-content-stretch">
+                    <div class="swiper-wrapper d-flex">
 
-                    @foreach($data_speaker as $data)
+                      @foreach($data_speaker as $data)
+                        <div class="swiper-slide">
+                          <div class="row speaker-people-box">
+                            <div class="d-flex justify-content-center">
+                              <img src="/assets/img/talkshow_speaker_list/{{ $data->image }}" class="speaker-pic-box" />
+                            </div>
+                            <div class="d-flex justify-content-center align-items-start my-2">
+                              <p class="text-center blue-regular">{{ $data->name }}</p>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-start my-2">
+                              <p class="text-center blue-regular">{{ $data->organization }}</p>
+                            </div>
+                          </div>
+                        </div><!-- End speaker item -->
+                      @endforeach
+                      
+
+                      <!--
                       <div class="swiper-slide">
                         <div class="row speaker-people-box">
                           <div class="d-flex justify-content-center">
-                            <img src="/assets/img/talkshow_speaker_list/{{ $data->image }}" class="speaker-pic-box" />
+                            <div class="speaker-pic-box">
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                           </div>
                           <div class="d-flex justify-content-center align-items-start my-2">
-                            <p class="text-center blue-regular">{{ $data->name }}</p>
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                           </div>
-                          <div class="d-flex justify-content-center align-items-start my-2">
-                            <p class="text-center blue-regular">{{ $data->organization }}</p>
+                        </div>
+                      </div><!-- End speaker item
+
+                      <div class="swiper-slide">
+                        <div class="row speaker-people-box">
+                          <div class="d-flex justify-content-center">
+                            <div class="speaker-pic-box">
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                        </div>
+                      </div><!-- End speaker item
+
+                      <div class="swiper-slide">
+                        <div class="row speaker-people-box">
+                          <div class="d-flex justify-content-center">
+                            <div class="speaker-pic-box">
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                           </div>
                         </div>
                       </div><!-- End speaker item -->
-                    @endforeach
-                    
 
-                    <!--
-                    <div class="swiper-slide">
-                      <div class="row speaker-people-box">
-                        <div class="d-flex justify-content-center">
-                          <div class="speaker-pic-box">
-                          </div>
-                        </div>
-                        <div class="d-flex justify-content-center my-2">
-                          <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-start my-2">
-                          <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                        </div>
-                      </div>
-                    </div><!-- End speaker item
+                    </div>
 
-                    <div class="swiper-slide">
-                      <div class="row speaker-people-box">
-                        <div class="d-flex justify-content-center">
-                          <div class="speaker-pic-box">
-                          </div>
-                        </div>
-                        <div class="d-flex justify-content-center my-2">
-                          <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                        </div>
-                        <div class="d-flex justify-content-center my-2">
-                          <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                        </div>
-                      </div>
-                    </div><!-- End speaker item
-
-                    <div class="swiper-slide">
-                      <div class="row speaker-people-box">
-                        <div class="d-flex justify-content-center">
-                          <div class="speaker-pic-box">
-                          </div>
-                        </div>
-                        <div class="d-flex justify-content-center my-2">
-                          <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                        </div>
-                        <div class="d-flex justify-content-center my-2">
-                          <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                        </div>
-                      </div>
-                    </div><!-- End speaker item -->
-
+                    <!-- Swiper buttons -->
+                      <!-- <div class="swiper-button-next"></div> -->
+                      <!-- <div class="swiper-button-prev"></div> -->
+                      <div class="swiper-pagination-speaker" style="visibility: hidden;"></div>
+                  </div>
+                  
+                  <!-- we put an arrow into the outside swiper swiper -->
+                  <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="speaker-btn-next fas fa-arrow-right"></i>
                   </div>
 
-                  <!-- Swiper buttons -->
-                    <!-- <div class="swiper-button-next"></div> -->
-                    <!-- <div class="swiper-button-prev"></div> -->
-                    <div class="swiper-pagination-speaker" style="visibility: hidden;"></div>
-                </div>
-                
-                <!-- we put an arrow into the outside swiper swiper -->
-                <div class="col-1 d-flex align-items-center justify-content-center">
-                  <i class="speaker-btn-next fas fa-arrow-right"></i>
-                </div>
-
-                <!-- </div> -->
-                <!-- <h3>IME</h3> -->
-                <!-- <div class="row d-flex justify-content-center"> -->
-                  <!-- <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                      <div class="speaker-pic-box">
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                  </div>
-
-                  <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                      <div class="speaker-pic-box">
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                  </div>
-
-                  <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                      <div class="speaker-pic-box">
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                  </div>
-
-                  <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                      <div class="speaker-pic-box">
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                  </div> -->
-
-                <!-- </div>   -->
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section><!-- End Speaker Section -->
-
-      <!-- ======= Schedule Section ======= -->
-      <section id="schedule" class="general schedule-page d-flex my-4">
-        <div class="container"><!-- class="d-flex align-items-center" -->
-
-          <div class="row d-flex justify-content-center mt-4">
-            <div class="col-12">
-              <h1 class="blue-title">Schedule</h1>
-            </div>
-            <div class="col-lg-10 mt-4">
-              <div class="content d-flex justify-content-center">
-                <!-- <div class="swiper-father"> -->
-
-                <!-- we put an arrow into the outside swiper swiper -->
-                <div class="col-1 d-flex align-items-center justify-content-center">
-                  <i class="schedule-btn-prev fas fa-arrow-left"></i>
-                </div>
-
-                <div class="col-10 swiper-container schedule-swiper col-9 d-flex align-items-center justify-content-center">
-                  <div class="swiper-wrapper">
-
-                    @foreach($data_day as $data_day)
-                      <!-- Day item --> 
-                      <div class="swiper-slide d-flex align-items-center justify-content-center">
-                        <div class="col-11 row schedule-box">
-                          <div class="schedule-day d-flex justify-content-center py-3">
-                            <h3 class="text-center white-strong">{{ $data_day->title }}</h3>
-                          </div>
-
-                          @forelse($data_detail as $data_detail)
-                            <!-- Content(s) -->
-                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
-                              {{ $data_detail }}
-                            </h4>
-                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
-                              SESI 1: Nama Pembicara
-                            </h4>
-                          @empty
-                            <h4 class="col-12 schedule-desc d-flex justify-content-center py-3 text-center blue-regular">
-                              Please add activity to this day, thank you!
-                            </h4>
-                          @endforelse
-
-                          <!--
-                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">09.00</h4>
-                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 2: Nama Pembicara</h4>
-                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">10.00</h4>
-                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 3: Nama Pembicara</h4>
-                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">11.00</h4>
-                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 4: Nama Pembicara</h4>
-                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">12.00</h4>
-                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 5: Nama Pembicara</h4>
-                          -->
+                  <!-- </div> -->
+                  <!-- <h3>IME</h3> -->
+                  <!-- <div class="row d-flex justify-content-center"> -->
+                    <!-- <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
+                      <div class="d-flex justify-content-center">
+                        <div class="speaker-pic-box">
                         </div>
-                      </div><!-- End day item -->
-                    @endforeach
-
-                  </div>
-
-                  <!-- Swiper buttons -->
-                    <!-- <div class="swiper-button-next"></div> -->
-                    <!-- <div class="swiper-button-prev"></div> -->
-                    <div class="swiper-pagination-schedule" style="visibility: hidden;"></div>
-                </div>
-                
-                <!-- we put an arrow into the outside swiper swiper -->
-                <div class="col-1 d-flex align-items-center justify-content-center">
-                  <i class="schedule-btn-next fas fa-arrow-right"></i>
-                </div>
-
-                <!-- </div> -->
-                <!-- <h3>IME</h3> -->
-                <!-- <div class="row d-flex justify-content-center"> -->
-                  <!-- <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                      <div class="speaker-pic-box">
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                  </div>
 
-                  <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                      <div class="speaker-pic-box">
+                    <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
+                      <div class="d-flex justify-content-center">
+                        <div class="speaker-pic-box">
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                  </div>
 
-                  <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                      <div class="speaker-pic-box">
+                    <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
+                      <div class="d-flex justify-content-center">
+                        <div class="speaker-pic-box">
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                  </div>
 
-                  <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">
-                      <div class="speaker-pic-box">
+                    <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
+                      <div class="d-flex justify-content-center">
+                        <div class="speaker-pic-box">
+                        </div>
                       </div>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-start my-2">
-                      <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
-                    </div>
-                  </div> -->
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                    </div> -->
 
-                <!-- </div>   -->
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section><!-- End Schedule Section -->
-
-      <!-- ======= Island Main Section ======= -->
-      <div class="section bg-static">
-        <div class="bg-move"></div>
-      </div>
-      <section id="island-main" class="general island-main-page d-flex my-4">
-        <div class="maps"></div>
-        <div class="container"><!-- class="d-flex align-items-center" -->
-
-          <div class="row d-flex justify-content-center mt-4">
-            <div class="col-12">
-              <h1 class="blue-title">Main Room</h1>
-            </div>
-            <div class="col-lg-10 mt-4">
-              <div class="content row d-flex justify-content-stretch">
-                <div class="col-12 d-flex justify-content-stretch">
-                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
-                </div>
-                <div class="col-12 d-flex justify-content-center">
-                  <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
+                  <!-- </div>   -->
                 </div>
               </div>
             </div>
+
           </div>
+        </section><!-- End Speaker Section -->
 
-        </div>
-      </section><!-- End Island Main Section -->
+        <!-- ======= Schedule Section ======= -->
+        <section id="schedule" class="general schedule-page d-flex my-4">
+          <div class="container"><!-- class="d-flex align-items-center" -->
 
-      @include('footer')
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="blue-title">Schedule</h1>
+              </div>
+              <div class="col-lg-10 mt-4">
+                <div class="content d-flex justify-content-center">
+                  <!-- <div class="swiper-father"> -->
 
-      <!-- <img src="{{ asset ('assets/img/about.png') }}"/> -->
-    </section><!-- End About Section -->
+                  <!-- we put an arrow into the outside swiper swiper -->
+                  <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="schedule-btn-prev fas fa-arrow-left"></i>
+                  </div>
+
+                  <div class="col-10 swiper-container schedule-swiper col-9 d-flex align-items-center justify-content-center">
+                    <div class="swiper-wrapper">
+
+                      @foreach($data_day as $data_day)
+                        <!-- Day item --> 
+                        <div class="swiper-slide d-flex align-items-center justify-content-center">
+                          <div class="col-11 row schedule-box">
+                            <div class="schedule-day d-flex justify-content-center py-3">
+                              <h3 class="text-center white-strong">{{ $data_day->title }}</h3>
+                            </div>
+
+                            @forelse($data_detail as $data_detail)
+                              <!-- Content(s) -->
+                              <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                                {{ $data_detail }}
+                              </h4>
+                              <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                                SESI 1: Nama Pembicara
+                              </h4>
+                            @empty
+                              <h4 class="col-12 schedule-desc d-flex justify-content-center py-3 text-center blue-regular">
+                                Please add activity to this day, thank you!
+                              </h4>
+                            @endforelse
+
+                            <!--
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">09.00</h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 2: Nama Pembicara</h4>
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">10.00</h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 3: Nama Pembicara</h4>
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">11.00</h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 4: Nama Pembicara</h4>
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">12.00</h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 5: Nama Pembicara</h4>
+                            -->
+                          </div>
+                        </div><!-- End day item -->
+                      @endforeach
+
+                    </div>
+
+                    <!-- Swiper buttons -->
+                      <!-- <div class="swiper-button-next"></div> -->
+                      <!-- <div class="swiper-button-prev"></div> -->
+                      <div class="swiper-pagination-schedule" style="visibility: hidden;"></div>
+                  </div>
+                  
+                  <!-- we put an arrow into the outside swiper swiper -->
+                  <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="schedule-btn-next fas fa-arrow-right"></i>
+                  </div>
+
+                  <!-- </div> -->
+                  <!-- <h3>IME</h3> -->
+                  <!-- <div class="row d-flex justify-content-center"> -->
+                    <!-- <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
+                      <div class="d-flex justify-content-center">
+                        <div class="speaker-pic-box">
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                    </div>
+
+                    <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
+                      <div class="d-flex justify-content-center">
+                        <div class="speaker-pic-box">
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                    </div>
+
+                    <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
+                      <div class="d-flex justify-content-center">
+                        <div class="speaker-pic-box">
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                    </div>
+
+                    <div class="row col-lg-3 col-sm-12 col-md-12 about-people-box d-flex justify-content-center">
+                      <div class="d-flex justify-content-center">
+                        <div class="speaker-pic-box">
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                      <div class="d-flex justify-content-center align-items-start my-2">
+                        <p class="blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                      </div>
+                    </div> -->
+
+                  <!-- </div>   -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section><!-- End Schedule Section -->
+
+        <!-- ======= Island Main Section ======= -->
+        <section id="island-main" class="general island-main-page d-flex my-4">
+          <div class="container">
+
+            <div class="row justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="blue-title">Main Room</h1>
+              </div>
+
+              <div class="col-lg-10 mt-4">
+                <div id="container">
+                  <div id="box"></div>
+                  </div>
+              </div>
+            </div>
+
+            <!--
+            <section id="talkshow-room">
+            </section>
+            <section id="games-room">
+            </section>
+            <section id="ngo-room">
+            </section>
+            <section id="medpart-room">
+            </section>
+            <section id="donation-room">
+            </section>
+            <section id="merchandise-room">
+            </section>
+          -->
+
+
+          <!--
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="blue-title">Main Room</h1>
+              </div>
+              <div class="col-lg-10 mt-4">
+                <div class="content row d-flex justify-content-stretch">
+                  <div class="col-12 d-flex justify-content-stretch">
+                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          -->
+
+          </div>
+        </section><!-- End Island Main Section -->
+
+        <section id="talkshow-room" class="general island-page d-flex my-4">
+          <div class="container">
+
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="text-center blue-title">Talkshow Room</h1>
+              </div>
+              <!-- <div class="image"></div> -->
+              <img src="{{ asset ('assets/img/all_general_main_page/talkshow.png') }}" class="col-12 feature_image" alt="">
+              <p class="col-3 btn-general talkshow-btn text-center blue-title" onclick="location.href='talkshow';">GO IN</p>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="games-room" class="general island-page d-flex my-4">
+          <div class="container">
+
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="text-center blue-title">Games Room</h1>
+              </div>
+              <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}" class="col-12 feature_image" alt="">
+              <p class="col-3 btn-general games-btn text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='games';">GO IN</p>
+
+              <!--
+              <div class="col-12">
+                <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}"class="img-fluid" alt="">
+              </div>
+              -->
+
+            </div>  
+
+          </div>
+        </section>
+        
+        <section id="ngo-room" class="general island-page d-flex my-4">
+          <div class="container">
+
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="text-center blue-title">NGO Room</h1>
+              </div>
+              <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}" class="col-12 feature_image" alt="">
+              <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='ngo';">GO IN</p>
+              
+              <!--
+              <div class="col-12">
+                <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
+              </div>
+              -->
+
+            </div>  
+
+          </div>
+        </section>
+
+        <section id="medpart-room" class="general island-page d-flex my-4">
+          <div class="container">
+
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="text-center blue-title">Medpart Room</h1>
+              </div>
+              <img src="{{ asset ('assets/img/all_general_main_page/medpart.png') }}" class="col-12 feature_image" alt="">
+              <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='medpart';">GO IN</p>
+              
+              <!--
+              <div class="col-12">
+                <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
+              </div>
+              -->
+
+            </div>  
+
+          </div>
+        </section>
+
+        <section id="donation-room" class="general island-page d-flex my-4">
+          <div class="container">
+
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="text-center blue-title">Donation Room</h1>
+              </div>
+              <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}" class="col-12 feature_image" alt="">
+              <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='donation';">GO IN</p>
+
+              <!--
+              <div class="col-12">
+                <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}"class="img-fluid" alt="">
+              </div>
+              -->
+            </div>  
+
+          </div>
+        </section>
+
+        <section id="merchandise-room" class="general island-page d-flex my-4">
+          <div class="container">
+
+            <div class="row d-flex justify-content-center mt-4">
+              <div class="col-12">
+                <h1 class="text-center blue-title">Merchandise Room</h1>
+              </div>
+              <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}" class="col-12 feature_image" alt="">
+              <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='merchandise';">GO IN</p>
+
+              <!--
+              <div class="col-12">
+                <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}"class="img-fluid" alt="">
+              </div>
+              -->
+            </div>  
+
+          </div>
+        </section>
+
+          
+
+        @include('footer')
+
+        <!-- <img src="{{ asset ('assets/img/about.png') }}"/> -->
+      </section><!-- End About Section -->
+    @endif
 
     @include('modals')
 
