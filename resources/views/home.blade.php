@@ -6,7 +6,9 @@
 </head>
 
 <body>
+    @include('menu')
     @php
+      $userwriter = -1;
       if (Auth::guard('web')->user() != null){
         $userwriter = Auth::guard('web')->user()->done_paid;
       } else {
@@ -14,8 +16,6 @@
       }
       /* $useradmin = Auth::guard('writer')->user(); */
     @endphp
-
-    @include('menu')
     <a href="#about" class="to-bottom d-flex align-items-center justify-content-center"><i class="fas fa-arrow-down"></i></a>
     
     <!-- ======= intro-page Section ======= -->
@@ -176,7 +176,7 @@
                 <h1 class="blue-title">Speakers</h1>
               </div>
               <div class="col-12 mt-4">
-                <div class="content row">
+                <!-- <div class="content row"> -->
                   <!-- <div class="swiper-father"> -->
 
                   <!-- we put an arrow into the outside swiper swiper -->

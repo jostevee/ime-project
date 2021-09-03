@@ -18,11 +18,12 @@
 
 <!-- Template JS File(s) -->
 <script src="{{ asset ('assets/js/main.js') }}"></script>
+<script src="{{ asset ('assets/js/sound.js') }}"></script>
 <script src="{{ asset ('assets/js/maps.js') }}"></script>
 <script src="{{ asset ('assets/js/talkshow_room.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
 <script>
-  var userwriter = <?php echo $userwriter; ?>
+  var userwriter = <?php $userwriter; ?>
   // on the footer of redirect page
   if (window.location.hash == "#notpaid") {
     $(document).ready(function(){

@@ -367,13 +367,13 @@ class WriterController extends Controller
         $talkshow_day =  TalkshowDay::where('id', $id)->firstOrFail();
         $talkshow_day->delete();
 
-        return redirect('/writer/talkshow-day/list')->with('success', 'Selected Talkshow Day succesfully deleted');
+        return redirect('/writer/talkshow-detail/list')->with('success', 'Selected Talkshow Day succesfully deleted');
       }
 
       public function myTalkshowDetail(){
-        $talkshow_day = TalkshowDay::orderByDesc('created_at')->get();
+        $talkshow_day = TalkshowDetail::orderByDesc('created_at')->get();
 
-        return view('writer/my_talkshow_day', compact('talkshow_day'));
+        return view('writer/my_talkshow_detail', compact('talkshow_day'));
       }
 
 }
