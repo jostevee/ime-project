@@ -993,18 +993,20 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .speaker-page .speaker-people-box .speaker-pic-box {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
 }
 
 .speaker-page .speaker-people-box .speaker-pic-box img {
-  display: inline;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
+   height: 100%;
+   min-width: 100%;
+   /* left: 50%; */
+   /* border-radius: 50%; */
+   position: relative;
+   transform: translateX(0%);
 }
 
 /* .about-people-box {
