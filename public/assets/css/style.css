@@ -995,7 +995,7 @@ h1, h2, h3, h4, h5, h6 {
 .speaker-page .speaker-people-box .speaker-pic-box {
   width: 130px;
   height: 130px;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   border-radius: 50%;
 }
@@ -1005,7 +1005,7 @@ h1, h2, h3, h4, h5, h6 {
    min-width: 100%;
    /* left: 50%; */
    /* border-radius: 50%; */
-   position: relative;
+   /* position: relative; */
    transform: translateX(0%);
 }
 

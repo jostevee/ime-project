@@ -168,14 +168,12 @@
     },
     */
     slidesPerView: 'auto',
-    /*
     pagination: {
       el: '.swiper-pagination-speaker',
       type: 'bullets',
       clickable: true,
       bulletActiveClass: 'active'
     },
-    */
     navigation: {
       nextEl: '.speaker-btn-next',
       prevEl: '.speaker-btn-prev'
@@ -198,7 +196,7 @@
       1024: {
         slidesPerView: 3,
         spaceBetween: 40, //20
-        centeredSlides: false
+        centeredSlides: false,
       }
     }
   });

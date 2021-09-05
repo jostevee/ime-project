@@ -176,7 +176,7 @@
                 <h1 class="blue-title">Speakers</h1>
               </div>
               <div class="col-12 mt-4">
-                <!-- <div class="content row"> -->
+                <div class="content row">
                   <!-- <div class="swiper-father"> -->
 
                   <!-- we put an arrow into the outside swiper swiper -->
@@ -220,8 +220,9 @@
                             <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                           </div>
                         </div>
-                      </div><!-- End speaker item
+                      </div><!-- End speaker item -->
 
+                      <!--
                       <div class="swiper-slide">
                         <div class="row speaker-people-box">
                           <div class="d-flex justify-content-center">
@@ -235,8 +236,57 @@
                             <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
                           </div>
                         </div>
-                      </div><!-- End speaker item
+                      </div><!-- End speaker item -->
 
+                      <!--
+                      <div class="swiper-slide">
+                        <div class="row speaker-people-box">
+                          <div class="d-flex justify-content-center">
+                            <div class="speaker-pic-box">
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                        </div>
+                      </div><!-- End speaker item -->
+
+                      <!--
+                      <div class="swiper-slide">
+                        <div class="row speaker-people-box">
+                          <div class="d-flex justify-content-center">
+                            <div class="speaker-pic-box">
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                        </div>
+                      </div><!-- End speaker item -->
+
+                      <!--
+                      <div class="swiper-slide">
+                        <div class="row speaker-people-box">
+                          <div class="d-flex justify-content-center">
+                            <div class="speaker-pic-box">
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                          <div class="d-flex justify-content-center my-2">
+                            <p class="text-center blue-regular">Prof. Dr. Fulan, M.Sc.</p>
+                          </div>
+                        </div>
+                      </div><!-- End speaker item -->
+
+                      <!--
                       <div class="swiper-slide">
                         <div class="row speaker-people-box">
                           <div class="d-flex justify-content-center">
@@ -255,9 +305,9 @@
                     </div>
 
                     <!-- Swiper buttons -->
-                      <!-- <div class="swiper-button-next"></div> -->
-                      <!-- <div class="swiper-button-prev"></div> -->
-                      <div class="swiper-pagination-speaker" style="visibility: hidden;"></div>
+                    <!-- <div class="swiper-button-next"></div> -->
+                    <!-- <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination-speaker" style="visibility: hidden;"></div>
                   </div>
                   
                   <!-- we put an arrow into the outside swiper swiper -->
