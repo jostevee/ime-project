@@ -28,7 +28,8 @@ class User extends Authenticatable
         'email',
         'password',
         'google_id',
-        'done_paid',
+        'paid_status',
+        'trx_image',
     ];
 
     /**

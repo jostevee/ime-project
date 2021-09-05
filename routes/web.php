@@ -102,6 +102,11 @@ Route::middleware('auth:writer')->group(function () {
     Route::post('/writer/talkshow-detail/delete/{id}', [WriterController::class, 'deleteTalkshowDetail']);
     Route::get('/writer/talkshow-detail/{id}', [WriterController::class, 'lookTalkshowDetail']);
 
+    Route::get('/writer/payment-user/list', [WriterController::class, 'myPaymentUser']);
+    Route::get('/writer/payment-user/edit/{id}', [WriterController::class, 'editPaymentUser']);
+    Route::post('/writer/payment-user/edit/{id}', [WriterController::class, 'updatePaymentUser']);
+    Route::post('/writer/payment-user/delete/{id}', [WriterController::class, 'deletePaymentUser']);
+
     Route::get('/writer/editAccount/{id}', [WriterController::class, 'editAccount']);
     Route::post('/writer/editAccount/{id}', [WriterController::class, 'updateAccount']);
 });

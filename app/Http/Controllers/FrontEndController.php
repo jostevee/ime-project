@@ -19,7 +19,7 @@ class FrontEndController extends Controller
     public function home(){
         //$event = Event::orderByDesc('created_at')->take(4)->get();
         $data_speaker = TalkshowSpeaker::all();
-        $data_day = TalkshowDay::orderByDesc('title')->get();
+        $data_day = TalkshowDay::orderBy('title')->get();
         $data_detail = TalkshowDetail::orderByDesc('from_time')->get();
 
         return view('home', compact('data_speaker', 'data_day', 'data_detail')); //, compact('event')

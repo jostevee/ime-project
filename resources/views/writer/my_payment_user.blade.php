@@ -57,12 +57,11 @@
 
   <main id="main">
 
-    <!-- Postingan Saya -->
-    <section id="talkshow-detail" class="mypost bg-light py-4">
+    <section id="payment-user" class="mypost bg-light py-4">
       <div class="container">
 
         <div class="section-title my-4">
-          <h2>My Talkshow Detail</h2>
+          <h2>My Payment User</h2>
         </div>
 
         <div class="container-fluid">
@@ -80,9 +79,9 @@
                 </div>
               @endif
               <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
-              <a href="/writer/talkshow-detail/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Talkshow Day</a>
-              <p style="text-align: right;">Talkshow Detail total =
-                {{ $talkshow_detail->count() }}
+              <!-- <a href="/writer/talkshow-detail/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Talkshow Day</a> -->
+              <p style="text-align: right;">Payment User total =
+                {{ $payment_user->count() }}
               </p>
               @php
               $id = 1;
@@ -91,19 +90,30 @@
                 <table class="table table-striped">
                   <tr>
                     <th>No.</th>
-                    <th>Title</th>
-                    <th>Theme</th>
-                    <th>Publish date</th>
-                    <th width="15%"></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Google ID</th>
+                    <th>Transaction Image</th>
+                    <th>Payment Status</th>
+                    <th>Created at</th>
+                    <th width="10%"></th>
                   </tr>
-                  @forelse($talkshow_day as $data)
+                  @forelse($payment_user as $data)
                     <tr>
                       <td>{{ $id++ }}</td>
-                      <td>{{ $data->title }}</td>
-                      <td>{{ $data->theme }}</td>
+                      <td>{{ $data->name }}</td>
+                      <td>{{ $data->email }}</td>
+                      <td>{{ $data->google_id }}</td>
+                      <td><img src="/assets/img/payment_user_list/{{ $data->trx_image }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
+                      <td>
+                        @if ($data->paid_status == 0)
+                          Unpaid
+                        @elseif($data->paid_status == 1)
+                          Paid
+                        @endif
+                      </td>
                       <td>{{ $data->created_at }}</td>
                       <td>
-                        <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
                         <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
                         <form action="delete/{{ $data->id }}" method="POST">@csrf
                           <button class="btn btn-danger col-12" type="submit">Delete</button>
@@ -112,7 +122,7 @@
                     </tr>
                   @empty
                     <tr>
-                      <td colspan="6" align="center"><i>No data available</i></td>
+                      <td colspan="8" align="center"><i>No data available</i></td>
                     </tr>
                   @endforelse
                 </table>

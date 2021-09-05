@@ -10,7 +10,7 @@
     @php
       $userwriter = -1;
       if (Auth::guard('web')->user() != null){
-        $userwriter = Auth::guard('web')->user()->done_paid;
+        $userwriter = Auth::guard('web')->user()->apid_status;
       } else {
         $userwriter = -1;
       }
@@ -406,14 +406,16 @@
                               <h3 class="text-center white-strong">{{ $data_day->title }}</h3>
                             </div>
 
-                            @forelse($data_detail as $data_detail)
-                              <!-- Content(s) -->
-                              <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
-                                {{ $data_detail }}
-                              </h4>
-                              <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
-                                SESI 1: Nama Pembicara
-                              </h4>
+                            @forelse($data_detail as $data_per_detail)
+                              @if ($data_per_detail->id_day == $data_day->id)
+                                <!-- Content(s) -->
+                                <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                                  {{ $data_per_detail->from_time }}
+                                </h4>
+                                <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                                  SESI 1: Nama Pembicara
+                                </h4>
+                              @endif
                             @empty
                               <h4 class="col-12 schedule-desc d-flex justify-content-center py-3 text-center blue-regular">
                                 Please add activity to this day, thank you!

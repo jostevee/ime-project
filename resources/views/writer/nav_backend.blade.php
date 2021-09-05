@@ -33,9 +33,21 @@
                 <li><a class="nav-link" href="/writer/talkshow-speaker/list">List Speaker</a></li>
               </ul>
             </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+            <li class="dropdown"><a class="nav-link scrollto" href="#talkshow-detail">Talkshow Detail</a>
+              <ul>
+                <li><a class="nav-link" href="/writer/talkshow-detail/add">Add Talkshow Detail</a></li>
+                <li><a class="nav-link" href="/writer/talkshow-detail/list">List Talkshow Detail</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="nav-link scrollto" href="#payment-user">Payment User</a>
+              <ul>
+                <li><a class="nav-link" href="/writer/payment-user/add">Add Payment User</a></li>
+                <li><a class="nav-link" href="/writer/payment-user/list">List Payment User</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
 
       <a href="/logout" class="btn-signout d-flex align-items-center mx-3"><i class="fas fa-sign-out-alt"></i></a>
       <!-- <a href="contact-us" class="appointment-btn scrollto"><i class="bi bi-whatsapp"></i></a> -->

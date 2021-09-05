@@ -21,8 +21,8 @@ class LoginWithGoogleController extends Controller
         try {
       
             $user = Socialite::driver('google')->user();
-            $finduser = User::where('google_id', $user->id)->where('done_paid', '0')->first();
-            $paiduser = User::where('google_id', $user->id)->where('done_paid', '1')->first();
+            $finduser = User::where('google_id', $user->id)->where('paid_status', '0')->first();
+            $paiduser = User::where('google_id', $user->id)->where('paid_status', '1')->first();
        
             if ($paiduser) {
                 Auth::login($paiduser);
@@ -36,7 +36,7 @@ class LoginWithGoogleController extends Controller
                     'name' => $user->name,
                     'email' => $user->email,
                     'google_id'=> $user->id,
-                    'done_paid'=> 0,
+                    'paid_status'=> 0,
                     'password' => encrypt('123456')
                     // 'password' => encrypt('123456')
                 ]);

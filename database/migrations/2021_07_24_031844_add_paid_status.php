@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddDonePaid extends Migration
+class AddPaidStatus extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,7 @@ class AddDonePaid extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->integer('done_paid');
+            $table->integer('paid_status');
         });
     }
 
@@ -28,7 +28,7 @@ class AddDonePaid extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->dropColumn('done_paid');
+            $table->dropColumn('paid_status');
         });
     }
 }

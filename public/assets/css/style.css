@@ -965,7 +965,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .speaker-page .speaker-people-box {
-  width:  200px;
+  min-width: 200px;
   height: 300px;
   margin: 30px 30px;
   padding: 25px 0px;
@@ -1104,6 +1104,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-page .sponsors {
   margin:  10px;
+  cursor: pointer;
   background: #F3EC9E;
   border-radius: 25px;
   width: 50px;

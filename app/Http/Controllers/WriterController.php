@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Writer;
+use App\Models\User;
 use App\Models\NGO;
 use App\Models\Medpart;
 use App\Models\TalkshowDay;
@@ -114,6 +115,7 @@ class WriterController extends Controller
         return view('writer/my_ngo', compact('ngo'));
       }
 
+
     // Medpart
       public function lookMedpart($id){
         $data = Medpart::where('id', $id)->firstOrFail();
@@ -205,6 +207,7 @@ class WriterController extends Controller
         return view('writer/my_medpart', compact('medpart'));
       }
     
+
     // TalkshowDay
       public function lookTalkshowDay($id){
         $data = TalkshowDay::where('id', $id)->firstOrFail();
@@ -254,6 +257,7 @@ class WriterController extends Controller
 
         return view('writer/my_talkshow_day', compact('talkshow_day'));
       }
+
 
     // TalkshowSpeaker
       public function lookTalkshowSpeaker($id){
@@ -339,9 +343,12 @@ class WriterController extends Controller
 
       public function saveTalkshowDetail(Request $request){
         $talkshow_detail = new TalkshowDetail();
-        $talkshow_detail->title = $request->input('title');
-        $talkshow_detail->theme = $request->input('theme');
-
+        $talkshow_detail->id_day = $request->input('id_day');
+        $talkshow_detail->id_speaker = $request->input('id_speaker');
+        $talkshow_detail->from_time = $request->input('from_time');
+        $talkshow_detail->to_time = $request->input('to_time');
+        $talkshow_detail->zoom = $request->input('zoom');
+        $talkshow_detail->youtube = $request->input('youtube');
         $talkshow_detail->save();
 
         return redirect('/writer/talkshow-detail/list');
@@ -376,4 +383,32 @@ class WriterController extends Controller
         return view('writer/my_talkshow_detail', compact('talkshow_day'));
       }
 
+
+      // PaymentUser
+      public function editPaymentUser($id){
+        $payment_user = User::where('id', $id)->firstOrFail();
+
+        return view('writer/edit_single_payment_user', compact('payment_user'));
+      }
+
+      public function updatePaymentUser(Request $request, $id){
+        $payment_user = User::where('id', $id)->firstOrFail(); 
+        $payment_user->paid_status = $request->input('paid_status');           
+        $payment_user->save();
+
+        return redirect('/writer/payment-user/list');
+      }
+
+      public function deletePaymentUser(Request $request, $id){
+        $payment_user = User::where('id', $id)->firstOrFail();
+        $payment_user->delete();
+
+        return redirect('/writer/payment-user/list')->with('success', 'Selected Payment User succesfully deleted');
+      }
+
+      public function myPaymentUser(){
+        $payment_user = User::orderByDesc('created_at')->get();
+
+        return view('writer/my_payment_user', compact('payment_user'));
+      }
 }

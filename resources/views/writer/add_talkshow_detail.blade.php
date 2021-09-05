@@ -83,7 +83,7 @@
               @endif
                 <div class="form-group col-6">
                   <label for="title">Talkshow Day</label>
-                  <select class="form-select" id="day" name="day" required>
+                  <select class="form-select" id="day" name="id_day" required>
                     <option value="">Select talkshow day...</option>
                     @foreach($data_day as $data)
                       <option value="{{ $data->id }}">{{ $data->title }}</option>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="form-group col-6">
                   <label for="kategori">Talkshow Speaker</label>
-                  <select class="form-select" id="speaker" name="speaker" required>
+                  <select class="form-select" id="speaker" name="id_speaker" required>
                     <option value="">Select talkshow speaker...</option>
                     @foreach($data_speaker as $data)
                       <option value="{{ $data->id }}">{{ $data->name }}</option>
@@ -102,33 +102,33 @@
                 <div class="form-group col-6 mt-4">
                   <label for="title">From time</label>
                   <div class="md-form">
-                    <input placeholder="Selected time" type="text" id="input_starttime" class="form-control timepicker">
-                    <label for="input_starttime">Twelve hour clock</label>
+                    <input type="time" name="from_time" id="from_time" class="form-control timepicker" placeholder="Selected time">
                   </div>
                 </div>
                 <div class="form-group col-6 mt-4">
                   <label for="title">To time</label>
-                  <input type="text" name="to_time" id="to_time" class="form-control" placeholder="Enter talkshow end time here" required>
+                  <input type="time" name="to_time" id="to_time" class="form-control timepicker" placeholder="Enter talkshow end time here" required>
                 </div>
-                <div class="bootstrap-timepicker">
-                  <div class="form-group">
-                    <label>Time picker:</label>
-                    <div class="input-group input-group-lg">
-                      <input type="text" class="form-control timepicker">
-                      <div class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
+                <div class="form-group col-6 mt-4">
+                  <label for="title">Zoom</label>
+                  <input type="text" name="zoom" class="form-control" placeholder="Enter Zoom link here" required>
+                </div>
+                <div class="form-group col-6 mt-4">
+                  <label for="title">Youtube</label>
+                  <input type="text" name="youtube" class="form-control" placeholder="Enter Youtube link here" required>
+                </div>
+
+                <!--
                 <div class="form-group mt-4">
                   <label for="img_link">Choose an image</label>
                 </div>
                 <div class="form-group my-4">
                   <input type="file" name="img_link" id="img_link" class="form-control-file">
                 </div>
+                -->
+
                 <div class="mt-4">
-                  <button type="submit">Add Talkshow Speaker</button>
+                  <button type="submit">Add Talkshow Detail</button>
                   <a class="cancel" onclick="location.href='/writer/talkshow-speaker/list';">Cancel</a>
                   <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
                 </div>
