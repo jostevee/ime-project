@@ -16,6 +16,8 @@
       }
       /* $useradmin = Auth::guard('writer')->user(); */
     @endphp
+
+    {{ $userwriter }}
     <a href="#about" class="to-bottom d-flex align-items-center justify-content-center"><i class="fas fa-arrow-down"></i></a>
     
     <!-- ======= intro-page Section ======= -->
