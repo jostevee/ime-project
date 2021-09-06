@@ -355,15 +355,15 @@ class WriterController extends Controller
       }
 
       public function editTalkshowDetail($id){
-        $talkshow_day = TalkshowDay::where('id', $id)->firstOrFail();
+        $talkshow_detail = TalkshowDetail::where('id', $id)->firstOrFail();
 
-        return view('writer/edit_single_talkshow_detail', compact('talkshow_day'));
+        return view('writer/edit_single_talkshow_detail', compact('talkshow_detail'));
       }
 
       public function updateTalkshowDetail(Request $request, $id){
-        $talkshow_day = TalkshowDay::where('id', $id)->firstOrFail();
-        $talkshow_day->title = $request->input('title');
-        $talkshow_day->theme = $request->input('theme');
+        $talkshow_detail = TalkshowDetail::where('id', $id)->firstOrFail();
+        $talkshow_detail->title = $request->input('title');
+        $talkshow_detail->theme = $request->input('theme');
 
         $talkshow_day->save();
 
@@ -371,16 +371,16 @@ class WriterController extends Controller
       }
 
       public function deleteTalkshowDetail(Request $request, $id){
-        $talkshow_day =  TalkshowDay::where('id', $id)->firstOrFail();
-        $talkshow_day->delete();
+        $talkshow_detail =  TalkshowDetail::where('id', $id)->firstOrFail();
+        $talkshow_detail->delete();
 
         return redirect('/writer/talkshow-detail/list')->with('success', 'Selected Talkshow Day succesfully deleted');
       }
 
       public function myTalkshowDetail(){
-        $talkshow_day = TalkshowDetail::orderByDesc('created_at')->get();
+        $talkshow_detail = TalkshowDetail::orderByDesc('created_at')->get();
 
-        return view('writer/my_talkshow_detail', compact('talkshow_day'));
+        return view('writer/my_talkshow_detail', compact('talkshow_detail'));
       }
 
 

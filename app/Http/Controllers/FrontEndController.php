@@ -52,7 +52,7 @@ class FrontEndController extends Controller
 
         $ngo->save();
 
-        return redirect('/writer/ngo/list');
+        // return redirect('/writer/ngo/list');
       }
 
     public function test(){

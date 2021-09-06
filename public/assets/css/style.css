@@ -774,7 +774,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   height: fit-content; /*95vh*/
-  background: url("../img/all_general_main_page/background_blue.png");
+  background: url("../img/all_general_main_page/background.png");
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 38px 0px 0px 0px;
@@ -876,7 +876,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-page .about-people-box .video-box {
   margin: 20px 0px 0px 0px;
-  background: #FFF;
+  /* background: #FFF; */
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+.about-page .about-people-box .video-box img {
+  margin: 20px 0px 0px 0px;
+  /* background: #FFF; */
   border-radius: 30px;
   width: 200px;
   height: 200px;
