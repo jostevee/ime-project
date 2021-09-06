@@ -108,7 +108,7 @@
 
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-12 d-flex justify-content-center">
-                        <a href="https://youtu.be/oBt-nGvTBJM?t=470" class="glightbox play-btn mb-4">
+                        <a href="#" class="glightbox play-btn mb-4">
                           <img src="{{ asset ('assets/img/about/Nadya_About.jpeg') }}" class="video-box"/>
                         </a>
                       </div>
@@ -124,7 +124,7 @@
 
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-lg-12 d-flex justify-content-center">
-                        <a href="https://youtu.be/oBt-nGvTBJM?t=470" class="glightbox play-btn mb-4">
+                        <a href="#" class="glightbox play-btn mb-4">
                           <img src="{{ asset ('assets/img/about/Humas_Jetli.jpg') }}" class="video-box"/>
                         </a>
                       </div>
@@ -140,7 +140,7 @@
 
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-lg-12 d-flex justify-content-center">
-                        <a href="https://youtu.be/oBt-nGvTBJM?t=470" class="glightbox play-btn mb-4">
+                        <a href="#" class="glightbox play-btn mb-4">
                           <img src="{{ asset ('assets/img/about/Maul_About.jpeg') }}" class="video-box"/>
                         </a>
                       </div>
