@@ -23,8 +23,8 @@
 <script src="{{ asset ('assets/js/talkshow_room.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
 <script>
-  var userwriter = <?php echo $userwriter; ?>
-  alert(userwriter);
+  var userwriterjs = <?php $userwriter; ?>
+  console.log(userwriterjs);
   // on the footer of redirect page
   if (window.location.hash == "#notpaid") {
     $(document).ready(function(){
@@ -34,7 +34,7 @@
         // alert("Tes")
         // document.getElementById("registrationModal").showModal();
     });        
-  } else if (userwriter == 0) {
+  } else if (userwriterjs == 0) {
     $(document).ready(function(){
         $('#payModal').modal('show'); 
         
