@@ -34,7 +34,9 @@
         // alert("Tes")
         // document.getElementById("registrationModal").showModal();
     });        
-  } else if (userwriterjs == 0) {
+  }
+  
+  if (userwriterjs == 0) {
     $(document).ready(function(){
         $('#payModal').modal('show'); 
         

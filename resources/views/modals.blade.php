@@ -444,8 +444,8 @@
       </div>
     </div>
 
-    <!-- Modal 6 Pay Confirm -->
-    <div class="modal fade" id="payModal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
+    <!-- Modal 5 Pay BNI -->
+    <div class="modal fade" id="payModal5BNI" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered"> <!--  modal-fullscreen-md-down -->
         <div class="modal-content modal-pay">
 
@@ -465,12 +465,12 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">0721496269</p></div>
             </div>
-            <div class="col-12 d-flex justify-content-start align-items-center mt-4">
+            <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
             <div class="col-12 d-flex justify-content-stretch align-items-center my-2">
               <p class="text-start yellow-regular">Lorem ipsum</p>
-            </div>
+            </div> -->
             <div class="col-12 d-flex justify-content-center align-items-center mt-2">
               <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#payModal6"><p class="text-center blue-strong" style="font-size: 16;">Payment Confirmation</p></a>
             </div>
@@ -509,12 +509,12 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">1090017111071</p></div>
             </div>
-            <div class="col-12 d-flex justify-content-start align-items-center mt-4">
+            <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
             <div class="col-12 d-flex justify-content-stretch align-items-center my-2">
               <p class="text-start yellow-regular">Lorem ipsum</p>
-            </div>
+            </div> -->
             <div class="col-12 d-flex justify-content-center align-items-center mt-2">
               <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#payModal6"><p class="text-center blue-strong" style="font-size: 16;">Payment Confirmation</p></a>
             </div>
@@ -553,12 +553,12 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">081388923882</p></div>
             </div>
-            <div class="col-12 d-flex justify-content-start align-items-center mt-4">
+            <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
             <div class="col-12 d-flex justify-content-stretch align-items-center my-2">
               <p class="text-start yellow-regular">Lorem ipsum</p>
-            </div>
+            </div> -->
             <div class="col-12 d-flex justify-content-center align-items-center mt-2">
               <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#payModal6"><p class="text-center blue-strong" style="font-size: 16;">Payment Confirmation</p></a>
             </div>
@@ -597,12 +597,12 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">08877004317</p></div>
             </div>
-            <div class="col-12 d-flex justify-content-start align-items-center mt-4">
+            <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
             <div class="col-12 d-flex justify-content-stretch align-items-center my-2">
               <p class="text-start yellow-regular">Lorem ipsum</p>
-            </div>
+            </div> -->
             <div class="col-12 d-flex justify-content-center align-items-center mt-2">
               <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#payModal6"><p class="text-center blue-strong" style="font-size: 16;">Payment Confirmation</p></a>
             </div>
@@ -641,12 +641,12 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">081388923882 </p></div>
             </div>
-            <div class="col-12 d-flex justify-content-start align-items-center mt-4">
+            <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
             <div class="col-12 d-flex justify-content-stretch align-items-center my-2">
               <p class="text-start yellow-regular">Lorem ipsum</p>
-            </div>
+            </div> -->
             <div class="col-12 d-flex justify-content-center align-items-center mt-2">
               <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#payModal6"><p class="text-center blue-strong" style="font-size: 16;">Payment Confirmation</p></a>
             </div>
@@ -665,7 +665,7 @@
     </div>
 
     <!-- Modal 5 Pay Confirm -->
-    <div class="modal fade" id="payModal5Confirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
+    <div class="modal fade" id="payModal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered"> <!--  modal-fullscreen-md-down -->
         <div class="modal-content modal-pay">
 
@@ -711,14 +711,13 @@
                     <input type="file" name="img_link" id="img_link" class="form-control-file">
                   </div>
                   <div class="mt-4">
-                    <button type="submit">Add Medpart</button>
-                    <a class="cancel" onclick="location.href='/writer/medpart/list';">Cancel</a>
+                    <button type="submit">Add Payment Receipt</button>
                     <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
                   </div>
 		          </form>
               <!-- <a class="col-12 btn-modal"><p class="text-center blue-regular">Bukti Pembayaran</p></div> -->
             </div>
-            <div class="col-12 d-flex justify-content-start align-items-center mt-4">
+            <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
             <div class="col-12 d-flex justify-content-stretch align-items-center my-2">
@@ -729,7 +728,7 @@
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center mt-2">
               <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal"><p class="text-center blue-strong" style="font-size: 16;">Pay Later</p></a>
-            </div> 
+            </div>  -->
           </div>
 
           <!-- <div class="modal-footer">
