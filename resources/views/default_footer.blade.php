@@ -23,7 +23,7 @@
 <script src="{{ asset ('assets/js/talkshow_room.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
 <script>
-  var userwriterjs = <?php $userwriter; ?>
+  var userwriterjs = <?php echo json_encode($userwriter); ?>;
   console.log(userwriterjs);
   // on the footer of redirect page
   if (window.location.hash == "#notpaid") {
