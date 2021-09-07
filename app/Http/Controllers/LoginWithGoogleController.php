@@ -37,6 +37,7 @@ class LoginWithGoogleController extends Controller
                     'email' => $user->email,
                     'google_id'=> $user->id,
                     'paid_status'=> 0,
+                    'trx_image_submit'=> 0,
                     'password' => encrypt('123456')
                     // 'password' => encrypt('123456')
                 ]);

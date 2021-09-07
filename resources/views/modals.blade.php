@@ -664,7 +664,7 @@
       </div>
     </div>
 
-    <!-- Modal 5 Pay Confirm -->
+    <!-- Modal 6 Pay Confirm -->
     <div class="modal fade" id="payModal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered"> <!--  modal-fullscreen-md-down -->
         <div class="modal-content modal-pay">
@@ -680,22 +680,14 @@
               <a class="icon-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></a>
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center">
-              <h3 class="text-center yellow-strong">Payment Confirmation</p>
+              <h3 class="text-center yellow-strong">Payment Confirmation</h3>
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center">
               <form method="POST" autocomplete="on" enctype="multipart/form-data" class="php-general-form row">
                 @csrf
-                @if (session('error'))
-                  <div class="alert alert-danger">
-                    {{ session('error') }}
-                  </div>
-                @endif
-                @if (session('success'))
-                  <div class="alert alert-success">
-                    {{ session('success') }}
-                  </div>
-                @endif
-                  <!-- <div class="form-group">
+
+                  <!--
+                  <div class="form-group">
                     <label for="title">Name</label>
                     <input type="text" name="name" id="name" class="form-control" placeholder="Enter Medpart name here" required>
                   </div>
@@ -703,19 +695,28 @@
                     <label for="title">Info</label>
                     <textarea type="text" name="info" id="content" class="form-control" rows="6" placeholder="Enter your info here" required></textarea>
                         <!-- <input type="text" name="info" id="info" class="form-control" placeholder="Enter NGO info here" required>
-                  </div> -->
-                  <div class="form-group yellow-regular my-4">
-                    <input type="file" class="custom-file-input" id="customFile" name="filename">
-                    <!-- <label class="custom-file-label" for="customFile">Choose file</label>                    <input type="file" name="img_link" id="img_link" class="btn-general"> -->
                   </div>
-                  <div class="mt-4">
-                    <button type="submit">Add Payment Receipt</button>
+                  -->
+
+                  <input type="text" name="id" value="{{$userid}}" hidden required>
+                  <div class="form-group mt-4">
+                    <!-- <input type="file" class="custom-file-input" id="customFile" name="filename"> -->
+                    <!-- <label class="custom-file-label" for="customFile">Choose file</label> -->
+                    <input type="file" name="img_link" id="img_link" class="col-12 btn-modal" required>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="col-12 btn-modal" style="cursor: default;"><p class="text-center blue-regular">{{$useremail}} </p></div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-4">
+                    <button type="submit" class="text-center btn-modal" style="border-radius: 25px;">OK</button>
                     <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
                   </div>
 		          </form>
               <!-- <a class="col-12 btn-modal"><p class="text-center blue-regular">Bukti Pembayaran</p></div> -->
             </div>
-            <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
+
+            <!--
+            <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
             <div class="col-12 d-flex justify-content-stretch align-items-center my-2">
@@ -726,7 +727,40 @@
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center mt-2">
               <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal"><p class="text-center blue-strong" style="font-size: 16;">Pay Later</p></a>
-            </div>  -->
+            </div>
+            -->
+          </div>
+
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 7 Pay -->
+    <div class="modal fade" id="payModal7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered"> <!--  modal-fullscreen-md-down -->
+        <div class="modal-content modal-pay">
+
+          <!-- <div class="modal-header"> -->
+            <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+          <!-- </div> -->
+
+          <div class="modal-body row">
+            <div class="col-10 d-flex justify-content-center align-items-start">
+            </div>
+            <div class="col-2 d-flex justify-content-end">
+              <a class="icon-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle"></i></a>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <h5 class="text-center yellow-strong">Your data still in validation process, please wait patienly</h5>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center mt-2">
+              <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal"><p class="text-center blue-strong" style="font-size: 16;">Close</p></a>
+            </div> 
           </div>
 
           <!-- <div class="modal-footer">

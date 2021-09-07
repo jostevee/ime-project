@@ -26,11 +26,11 @@ class FrontEndController extends Controller
         return view('home', compact('data_speaker', 'data_day', 'data_detail')); //, compact('event')
     }
 
-    public function savePayment(Request $request, $id){
-        $user = User::where('id', $id)->firstOrFail();
+    public function savePayment(Request $request){
+        $user = User::where('id', $request->input('id'))->firstOrFail();
 
-        if ($request->hasFile('filename')) {
-            $gambar = $request->file('filename');
+        if ($request->hasFile('img_link')) {
+            $gambar = $request->file('img_link');
             $fileName = time().$gambar->getClientOriginalName();
 
             // Create 'img/event_list' directory if it isn't available yet
@@ -39,15 +39,18 @@ class FrontEndController extends Controller
             }
 
             // Move the file to the selected directory
-            $request->file('filename')->move('assets/img/trx_image_list', $fileName);
+            $request->file('img_link')->move('assets/img/trx_image_list', $fileName);
 
             $user->trx_image = $fileName;
+            $user->trx_image_submit = 1;
+
         } else {
-            $user->logo = '';
+            $user->trx_image = '';
         }
 
         $user->save();
 
+        return redirect('/home')->with('success', 'Payment Data successfully uploaded');
         // return redirect('/writer/ngo/list');
       }
 

@@ -127,9 +127,13 @@
   transition: all ease-in-out 0.4s;
 }
 
+.modal-pay .btn-modal p, h5 {
+  transition: all ease-in-out 0.4s;
+}
+
 .modal-pay .btn-modal:hover {
   /* padding: 6px 34px 6px 40px; */
-  background: #173963c4;
+  background: #678FAD;
   color:  #F3EC9E;
 }
 

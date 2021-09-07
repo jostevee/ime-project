@@ -31,6 +31,7 @@
 
   var userwriter = <?php echo json_encode($userwriter); ?>;
   var userid = <?php echo json_encode($userid); ?>;
+  var submittedstatus = <?php echo json_encode($submittedstatus); ?>;
   
   // on the footer of redirect page
   if (window.location.hash == "#notpaid") {
@@ -43,9 +44,19 @@
     });        
   }
   
-  if (userwriter == 0) {
+  if (userwriter == 0 && submittedstatus == 0) {
     $(document).ready(function(){
         $('#payModal').modal('show'); 
+        
+        // $("#registrationModal").modal();
+        // alert("Tes")
+        // document.getElementById("registrationModal").showModal();
+    });        
+  }
+
+  if (userwriter == 0 && submittedstatus == 1) {
+    $(document).ready(function(){
+        $('#payModal7').modal('show'); 
         
         // $("#registrationModal").modal();
         // alert("Tes")

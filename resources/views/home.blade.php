@@ -13,7 +13,9 @@
       $userid = 0;
       if (Auth::guard('web')->user() != null){
         $userwriter = Auth::guard('web')->user()->paid_status;
+        $submittedstatus = Auth::guard('web')->user()->trx_image_submit;
         $userid = Auth::guard('web')->user()->id;
+        $useremail = Auth::guard('web')->user()->email;
       } else {
         $userwriter = -1;
       }
@@ -26,6 +28,18 @@
     <section id="intro" class="intro-page d-flex">
       <div class="container-fluid d-flex align-items-center justify-content-center">
           <div class="row"> <!-- h-100 -->
+            <div class="col-12 d-flex align-items-center justify-content-center">
+              @if (session('error'))
+                <div class="alert alert-danger">
+                  {{ session('error') }}
+                </div>
+              @endif
+              @if (session('success'))
+                <div class="alert alert-success">
+                  {{ session('success') }}
+                </div>
+              @endif
+            </div>
             <div class="col-lg-12 d-flex align-items-center justify-content-center">
               <img src="{{ asset('assets/img/intro_page/ime_logo_transparent_new.png') }}"/>
             </div>
