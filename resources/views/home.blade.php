@@ -422,29 +422,97 @@
                   <div class="col-10 swiper-container schedule-swiper col-9 d-flex align-items-center justify-content-center">
                     <div class="swiper-wrapper">
 
-                      @foreach($data_day as $data_day)
+                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                      <div class="col-11 row schedule-box">
+                        <div class="schedule-day d-flex justify-content-center py-3">
+                          <h3 class="text-center white-strong">DAY 1</h3>
+                        </div>
+
+                        <!-- Content(s) -->
+                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                          08.30 - 09.45
+                        </h4>
+                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                          SESI 1: Andreas A. Hutahaean Ph.D.
+                        </h4>
+
+                        <!-- Content(s) -->
+                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                          09.55 - 11.15
+                        </h4>
+                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                          SESI 2: Annisa Dian Ndari
+                        </h4>
+
+                        <!-- Content(s) -->
+                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                          11.25 - 12.45
+                        </h4>
+                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                          SESI 3: Dwi Ariyoga Gautama
+                        </h4>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                      <div class="col-11 row schedule-box">
+                        <div class="schedule-day d-flex justify-content-center py-3">
+                          <h3 class="text-center white-strong">DAY 2</h3>
+                        </div>
+
+                        <!-- Content(s) -->
+                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                          08.30 - 09.45
+                        </h4>
+                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                          SESI 1: M. Erdi Lazuardi
+                        </h4>
+
+                        <!-- Content(s) -->
+                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                          09.55 - 11.15
+                        </h4>
+                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                          SESI 2: Dr. Rahmat Irfansyah, M.Si
+                        </h4>
+
+                        <!-- Content(s) -->
+                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                          11.25 - 12.45
+                        </h4>
+                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                          SESI 3: Aaron Matthew - Agnes Felicia Gesi Romauli
+                        </h4>
+                      </div>
+                    </div>
+
+                </div>
+
+                      <!--
+                      // @foreach($data_day as $data_day)
                         <!-- Day item --> 
+                        <!--
                         <div class="swiper-slide d-flex align-items-center justify-content-center">
                           <div class="col-11 row schedule-box">
                             <div class="schedule-day d-flex justify-content-center py-3">
                               <h3 class="text-center white-strong">{{ $data_day->title }}</h3>
                             </div>
 
-                            @forelse($data_detail as $data_per_detail)
-                              @if ($data_per_detail->id_day == $data_day->id)
-                                <!-- Content(s) -->
+                            // @forelse($data_detail as $data_per_detail)
+                              // @if ($data_per_detail->id_day == $data_day->id)
+                                <!-- Content(s)
                                 <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
                                   {{ $data_per_detail->from_time }}
                                 </h4>
                                 <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
                                   SESI 1: Nama Pembicara
                                 </h4>
-                              @endif
-                            @empty
+                              //@endif
+                            //@empty
                               <h4 class="col-12 schedule-desc d-flex justify-content-center py-3 text-center blue-regular">
                                 Please add activity to this day, thank you!
                               </h4>
-                            @endforelse
+                            //@endforelse
 
                             <!--
                             <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">09.00</h4>
@@ -455,12 +523,12 @@
                             <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 4: Nama Pembicara</h4>
                             <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">12.00</h4>
                             <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">SESI 5: Nama Pembicara</h4>
-                            -->
+                            
                           </div>
-                        </div><!-- End day item -->
-                      @endforeach
+                        </div><!-- End day item
+                      // @endforeach
 
-                    </div>
+                    </div> -->
 
                     <!-- Swiper buttons -->
                       <!-- <div class="swiper-button-next"></div> -->
