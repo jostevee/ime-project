@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 use App\Models\Medpart;
 use App\Models\NGO;
 use App\Models\TalkshowDetail;
@@ -25,32 +26,27 @@ class FrontEndController extends Controller
         return view('home', compact('data_speaker', 'data_day', 'data_detail')); //, compact('event')
     }
 
-    public function savePayment(Request $request){
-        $ngo = new NGO();
-        $ngo->name = $request->input('name');
-        $ngo->info = $request->input('info');
-        $ngo->video = $request->input('video');
-        $ngo->ig = $request->input('ig');
-        $ngo->fb = $request->input('fb');
+    public function savePayment(Request $request, $id){
+        $user = User::where('id', $id)->firstOrFail();
 
-        if ($request->hasFile('img_link')) {
-            $gambar = $request->file('img_link');
+        if ($request->hasFile('filename')) {
+            $gambar = $request->file('filename');
             $fileName = time().$gambar->getClientOriginalName();
 
             // Create 'img/event_list' directory if it isn't available yet
-            if(!is_dir('assets/img/ngo_list')) {
-                mkdir('assets/img/ngo_list', 0777, true);
+            if(!is_dir('assets/img/trx_image_list')) {
+                mkdir('assets/img/trx_image_list', 0777, true);
             }
 
             // Move the file to the selected directory
-            $request->file('img_link')->move('assets/img/ngo_list', $fileName);
+            $request->file('filename')->move('assets/img/trx_image_list', $fileName);
 
-            $ngo->logo = $fileName;
+            $user->trx_image = $fileName;
         } else {
-            $ngo->logo = '';
+            $user->logo = '';
         }
 
-        $ngo->save();
+        $user->save();
 
         // return redirect('/writer/ngo/list');
       }

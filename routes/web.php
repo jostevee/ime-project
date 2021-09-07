@@ -28,6 +28,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('dashboard', function () {
 
 Route::get('/', function () {return redirect('/home');});
 Route::get('/home', [FrontEndController::class, 'home']);
+Route::post('/home', [FrontEndController::class, 'savePayment']);
 Route::get('about', [FrontEndController::class, 'about']);
 Route::get('speaker', [FrontEndController::class, 'speaker']);
 Route::get('schedule', [FrontEndController::class, 'schedule']);
@@ -59,6 +60,9 @@ Route::post('/sign-up', [LoginController::class, 'registerWriter']);
 Route::get('/logout', [LoginController::class, 'logout']);
 
 // Writer - Admin
+// Route::middleware('auth:web')->group(function () {
+// }
+
 Route::middleware('auth:writer')->group(function () {
     Route::get('/writer', [WriterController::class, 'index']);
 

@@ -23,8 +23,15 @@
 <script src="{{ asset ('assets/js/talkshow_room.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
 <script>
-  var userwriterjs = <?php echo json_encode($userwriter); ?>;
-  console.log(userwriterjs);
+  // Add the following code if you want the name of the file appear on select
+  $(".custom-file-input").on("change", function() {
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  });
+
+  var userwriter = <?php echo json_encode($userwriter); ?>;
+  var userid = <?php echo json_encode($userid); ?>;
+  
   // on the footer of redirect page
   if (window.location.hash == "#notpaid") {
     $(document).ready(function(){
@@ -36,7 +43,7 @@
     });        
   }
   
-  if (userwriterjs == 0) {
+  if (userwriter == 0) {
     $(document).ready(function(){
         $('#payModal').modal('show'); 
         

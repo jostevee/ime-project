@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   @include('default_header')
 </head>
 
@@ -9,14 +10,16 @@
     @include('menu')
     @php
       $userwriter = -1;
+      $userid = 0;
       if (Auth::guard('web')->user() != null){
         $userwriter = Auth::guard('web')->user()->paid_status;
+        $userid = Auth::guard('web')->user()->id;
       } else {
         $userwriter = -1;
       }
       /* $useradmin = Auth::guard('writer')->user(); */
     @endphp
-    
+
     <a href="#about" class="to-bottom d-flex align-items-center justify-content-center"><i class="fas fa-arrow-down"></i></a>
     
     <!-- ======= intro-page Section ======= -->
@@ -108,7 +111,7 @@
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-12 d-flex justify-content-center">
                         <a href="#" class="glightbox play-btn mb-4">
-                          <img src="{{ asset ('assets/img/about/Nadya_About.jpeg') }}" class="video-box"/>
+                          <img src="{{ asset ('assets/img/about/Nadya_About.svg') }}" class="video-box"/>
                         </a>
                       </div>
                       <div class="col-12 d-flex justify-content-center my-2">
@@ -124,7 +127,7 @@
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-lg-12 d-flex justify-content-center">
                         <a href="#" class="glightbox play-btn mb-4">
-                          <img src="{{ asset ('assets/img/about/Humas_Jetli.jpg') }}" class="video-box"/>
+                          <img src="{{ asset ('assets/img/about/Humas_Jetli.svg') }}" class="video-box"/>
                         </a>
                       </div>
                       <div class="col-lg-12 d-flex justify-content-center my-2">
@@ -140,7 +143,7 @@
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-lg-12 d-flex justify-content-center">
                         <a href="#" class="glightbox play-btn mb-4">
-                          <img src="{{ asset ('assets/img/about/Maul_About.jpeg') }}" class="video-box"/>
+                          <img src="{{ asset ('assets/img/about/Maul_About.svg') }}" class="video-box"/>
                         </a>
                       </div>
                       <div class="col-lg-12 d-flex justify-content-center my-2">

@@ -695,20 +695,18 @@
                     {{ session('success') }}
                   </div>
                 @endif
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label for="title">Name</label>
                     <input type="text" name="name" id="name" class="form-control" placeholder="Enter Medpart name here" required>
                   </div>
                   <div class="form-group mt-4">
                     <label for="title">Info</label>
                     <textarea type="text" name="info" id="content" class="form-control" rows="6" placeholder="Enter your info here" required></textarea>
-                        <!-- <input type="text" name="info" id="info" class="form-control" placeholder="Enter NGO info here" required> -->                
-                  </div>
-                  <div class="form-group mt-4">
-                    <label for="img_link">Choose an image</label>
-                  </div>
-                  <div class="form-group my-4">
-                    <input type="file" name="img_link" id="img_link" class="form-control-file">
+                        <!-- <input type="text" name="info" id="info" class="form-control" placeholder="Enter NGO info here" required>
+                  </div> -->
+                  <div class="form-group yellow-regular my-4">
+                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                    <!-- <label class="custom-file-label" for="customFile">Choose file</label>                    <input type="file" name="img_link" id="img_link" class="btn-general"> -->
                   </div>
                   <div class="mt-4">
                     <button type="submit">Add Payment Receipt</button>

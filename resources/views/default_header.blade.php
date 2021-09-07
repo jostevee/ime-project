@@ -21,6 +21,7 @@
 <link href="{{ asset ('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 <link href="{{ asset ('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
 <link href="{{ asset ('assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+
 <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
 <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 
@@ -34,7 +35,6 @@
 <!-- Template Main CSS File -->
 <link href="{{ asset ('assets/css/style.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset ('assets/css/modals.css') }}" rel="stylesheet" type="text/css">
-
 
 <!-- Zoom CSS -->
 <link href="{{ asset ('assets/css/maps.css') }}" rel="stylesheet" type="text/css">
