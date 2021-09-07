@@ -12,6 +12,7 @@
       $userwriter = -1;
       $userid = 0;
       $useremail = -1;
+      $submittedstatus = -1;
       if (Auth::guard('web')->user() != null){
         $userwriter = Auth::guard('web')->user()->paid_status;
         $submittedstatus = Auth::guard('web')->user()->trx_image_submit;
