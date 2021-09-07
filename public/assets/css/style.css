@@ -136,7 +136,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-/*
 #preloader {
   position: fixed;
   top: 0;
@@ -179,7 +178,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(360deg);
   }
 }
-*/
 
 
 /*--------------------------------------------------------------
@@ -492,22 +490,31 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 10px;
   /* width: 368px; */
-  height: 400px;
-}
-
-#cloud2{
-  position: relative;
-  top: 10px;
-  /* width:170px; */
-  height:400px;
+  /* height: 400px; */
 }
 
 #cloud3{
   position: relative;
-  top: 250px;
+  top: 10px;
+  /* top: 250px; */
   /* left: 300px; */
   /* width:170px; */
-  height: 400px;
+  /* height: 400px; */
+}
+
+#cloud2{
+  position: relative;
+  top: 250px;
+  /* width:170px; */
+  /* height:400px; */
+}
+
+#cloud4{
+  position: relative;
+  top: 250px;
+  /* top: 250px; */
+  /* width:170px; */
+  /* height:400px; */
 }
 
 
@@ -837,8 +844,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-move-1 {
   position: absolute;
-  top: 0px;
-  bottom: 0;
+  top: auto;
+  /* bottom: 0; */
   right: auto;
   width: fit-content;
   background-size: contain;
@@ -848,8 +855,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-move-2 {
   position: absolute;
-  top: 0px;
-  bottom: 0;
+  top: auto;
+/*   bottom: 0; */
+  right: auto;
+  width: fit-content;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-move-3 {
+  position: absolute;
+  top: auto;
+/*   bottom: 0; */
+  right: auto;
+  width: fit-content;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-move-4 {
+  position: absolute;
+  top: auto;
+/*   bottom: 0; */
   right: auto;
   width: fit-content;
   background-size: contain;

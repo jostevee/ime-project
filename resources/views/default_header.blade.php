@@ -36,9 +36,9 @@
 <link href="{{ asset ('assets/css/style.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset ('assets/css/modals.css') }}" rel="stylesheet" type="text/css">
 
-<!-- Zoom CSS -->
-<link href="{{ asset ('assets/css/maps.css') }}" rel="stylesheet" type="text/css">
-<link href="{{ asset ('assets/css/zoom.css') }}" rel="stylesheet" type="text/css">
+<!-- Zoom and Maps CSS -->
+<!-- <link href="{{ asset ('assets/css/maps.css') }}" rel="stylesheet" type="text/css"> -->
+<!-- <link href="{{ asset ('assets/css/zoom.css') }}" rel="stylesheet" type="text/css"> -->
 
 <!-- Google's Sign In Method -->
 <script src="https://apis.google.com/js/api:client.js"></script>

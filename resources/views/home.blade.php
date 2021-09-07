@@ -24,7 +24,7 @@
     
     <!-- ======= intro-page Section ======= -->
     <section id="intro" class="intro-page d-flex">
-      <div class="container-fluid d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center justify-content-center">
           <div class="row"> <!-- h-100 -->
             <div class="col-lg-12 d-flex align-items-center justify-content-center">
               <img src="{{ asset('assets/img/intro_page/ime_logo_transparent_new.png') }}"/>
@@ -68,12 +68,13 @@
     
       <section class="main-page">
         <!-- ======= Clouds Section ======= -->
-        <div class="bg-move-1 d-flex justify-content-center">
+        <div class="row bg-move-1 d-flex justify-content-center">
           <img id="cloud1" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
           <img id="cloud3" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
         </div>
-        <div class="bg-move-2 d-flex justify-content-center">
+        <div class="row bg-move-2 d-flex justify-content-center">
           <img id="cloud2" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
+          <img id="cloud4" src="{{ asset ('assets/img/all_general_main_page/cloud.png') }}"/>
         </div>
         
         <!-- Old version Cloud Section -->

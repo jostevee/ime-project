@@ -324,6 +324,7 @@
   });
 
 
+  /* Cloud Sections */
   $(window).on("load resize scroll", function() {
     $(".main-page").each(function() {
         var windowTop = $(window).scrollTop();
@@ -334,10 +335,16 @@
         // var x = $("#cloud1").position();
         $(this)
             .find(".bg-move-1")
-            .css({ left: windowTop - 300 });
+            .css({ left: windowTop - 300}); // ,top: windowTop - 400
         $(this)
             .find(".bg-move-2")
-            .css({ right: windowTop - 300 });
+            .css({ right: windowTop - 300});
+        $(this)
+            .find(".bg-move-3")
+            .css({ left: windowTop - 500}); // ,top: windowTop - 400
+        $(this)
+            .find(".bg-move-4")
+            .css({ right: windowTop - 500});
         
     });
   });

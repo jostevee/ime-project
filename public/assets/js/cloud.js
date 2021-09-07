@@ -6,9 +6,9 @@
 */
 
 $(document).ready(function() {
-
     function runIt(item$) {
         var animWidth = Math.min($(window).width(), $(".main-page").width());
+        var animHeight = Math.min($(window).height(), $(".main-page").height());
         var numRand = Math.floor(Math.random()*6000) + 7000;
         // alert(numRand);
         item$.animate({left: (animWidth + item$.width()) + "px"}, numRand, 'linear', function() {
@@ -21,7 +21,6 @@ $(document).ready(function() {
     $('.cloud').each(function() {
         runIt($(this));
     });
-
 });
 
 

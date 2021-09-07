@@ -19,7 +19,7 @@
 <!-- Template JS File(s) -->
 <script src="{{ asset ('assets/js/main.js') }}"></script>
 <script src="{{ asset ('assets/js/sound.js') }}"></script>
-<script src="{{ asset ('assets/js/maps.js') }}"></script>
+<!-- <script src="{{ asset ('assets/js/maps.js') }}"></script> -->
 <script src="{{ asset ('assets/js/talkshow_room.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
 <script>
@@ -161,7 +161,7 @@
 </script>
 
 <!-- Zoom Js -->
-<script src="js/zoom.js"></script>
+<!-- <script src="js/zoom.js"></script> -->
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
