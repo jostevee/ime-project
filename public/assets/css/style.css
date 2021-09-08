@@ -496,6 +496,7 @@ h1, h2, h3, h4, h5, h6 {
 #cloud3{
   position: relative;
   top: 10px;
+  left: -600px;
   /* top: 250px; */
   /* left: 300px; */
   /* width:170px; */
@@ -512,6 +513,7 @@ h1, h2, h3, h4, h5, h6 {
 #cloud4{
   position: relative;
   top: 250px;
+  left: 600px;
   /* top: 250px; */
   /* width:170px; */
   /* height:400px; */
@@ -1068,7 +1070,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .schedule-page .content {
   padding: 0px;
-  border-radius: 20px;
+  min-height: 600px;
+  border-radius: 20px; 
   /* background: #F3EC9E; */
   /* color: #fff; */
 }
@@ -1098,6 +1101,14 @@ h1, h2, h3, h4, h5, h6 {
   /* margin: 20px 0px; */
   /* box-shadow: 35px 0px 0px -10px #173963, -35px 0px 0px -10px #173963; */
   /* color: #fff; */
+}
+.schedule-page .schedule-box .schedule-content-day {
+  /* position: absolute; */
+  margin: 0;
+  padding: 0;
+  height: 350px;
+  width: 100%;
+  overflow-y: scroll;
 }
 
 .schedule-page .schedule-box .schedule-day {

@@ -335,17 +335,10 @@
         // var x = $("#cloud1").position();
         $(this)
             .find(".bg-move-1")
-            .css({ left: windowTop - 300}); // ,top: windowTop - 400
+            .css({ left: windowTop - 300, top: windowTop - 600}); // ,top: windowTop - 400
         $(this)
             .find(".bg-move-2")
-            .css({ right: windowTop - 300});
-        $(this)
-            .find(".bg-move-3")
-            .css({ left: windowTop - 500}); // ,top: windowTop - 400
-        $(this)
-            .find(".bg-move-4")
-            .css({ right: windowTop - 500});
-        
+            .css({ right: windowTop - 300,  top: windowTop - 600});        
     });
   });
 

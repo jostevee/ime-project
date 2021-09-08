@@ -423,70 +423,242 @@
                     <div class="swiper-wrapper">
 
                     <div class="swiper-slide d-flex align-items-center justify-content-center">
-                      <div class="col-11 row schedule-box">
+                      <div class="col-12 row schedule-box">
                         <div class="schedule-day d-flex justify-content-center py-3">
                           <h3 class="text-center white-strong">DAY 1</h3>
                         </div>
 
-                        <!-- Content(s) -->
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
-                          08.30 - 09.45
-                        </h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
-                          SESI 1: Andreas A. Hutahaean Ph.D.
-                        </h4>
+                        <div class="col-12 row schedule-content-day">
+                          <!-- Talkshow -->
+                            <div class="schedule-day d-flex justify-content-center mt-3 py-3">
+                              <h3 class="text-center yellow-regular">Talkshow</h3>
+                            </div>
 
-                        <!-- Content(s) -->
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
-                          09.55 - 11.15
-                        </h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
-                          SESI 2: Annisa Dian Ndari
-                        </h4>
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              08.30 - 09.45
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              SESI 1: Andreas A. Hutahaean Ph.D.
+                            </h4>
 
-                        <!-- Content(s) -->
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
-                          11.25 - 12.45
-                        </h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
-                          SESI 3: Dwi Ariyoga Gautama
-                        </h4>
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              09.55 - 11.15
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              SESI 2: Annisa Dian Ndari
+                            </h4>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              11.25 - 12.45
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              SESI 3: Dwi Ariyoga Gautama
+                            </h4>
+
+
+                          <!-- NGO and Media Partner -->
+                            <div class="schedule-day d-flex justify-content-center mt-3 py-3">
+                              <h3 class="text-center yellow-regular">NGO and Media Partner</h3>
+                            </div>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              08.15 - 09.00
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              HIMAOSE Undip
+                            </h4>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              08.30 - 09.15
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              SAWFISH
+                            </h4>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              09.15 - 10.00
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              AtSea
+                            </h4>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              09.30 - 10.15
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              HIMAIKA Unpad
+                            </h4>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              10.15 - 11.00
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              FDC IPB
+                            </h4>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              10.30 - 11.15
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              HIMAKUA IPB
+                            </h4>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              11.15 - 12.00
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              HIMITEKA
+                            </h4>
+
+
+                          <!-- Games -->
+                            <div class="schedule-day d-flex justify-content-center mt-3 py-3">
+                              <h3 class="text-center yellow-regular">Games</h3>
+                            </div>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              12.50 - 12.55
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              Gartic.io
+                            </h4>
+
+                            <!-- Content(s) -->
+                            <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                              13.00 - 13.10
+                            </h4>
+                            <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                              Quizziz
+                            </h4>
+                        </div>
                       </div>
                     </div>
 
                     <div class="swiper-slide d-flex align-items-center justify-content-center">
-                      <div class="col-11 row schedule-box">
+                      <div class="col-12 row schedule-box">
                         <div class="schedule-day d-flex justify-content-center py-3">
                           <h3 class="text-center white-strong">DAY 2</h3>
                         </div>
 
-                        <!-- Content(s) -->
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
-                          08.30 - 09.45
-                        </h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
-                          SESI 1: M. Erdi Lazuardi
-                        </h4>
+                        <div class="col-12 row schedule-content-day">
 
-                        <!-- Content(s) -->
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
-                          09.55 - 11.15
-                        </h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
-                          SESI 2: Dr. Rahmat Irfansyah, M.Si
-                        </h4>
+                        <!-- Talkshow -->
+                          <div class="schedule-day d-flex justify-content-center mt-3 py-3">
+                            <h3 class="text-center yellow-regular">Talkshow</h3>
+                          </div>
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            08.30 - 09.45
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            SESI 1: M. Erdi Lazuardi
+                          </h4>
 
-                        <!-- Content(s) -->
-                        <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
-                          11.25 - 12.45
-                        </h4>
-                        <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
-                          SESI 3: Aaron Matthew - Agnes Felicia Gesi Romauli
-                        </h4>
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            09.55 - 11.15
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            SESI 2: Dr. Rahmat Irfansyah, M.Si
+                          </h4>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            11.25 - 12.45
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            SESI 3: Aaron Matthew - Agnes Felicia Gesi Romauli
+                          </h4>
+
+
+                        <!-- NGO and Media Partner -->
+                          <div class="schedule-day d-flex justify-content-center mt-3 py-3">
+                            <h3 class="text-center yellow-regular">NGO and Media Partner</h3>
+                          </div>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            08.15 - 09.00
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            HIMAOSE Undip
+                          </h4>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            08.30 - 09.15
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            AtSea
+                          </h4>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            09.15 - 10.00
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            HIMAIKA Unpad
+                          </h4>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            09.30 - 10.15
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            FDC IPB
+                          </h4>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            10.15 - 11.00
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            HIMAKUA IPB
+                          </h4>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            10.30 - 11.15
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            HIMITEKA
+                          </h4>
+
+
+                        <!-- Games -->
+                          <div class="schedule-day d-flex justify-content-center mt-3 py-3">
+                            <h3 class="text-center yellow-regular">Games</h3>
+                          </div>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            12.50 - 12.55
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            Gartic.io
+                          </h4>
+
+                          <!-- Content(s) -->
+                          <h4 class="col-4 schedule-time d-flex justify-content-center py-3 text-center white-regular">
+                            13.00 - 13.10
+                          </h4>
+                          <h4 class="col-8 schedule-desc d-flex justify-content-start py-3 blue-regular">
+                            Quizziz
+                          </h4>
+                      
                       </div>
                     </div>
-
-                </div>
 
                       <!--
                       // @foreach($data_day as $data_day)
@@ -526,20 +698,21 @@
                             
                           </div>
                         </div><!-- End day item
-                      // @endforeach
+                      // @endforeach -->
 
-                    </div> -->
-
-                    <!-- Swiper buttons -->
-                      <!-- <div class="swiper-button-next"></div> -->
-                      <!-- <div class="swiper-button-prev"></div> -->
-                      <div class="swiper-pagination-schedule" style="visibility: hidden;"></div>
+                    </div>
                   </div>
+
+                  <!-- Swiper buttons -->
+                  <!-- <div class="swiper-button-next"></div> -->
+                  <!-- <div class="swiper-button-prev"></div> -->
+                  <div class="swiper-pagination-schedule" style="visibility: hidden;"></div>
+                </div>
                   
-                  <!-- we put an arrow into the outside swiper swiper -->
-                  <div class="col-1 d-flex align-items-center justify-content-center">
-                    <i class="schedule-btn-next fas fa-arrow-right"></i>
-                  </div>
+                <!-- we put an arrow into the outside swiper swiper -->
+                <div class="col-1 d-flex align-items-center justify-content-center">
+                  <i class="schedule-btn-next fas fa-arrow-right"></i>
+                </div>
 
                   <!-- </div> -->
                   <!-- <h3>IME</h3> -->
