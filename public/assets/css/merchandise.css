@@ -70,18 +70,26 @@
 .merchandise-room-page .blue-background-box {
   background: #1C3B51;
   border-radius: 10px;
-  /* width: 240px; */
-  /* height: 240px; */
+  width: 240px;
+  height: 240px;
 }
 
 .merchandise-room-page .yellow-background-box {
   background: #F3EC9E;
   /* border-radius: 10px; */
-  /* width: 200px; */
-  /* height: 200px; */
+  width: 200px;
+  height: 200px;
 }
 
-.merchandise-room-page .about-people-box .name-box {
+.merchandise-room-page .merch-box {
+  /* background: #F3EC9E; */
+  /* border-radius: 10px; */
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.merchandise-room-page .name-box {
   padding: 14px;
   background: #1C3B51;
   border-radius: 30px;
@@ -92,7 +100,7 @@
   height: 200px; */
 }
 
-.about-page .about-people-box .name-box:hover {
+.merchandise-room-page .name-box:hover {
   background: #215799;
 }
 

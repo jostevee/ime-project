@@ -146,3 +146,54 @@
 .modal-pay .menu-modal-row {
   margin: 0px 20px;
 }
+
+
+/*--------------------------------------------------------------
+# Modal Branding Section
+--------------------------------------------------------------*/
+.modal-branding {
+  background: #F3EC9E;
+  border-radius: 20px;
+}
+
+.modal-branding .icon-close i {
+  font-size: 35px;
+  cursor: pointer;
+  color: #1C3B51;
+  transition: all ease-in-out 0.4s;
+}
+
+.modal-branding .icon-close i:hover {
+  color: #678FAD;
+}
+
+.modal-branding .btn-modal {
+  background: #1C3B51; /* rgba(255, 255, 255, 0.2); */
+  cursor: pointer;
+  padding: 6px 30px 6px 30px;
+  /* color: #F3EC9E; */ /* #fff */
+  font-size: 23px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 10px;
+  transition: all ease-in-out 0.4s;
+}
+
+.modal-branding .btn-modal p, h5 {
+  transition: all ease-in-out 0.4s;
+}
+
+.modal-branding .btn-modal:hover {
+  /* padding: 6px 34px 6px 40px; */
+  background: #678FAD;
+  color:  #F3EC9E;
+}
+
+.modal-branding .btn-modal:hover p, h5 {
+  /* padding: 6px 34px 6px 40px; */
+/*   background: #F3EC9E; */
+  color:  #678FAD;
+}
+
+.modal-branding .menu-modal-row {
+  margin: 0px 20px;
+}

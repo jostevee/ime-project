@@ -19,15 +19,25 @@
 <!-- Template JS File(s) -->
 <script src="{{ asset ('assets/js/main.js') }}"></script>
 <script src="{{ asset ('assets/js/sound.js') }}"></script>
-<!-- <script src="{{ asset ('assets/js/maps.js') }}"></script> -->
 <script src="{{ asset ('assets/js/talkshow_room.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
+
+<!-- <script src="{{ asset ('assets/js/maps.js') }}"></script> -->
+
 <script>
   // Add the following code if you want the name of the file appear on select
   $(".custom-file-input").on("change", function() {
     var fileName = $(this).val().split("\\").pop();
     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
   });
+
+  $(document).ready(function(){
+    $('#brandingModal').modal('show'); 
+      
+    // $("#registrationModal").modal();
+    // alert("Tes")
+    // document.getElementById("registrationModal").showModal();
+  });        
 
   var userwriter = <?php echo json_encode($userwriter); ?>;
   var userid = <?php echo json_encode($userid); ?>;

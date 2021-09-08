@@ -33,9 +33,74 @@
             <div class="col-12">
               <h1 class="blue-title">Merchandise</h1>
             </div>
-            <div class="col-12 row d-flex justify-content-stretch align-items-center mt-4">
-              <div class="col-lg-6 col-12 col-md-6 blue-background-box row d-flex justify-content-center align-items-center">
-                <div class="col-12 yellow-background-box row d-flex justify-content-center align-items-center">
+            <div class="col-12 row d-flex justify-content-center align-items-center mt-4">
+              <div class="col-6 row d-flex justify-content-center align-items-center mt-4">
+                <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
+                  <div class="yellow-background-box d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('assets/img/merchandise/find_the_fish.jpeg') }}" class="merch-box"/>
+                  </div>
+                </div>
+                <div class="col-8 d-flex justify-content-center mt-4">
+                  <div class="name-box">
+                    <p class="text-center yellow-strong">
+                      Find the Fish
+                    </p>
+                    <p class="text-center yellow-regular" style="font-size: 13px;">
+                      Rp80.000,00 (Lengan Pendek)<br>
+                      Rp85.000,00 (Lengan Panjang)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 row d-flex justify-content-center align-items-center mt-4">
+                <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
+                  <div class="yellow-background-box d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('assets/img/merchandise/plastic_are_predator.jpeg') }}" class="merch-box"/>
+                  </div>
+                </div>
+                <div class="col-8 d-flex justify-content-center mt-4">
+                  <div class="name-box">
+                    <p class="text-center yellow-strong">
+                      Plastic are Predator
+                    </p>
+                    <p class="text-center yellow-regular" style="font-size: 13px;">
+                      Rp80.000,00 (Lengan Pendek)<br>
+                      Rp85.000,00 (Lengan Panjang)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 row d-flex justify-content-center align-items-center mt-4">
+                <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
+                  <div class="yellow-background-box d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('assets/img/merchandise/ime_merch_a.jpg') }}" class="merch-box"/>
+                  </div>
+                </div>
+                <div class="col-8 d-flex justify-content-center mt-4">
+                  <div class="name-box">
+                    <p class="text-center yellow-regular" style="font-size: 16px;">
+                      Design A<br>
+                      Rp100.000,00
+                    </p>                  
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 row d-flex justify-content-center align-items-center mt-4">
+                <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
+                  <div class="yellow-background-box d-flex justify-content-center align-items-center">
+                    <img src="{{ asset('assets/img/merchandise/ime_merch_b.jpg') }}" class="merch-box"/>
+                  </div>
+                </div>
+                <div class="col-8 d-flex justify-content-center mt-4">
+                  <div class="name-box">
+                    <p class="text-center yellow-regular" style="font-size: 16px;">
+                      Design B<br>
+                      Rp200.000,00
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
