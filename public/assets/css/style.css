@@ -1395,6 +1395,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 
+
+/* Talkshow Button */
 @media (min-width: 1024px) {
   .island-page .talkshow-btn {
     margin: 320px 0px 0px 90px;
@@ -1417,6 +1419,70 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 */
+
+
+/* Games Button */
+@media (min-width: 1024px) {
+  .island-page .games-btn {
+    margin: 240px 0px 0px 90px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .island-page .games-btn {
+    margin: 90px 0px 0px 90px;
+    font-size: 16px;
+  }
+}
+
+
+/* NGO Button */
+@media (min-width: 1024px) {
+  .island-page .ngo-btn {
+    margin: 240px 0px 0px 90px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .island-page .ngo-btn {
+    margin: 90px 0px 0px 90px;
+    font-size: 16px;
+  }
+}
+
+
+/* Medpart Button */
+@media (min-width: 1024px) {
+  .island-page .medpart-btn {
+    margin: 240px 0px 0px 90px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .island-page .medpart-btn {
+    margin: 90px 0px 0px 90px;
+    font-size: 16px;
+  }
+}
+
+
+/* Donation Button */
+@media (min-width: 1024px) {
+  .island-page .donation-btn {
+    margin: 240px 0px 0px 90px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .island-page .donation-btn {
+    margin: 90px 0px 0px 90px;
+    font-size: 16px;
+  }
+}
 
 
 .talkshow-room-page .image {
