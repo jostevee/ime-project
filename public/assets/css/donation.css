@@ -55,121 +55,14 @@
   /* color: #fff; */
 }
 
-.donation-room-page .donation-room-people-box {
-  margin: 30px 60px;
-  padding: 25px 0px;
+.donation-room-page .content-transparent {
+  padding: 10px;
   border-radius: 20px;
-  background: #F3EC9E;
-  min-height: 300px;
-  max-width: 240px;
-  box-shadow: 35px 0px 0px -10px #173963, -35px 0px 0px -10px #173963;
+  background: #e4e4e4b9;
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
   /* color: #fff; */
-}
-
-.donation-room-page .donation-room-btn-next, .donation-room-page .donation-room-btn-prev {
-  font-size: 25px;
-  background: #F3EC9E;
-  color: #1C3B51;
-  border-radius: 25px;
-  padding: 8px;
-  -webkit-filter: drop-shadow(1px 4px 0px #1C3B51);
-  filter: drop-shadow(5px 6px 0px 0px #1C3B51);
-  transition: all ease-in-out 0.4s;
-}
-
-.donation-room-page .donation-room-btn-next:hover, .donation-room-page .donation-room-btn-prev:hover {
-  background: #BDB77B;
-}
-
-.donation-room-page .donation-room-day-box {
-  margin: 30px 30px;
-  padding: 25px 0px;
-  border-radius: 20px;
-  background: #173963;
-  box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;  
-  /* color: #fff; */
-}
-
-.donation-room-page .donation-room-day-text-box {
-  margin: 30px 30px;
-  padding: 25px 0px;
-  border-radius: 20px;
-  background: #F3EC9E;
-  /* box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;   */
-  /* color: #fff; */
-}
-
-.donation-room-page .donation-room-day-which-box {
-  margin: 0px 0px 0px 0px;
-  width: 100px;
-  padding: 5px 0px;
-  border-radius: 12px;
-  background: #173963;
-  box-shadow: -26px 0px 0px 0px #173963;
-  /* color: #fff; */
-}
-
-.donation-room-page .donation-room-day-theme-box {
-  margin: 30px 30px;
-  padding: 25px 0px;
-  border-radius: 20px;
-  /* box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;   */
-  /* color: #fff; */
-}
-
-/*
-.donation-room-page .yellow-background-box {
-  background: #F3EC9E;
-  border-radius: 30px;
-  width: 200px;
-  height: 200px;
-}
-*/
-
-.donation-room-page .donation-room-people-box .donation-room-pic-box {
-  margin: 20px 0px;
-  background: #FFF;
-  border-radius: 75px;
-  width: 150px;
-  height: 150px;
-}
-
-/**
-* Youtube Button
-*/
-.donation-room-page .youtube {
-  content: url('../img/youtube_dark_blue.png');
-  cursor: pointer;
-  margin:  10px;
-  border-radius: 25px;
-  width: 75px;
-  height: 50px;
-  transition: all ease-in-out 0.4s;
-}
-
-.donation-room-page .youtube:hover {
-  content: url('../img/youtube_light_blue.png');
-  width: 85px;
-  height: 60px;
-  /* background: #436279; */
-}
-
-/**
-* Zoom Button
-*/
-.donation-room-page .zoom {
-  content: url('../img/zoom_dark_blue.png');
-  cursor: pointer;
-  margin:  10px;
-  border-radius: 25px;
-  width: 75px;
-  height: 50px;
-  transition: all ease-in-out 0.4s;
-}
-
-.donation-room-page .zoom:hover {
-  content: url('../img/zoom_light_blue.png');
-  width: 85px;
-  height: 60px;
-  /* background: #436279; */
 }

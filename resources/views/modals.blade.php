@@ -290,7 +290,7 @@
               <p class="d-flex justify-content-center text-center black-strong mt-2" style="font-size: 24px;">Schedule</p>
             </div>
             <div class="col-4 col-md-3 col-lg-2 menu-modal-row">
-              <a data-bs-dismiss="modal" onclick="location.href='#about';"><div class="menu-modal-icon d-flex justify-content-center"><i class="on-ime-icon"></i></div></a>
+              <a data-bs-dismiss="modal" onclick="location.href='/';"><div class="menu-modal-icon d-flex justify-content-center"><i class="on-ime-icon"></i></div></a>
               <p class="d-flex justify-content-center text-center black-strong mt-2" style="font-size: 24px;">On IME</p>
             </div>
           </div>

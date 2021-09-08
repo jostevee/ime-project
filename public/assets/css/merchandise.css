@@ -1,0 +1,206 @@
+/**
+* Template Name: LB3Labs One - v1.1.0
+* Template URL: 
+* Author: LB3Labs Developer
+* License: 
+*/
+
+/*--------------------------------------------------------------
+# Merchandise Room Section
+--------------------------------------------------------------*/
+.merchandise-room-page {
+  width: 100%;
+  height: fit-content; /*95vh*/
+  background: url("../img/merchandise/background.png");
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+@media (min-width: 1024px) {
+  .merchandise-room-page {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 992px) {
+  .merchandise-room-page {
+     /* 54vh */
+     background-attachment: fixed;
+     max-height: fit-content;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  .merchandise-room-page {
+    background-attachment: fixed;
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 20px;
+  }
+}
+
+.merchandise-room-page .content {
+  padding: 10px;
+  border-radius: 20px;
+  background: #173963;
+  /* color: #fff; */
+}
+
+.merchandise-room-page .content-transparent {
+  padding: 10px;
+  border-radius: 20px;
+  background: #e4e4e4b9;
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+  /* color: #fff; */
+}
+
+.merchandise-room-page .blue-background-box {
+  background: #1C3B51;
+  border-radius: 10px;
+  /* width: 240px; */
+  /* height: 240px; */
+}
+
+.merchandise-room-page .yellow-background-box {
+  background: #F3EC9E;
+  /* border-radius: 10px; */
+  /* width: 200px; */
+  /* height: 200px; */
+}
+
+.merchandise-room-page .about-people-box .name-box {
+  padding: 14px;
+  background: #1C3B51;
+  border-radius: 30px;
+  width: inherit;
+  align-self: center;
+  transition: all ease-in-out 0.4s;
+  /* width: 200px;
+  height: 200px; */
+}
+
+.about-page .about-people-box .name-box:hover {
+  background: #215799;
+}
+
+
+.merchandise-room-page .donation-room-btn-next, .merchandise-room-page .donation-room-btn-prev {
+  font-size: 25px;
+  background: #F3EC9E;
+  color: #1C3B51;
+  border-radius: 25px;
+  padding: 8px;
+  -webkit-filter: drop-shadow(1px 4px 0px #1C3B51);
+  filter: drop-shadow(5px 6px 0px 0px #1C3B51);
+  transition: all ease-in-out 0.4s;
+}
+
+.merchandise-room-page .donation-room-btn-next:hover, .merchandise-room-page .donation-room-btn-prev:hover {
+  background: #BDB77B;
+}
+
+.merchandise-room-page .donation-room-day-box {
+  margin: 30px 30px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  background: #173963;
+  box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;  
+  /* color: #fff; */
+}
+
+.merchandise-room-page .donation-room-day-text-box {
+  margin: 30px 30px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  background: #F3EC9E;
+  /* box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;   */
+  /* color: #fff; */
+}
+
+.merchandise-room-page .donation-room-day-which-box {
+  margin: 0px 0px 0px 0px;
+  width: 100px;
+  padding: 5px 0px;
+  border-radius: 12px;
+  background: #173963;
+  box-shadow: -26px 0px 0px 0px #173963;
+  /* color: #fff; */
+}
+
+.merchandise-room-page .donation-room-day-theme-box {
+  margin: 30px 30px;
+  padding: 25px 0px;
+  border-radius: 20px;
+  /* box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;   */
+  /* color: #fff; */
+}
+
+/*
+.merchandise-room-page .yellow-background-box {
+  background: #F3EC9E;
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+}
+*/
+
+.merchandise-room-page .donation-room-people-box .donation-room-pic-box {
+  margin: 20px 0px;
+  background: #FFF;
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+}
+
+/**
+* Youtube Button
+*/
+.merchandise-room-page .youtube {
+  content: url('../img/youtube_dark_blue.png');
+  cursor: pointer;
+  margin:  10px;
+  border-radius: 25px;
+  width: 75px;
+  height: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.merchandise-room-page .youtube:hover {
+  content: url('../img/youtube_light_blue.png');
+  width: 85px;
+  height: 60px;
+  /* background: #436279; */
+}
+
+/**
+* Zoom Button
+*/
+.merchandise-room-page .zoom {
+  content: url('../img/zoom_dark_blue.png');
+  cursor: pointer;
+  margin:  10px;
+  border-radius: 25px;
+  width: 75px;
+  height: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.merchandise-room-page .zoom:hover {
+  content: url('../img/zoom_light_blue.png');
+  width: 85px;
+  height: 60px;
+  /* background: #436279; */
+}

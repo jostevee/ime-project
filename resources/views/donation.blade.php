@@ -3,6 +3,21 @@
 
 <head>
   @include('default_header')
+  @php
+    $userwriter = -1;
+    $userid = 0;
+    $useremail = -1;
+    $submittedstatus = -1;
+    if (Auth::guard('web')->user() != null){
+      $userwriter = Auth::guard('web')->user()->paid_status;
+      $submittedstatus = Auth::guard('web')->user()->trx_image_submit;
+      $userid = Auth::guard('web')->user()->id;
+      $useremail = Auth::guard('web')->user()->email;
+    } else {
+      $userwriter = -1;
+    }
+    /* $useradmin = Auth::guard('writer')->user(); */
+  @endphp
   <link href="{{ asset ('assets/css/donation.css') }}" rel="stylesheet" type="text/css">
 </head>
 
@@ -18,34 +33,41 @@
             <div class="col-12">
               <h1 class="blue-title">Donation Room</h1>
             </div>
-            <div class="col-lg-9 mt-4">
-              <p class="blue-strong">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia placerat commodo. Pellentesque euismod arcu orci,
-                quis ornare enim blandit eu. Sed iaculis tempus neque, in tincidunt ligula rutrum a. Ut et ornare eros. Donec dignissim
-                urna dolor, a lobortis leo auctor eget. Donec elementum neque augue, eu viverra tortor aliquet non. Mauris lacinia tellus
-                neque, vel convallis urna eleifend at. Duis commodo luctus lectus, nec elementum nisl elementum quis. Morbi id nunc lacus.
-                Proin metus mi, mattis at lacus ut, hendrerit vestibulum nibh. Aliquam erat volutpat.
+            <div class="col-lg-9 content-transparent mt-4">
+              <p class="blue-strong" style="text-align: justify; padding: 10px;">
+              Kelompok Smiling Coral Indonesia (SCI) adalah Kelompok Masyarakat peduli lingkungan 
+              yang didirikan pada Tanggal 10 Agustus Tahun 2010 bertepatan dengan Hari Konservasi 
+              Alam Nasional sesuai dengan Berita Acara Pembentukan Smiling Coral Indonesia di 
+              Kelurahan Pulau Panggang, Nomor : BA.01/SCI/VIII/2010, Tanggal 10 Agustus 2010. Pembentukan Kelompok Smiling Coral Indonesia melalui surat Keputusan Lurah Kelurahan Pulau Panggang Nomor : SK. 28 Tahun 2010 Tanggal 13 Juli 2020. 
               </p>
             </div>
             <div class="col-9 mt-4">
-              <div class="content my-4">
+              <div class="content">
                 <!-- <h3>IME</h3> -->
                 <div class="row d-flex justify-content-stretch">
 
-                  <div class="row col-12 col-lg-3 col-md-3 about-people-box d-flex justify-content-center">
+                  <div class="row col-12 col-lg-3 col-md-3 d-flex justify-content-center">
                     <div class="col-12 d-flex justify-content-center">
-                      <div class="round-box">
+                      <div class="donation-room-people-box">
+                        <img src="{{ asset('assets/img/donation/logo_smiling_trans.png') }}" class="donation-room-pic-box">
                       </div>
                     </div>
                   </div>
 
-                  <div class="row col-12 col-lg-9 col-md-9 about-people-box d-flex justify-content-center">
+                  <div class="row col-12 col-lg-9 col-md-9 d-flex justify-content-center">
                     <div class="col-lg-12 my-2">
                       <h5 class="yellow-title">OUR DONATION TEAM</h5>
                     </div>
                     <div class="col-lg-12">
-                      <p class="yellow-regular" style="font-size: 16px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia placerat commodo. Pellentesque euismod arcu orci, quis ornare enim blandit eu. Sed iaculis tempus neque, in tincidunt ligula rutrum a. Ut et ornare eros. Donec dignissim urna dolor, a lobortis leo auctor eget.
+                      <p class="yellow-regular" style="text-align: justify; font-size: 16px; padding: 10px;">
+                      Smiling Coral Indonesia adalah sebuah kelompok masyarakat peduli lingkungan yang bergerak 
+                      dibidang sains kelautan, konservasi alam, peduli lingkungan laut dan ekosistemnya serta 
+                      pengembangan pariwisata berkelanjutan dan ramah lingkungan khususnya di Kawasan Kabupaten 
+                      Administrasi Kepulauan Seribu Provinsi DKI Jakarta. Kelompok Masyarakat ini didirikan 
+                      dengan maksud sebagai wadah dalam mencapai kemandirian dan kesejahteraan masyarakat melalui 
+                      pendekatan sains kelautan, aktivitas konservasi alam, riset kelautan, pengembangan budidaya 
+                      hasil laut, pengembangan pariwisata dan perikanan berkelanjutan yang ramah lingkungan serta 
+                      mendorong masyarakat untuk memanfaatan sumber daya laut secara berkelajutan.
                       </p>
                     </div>
                   </div>
