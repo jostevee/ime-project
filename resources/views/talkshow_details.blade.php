@@ -4,8 +4,11 @@
 <head>
   @include('default_header')
   <link href="{{ asset ('assets/css/talkshow_details.css') }}" rel="stylesheet" type="text/css">
+</head>
 
-  @php
+<body>
+    @include('menu')
+    @php
       $userwriter = -1;
       $userid = 0;
       $useremail = -1;
@@ -20,10 +23,6 @@
       }
       /* $useradmin = Auth::guard('writer')->user(); */
     @endphp
-</head>
-
-<body>
-    @include('menu')
 
     <section class="talkshow-details-page">
       <!-- ======= Talkshow Details Section ======= -->
