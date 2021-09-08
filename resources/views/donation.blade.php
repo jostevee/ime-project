@@ -3,6 +3,8 @@
 
 <head>
   @include('default_header')
+  <link href="{{ asset ('assets/css/donation.css') }}" rel="stylesheet" type="text/css">
+  
   @php
     $userwriter = -1;
     $userid = 0;
@@ -18,7 +20,6 @@
     }
     /* $useradmin = Auth::guard('writer')->user(); */
   @endphp
-  <link href="{{ asset ('assets/css/donation.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 <body>

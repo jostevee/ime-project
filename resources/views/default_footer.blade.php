@@ -31,14 +31,6 @@
     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
   });
 
-  $(document).ready(function(){
-    $('#brandingModal').modal('show'); 
-      
-    // $("#registrationModal").modal();
-    // alert("Tes")
-    // document.getElementById("registrationModal").showModal();
-  });        
-
   var userwriter = <?php echo json_encode($userwriter); ?>;
   var userid = <?php echo json_encode($userid); ?>;
   var submittedstatus = <?php echo json_encode($submittedstatus); ?>;
@@ -51,6 +43,16 @@
         // $("#registrationModal").modal();
         // alert("Tes")
         // document.getElementById("registrationModal").showModal();
+    });        
+  }
+
+  if (userwriter == -1 && submittedstatus == -1) {
+    $(document).ready(function(){
+      $('#brandingModal').modal('show'); 
+        
+      // $("#registrationModal").modal();
+      // alert("Tes")
+      // document.getElementById("registrationModal").showModal();
     });        
   }
   

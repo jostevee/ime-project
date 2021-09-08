@@ -4,6 +4,22 @@
 <head>
   @include('default_header')
   <link href="{{ asset ('assets/css/ngo.css') }}" rel="stylesheet" type="text/css">
+
+  @php
+      $userwriter = -1;
+      $userid = 0;
+      $useremail = -1;
+      $submittedstatus = -1;
+      if (Auth::guard('web')->user() != null){
+        $userwriter = Auth::guard('web')->user()->paid_status;
+        $submittedstatus = Auth::guard('web')->user()->trx_image_submit;
+        $userid = Auth::guard('web')->user()->id;
+        $useremail = Auth::guard('web')->user()->email;
+      } else {
+        $userwriter = -1;
+      }
+      /* $useradmin = Auth::guard('writer')->user(); */
+    @endphp
 </head>
 
 <body>

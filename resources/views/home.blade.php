@@ -2,13 +2,10 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   @include('default_header')
-</head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<body>
-    @include('menu')
-    @php
+  @php
       $userwriter = -1;
       $userid = 0;
       $useremail = -1;
@@ -23,6 +20,10 @@
       }
       /* $useradmin = Auth::guard('writer')->user(); */
     @endphp
+</head>
+
+<body>
+    @include('menu')
 
     <a href="#about" class="to-bottom d-flex align-items-center justify-content-center"><i class="fas fa-arrow-down"></i></a>
     

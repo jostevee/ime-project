@@ -793,9 +793,11 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <h5 class="text-center blue-strong">INDONESIA MARINE EXHIBITION</h5>
             </div>
-            <img src
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <img src="{{ asset('assets/img/poster_ims.png') }}" class="col-12 d-flex justify-content-center align-items-center" style="border-radius: 40px;"/>
+            </div>
             <div class="col-12 d-flex justify-content-center align-items-center mt-2">
-              <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal"><p class="text-center blue-strong" style="font-size: 16;">Close</p></a>
+              <a class="col-8 btn-modal" style="border-radius: 25px;" data-bs-dismiss="modal"><p class="text-center yellow-strong" style="font-size: 16;">Close</p></a>
             </div> 
           </div>
 
