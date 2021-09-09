@@ -790,7 +790,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #1C3B51; /* #fff */
   /* color: #437099; */
   font-size: 14px;
-  border-radius: 50px;
+  border-radius: 25px;
   transition: all ease-in-out 0.4s;
 }
 
