@@ -96,7 +96,7 @@
                     <th width="30%">Transaction Image</th>
                     <th>Payment Status</th>
                     <th>Created at</th>
-                    <th width="15%"></th>
+                    <th width="20%"></th>
                   </tr>
                   @forelse($payment_user as $data)
                     <tr>
