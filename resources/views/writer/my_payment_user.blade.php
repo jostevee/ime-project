@@ -105,9 +105,13 @@
                       <td>{{ $data->email }}</td>
                       <td>{{ $data->google_id }}</td>
                       <td>
-                        <a href="/assets/img/trx_image_list/{{ $data->trx_image }}" class="glightbox play-btn mb-4">
-                          <img src="/assets/img/trx_image_list/{{ $data->trx_image }}" style="width: 300px; height: 200px; object-fit: cover; border-radius: 20px;" alt="" class="img-fluid"/></td> 
-                        </a>
+                        @if ($data->trx_image != null)
+                          <a href="/assets/img/trx_image_list/{{ $data->trx_image }}" class="glightbox play-btn mb-4">
+                            <img src="/assets/img/trx_image_list/{{ $data->trx_image }}" style="width: 300px; height: 200px; object-fit: cover; border-radius: 20px;" alt="" class="img-fluid"/>
+                          </a>
+                        @else
+                          <img src="{{ asset('/assets/img/no_image_available.png') }}" style="width: 300px; height: 200px; object-fit: cover; border-radius: 20px;" alt="" class="img-fluid"/>
+                      </td> 
                       <td>
                         @if ($data->paid_status == 0)
                           Unpaid
