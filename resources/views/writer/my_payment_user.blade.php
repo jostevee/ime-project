@@ -93,7 +93,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Google ID</th>
-                    <th>Transaction Image</th>
+                    <th width="30%">Transaction Image</th>
                     <th>Payment Status</th>
                     <th>Created at</th>
                     <th width="10%"></th>
