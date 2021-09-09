@@ -98,7 +98,7 @@
                       <select class="form-select" id="paid_status" name="paid_status" required>
                         <option value="">Select paid status...</option>
                           @if ($payment_user->paid_status == 1)
-                            <option value="0">Unpaid<option>
+                            <option value="0">Unpaid</option>
                             <option value="1" selected>Paid</option>
                           @elseif ($payment_user->paid_status == 0)
                             <option value="0" selected>Unpaid</option>

@@ -104,7 +104,10 @@
                       <td>{{ $data->name }}</td>
                       <td>{{ $data->email }}</td>
                       <td>{{ $data->google_id }}</td>
-                      <td><img src="/assets/img/payment_user_list/{{ $data->trx_image }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
+                      <td>
+                        <a href="/assets/img/trx_image_list/{{ $data->trx_image }}" class="glightbox play-btn mb-4">
+                          <img src="/assets/img/trx_image_list/{{ $data->trx_image }}" style="width: 300px; height: 200px; object-fit: cover; border-radius: 20px;" alt="" class="img-fluid"/></td> 
+                        </a>
                       <td>
                         @if ($data->paid_status == 0)
                           Unpaid

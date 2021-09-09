@@ -41,7 +41,7 @@
             </li>
             <li class="dropdown"><a class="nav-link scrollto" href="#payment-user">Payment User</a>
               <ul>
-                <li><a class="nav-link" href="/writer/payment-user/add">Add Payment User</a></li>
+                <!-- <li><a class="nav-link" href="/writer/payment-user/add">Add Payment User</a></li> -->
                 <li><a class="nav-link" href="/writer/payment-user/list">List Payment User</a></li>
               </ul>
             </li>
