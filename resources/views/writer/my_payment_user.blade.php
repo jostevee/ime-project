@@ -111,6 +111,7 @@
                           </a>
                         @else
                           <img src="{{ asset('/assets/img/no_image_available.png') }}" style="width: 300px; height: 200px; object-fit: cover; border-radius: 20px;" alt="" class="img-fluid"/>
+                        @endif
                       </td> 
                       <td>
                         @if ($data->paid_status == 0)
