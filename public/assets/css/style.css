@@ -775,6 +775,39 @@ h1, h2, h3, h4, h5, h6 {
         }
     */
 
+/*
+# Button (General)
+*/
+.btn-general-static {
+  cursor: pointer;
+  display: inline-block;
+  background: #F3EC9E; /* rgba(255, 255, 255, 0.2); */
+  padding: 6px 20px 8px 20px;
+  margin-top: 12px;
+  width: inherit;
+  color: #1C3B51; /* #fff */
+  /* color: #437099; */
+  font-size: 14px;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.btn-general-statici {
+  font-size: 14px;
+}
+
+.btn-general-static:hover {
+  color: #F3EC9E; /* #173963 */
+  background: #1C3B51; /* #fff */
+  /* background: #3291e6; */
+}
+
+.btn-general-static i {
+  font-size: 28px;
+  color: #FFF;
+  line-height: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Main Page

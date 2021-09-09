@@ -392,8 +392,8 @@ class WriterController extends Controller
       }
 
       public function updatePaymentUser(Request $request, $id){
-        $payment_user = User::where('id', $id)->firstOrFail(); 
-        $payment_user->paid_status = $request->input('paid_status');           
+        $payment_user = User::where('id', $id)->firstOrFail();
+        $payment_user->paid_status = $request->input('paid_status');
         $payment_user->save();
 
         return redirect('/writer/payment-user/list');
@@ -404,6 +404,14 @@ class WriterController extends Controller
         $payment_user->delete();
 
         return redirect('/writer/payment-user/list')->with('success', 'Selected Payment User succesfully deleted');
+      }
+
+      public function notifyChangePaymentUser(Request $request, $id){
+        $payment_user = User::where('id', $id)->firstOrFail();
+        $payment_user->trx_image_submit = 0;
+        $payment_user->save();
+
+        return redirect('/writer/payment-user/list')->with('success', 'Selected Payment User has been succesfully noified');
       }
 
       public function myPaymentUser(){

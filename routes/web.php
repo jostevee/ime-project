@@ -111,6 +111,8 @@ Route::middleware('auth:writer')->group(function () {
     Route::get('/writer/payment-user/edit/{id}', [WriterController::class, 'editPaymentUser']);
     Route::post('/writer/payment-user/edit/{id}', [WriterController::class, 'updatePaymentUser']);
     Route::post('/writer/payment-user/delete/{id}', [WriterController::class, 'deletePaymentUser']);
+    Route::post('/writer/payment-user/notify/{id}', [WriterController::class, 'notifyChangePaymentUser']);
+
 
     Route::get('/writer/editAccount/{id}', [WriterController::class, 'editAccount']);
     Route::post('/writer/editAccount/{id}', [WriterController::class, 'updateAccount']);

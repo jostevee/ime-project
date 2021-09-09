@@ -96,7 +96,7 @@
                     <th width="30%">Transaction Image</th>
                     <th>Payment Status</th>
                     <th>Created at</th>
-                    <th width="10%"></th>
+                    <th width="15%"></th>
                   </tr>
                   @forelse($payment_user as $data)
                     <tr>
@@ -122,9 +122,14 @@
                       </td>
                       <td>{{ $data->created_at }}</td>
                       <td>
-                        <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
+                        <form action="edit/{{ $data->id }}" method="POST">@csrf
+                          <button class="btn btn-general-static" style="width: 100%;" type="submit">Edit</button>
+                        </form>
                         <form action="delete/{{ $data->id }}" method="POST">@csrf
-                          <button class="btn btn-danger col-12" type="submit">Delete</button>
+                          <button class="btn btn-general-static" style="width: 100%;" type="submit">Delete</button>
+                        </form>
+                        <form action="notify/{{ $data->id }}" method="POST">@csrf
+                          <button class="btn btn-general-static" style="width: 100%;" type="submit">Ask new image</button>
                         </form>
                       </td>
                     </tr>
