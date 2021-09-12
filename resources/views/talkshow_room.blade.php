@@ -72,7 +72,7 @@
                               <h3 class="text-start yellow-strong">{{ $data->title }}</h3>
                             </div>
                             <div class="d-flex justify-content-center align-items-center my-2">
-                              <h5 class="text-center blue-strong">{{ $data->theme }}</h5>
+                              <p class="text-center blue-strong">{{ $data->theme }}</p>
                             </div>
                           </div>
                         </a><!-- End Talkshow item -->
