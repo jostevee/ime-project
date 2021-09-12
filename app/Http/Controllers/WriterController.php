@@ -253,7 +253,7 @@ class WriterController extends Controller
       }
 
       public function myTalkshowDay(){
-        $talkshow_day = TalkshowDay::orderByDesc('created_at')->get();
+        $talkshow_day = TalkshowDay::orderBy('title')->get();
 
         return view('writer/my_talkshow_day', compact('talkshow_day'));
       }

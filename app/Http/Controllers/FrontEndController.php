@@ -74,14 +74,14 @@ class FrontEndController extends Controller
     
 
     public function talkshow(){
-        $data = TalkshowDay::orderByDesc('title')->get();
+        $data = TalkshowDay::orderBy('title')->get();
 
         return view('talkshow_room', compact('data')); //, compact('event')
     }
 
     public function talkshowDetails($id){
         $data_root = TalkshowDay::where('id', $id)->firstOrFail();
-        $data = TalkshowDetail::where('id_day', $id)->orderByDesc('created_at')->get();
+        $data = TalkshowDetail::where('id_day', $id)->orderBy('from_time')->get();
         // $event = Event::orderByDesc('created_at')->take(4)->get();
 
         return view('talkshow_details', compact('data', 'data_root')); //, compact('event')
