@@ -3,6 +3,7 @@
 
 <head>
   @include('default_header')
+  <title>Indonesia Marine Exhibition - Donation Room</title>
   <link href="{{ asset ('assets/css/donation.css') }}" rel="stylesheet" type="text/css">
 </head>
 
@@ -59,7 +60,7 @@
                       <h5 class="yellow-title">OUR DONATION TEAM</h5>
                     </div>
                     <div class="col-lg-12">
-                      <p class="yellow-regular" style="text-align: justify; font-size: 16px; padding: 10px;">
+                      <p class="yellow-regular" style="text-align: justify; font-size: 16px; padding: 10px 0px 10px 0px;">
                       Smiling Coral Indonesia adalah sebuah kelompok masyarakat peduli lingkungan yang bergerak 
                       dibidang sains kelautan, konservasi alam, peduli lingkungan laut dan ekosistemnya serta 
                       pengembangan pariwisata berkelanjutan dan ramah lingkungan khususnya di Kawasan Kabupaten 
@@ -88,6 +89,6 @@
     @include('modals')
 </body>
 
-@include('default_footer')
+@include('default_footer_paid_page')
 
 </html>

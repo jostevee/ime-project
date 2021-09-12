@@ -3,6 +3,7 @@
 
 <head>
   @include('default_header')
+  <title>Indonesia Marine Exhibition - Games Room</title>
   <link href="{{ asset ('assets/css/games.css') }}" rel="stylesheet" type="text/css">
 </head>
 
@@ -117,6 +118,6 @@
     @include('modals')
 </body>
 
-@include('default_footer')
+@include('default_footer_paid_page')
 
 </html>

@@ -39,43 +39,19 @@
   
   // on the footer of redirect page
   if (window.location.hash == "#notpaid") {
-    $(document).ready(function(){
-        $('#payModal').modal('show'); 
-        
-        // $("#registrationModal").modal();
-        // alert("Tes")
-        // document.getElementById("registrationModal").showModal();
-    });        
+    location.href="/";            
   }
 
   if (userwriter == -1 && submittedstatus == -1) {
-    $(document).ready(function(){
-      $('#brandingModal').modal('show'); 
-        
-      // $("#registrationModal").modal();
-      // alert("Tes")
-      // document.getElementById("registrationModal").showModal();
-    });        
+    location.href="/";       
   }
   
   if (userwriter == 0 && submittedstatus == 0) {
-    $(document).ready(function(){
-        $('#payModal').modal('show'); 
-        
-        // $("#registrationModal").modal();
-        // alert("Tes")
-        // document.getElementById("registrationModal").showModal();
-    });        
+    location.href="/";              
   }
 
   if (userwriter == 0 && submittedstatus == 1) {
-    $(document).ready(function(){
-        $('#payModal7').modal('show'); 
-        
-        // $("#registrationModal").modal();
-        // alert("Tes")
-        // document.getElementById("registrationModal").showModal();
-    });        
+    location.href="/";               
   }
 
   $('#ngoModal').on('show.bs.modal', function (event) {

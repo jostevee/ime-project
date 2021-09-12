@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   @include('default_header')
+  <title>Indonesia Marine Exhibition - Home</title>
 </head>
 
 <body>
@@ -843,14 +844,17 @@
           <section id="talkshow-room" class="general island-page d-flex my-4">
             <div class="container">
 
-              <div class="row d-flex justify-content-center mt-4">
+              <div class="row d-flex justify-content-center talkshow-page-move mt-4">
                 <div class="col-12">
                   <h1 class="text-center blue-title">Talkshow Room</h1>
                 </div>
+
                 <!-- <div class="image"></div> -->
                 <img src="{{ asset ('assets/img/all_general_main_page/talkshow.png') }}" class="col-12 feature_image" alt="">
                 <p class="col-3 btn-general talkshow-btn text-center blue-title" onclick="location.href='talkshow';">GO IN</p>
               </div>
+
+          
 
             </div>
           </section>

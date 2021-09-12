@@ -10,6 +10,8 @@ use App\Models\NGO;
 use App\Models\TalkshowDetail;
 use App\Models\TalkshowDay;
 use App\Models\TalkshowSpeaker;
+use App\Models\Merchandise;
+use App\Models\Games;
 use Auth;
 
 // use Illuminate\Support\Facades\Auth;
@@ -85,12 +87,6 @@ class FrontEndController extends Controller
         return view('talkshow_details', compact('data', 'data_root')); //, compact('event')
     }
 
-    public function games(){
-        //$event = Event::orderByDesc('created_at')->take(4)->get();
-
-        return view('games'); //, compact('event')
-    }
-
     public function ngo(){
         $data = NGO::orderByDesc('created_at')->get();
 
@@ -110,9 +106,17 @@ class FrontEndController extends Controller
     }
 
     public function merchandise(){
-        //$event = Event::orderByDesc('created_at')->take(4)->get();
+        // $data = Merchandise::orderByDesc('created_at')->take(4)->get();
+        $data = Merchandise::all();
 
-        return view('merchandise'); //, compact('event')
+        return view('merchandise', compact('data')); //, compact('event')
+    }
+
+    public function games(){
+        //$event = Event::orderByDesc('created_at')->take(4)->get();
+        $data = Games::where('id', $id)->orderByDesc('id_day')->firstOrFail();
+
+        return view('games', compact('data')); //, compact('event')
     }
 
     public function misatoto(){

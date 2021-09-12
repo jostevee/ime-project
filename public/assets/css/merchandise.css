@@ -91,8 +91,9 @@
 
 .merchandise-room-page .name-box {
   padding: 14px;
+  min-height: 100px;
   background: #1C3B51;
-  border-radius: 30px;
+  border-radius: 10px;
   width: inherit;
   align-self: center;
   transition: all ease-in-out 0.4s;
@@ -105,7 +106,7 @@
 }
 
 
-.merchandise-room-page .donation-room-btn-next, .merchandise-room-page .donation-room-btn-prev {
+.merchandise-room-page .merchandise-room-btn-next, .merchandise-room-page .merchandise-room-btn-prev {
   font-size: 25px;
   background: #F3EC9E;
   color: #1C3B51;
@@ -116,11 +117,11 @@
   transition: all ease-in-out 0.4s;
 }
 
-.merchandise-room-page .donation-room-btn-next:hover, .merchandise-room-page .donation-room-btn-prev:hover {
+.merchandise-room-page .merchandise-room-btn-next:hover, .merchandise-room-page .merchandise-room-btn-prev:hover {
   background: #BDB77B;
 }
 
-.merchandise-room-page .donation-room-day-box {
+.merchandise-room-page .merchandise-room-day-box {
   margin: 30px 30px;
   padding: 25px 0px;
   border-radius: 20px;
@@ -129,7 +130,7 @@
   /* color: #fff; */
 }
 
-.merchandise-room-page .donation-room-day-text-box {
+.merchandise-room-page .merchandise-room-day-text-box {
   margin: 30px 30px;
   padding: 25px 0px;
   border-radius: 20px;
@@ -138,7 +139,7 @@
   /* color: #fff; */
 }
 
-.merchandise-room-page .donation-room-day-which-box {
+.merchandise-room-page .merchandise-room-day-which-box {
   margin: 0px 0px 0px 0px;
   width: 100px;
   padding: 5px 0px;
@@ -148,7 +149,7 @@
   /* color: #fff; */
 }
 
-.merchandise-room-page .donation-room-day-theme-box {
+.merchandise-room-page .merchandise-room-day-theme-box {
   margin: 30px 30px;
   padding: 25px 0px;
   border-radius: 20px;
@@ -165,7 +166,7 @@
 }
 */
 
-.merchandise-room-page .donation-room-people-box .donation-room-pic-box {
+.merchandise-room-page .merchandise-room-people-box .merchandise-room-pic-box {
   margin: 20px 0px;
   background: #FFF;
   border-radius: 75px;

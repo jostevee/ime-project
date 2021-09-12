@@ -3,6 +3,7 @@
 
 <head>
   @include('default_header')
+  <title>Indonesia Marine Exhibition - Merchandise</title>
   <link href="{{ asset ('assets/css/merchandise.css') }}" rel="stylesheet" type="text/css">
 </head>
 
@@ -33,8 +34,118 @@
             <div class="col-12">
               <h1 class="blue-title">Merchandise</h1>
             </div>
+
+            <div class="col-12 mt-4">
+              <div class="row">
+                <!-- <div class="swiper-father"> -->
+
+                  <!-- we put an arrow into the outside swiper swiper -->
+                  <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="merchandise-room-btn-prev fas fa-arrow-left"></i>
+                  </div>
+
+                  
+                    <div class="swiper-container merchandise-room-swiper col-9 d-flex align-items-center justify-content-stretch">
+                      <div class="swiper-wrapper d-flex">
+
+                        <div class="swiper-slide">
+                          <div class="row d-flex justify-content-center">
+
+                            <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
+                              <div class="yellow-background-box d-flex justify-content-center align-items-center">
+                                <img src="{{ asset('assets/img/merchandise/find_the_fish.jpeg') }}" class="merch-box"/>
+                              </div>
+                            </div>
+                            <div class="col-10 d-flex justify-content-center mt-4">
+                              <div class="name-box row align-items-center">
+                                <p class="text-center yellow-strong">
+                                  Find the Fish
+                                </p>
+                                <p class="text-center yellow-regular" style="font-size: 13px;">
+                                  Rp80.000,00 (Lengan Pendek)<br>
+                                  Rp85.000,00 (Lengan Panjang)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
+                              <div class="yellow-background-box d-flex justify-content-center align-items-center">
+                                <img src="{{ asset('assets/img/merchandise/plastic_are_predator.jpeg') }}" class="merch-box"/>
+                              </div>
+                            </div>
+                            <div class="col-10 d-flex justify-content-center mt-4">
+                              <div class="name-box row align-items-center">
+                                <p class="text-center yellow-strong">
+                                  Plastic are Predator
+                                </p>
+                                <p class="text-center yellow-regular" style="font-size: 13px;">
+                                  Rp80.000,00 (Lengan Pendek)<br>
+                                  Rp85.000,00 (Lengan Panjang)
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
+                              <div class="yellow-background-box d-flex justify-content-center align-items-center">
+                                <img src="{{ asset('assets/img/merchandise/ime_merch_a.jpg') }}" class="merch-box"/>
+                              </div>
+                            </div>
+                            <div class="col-10 d-flex justify-content-center mt-4">
+                              <div class="name-box row align-items-center">
+                                <p class="text-center yellow-regular" style="font-size: 16px;">
+                                  Design A<br>
+                                  Rp100.000,00
+                                </p>                  
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
+                              <div class="yellow-background-box d-flex justify-content-center align-items-center">
+                                <img src="{{ asset('assets/img/merchandise/ime_merch_b.jpg') }}" class="merch-box"/>
+                              </div>
+                            </div>
+                            <div class="col-10 d-flex justify-content-center mt-4">
+                              <div class="name-box row align-items-center">
+                                <p class="text-center yellow-regular" style="font-size: 16px;">
+                                  Design B<br>
+                                  Rp200.000,00
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Swiper buttons -->
+                        <!-- <div class="swiper-button-next"></div> -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <div class="swiper-pagination-merchandise-room" style="visibility: hidden;"></div>
+                    </div>
+                  
+                  <!-- we put an arrow into the outside swiper swiper -->
+                  <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="merchandise-room-btn-next fas fa-arrow-right"></i>
+                  </div>
+
+              </div>
+            </div>
+
+            <!--
             <div class="col-12 row d-flex justify-content-center align-items-center mt-4">
               <div class="col-6 row d-flex justify-content-center align-items-center mt-4">
+
                 <div class="col-12 blue-background-box d-flex justify-content-center align-items-center">
                   <div class="yellow-background-box d-flex justify-content-center align-items-center">
                     <img src="{{ asset('assets/img/merchandise/find_the_fish.jpeg') }}" class="merch-box"/>
@@ -103,7 +214,10 @@
                   </div>
                 </div>
               </div>
+
             </div>
+            -->
+
           </div>
 
         </div>
@@ -117,6 +231,6 @@
     @include('modals')
 </body>
 
-@include('default_footer')
+@include('default_footer_paid_page')
 
 </html>

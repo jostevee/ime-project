@@ -8,7 +8,7 @@
 /*--------------------------------------------------------------
 # Merchandise Room Section
 --------------------------------------------------------------*/
-.merchandise-room-page {
+.games-room-page {
   width: 100%;
   height: fit-content; /*95vh*/
   background: url("../img/games/background.png");
@@ -17,7 +17,7 @@
 }
 
 @media (min-width: 1024px) {
-  .merchandise-room-page {
+  .games-room-page {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 992px) {
-  .merchandise-room-page {
+  .games-room-page {
      /* 54vh */
      background-attachment: fixed;
      max-height: fit-content;
@@ -38,7 +38,7 @@
 }
 
 @media (max-height: 600px) {
-  .merchandise-room-page {
+  .games-room-page {
     background-attachment: fixed;
     height: fit-content;
     background-size: cover;
@@ -48,14 +48,14 @@
   }
 }
 
-.merchandise-room-page .content {
+.games-room-page .content {
   padding: 10px;
   border-radius: 20px;
   background: #173963;
   /* color: #fff; */
 }
 
-.merchandise-room-page .content-transparent {
+.games-room-page .content-transparent {
   padding: 10px;
   border-radius: 20px;
   background: #e4e4e4b9;
@@ -67,21 +67,21 @@
   /* color: #fff; */
 }
 
-.merchandise-room-page .blue-background-box {
+.games-room-page .blue-background-box {
   background: #1C3B51;
   border-radius: 10px;
   width: 240px;
   height: 240px;
 }
 
-.merchandise-room-page .yellow-background-box {
+.games-room-page .yellow-background-box {
   background: #F3EC9E;
   /* border-radius: 10px; */
   width: 200px;
   height: 200px;
 }
 
-.merchandise-room-page .merch-box {
+.games-room-page .merch-box {
   /* background: #F3EC9E; */
   /* border-radius: 10px; */
   width: 200px;
@@ -89,7 +89,7 @@
   object-fit: contain;
 }
 
-.merchandise-room-page .name-box {
+.games-room-page .name-box {
   padding: 14px;
   background: #1C3B51;
   border-radius: 30px;
@@ -100,12 +100,12 @@
   height: 200px; */
 }
 
-.merchandise-room-page .name-box:hover {
+.games-room-page .name-box:hover {
   background: #215799;
 }
 
 
-.merchandise-room-page .donation-room-btn-next, .merchandise-room-page .donation-room-btn-prev {
+.games-room-page .donation-room-btn-next, .games-room-page .donation-room-btn-prev {
   font-size: 25px;
   background: #F3EC9E;
   color: #1C3B51;
@@ -116,11 +116,11 @@
   transition: all ease-in-out 0.4s;
 }
 
-.merchandise-room-page .donation-room-btn-next:hover, .merchandise-room-page .donation-room-btn-prev:hover {
+.games-room-page .donation-room-btn-next:hover, .games-room-page .donation-room-btn-prev:hover {
   background: #BDB77B;
 }
 
-.merchandise-room-page .donation-room-day-box {
+.games-room-page .donation-room-day-box {
   margin: 30px 30px;
   padding: 25px 0px;
   border-radius: 20px;
@@ -129,7 +129,7 @@
   /* color: #fff; */
 }
 
-.merchandise-room-page .donation-room-day-text-box {
+.games-room-page .donation-room-day-text-box {
   margin: 30px 30px;
   padding: 25px 0px;
   border-radius: 20px;
@@ -138,7 +138,7 @@
   /* color: #fff; */
 }
 
-.merchandise-room-page .donation-room-day-which-box {
+.games-room-page .donation-room-day-which-box {
   margin: 0px 0px 0px 0px;
   width: 100px;
   padding: 5px 0px;
@@ -148,7 +148,7 @@
   /* color: #fff; */
 }
 
-.merchandise-room-page .donation-room-day-theme-box {
+.games-room-page .donation-room-day-theme-box {
   margin: 30px 30px;
   padding: 25px 0px;
   border-radius: 20px;
@@ -157,7 +157,7 @@
 }
 
 /*
-.merchandise-room-page .yellow-background-box {
+.games-room-page .yellow-background-box {
   background: #F3EC9E;
   border-radius: 30px;
   width: 200px;
@@ -165,7 +165,7 @@
 }
 */
 
-.merchandise-room-page .donation-room-people-box .donation-room-pic-box {
+.games-room-page .donation-room-people-box .donation-room-pic-box {
   margin: 20px 0px;
   background: #FFF;
   border-radius: 75px;
@@ -176,7 +176,7 @@
 /**
 * Youtube Button
 */
-.merchandise-room-page .youtube {
+.games-room-page .youtube {
   content: url('../img/youtube_dark_blue.png');
   cursor: pointer;
   margin:  10px;
@@ -186,7 +186,7 @@
   transition: all ease-in-out 0.4s;
 }
 
-.merchandise-room-page .youtube:hover {
+.games-room-page .youtube:hover {
   content: url('../img/youtube_light_blue.png');
   width: 85px;
   height: 60px;
@@ -196,7 +196,7 @@
 /**
 * Zoom Button
 */
-.merchandise-room-page .zoom {
+.games-room-page .zoom {
   content: url('../img/zoom_dark_blue.png');
   cursor: pointer;
   margin:  10px;
@@ -206,7 +206,7 @@
   transition: all ease-in-out 0.4s;
 }
 
-.merchandise-room-page .zoom:hover {
+.games-room-page .zoom:hover {
   content: url('../img/zoom_light_blue.png');
   width: 85px;
   height: 60px;

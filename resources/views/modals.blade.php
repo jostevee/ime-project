@@ -791,7 +791,7 @@
               <h3 class="text-center blue-strong">COMING SOON</h3>
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center">
-              <h5 class="text-center blue-strong">INDONESIA MARINE EXHIBITION</h5>
+              <h4 class="text-center blue-strong">INDONESIA MARINE SUMMIT 2021</h4>
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center">
               <img src="{{ asset('assets/img/poster_ims.png') }}" class="col-12 d-flex justify-content-center align-items-center" style="border-radius: 40px;"/>

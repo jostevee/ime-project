@@ -55,6 +55,18 @@
   /* color: #fff; */
 }
 
+.talkshow-room-page .content-transparent {
+  padding: 10px;
+  border-radius: 20px;
+  background: #e4e4e4b9;
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+  /* color: #fff; */
+}
+
 .talkshow-room-page .talkshow-room-btn-next, .talkshow-room-page .talkshow-room-btn-prev {
   font-size: 25px;
   background: #F3EC9E;

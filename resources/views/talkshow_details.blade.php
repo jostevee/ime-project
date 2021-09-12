@@ -3,6 +3,7 @@
 
 <head>
   @include('default_header')
+  <title>Indonesia Marine Exhibition - Talkshow Room {{$data_root->title}}</title>
   <link href="{{ asset ('assets/css/talkshow_details.css') }}" rel="stylesheet" type="text/css">
 </head>
 
@@ -40,8 +41,12 @@
 
             <div class="row col-12 justify-content-center mt-4">
               @if ($data_root->count() == 0)
-                <h1 style="margin-top: 250px;">Welcome to IME</h1>
-                <h2>Indonesia Marine</h2>
+                <div style="margin-top: 250px;">
+                  <div class="content-transparent">
+                    <h1>Ups... there are no data available</h1>
+                    <h2>Please try again :)</h2>
+                  </div>
+                </div>
               @else
                 @foreach($data as $data_per_day)
                   <div class="row talkshow-details-people-box justify-content-center align-items-center col-lg-3 mb-2">
@@ -69,6 +74,6 @@
     @include('modals')
 </body>
 
-@include('default_footer')
+@include('default_footer_paid_page')
 
 </html>

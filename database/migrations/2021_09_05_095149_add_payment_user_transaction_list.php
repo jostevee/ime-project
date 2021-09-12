@@ -16,6 +16,7 @@ class AddPaymentUserTransactionList extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
             $table->string('trx_image')->unique()->nullable();
+            $table->string('trx_image_submit')->unique()->nullable();
         });
     }
 
@@ -29,6 +30,7 @@ class AddPaymentUserTransactionList extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
             $table->dropColumn('trx_image');
+            $table->dropColumn('trx_image_submit');
         });
     }
 }

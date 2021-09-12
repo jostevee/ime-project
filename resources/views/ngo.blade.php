@@ -3,6 +3,7 @@
 
 <head>
   @include('default_header')
+  <title>Indonesia Marine Exhibition - NGO</title>
   <link href="{{ asset ('assets/css/ngo.css') }}" rel="stylesheet" type="text/css">
 </head>
 
@@ -31,8 +32,12 @@
 
             <div class="row col-12 justify-content-center mx-4">
               @if ($data->count() == 0)
-                <h1 style="margin-top: 250px;">Ups... there are no data available</h1>
-                <h2>Please try again :)</h2>
+                <div style="margin-top: 250px;">
+                  <div class="content-transparent">
+                    <h1>Ups... there are no data available</h1>
+                    <h2>Please try again :)</h2>
+                  </div>
+                </div>
               @else
                 @foreach($data as $data_per_logo)
                   <a href="" id="ngoModalId"
@@ -66,6 +71,6 @@
     @include('modal_ngo')
 </body>
 
-@include('default_footer')
+@include('default_footer_paid_page')
 
 </html>

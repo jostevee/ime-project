@@ -3,6 +3,7 @@
 
 <head>
   @include('default_header')
+  <title>Indonesia Marine Exhibition - Main Talkshow Room</title>
   <link href="{{ asset ('assets/css/talkshow_room.css') }}" rel="stylesheet" type="text/css">
 </head>
 
@@ -30,18 +31,24 @@
         <div class="container"><!-- class="d-flex align-items-center" -->
 
           <div class="row d-flex justify-content-center my-4">
+
             <!--
             <div class="col-12">
               <h1 class="blue-title">Speakers</h1>
             </div>
             -->
+            
             <div class="col-12 mt-4">
               <div class="content row">
                 <!-- <div class="swiper-father"> -->
 
                 @if ($data->count() == 0)
-                  <h1 style="margin-top: 250px;">Ups... there are no data available</h1>
-                  <h2>Please try again :)</h2>
+                  <div style="margin-top: 250px;">
+                    <div class="content-transparent">
+                      <h1>Ups... there are no data available</h1>
+                      <h2>Please try again :)</h2>
+                    </div>
+                  </div>
                 @else
                   <!-- we put an arrow into the outside swiper swiper -->
                   <div class="col-1 d-flex align-items-center justify-content-center">
@@ -139,7 +146,7 @@
                       </div>
                     </div> -->
 
-                  <!-- </div>   -->
+                  <!-- </div> -->
                 @endif
 
               </div>
@@ -157,6 +164,6 @@
     @include('modals')
 </body>
 
-@include('default_footer')
+@include('default_footer_paid_page')
 
 </html>
