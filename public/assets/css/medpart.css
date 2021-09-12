@@ -86,12 +86,31 @@
   /* color: #fff; */
 }
 
+/*
 .medpart-page .medpart-list-box .medpart-pic-box {
   margin: 20px 0px;
   background: #F3EC9E;
   border-radius: 75px;
   width: 150px;
   height: 150px;
+}
+*/
+
+.medpart-page .medpart-list-box .medpart-pic-box {
+  width: 150px;
+  height: 150px;
+  /* position: relative; */
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.medpart-page .medpart-list-box .medpart-pic-box img {
+   height: 100%;
+   min-width: 100%;
+   /* left: 50%; */
+   /* border-radius: 50%; */
+   /* position: relative; */
+   transform: translateX(0%);
 }
 
 /**

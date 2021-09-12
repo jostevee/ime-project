@@ -42,18 +42,20 @@
                 @foreach($data as $data_per_logo)
                   <a href="" id="medpartModalId"
                     data-bs-toggle="modal"
-                    data-id="{{$data_per_logo->id}}"
-                    data-name="{{$data_per_logo->name}}"
-                    data-info="{{$data_per_logo->info}}"
-                    data-vid="{{$data_per_logo->video}}"
-                    data-ig="{{$data_per_logo->ig}}"
-                    data-fb="{{$data_per_logo->fb}}"
+                    data-id="{{ $data_per_logo->id}}"
+                    data-name="{{ $data_per_logo->name }}"
+                    data-info="{{ $data_per_logo->info }}"
+                    data-vid="{{ $data_per_logo->video }}"
+                    data-ig="{{ $data_per_logo->ig }}"
+                    data-fb="{{ $data_per_logo->fb }}"
                     data-bs-target="#medpartModal"
                     class="row medpart-list-box justify-content-center align-items-center col-lg-3 mb-2">
                   <!-- medpart/{{$data_per_logo->id}} -->
                   <!-- {{$data_per_logo->video}} -->
                     <div class="d-flex justify-content-center">
-                      <div class="medpart-pic-box"></div>
+                      <div class="medpart-pic-box">
+                        <img src="/assets/img/medpart_list/{{ $data_per_logo->logo }}" />
+                      </div>
                     </div>
                     <h4 class="text-center blue-title medpart-name-box">{{$data_per_logo->name}}</h4>
                   </a>
