@@ -82,7 +82,7 @@
               $id = 1;
               @endphp
               <div class="table-responsive">
-                <table class="table-reponsive table-striped table-hover">
+                <table class="table table-striped table-hover">
                   <tr>
                     <th>No.</th>
                     <th width="20%">Image</th>
