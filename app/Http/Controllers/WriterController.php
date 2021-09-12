@@ -137,7 +137,8 @@ class WriterController extends Controller
 
         if ($request->hasFile('img_link')) {
             $gambar = $request->file('img_link');
-            $fileName = time().$gambar->getClientOriginalName();
+            $fileName = $gambar->getClientOriginalName();
+            // $fileName = time().$gambar->getClientOriginalName();
 
             // Create 'img/event_list' directory if it isn't available yet
             if(!is_dir('assets/img/medpart_list')) {
@@ -170,26 +171,26 @@ class WriterController extends Controller
         $medpart->ig = $request->input('ig');
         $medpart->fb = $request->input('fb');
 
-            /*
-            if ($request->input('img_link_update') != null) {
-                if ($request->hasFile('img_link_update')) {
-                    $event->img_link = '';
-                    $gambar = $request->file('img_link_update');
-                    $fileName = time().$gambar->getClientOriginalName();
+        if ($request->hasFile('img_link_update')) {
+          $gambar = $request->file('img_link_update');
+          $fileName = $gambar->getClientOriginalName();
+          // $fileName = time().$gambar->getClientOriginalName();
 
-                    if(!is_dir('img')) {
-                        mkdir('img', 0777, true);
-                    }
-                    $request->file('img_link_update')->move('img/', $fileName);
+          // Create 'img/event_list' directory if it isn't available yet
+          if(!is_dir('assets/img/medpart_list')) {
+              mkdir('assets/img/medpart_list', 0777, true);
+          }
 
-                    $event->img_link = $fileName;
-                } else {
-                    $event->img_link = '';
-                }
-            }
-            */
+          // Move the file to the selected directory
+          $request->file('img_link_update')->move('assets/img/medpart_list', $fileName);
 
-        $medpart->save();
+          // Save filename to database
+          $medpart->logo = $fileName;
+        } else {
+          $medpart->logo = 'ini error';
+        }
+
+        $medpart->update();
 
         return redirect('/writer/medpart/list');
       }

@@ -122,7 +122,7 @@
                       </td>
                       <td>{{ $data->created_at }}</td>
                       <td>
-                        <form action="edit/{{ $data->id }}" method="POST">@csrf
+                        <form action="edit/{{ $data->id }}" method="GET">@csrf
                           <button class="btn btn-general-static" style="width: 100%;" type="submit">Edit</button>
                         </form>
                         <form action="delete/{{ $data->id }}" method="POST">@csrf

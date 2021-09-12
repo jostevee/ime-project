@@ -89,7 +89,7 @@
                     </div>
                     <div class="form-group mt-4">
                       <label for="title">Info</label>
-                      <textarea type="text" name="info" id="content" class="form-control" rows="6" placeholder="Enter your info here" required>{{ $ngo->info }}</textarea>
+                      <textarea type="text" name="info" id="content" class="form-control" rows="6" placeholder="Enter your info here" required>{{ $medpart->info }}</textarea>
                       <!-- <input type="text" name="info" id="info" class="form-control" placeholder="Enter NGO info here" required> -->
                     </div>
                     <div class="form-group col-4 mt-4">
@@ -104,22 +104,19 @@
                       <label for="title">FB</label>
                       <input type="text" name="fb" id="fb" class="form-control" value="{{ $medpart->fb }}">
                     </div>
-
-                  <!--
-                  <div class="form-group mt-4">
-				            <label for="img_link_update">Choose an image</label>
-                  </div> -->
-                  <!--
-                  <div class="form-group mt-2">
-				            <input type="file" name="img_link_update" id="img_link" class="form-control-file">
-			            </div> -->
-			            <div class="mt-4">
-                    <button type="submit">Save</button>
-                    <a class="cancel" onclick="location.href='/writer/medpart/list';">Cancel</a>
-                    <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
-                  </div>
-			          </form>
-		          </div>
+                    <div class="form-group mt-4">
+                      <label for="img_link">Choose an image</label>
+                    </div>
+                    <div class="form-group my-4">
+                      <input type="file" name="img_link_update" id="img_link_update" class="form-control-file">
+                    </div>
+                    <div class="mt-4">
+                      <button type="submit">Save</button>
+                      <a class="cancel" onclick="location.href='/writer/medpart/list';">Cancel</a>
+                      <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
+                    </div>
+                  </form>
+                </div>
 				        {{--
 
 			        --}}

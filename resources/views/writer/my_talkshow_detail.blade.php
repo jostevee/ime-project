@@ -88,7 +88,7 @@
               $id = 1;
               @endphp
               <div class="table-responsive">
-                <table class="table table-striped">
+                <table class="table table-striped table-hover">
                   <tr>
                     <th>No.</th>
                     <th>Title</th>
@@ -96,12 +96,22 @@
                     <th>Publish date</th>
                     <th width="15%"></th>
                   </tr>
-                  @forelse($talkshow_day as $data)
+                  @forelse($talkshow_detail as $data)
                     <tr>
                       <td>{{ $id++ }}</td>
                       <td>{{ $data->title }}</td>
                       <td>{{ $data->theme }}</td>
                       <td>{{ $data->created_at }}</td>
+                      <td>
+                        <form action="edit/{{ $data->id }}" method="GET">@csrf
+                          <button class="btn btn-general-static" style="width: 100%;" type="submit">Edit</button>
+                        </form>
+                        <form action="delete/{{ $data->id }}" method="POST">@csrf
+                          <button class="btn btn-general-static" style="width: 100%;" type="submit">Delete</button>
+                        </form>
+                      </td>
+
+                      <!--
                       <td>
                         <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
                         <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
@@ -109,6 +119,8 @@
                           <button class="btn btn-danger col-12" type="submit">Delete</button>
                         </form>
                       </td>
+                      -->
+
                     </tr>
                   @empty
                     <tr>

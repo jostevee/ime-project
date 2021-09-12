@@ -89,7 +89,7 @@
               $id = 1;
               @endphp
               <div class="table-responsive">
-              <table class="table table-striped">
+              <table class="table table-striped table-hover">
                 <tr>
                   <th>No.</th>
                   <th>Logo</th>
@@ -103,14 +103,27 @@
                 </tr>
                 @forelse($medpart as $data)
                   <tr>
-                    <td>{{$id++}}</td>
+                    <td>{{ $id++ }}</td>
                     <td><img src="/assets/img/medpart_list/{{ $data->logo }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
-                    <td>{{$data->name}}</td>
-                    <td>{{$data->info}}</td>
-                    <td>{{$data->video}}</td>
-                    <td>{{$data->ig}}</td>
-                    <td>{{$data->fb}}</td>
+                    <td>{{ $data->name }}</td>
+                    <td>{{ $data->info }}</td>
+                    <td>{{ $data->video }}</td>
+                    <td>{{ $data->ig }}</td>
+                    <td>{{ $data->fb }}</td>
                     <td>{{ $data->created_at }}</td>
+                    <td>
+                      <form action="edit/{{ $data->id }}" method="GET">@csrf
+                        <button class="btn btn-general-static" style="width: 100%;" type="submit">Edit</button>
+                      </form>
+                      <form action="delete/{{ $data->id }}" method="POST">@csrf
+                        <button class="btn btn-general-static" style="width: 100%;" type="submit">Delete</button>
+                      </form>
+                      <form action="notify/{{ $data->id }}" method="POST">@csrf
+                        <button class="btn btn-general-static" style="width: 100%;" type="submit">Ask new image</button>
+                      </form>
+                    </td>
+
+                    <!--
                     <td>
                       <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
                       <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
@@ -118,6 +131,8 @@
                         <button class="btn btn-danger col-12" type="submit">Delete</button>
                       </form>
                     </td>
+                    -->
+                    
                   </tr>
                 @empty
                   <tr>

@@ -5,13 +5,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Indonesia Marine Exhibition</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
+  <title>Indonesia Marine Exhibition - </title>
   @include('header_backend')
 
   <!-- include summernote css/js -->
@@ -88,7 +82,7 @@
               $id = 1;
               @endphp
               <div class="table-responsive">
-                <table class="table-reponsive table-striped">
+                <table class="table-reponsive table-striped table-hover">
                   <tr>
                     <th>No.</th>
                     <th width="20%">Image</th>
@@ -105,12 +99,24 @@
                       <td>{{ $data->organization }}</td>
                       <td>{{ $data->created_at }}</td>
                       <td>
+                        <form action="edit/{{ $data->id }}" method="GET">@csrf
+                          <button class="btn btn-general-static" style="width: 100%;" type="submit">Edit</button>
+                        </form>
+                        <form action="delete/{{ $data->id }}" method="POST">@csrf
+                          <button class="btn btn-general-static" style="width: 100%;" type="submit">Delete</button>
+                        </form>
+                      </td>
+
+                      <!--
+                      <td>
                         <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
                         <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
                         <form action="delete/{{ $data->id }}" method="POST">@csrf
                           <button class="btn btn-danger col-12" type="submit">Delete</button>
                         </form>
                       </td>
+                      -->
+                      
                     </tr>
                   @empty
                     <tr>
