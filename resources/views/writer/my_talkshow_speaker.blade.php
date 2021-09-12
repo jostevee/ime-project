@@ -5,8 +5,8 @@
 <html lang="en">
 
 <head>
-  <title>Indonesia Marine Exhibition - </title>
   @include('header_backend')
+  <title>Indonesia Marine Exhibition - Admin Page - Talkshow Speaker</title>
 
   <!-- include summernote css/js -->
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
@@ -116,7 +116,7 @@
                         </form>
                       </td>
                       -->
-                      
+
                     </tr>
                   @empty
                     <tr>
