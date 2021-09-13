@@ -1,9 +1,8 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>Indonesia Marine Exhibition</title>
-<meta content="" name="description">
-<meta content="" name="keywords">
+<meta content="Indonesia Marine Exhibition (IME) merupakan kegiatan pameran daring kelautan yang pertama dengan platform berupa website." name="description">
+<meta content="IME, Indonesia Marine Exhibition, IME IPB, IPB, Institut Pertanian Bogor, Ilum dan Teknologi Kelautan" name="keywords">
 
 <!-- Favicons -->
 <link href="assets/img/favicon.png" rel="icon">

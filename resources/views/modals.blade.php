@@ -465,6 +465,9 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">0721496269</p></div>
             </div>
+            <div class="col-12 d-flex justify-content-center align-items-center my-4">
+              <p class="text-center yellow-strong">Pembayaran a.n. Afviya (Bank BNI)</p>
+            </div>
             <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
@@ -508,6 +511,9 @@
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">1090017111071</p></div>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center my-4">
+              <p class="text-center yellow-strong">Pembayaran a.n. Fredrich S. (Bank Mandiri)</p>
             </div>
             <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
@@ -553,6 +559,9 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">081388923882</p></div>
             </div>
+            <div class="col-12 d-flex justify-content-center align-items-center my-4">
+              <p class="text-center yellow-strong">Pembayaran a.n. Afviya (DANA)</p>
+            </div>
             <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
@@ -597,6 +606,9 @@
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">08877004317</p></div>
             </div>
+            <div class="col-12 d-flex justify-content-center align-items-center my-4">
+              <p class="text-center yellow-strong">Pembayaran a.n. Afviya (GoPay)</p>
+            </div>
             <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>
             </div>
@@ -640,6 +652,9 @@
             </div>
             <div class="col-12 d-flex justify-content-center align-items-center">
               <div class="col-12 btn-modal"><p class="text-center blue-regular">081388923882 </p></div>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center my-4">
+              <p class="text-center yellow-strong">Pembayaran a.n. Afviya (OVO)</p>
             </div>
             <!-- <div class="col-12 d-flex justify-content-start align-items-center mt-4">
               <p class="text-start yellow-regular">Mekanisme Pembayaran</p>

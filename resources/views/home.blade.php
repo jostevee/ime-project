@@ -144,7 +144,7 @@
 
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-lg-12 d-flex justify-content-center">
-                        <a href="#" class="glightbox play-btn mb-4">
+                        <a href="{{ asset('assets/vid/sambutan_kahim.mov') }}" class="glightbox play-btn mb-4">
                           <img src="{{ asset ('assets/img/about/Humas_Jetli.png') }}" class="video-box"/>
                         </a>
                       </div>
