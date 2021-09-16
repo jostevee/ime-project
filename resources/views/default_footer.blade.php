@@ -100,6 +100,7 @@
     // $("#video_url").href(video);
   });
 
+  
   $('#medpartModal').on('show.bs.modal', function (event) {
     var id = $(event.relatedTarget).data('id');
     var name = $(event.relatedTarget).data('name');
@@ -122,7 +123,6 @@
     var name = $(event.relatedTarget).data('name');
     var info = $(event.relatedTarget).data('info');
     var vid = $(event.relatedTarget).data('vid');
-
     var str_vid = "{{ asset ('') }}" + vid;
 
     $("#name_section").html(name);

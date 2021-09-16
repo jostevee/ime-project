@@ -1,4 +1,4 @@
-<!-- Modal About Video -->
+Modal About Video
 <div class="modal fade" id="aboutVideoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="aboutVideoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-md-down"> <!--  modal-fullscreen-md-down -->
     <div class="modal-content modal-about-video">

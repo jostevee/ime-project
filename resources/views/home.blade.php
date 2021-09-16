@@ -992,6 +992,7 @@
       </section><!-- End About Section -->
 
     @include('modals')
+    @include('modal_about_video')
      
 
   <!-- <main id="main"> -->
