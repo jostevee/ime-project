@@ -40,7 +40,7 @@
                 </div>
               @else
                 @foreach($data as $data_per_logo)
-                  <a href="" id="ngoModalId"
+                <a href="" id="ngoModalId"
                     data-bs-toggle="modal"
                     data-id="{{$data_per_logo->id}}"
                     data-name="{{$data_per_logo->name}}"

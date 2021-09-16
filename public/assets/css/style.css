@@ -942,6 +942,14 @@ h1, h2, h3, h4, h5, h6 {
   /* color: #fff; */
 }
 
+.video-play-box {
+  margin: 0px 10px 10px 10px;
+  background: #FFF;
+  border-radius: 10px;
+  width: 720px;
+  height: 405px;
+}
+
 .about-page .about-people-box .video-box {
   margin: 20px 0px 0px 0px;
   /* background: #FFF; */

@@ -1,31 +1,11 @@
-// $(document).ready(function() {
-// });
-
-if(window.attachEvent) {
-  window.attachEvent('onload', musicBackground);
-} else {
-  if(window.onload) {
-      var curronload = window.onload;
-      var newonload = function(evt) {
-          curronload(evt);
-          yourFunctionName(evt);
-      };
-      window.onload = newonload;
-  } else {
-      window.onload = musicBackground;
-  }
-}
-
-// window.addEventListener("load", function(){
-// });
-
-function musicBackground(){
+function musicBackground() {
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src', '/assets/sound/sound.mp3');
     // {{ asset ("assets/sound/sound.mp3") }}
     audioElement.setAttribute('autoplay', 'autoplay');
-    //audioElement.load()
+    audioElement.load()
     $.get();
+
     audioElement.addEventListener("load", function() {
       audioElement.play();
     }, true);
@@ -37,7 +17,18 @@ function musicBackground(){
     }, false);
     */
 
+    // Console log condition detection
     console.log(audioElement.muted);
+
+    // onModalShow
+    $('#aboutVideoModal').on('show.bs.modal', function (event) {
+      audioElement.muted = true;
+    });
+
+    // onModalHidden
+    $('#aboutVideoModal').on('hidden.bs.modal', function (event) {
+      audioElement.muted = false;
+    });
 
     $('.sound').click(function() {
         if (audioElement.muted == false){
@@ -46,15 +37,6 @@ function musicBackground(){
             audioElement.muted = false;
         }
     });
-
-    // $('.glightbox').click(function() {
-    //   if (audioElement.muted == false){
-    //       audioElement.muted = true;
-    //   } else {
-    //       audioElement.muted = false;
-    //   }
-    // });
-
 
     /*
     $('.sound').click(function() {

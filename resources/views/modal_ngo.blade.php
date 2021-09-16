@@ -1,4 +1,4 @@
-    <!-- Modal Medpart -->
+    <!-- Modal NGO -->
     <div class="modal fade" id="ngoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down"> <!--  modal-fullscreen-md-down -->
         <div class="modal-content modal-signin-signup-menu">
@@ -54,7 +54,7 @@
                       <div class="col-12 d-flex">
                         <h4 class="text-start white-title">INFO</h4>
                       </div>
-                      <div class="col-12 d-flex">
+                      <div class="col-12 d-flex content">
                         <p class="text-start white-regular" id="info_section"></p>
                       </div>
                     </div>

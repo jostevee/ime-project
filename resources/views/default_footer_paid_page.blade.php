@@ -91,9 +91,6 @@
     var ig = $(event.relatedTarget).data('ig');
     var fb = $(event.relatedTarget).data('fb');
 
-
-    // $(this).find(".modal-content").text(myVal);
-
     var str_id = "You Have Entered " + "ID: " + id;
     var str_name = "You Have Entered " + "NAME: " + name;
     var str_info = "You Have Entered " + "INFO: " + info;
@@ -107,9 +104,19 @@
     $("#ig_section").attr("href", ig);
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
+  });
 
-    // document.getElementById("video_url").href="https://google.com";
-    // $("#video_url").href(video);
+  $('#aboutModal').on('show.bs.modal', function (event) {
+    var name = $(event.relatedTarget).data('name');
+    var info = $(event.relatedTarget).data('info');
+    var vid = $(event.relatedTarget).data('vid');
+
+    $("#name_section").html(name);
+    $("#info_section").html(info);
+    $("#videoFrame").attr("src", vid);
+
+    // $("#video_section").html(vid);
+
   });
 
   /*

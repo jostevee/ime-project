@@ -7,7 +7,7 @@
   <title>Indonesia Marine Exhibition - Home</title>
 </head>
 
-<body>
+<body onload="musicBackground()">
     @include('menu')
     @php
       $userwriter = -1;
@@ -128,7 +128,14 @@
 
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-12 d-flex justify-content-center">
-                        <a href="#" class="glightbox play-btn mb-4">
+                        <a href=""
+                          data-bs-toggle="modal"
+                          data-name="Nadya Cakasana, S.Kel., M.Si"
+                          data-info="Pembina HIMITEKA"
+                          data-vid="assets/vid/sambutan_pembina.mp4"
+                          data-bs-target="#aboutVideoModal"
+                          class="about-pic-box mb-2">
+                          <!-- <a href="#" class="glightbox play-btn mb-4"> -->
                           <img src="{{ asset ('assets/img/about/Nadya_About.png') }}" class="video-box"/>
                         </a>
                       </div>
@@ -144,7 +151,14 @@
 
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-lg-12 d-flex justify-content-center">
-                        <a href="{{ asset('assets/vid/sambutan_kahim.mov') }}" class="glightbox play-btn mb-4">
+                        <a href=""
+                          data-bs-toggle="modal"
+                          data-name="Jetli Alexandri Lasut"
+                          data-info="Ketua HIMITEKA"
+                          data-vid="assets/vid/sambutan_kahim.mp4"
+                          data-bs-target="#aboutVideoModal"
+                          class="about-pic-box mb-2">
+                          <!-- <a href="#" class="glightbox play-btn mb-4"> -->
                           <img src="{{ asset ('assets/img/about/Humas_Jetli.png') }}" class="video-box"/>
                         </a>
                       </div>
@@ -160,7 +174,14 @@
 
                     <div class="row col-12 col-lg-4 col-md-4 about-people-box d-flex justify-content-center">
                       <div class="col-lg-12 d-flex justify-content-center">
-                        <a href="#" class="glightbox play-btn mb-4">
+                        <a href=""
+                          data-bs-toggle="modal"
+                          data-name="Maulidya Qutrothunnada"
+                          data-info="Ketua IME 2021"
+                          data-vid="assets/vid/sambutan_ketua_pelaksana.mp4"
+                          data-bs-target="#aboutVideoModal"
+                          class="about-pic-box mb-2">
+                          <!-- <a href="#" class="glightbox play-btn mb-4"> -->
                           <img src="{{ asset ('assets/img/about/Maul_About.png') }}" class="video-box"/>
                         </a>
                       </div>
@@ -420,7 +441,7 @@
                     <i class="schedule-btn-prev fas fa-arrow-left"></i>
                   </div>
 
-                  <div class="col-10 swiper-container schedule-swiper col-9 d-flex align-items-center justify-content-center">
+                  <div class="col-9 swiper-container schedule-swiper col-9 d-flex align-items-center justify-content-center">
                     <div class="swiper-wrapper">
 
                     <div class="swiper-slide d-flex align-items-center justify-content-center">
@@ -971,7 +992,6 @@
       </section><!-- End About Section -->
 
     @include('modals')
-
      
 
   <!-- <main id="main"> -->

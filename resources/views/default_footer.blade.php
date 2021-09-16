@@ -86,14 +86,7 @@
     var ig = $(event.relatedTarget).data('ig');
     var fb = $(event.relatedTarget).data('fb');
 
-
     // $(this).find(".modal-content").text(myVal);
-
-    var str_id = "You Have Entered " + "ID: " + id;
-    var str_name = "You Have Entered " + "NAME: " + name;
-    var str_info = "You Have Entered " + "INFO: " + info;
-    var str_video = "You Have Entered " + "VIDEO: " + vid;
-    var str_ig = "You Have Entered " + "IG: " + ig;
 
     $("#id_section").html(id);
     $("#name_section").html(name);
@@ -115,15 +108,6 @@
     var ig = $(event.relatedTarget).data('ig');
     var fb = $(event.relatedTarget).data('fb');
 
-
-    // $(this).find(".modal-content").text(myVal);
-
-    var str_id = "You Have Entered " + "ID: " + id;
-    var str_name = "You Have Entered " + "NAME: " + name;
-    var str_info = "You Have Entered " + "INFO: " + info;
-    var str_video = "You Have Entered " + "VIDEO: " + vid;
-    var str_ig = "You Have Entered " + "IG: " + ig;
-
     $("#id_section").html(id);
     $("#name_section").html(name);
     $("#info_section").html(info);
@@ -131,10 +115,29 @@
     $("#ig_section").attr("href", ig);
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
-
-    // document.getElementById("video_url").href="https://google.com";
-    // $("#video_url").href(video);
   });
+
+  
+  $('#aboutVideoModal').on('show.bs.modal', function (event) {
+    var name = $(event.relatedTarget).data('name');
+    var info = $(event.relatedTarget).data('info');
+    var vid = $(event.relatedTarget).data('vid');
+
+    var str_vid = "{{ asset ('') }}" + vid;
+
+    $("#name_section").html(name);
+    $("#info_section").html(info);
+    $("#videoFrame").attr("src", str_vid);
+
+    // $("#video_section").html(vid);
+
+  });
+
+  $('#aboutVideoModal').on('hidden.bs.modal', function (event) {
+    $('#videoFrame').attr('src', '');
+    // $('#videoFrame').get(0).stopVideo();
+  });
+
 
   /*
   var id;
