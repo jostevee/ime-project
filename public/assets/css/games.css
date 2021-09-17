@@ -69,146 +69,38 @@
 
 .games-room-page .blue-background-box {
   background: #1C3B51;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 240px;
   height: 240px;
 }
 
 .games-room-page .yellow-background-box {
   background: #F3EC9E;
-  /* border-radius: 10px; */
-  width: 200px;
-  height: 200px;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
 }
 
-.games-room-page .merch-box {
+.games-room-page .games-box {
   /* background: #F3EC9E; */
   /* border-radius: 10px; */
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: contain;
 }
 
 .games-room-page .name-box {
   padding: 14px;
   background: #1C3B51;
-  border-radius: 30px;
-  width: inherit;
+  border-radius: 15px;
+  width: 200px;
   align-self: center;
   transition: all ease-in-out 0.4s;
-  /* width: 200px;
-  height: 200px; */
+  /* width: 200px; */
+  /* height: 200px; */
 }
 
 .games-room-page .name-box:hover {
   background: #215799;
-}
-
-
-.games-room-page .donation-room-btn-next, .games-room-page .donation-room-btn-prev {
-  font-size: 25px;
-  background: #F3EC9E;
-  color: #1C3B51;
-  border-radius: 25px;
-  padding: 8px;
-  -webkit-filter: drop-shadow(1px 4px 0px #1C3B51);
-  filter: drop-shadow(5px 6px 0px 0px #1C3B51);
-  transition: all ease-in-out 0.4s;
-}
-
-.games-room-page .donation-room-btn-next:hover, .games-room-page .donation-room-btn-prev:hover {
-  background: #BDB77B;
-}
-
-.games-room-page .donation-room-day-box {
-  margin: 30px 30px;
-  padding: 25px 0px;
-  border-radius: 20px;
-  background: #173963;
-  box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;  
-  /* color: #fff; */
-}
-
-.games-room-page .donation-room-day-text-box {
-  margin: 30px 30px;
-  padding: 25px 0px;
-  border-radius: 20px;
-  background: #F3EC9E;
-  /* box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;   */
-  /* color: #fff; */
-}
-
-.games-room-page .donation-room-day-which-box {
-  margin: 0px 0px 0px 0px;
-  width: 100px;
-  padding: 5px 0px;
-  border-radius: 12px;
-  background: #173963;
-  box-shadow: -26px 0px 0px 0px #173963;
-  /* color: #fff; */
-}
-
-.games-room-page .donation-room-day-theme-box {
-  margin: 30px 30px;
-  padding: 25px 0px;
-  border-radius: 20px;
-  /* box-shadow: 35px 0px 0px -10px #F3EC9E, -35px 0px 0px -10px #F3EC9E;   */
-  /* color: #fff; */
-}
-
-/*
-.games-room-page .yellow-background-box {
-  background: #F3EC9E;
-  border-radius: 30px;
   width: 200px;
-  height: 200px;
-}
-*/
-
-.games-room-page .donation-room-people-box .donation-room-pic-box {
-  margin: 20px 0px;
-  background: #FFF;
-  border-radius: 75px;
-  width: 150px;
-  height: 150px;
-}
-
-/**
-* Youtube Button
-*/
-.games-room-page .youtube {
-  content: url('../img/youtube_dark_blue.png');
-  cursor: pointer;
-  margin:  10px;
-  border-radius: 25px;
-  width: 75px;
-  height: 50px;
-  transition: all ease-in-out 0.4s;
-}
-
-.games-room-page .youtube:hover {
-  content: url('../img/youtube_light_blue.png');
-  width: 85px;
-  height: 60px;
-  /* background: #436279; */
-}
-
-/**
-* Zoom Button
-*/
-.games-room-page .zoom {
-  content: url('../img/zoom_dark_blue.png');
-  cursor: pointer;
-  margin:  10px;
-  border-radius: 25px;
-  width: 75px;
-  height: 50px;
-  transition: all ease-in-out 0.4s;
-}
-
-.games-room-page .zoom:hover {
-  content: url('../img/zoom_light_blue.png');
-  width: 85px;
-  height: 60px;
-  /* background: #436279; */
 }

@@ -100,7 +100,7 @@ class FrontEndController extends Controller
     }
 
     public function donation(){
-        //$event = Event::orderByDesc('created_at')->take(4)->get();
+        // $event = Event::orderByDesc('created_at')->take(4)->get();
 
         return view('donation'); //, compact('event')
     }
@@ -113,8 +113,9 @@ class FrontEndController extends Controller
     }
 
     public function games(){
-        //$event = Event::orderByDesc('created_at')->take(4)->get();
-        $data = Games::where('id', $id)->orderByDesc('id_day')->firstOrFail();
+        // $event = Event::orderByDesc('created_at')->take(4)->get();
+        // $data = Games::where('id', $id)->orderByDesc('id_day')->firstOrFail();
+        $data = Games::all();
 
         return view('games', compact('data')); //, compact('event')
     }

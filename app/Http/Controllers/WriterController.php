@@ -224,7 +224,6 @@ class WriterController extends Controller
         $talkshow_day = new TalkshowDay();
         $talkshow_day->title = $request->input('title');
         $talkshow_day->theme = $request->input('theme');
-
         $talkshow_day->save();
 
         return redirect('/writer/talkshow-day/list');
@@ -240,7 +239,6 @@ class WriterController extends Controller
         $talkshow_day = TalkshowDay::where('id', $id)->firstOrFail();
         $talkshow_day->title = $request->input('title');
         $talkshow_day->theme = $request->input('theme');
-
         $talkshow_day->save();
 
         return redirect('/writer/talkshow-day/list');
@@ -423,5 +421,28 @@ class WriterController extends Controller
         $payment_user = User::orderByDesc('created_at')->get();
 
         return view('writer/my_payment_user', compact('payment_user'));
+      }
+
+
+      // Games
+      public function editGames($id){
+        $games = Games::where('id', $id)->firstOrFail();
+
+        return view('writer/edit_single_games', compact('games'));
+      }
+
+      public function updateGames(Request $request, $id){
+        $games = Games::where('id', $id)->firstOrFail();
+        $games->time = $request->input('time');
+        $games->link = $request->input('link');
+        $games->save();
+
+        return redirect('/writer/games/list');
+      }
+
+      public function myGames(){
+        $games = Games::all();
+
+        return view('writer/my_games', compact('games'));
       }
 }

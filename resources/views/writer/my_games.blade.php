@@ -77,7 +77,7 @@
               <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
               <a href="/writer/merchandise/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Merchandise</a>
               <p style="text-align: right;">Games total =
-                {{ $merchandise->count() }}
+                {{ $games->count() }}
               </p>
               @php
               $id = 1;
@@ -86,24 +86,20 @@
               <table class="table table-striped">
                 <tr>
                   <th>No.</th>
-                  <th>Title</th>
-                  <th>Description</th>
-                  <th>Created at</th>
-                  <th>Image</th>
+                  <th>Platform</th>
+                  <th>Time</th>
+                  <th>Link</th>
                   <th width="5%"></th>
                 </tr>
-                @forelse($merchandise as $data)
+                @forelse($games as $data)
                   <tr>
-                    <td>{{$id++}}</td>
-                    <td>{{$data->title}}</td>
-                    <td>{{$data->description}}</td>
-                    <td>{{ $data->created_at }}</td>
-                    <td><img src="/assets/img/merchandise_list/{{ $data->image }}"  alt="" class="img-fluid" style="border-radius: 20px;"/></td> 
+                    <td>{{ $id++ }}</td>
+                    <td>{{ $data->platform }}</td>
+                    <td>{{ $data->time }}</td>
+                    <td>{{ $data->link }}</td>
                     <td>
-                      <a href="{{ $data->id }}" class="btn btn-success col-12 my-1">Preview</a>
-                      <a class="btn btn-warning mb-2 col-12" href="edit/{{ $data->id }}">Edit</a>
-                      <form action="delete/{{ $data->id }}" method="POST">@csrf
-                        <button class="btn btn-danger col-12" type="submit">Delete</button>
+                      <form action="edit/{{ $data->id }}" method="GET">@csrf
+                        <button class="btn btn-general-static" style="width: 100%;" type="submit">Edit</button>
                       </form>
                     </td>
                   </tr>

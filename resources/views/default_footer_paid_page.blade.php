@@ -21,12 +21,14 @@
 <script src="{{ asset ('assets/js/sound.js') }}"></script>
 <script src="{{ asset ('assets/js/talkshow_room.js') }}"></script>
 <script src="{{ asset ('assets/js/merchandise.js') }}"></script>
-<script src="{{ asset ('assets/js/games.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
 
+<!-- <script src="{{ asset ('assets/js/games.js') }}"></script> -->
 <!-- <script src="{{ asset ('assets/js/maps.js') }}"></script> -->
 
 <script>
+  musicBackground();
+
   // Add the following code if you want the name of the file appear on select
   $(".custom-file-input").on("change", function() {
     var fileName = $(this).val().split("\\").pop();

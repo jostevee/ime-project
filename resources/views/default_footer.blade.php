@@ -21,10 +21,10 @@
 <script src="{{ asset ('assets/js/sound.js') }}"></script>
 <script src="{{ asset ('assets/js/talkshow_room.js') }}"></script>
 <script src="{{ asset ('assets/js/merchandise.js') }}"></script>
-<script src="{{ asset ('assets/js/games.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
-<!-- <script src="{{ asset ('assets/js/zoom.js') }}"></script> -->
 
+<!-- <script src="{{ asset ('assets/js/games.js') }}"></script> -->
+<!-- <script src="{{ asset ('assets/js/zoom.js') }}"></script> -->
 <!-- <script src="{{ asset ('assets/js/maps.js') }}"></script> -->
 
 <script>
@@ -41,7 +41,8 @@
   // on the footer of redirect page
   if (window.location.hash == "#notpaid") {
     $(document).ready(function(){
-        $('#payModal').modal('show'); 
+        $('#payModal').modal('show');
+        musicBackground();
         
         // $("#registrationModal").modal();
         // alert("Tes")
@@ -52,6 +53,7 @@
   if (userwriter == -1 && submittedstatus == -1) {
     $(document).ready(function(){
       $('#brandingModal').modal('show'); 
+      musicBackground();
         
       // $("#registrationModal").modal();
       // alert("Tes")
@@ -62,6 +64,7 @@
   if (userwriter == 0 && submittedstatus == 0) {
     $(document).ready(function(){
         $('#payModal').modal('show'); 
+        musicBackground();
         
         // $("#registrationModal").modal();
         // alert("Tes")
@@ -72,6 +75,7 @@
   if (userwriter == 0 && submittedstatus == 1) {
     $(document).ready(function(){
         $('#payModal7').modal('show'); 
+        musicBackground();
         
         // $("#registrationModal").modal();
         // alert("Tes")

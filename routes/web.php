@@ -113,6 +113,10 @@ Route::middleware('auth:writer')->group(function () {
     Route::post('/writer/payment-user/delete/{id}', [WriterController::class, 'deletePaymentUser']);
     Route::post('/writer/payment-user/notify/{id}', [WriterController::class, 'notifyChangePaymentUser']);
 
+    Route::get('/writer/games/list', [WriterController::class, 'myGames']);
+    Route::get('/writer/games/edit/{id}', [WriterController::class, 'editGames']);
+    Route::post('/writer/games/edit/{id}', [WriterController::class, 'updateGames']);
+
 
     Route::get('/writer/editAccount/{id}', [WriterController::class, 'editAccount']);
     Route::post('/writer/editAccount/{id}', [WriterController::class, 'updateAccount']);

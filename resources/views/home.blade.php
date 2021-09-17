@@ -7,7 +7,7 @@
   <title>Indonesia Marine Exhibition - Home</title>
 </head>
 
-<body onload="musicBackground()">
+<body>
     @include('menu')
     @php
       $userwriter = -1;

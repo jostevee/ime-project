@@ -11,7 +11,7 @@ class Games extends Model
     protected $table='games';
     protected $primaryKey = 'id';
 
-    public function day() {
-        return $this->belongsTo('App\Models\TalkshowDay', 'id_day');
-    }
+    // public function day() {
+    //     return $this->belongsTo('App\Models\TalkshowDay', 'id_day');
+    // }
 }
