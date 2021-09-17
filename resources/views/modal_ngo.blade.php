@@ -1,30 +1,13 @@
     <!-- Modal NGO -->
     <div class="modal fade" id="ngoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-md-down"> <!--  modal-fullscreen-md-down -->
+      <div class="modal-dialog modal-lg modal-dialog-centered"> <!--  modal-fullscreen-md-down -->
         <div class="modal-content modal-signin-signup-menu">
 
           <!-- <div class="modal-header"> -->
             <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
           <!-- </div> -->
 
-          <form method="POST" action="{{ route('register') }}">
-            @csrf
-            <div class="modal-body row">
-
-              <!--
-              <h6 id="id_section"></h6>
-              <h6 id="name_section"></h6>
-              <h6 id="info_section"></h6>
-              <h6 id="video_section"></h6>
-              <h6 id="ig_section"></h6>
-              -->
-
-              <!--
-              <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-                <a href="#" id="video_url" data-bs-dismiss="modal" class="glightbox play-btn mb-4"></a>
-              </div>
-              -->
-
+            <div class="modal-body row d-flex justify-content-center">
 
               <!-- Validation error message -->
               <x-jet-validation-errors class="mb-4" />
@@ -40,11 +23,11 @@
               </div>
 
               <div class="col-12 d-flex justify-content-center row">
-                <div class="col-5 d-flex justify-content-center">
+                <div class="col-md-5 col-lg-5 d-flex justify-content-center">
                   <div class="comment-box"></div>
                 </div>
 
-                <div class="col-7 d-flex justify-content-center row">
+                <div class="col-md-7 col-lg-7 d-flex justify-content-center row">
                   <div class="col-12 d-flex justify-content-center">
                     <!-- <div class="video-box"></div> -->
                     <iframe name="videoFrame" id="videoFrame" class="embed-responsive-item video-box" src="#" allowfullscreen></iframe>
@@ -66,7 +49,6 @@
                   </div>
                 </div>
               </div>
-          </form>
 
         </div>
       </div>

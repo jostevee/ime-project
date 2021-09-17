@@ -28,7 +28,7 @@
     <section class="medpart-page">
       <!-- ======= Talkshow Details Section ======= -->
       <section id="medpart-page" class="general d-flex">
-        <div class="container mt-4">
+        <div class="container d-flex justify-content-center mt-4">
 
             <div class="row col-12 justify-content-center mx-4">
               @if ($data->count() == 0)

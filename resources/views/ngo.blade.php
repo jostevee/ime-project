@@ -28,7 +28,7 @@
     <section class="ngo-page">
       <!-- ======= Talkshow Details Section ======= -->
       <section id="ngo-page" class="general d-flex">
-        <div class="container mt-4">
+        <div class="container d-flex justify-content-center mt-4">
 
             <div class="row col-12 justify-content-center mx-4">
               @if ($data->count() == 0)
@@ -51,7 +51,9 @@
                     data-bs-target="#ngoModal"
                     class="row ngo-list-box justify-content-center align-items-center col-lg-3 mb-2">
                   <div class="d-flex justify-content-center">
-                    <div class="ngo-pic-box"></div>
+                    <div class="ngo-pic-box">
+                      <img src="assets/img/ngo_list/{{$data_per_logo->logo}}"/>
+                    </div>
                   </div>
                   <h4 class="text-center blue-title ngo-name-box">{{$data_per_logo->name}}</h4>
                 </a>
