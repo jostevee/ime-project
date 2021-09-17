@@ -98,12 +98,14 @@
                       <label for="title">FB</label>
                       <input type="text" name="fb" id="fb" class="form-control" value="{{ $medpart->fb }}">
                     </div>
-                    <div class="form-group mt-4">
-                      <label for="img_link">Choose an image</label>
-                    </div>
-                    <div class="form-group my-4">
-                      <input type="file" name="img_link_update" id="img_link_update" class="form-control-file">
-                    </div>
+                    <!--
+                      <div class="form-group mt-4">
+                        <label for="img_link">Choose an image</label>
+                      </div>
+                      <div class="form-group my-4">
+                        <input type="file" name="img_link_update" id="img_link_update" class="form-control-file">
+                      </div>
+                    -->
                     <div class="mt-4">
                       <button type="submit">Save</button>
                       <a class="cancel" onclick="location.href='/writer/medpart/list';">Cancel</a>

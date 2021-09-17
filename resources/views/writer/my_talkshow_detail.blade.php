@@ -74,7 +74,7 @@
                 </div>
               @endif
               <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
-              <a href="/writer/talkshow-detail/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Talkshow Day</a>
+              <a href="/writer/talkshow-detail/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Talkshow Detail</a>
               <p style="text-align: right;">Talkshow Detail total =
                 {{ $talkshow_detail->count() }}
               </p>
@@ -85,16 +85,22 @@
                 <table class="table table-striped table-hover">
                   <tr>
                     <th>No.</th>
-                    <th>Title</th>
-                    <th>Theme</th>
+                    <th>Day</th>
+                    <th>Speaker</th>
+                    <th>From time</th>
+                    <th>To time</th>
+                    <th>Zoom link</th>
                     <th>Publish date</th>
                     <th width="15%"></th>
                   </tr>
                   @forelse($talkshow_detail as $data)
                     <tr>
                       <td>{{ $id++ }}</td>
-                      <td>{{ $data->title }}</td>
-                      <td>{{ $data->theme }}</td>
+                      <td>{{ $data->day->title }}</td>
+                      <td>{{ $data->speaker->name }}</td>
+                      <td>{{ $data->from_time }}</td>
+                      <td>{{ $data->to_time }}</td>
+                      <td>{{ $data->zoom }}</td>
                       <td>{{ $data->created_at }}</td>
                       <td>
                         <form action="edit/{{ $data->id }}" method="GET">@csrf

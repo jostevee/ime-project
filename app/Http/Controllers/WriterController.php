@@ -349,24 +349,28 @@ class WriterController extends Controller
         $talkshow_detail->from_time = $request->input('from_time');
         $talkshow_detail->to_time = $request->input('to_time');
         $talkshow_detail->zoom = $request->input('zoom');
-        $talkshow_detail->youtube = $request->input('youtube');
+        // $talkshow_detail->youtube = $request->input('youtube');
         $talkshow_detail->save();
 
         return redirect('/writer/talkshow-detail/list');
       }
 
       public function editTalkshowDetail($id){
-        $talkshow_detail = TalkshowDetail::where('id', $id)->firstOrFail();
+        $data = TalkshowDetail::where('id', $id)->firstOrFail();
+        $data_day = TalkshowDay::all();
+        $data_speaker = TalkshowSpeaker::all();
 
-        return view('writer/edit_single_talkshow_detail', compact('talkshow_detail'));
+        return view('writer/edit_single_talkshow_detail', compact('data', 'data_day', 'data_speaker'));
       }
 
       public function updateTalkshowDetail(Request $request, $id){
         $talkshow_detail = TalkshowDetail::where('id', $id)->firstOrFail();
-        $talkshow_detail->title = $request->input('title');
-        $talkshow_detail->theme = $request->input('theme');
-
-        $talkshow_day->save();
+        $talkshow_detail->id_day = $request->input('id_day');
+        $talkshow_detail->id_speaker = $request->input('id_speaker');
+        $talkshow_detail->from_time = $request->input('from_time');
+        $talkshow_detail->to_time = $request->input('to_time');
+        $talkshow_detail->zoom = $request->input('zoom');
+        $talkshow_detail->save();
 
         return redirect('/writer/talkshow-detail/list');
       }

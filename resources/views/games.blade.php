@@ -25,14 +25,14 @@
       /* $useradmin = Auth::guard('writer')->user(); */
     @endphp
 
-    <section class="merchandise-room-page">
+    <section class="games-room-page">
       <!-- ======= Talkshow Details Section ======= -->
-      <section id="merchandise-room-page" class="general d-flex">
+      <section id="games-room-page" class="general d-flex">
         <div class="container mt-4">
 
           <div class="row d-flex justify-content-center mt-4">
             <div class="col-12">
-              <h1 class="blue-title">Merchandise</h1>
+              <h1 class="blue-title">Games</h1>
             </div>
             <div class="col-12 row d-flex justify-content-center align-items-center mt-4">
               <div class="col-6 row d-flex justify-content-center align-items-center mt-4">

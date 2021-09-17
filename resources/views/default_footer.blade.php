@@ -23,6 +23,7 @@
 <script src="{{ asset ('assets/js/merchandise.js') }}"></script>
 <script src="{{ asset ('assets/js/games.js') }}"></script>
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
+<!-- <script src="{{ asset ('assets/js/zoom.js') }}"></script> -->
 
 <!-- <script src="{{ asset ('assets/js/maps.js') }}"></script> -->
 
@@ -78,57 +79,8 @@
     });        
   }
 
-  $('#ngoModal').on('show.bs.modal', function (event) {
-    var id = $(event.relatedTarget).data('id');
-    var name = $(event.relatedTarget).data('name');
-    var info = $(event.relatedTarget).data('info');
-    var vid = $(event.relatedTarget).data('vid');
-    var ig = $(event.relatedTarget).data('ig');
-    var fb = $(event.relatedTarget).data('fb');
 
-    // $(this).find(".modal-content").text(myVal);
-
-    $("#id_section").html(id);
-    $("#name_section").html(name);
-    $("#info_section").html(info);
-    $("#video_section").html(vid);
-    $("#ig_section").attr("href", ig);
-    $("#fb_section").attr("href", fb);
-    $("#videoFrame").attr("src", vid);
-
-    // document.getElementById("video_url").href="https://google.com";
-    // $("#video_url").href(video);
-  });
-
-  $('#ngoModal').on('hidden.bs.modal', function (event) {
-    $('#videoFrame').attr('src', '');
-    // $('#videoFrame').get(0).stopVideo();
-  });
-
-
-  $('#medpartModal').on('show.bs.modal', function (event) {
-    var id = $(event.relatedTarget).data('id');
-    var name = $(event.relatedTarget).data('name');
-    var info = $(event.relatedTarget).data('info');
-    var vid = $(event.relatedTarget).data('vid');
-    var ig = $(event.relatedTarget).data('ig');
-    var fb = $(event.relatedTarget).data('fb');
-
-    $("#id_section").html(id);
-    $("#name_section").html(name);
-    $("#info_section").html(info);
-    $("#video_section").html(vid);
-    $("#ig_section").attr("href", ig);
-    $("#fb_section").attr("href", fb);
-    $("#videoFrame").attr("src", vid);
-  });
-
-  $('#medpartModal').on('hidden.bs.modal', function (event) {
-    $('#videoFrame').attr('src', '');
-    // $('#videoFrame').get(0).stopVideo();
-  });
-
-  
+  // About-Video Modal
   $('#aboutVideoModal').on('show.bs.modal', function (event) {
     var name = $(event.relatedTarget).data('name');
     var info = $(event.relatedTarget).data('info');
@@ -138,16 +90,11 @@
     $("#name_section").html(name);
     $("#info_section").html(info);
     $("#videoFrame").attr("src", str_vid);
-
-    // $("#video_section").html(vid);
-
   });
 
   $('#aboutVideoModal').on('hidden.bs.modal', function (event) {
     $('#videoFrame').attr('src', '');
-    // $('#videoFrame').get(0).stopVideo();
   });
-
 
   /*
   var id;

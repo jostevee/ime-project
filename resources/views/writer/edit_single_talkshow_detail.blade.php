@@ -6,7 +6,7 @@
 
 <head>
   @include('header_backend')
-  <title>Indonesia Marine Exhibition - Admin Page - Add Talkshow Detail</title>
+  <title>Indonesia Marine Exhibition - Admin Page - Edit Talkshow Detail</title>
 
   <!-- include summernote css/js -->
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
       <div class="container">
 
         <div class="section-title my-4">
-          <h2>Add Talkshow Detail</h2>
+          <h2>Edit Talkshow Detail</h2>
         </div>
 
         <div class="row">
@@ -79,8 +79,12 @@
                   <label for="title">Talkshow Day</label>
                   <select class="form-select" id="day" name="id_day" required>
                     <option value="">Select talkshow day...</option>
-                    @foreach($data_day as $data)
-                      <option value="{{ $data->id }}">{{ $data->title }}</option>
+                    @foreach($data_day as $data_day)
+                      @if ($data_day->id == $data->id_day)
+                        <option value="{{ $data_day->id }}" selected>{{ $data_day->title }}</option>
+                      @else
+                        <option value="{{ $data_day->id }}">{{ $data_day->title }}</option>
+                      @endif
                     @endforeach
                   </select>
                 </div>
@@ -88,29 +92,33 @@
                   <label for="kategori">Talkshow Speaker</label>
                   <select class="form-select" id="speaker" name="id_speaker" required>
                     <option value="">Select talkshow speaker...</option>
-                    @foreach($data_speaker as $data)
-                      <option value="{{ $data->id }}">{{ $data->name }}</option>
+                    @foreach($data_speaker as $data_speaker)
+                      @if ($data_speaker->id == $data->id_speaker)
+                        <option value="{{ $data_speaker->id }}" selected>{{ $data_speaker->name }}</option>
+                      @else
+                        <option value="{{ $data_speaker->id }}">{{ $data_speaker->name }}</option>
+                      @endif
                     @endforeach
                   </select>
                 </div>
                 <div class="form-group col-6 mt-4">
                   <label for="title">From time</label>
                   <div class="md-form">
-                    <input type="time" name="from_time" id="from_time" class="form-control timepicker" placeholder="Selected time">
+                    <input type="time" name="from_time" id="from_time" value="{{ $data->from_time }}" class="form-control timepicker" placeholder="Selected time">
                   </div>
                 </div>
                 <div class="form-group col-6 mt-4">
                   <label for="title">To time</label>
-                  <input type="time" name="to_time" id="to_time" class="form-control timepicker" placeholder="Enter talkshow end time here" required>
+                  <input type="time" name="to_time" id="to_time" value="{{ $data->to_time }}" class="form-control timepicker" placeholder="Enter talkshow end time here" required>
                 </div>
                 <div class="form-group col-12 mt-4">
                   <label for="title">Zoom</label>
-                  <input type="text" name="zoom" class="form-control" placeholder="Enter Zoom link here" required>
+                  <input type="text" name="zoom" value="{{ $data->zoom }}" class="form-control" placeholder="Enter Zoom link here" required>
                 </div>
 
                 <!-- <div class="form-group col-6 mt-4">
                   <label for="title">Youtube</label>
-                  <input type="text" name="youtube" class="form-control" placeholder="Enter Youtube link here" required>
+                  <input type="text" name="youtube" value="{{ $data->youtube }}" class="form-control" placeholder="Enter Youtube link here">
                 </div> -->
 
                 <!--
@@ -123,8 +131,8 @@
                 -->
 
                 <div class="mt-4">
-                  <button type="submit">Add Talkshow Detail</button>
-                  <a class="cancel" onclick="location.href='/writer/talkshow-speaker/list';">Cancel</a>
+                  <button type="submit">Save</button>
+                  <a class="cancel" onclick="location.href='/writer/talkshow-detail/list';">Cancel</a>
                   <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
                 </div>
 		          </form>

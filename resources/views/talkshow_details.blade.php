@@ -53,10 +53,10 @@
                     <div class="d-flex justify-content-center">
                       <div class="talkshow-details-pic-box"></div>
                     </div>
-                    <h4 class="text-center blue-title">{{$data_per_day->speaker}}</h4>
-                    <h6 class="text-center blue-regular">{{$data_per_day->time}}</h6>
-                    <a class="youtube d-flex align-items-center justify-content-center"></a>
-                    <a class="zoom d-flex align-items-center justify-content-center"></a>
+                    <h4 class="text-center blue-title">{{ $data_per_day->speaker->name }}</h4>
+                    <h4 class="text-center blue-regular">{{ $data_per_day->from_time }}</h4>
+                    <!-- <a class="youtube d-flex align-items-center justify-content-center"></a> -->
+                    <a href="{{ $data_per_day->zoom }}" class="zoom d-flex align-items-center justify-content-center"></a>
                   </div>
                 @endforeach
               @endif

@@ -16,6 +16,6 @@ class TalkshowDetail extends Model
     }
 
     public function speaker() {
-        return $this->belongsTo('App\Models\Speaker', 'id_speaker');
+        return $this->belongsTo('App\Models\TalkshowSpeaker', 'id_speaker');
     }
 }
