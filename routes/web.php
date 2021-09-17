@@ -43,6 +43,7 @@ Route::get('medpart/{id}', [FrontEndController::class, 'medpartDetails']);
 Route::get('donation', [FrontEndController::class, 'donation']);
 Route::get('merchandise', [FrontEndController::class, 'merchandise']);
 Route::get('games', [FrontEndController::class, 'games']);
+Route::get('zoom', [FrontEndController::class, 'zoom']);
 Route::get('test', [FrontEndController::class, 'test']);
 
 // Google Authorization

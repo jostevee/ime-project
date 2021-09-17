@@ -3,6 +3,31 @@
 
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <style>
+    /* [1] The container */
+    .img-hover-zoom {
+      width: 100%;
+      height: 200px; /* [1.1] Set it as per your need */
+      overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    }
+
+    /* [2] Transition property for smooth transformation of images */
+    .img-hover-zoom .imagemaps {
+      width: 100%;
+      pointer-events: auto;
+      transition: transform .5s ease;
+    }
+
+    .img-hover-zoom .imagemaps img {
+      width: 100%;
+    }
+
+    /* [3] Finally, transforming the image when container gets hovered */
+    .img-hover-zoom:hover .imagemaps {
+      transform: scale(2.5);
+    }
+  </style>
   @include('default_header')
   <title>Indonesia Marine Exhibition - Home</title>
 </head>
@@ -801,187 +826,156 @@
 
         @if ($userwriter == 1)
           <!-- ======= Island Main Section ======= -->
-          <section id="island-main" class="general island-main-page d-flex my-4">
-            <div class="container">
+                  <section id="island-main" class="general d-flex my-4">
+                    <div class="container">
 
-              <div class="row justify-content-center mt-4">
-                <div class="col-12">
-                  <h1 class="blue-title">Main Room</h1>
-                </div>
+                      <div class="row justify-content-center mt-4">
+                        <div class="col-12">
+                          <h1 class="blue-title">Main Room</h1>
+                        </div>
 
-                <div class="col-lg-10 mt-4">
-                  <div id="container">
-                    <div id="box"></div>
+                        <div class="col-12 mt-4">
+                          <div id="container">
+                            <div class="img-hover-zoom">
+                              <div id="scene" style="position: absolute;">
+                                <div data-depth="10">
+                                  <div class="imagemaps">
+                                    <img src="{{ asset ('assets/img/pulau_main/background.png') }}" class="col-12 feature_image" alt="">
+                                    <p class="col-3 btn-general talkshow-btn text-center blue-title" onclick="location.href='talkshow';">GO IN</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
+                  </section><!-- End Island Main Section -->
+
+                  <section id="talkshow-room" class="general island-page d-flex my-4">
+                    <div class="container">
+
+                      <div class="row d-flex justify-content-center talkshow-page-move mt-4">
+                        <div class="col-12">
+                          <h1 class="text-center blue-title">Talkshow Room</h1>
+                        </div>
+
+                        <!-- <div class="image"></div> -->
+                        <img src="{{ asset ('assets/img/all_general_main_page/talkshow.png') }}" class="col-12 feature_image" alt="">
+                      </div>
+
+                  
+
+                    </div>
+                  </section>
+
+                  <section id="games-room" class="general island-page d-flex my-4">
+                    <div class="container">
+
+                      <div class="row d-flex justify-content-center mt-4">
+                        <div class="col-12">
+                          <h1 class="text-center blue-title">Games Room</h1>
+                        </div>
+                        <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}" class="col-12 feature_image" alt="">
+                        <p class="col-3 btn-general games-btn text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='games';">GO IN</p>
+
+                        <!--
+                        <div class="col-12">
+                          <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}"class="img-fluid" alt="">
+                        </div>
+                        -->
+
+                      </div>  
+
+                    </div>
+                  </section>
+                  
+                  <section id="ngo-room" class="general island-page d-flex my-4">
+                    <div class="container">
+
+                      <div class="row d-flex justify-content-center mt-4">
+                        <div class="col-12">
+                          <h1 class="text-center blue-title">NGO Room</h1>
+                        </div>
+                        <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}" class="col-12 feature_image" alt="">
+                        <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='ngo';">GO IN</p>
+                        
+                        <!--
+                        <div class="col-12">
+                          <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
+                        </div>
+                        -->
+
+                      </div>  
+
+                    </div>
+                  </section>
+
+                  <section id="medpart-room" class="general island-page d-flex my-4">
+                    <div class="container">
+
+                      <div class="row d-flex justify-content-center mt-4">
+                        <div class="col-12">
+                          <h1 class="text-center blue-title">Medpart Room</h1>
+                        </div>
+                        <img src="{{ asset ('assets/img/all_general_main_page/medpart.png') }}" class="col-12 feature_image" alt="">
+                        <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='medpart';">GO IN</p>
+                        
+                        <!--
+                        <div class="col-12">
+                          <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
+                        </div>
+                        -->
+
+                      </div>  
+
+                    </div>
+                  </section>
+
+                  <section id="donation-room" class="general island-page d-flex my-4">
+                    <div class="container">
+
+                      <div class="row d-flex justify-content-center mt-4">
+                        <div class="col-12">
+                          <h1 class="text-center blue-title">Donation Room</h1>
+                        </div>
+                        <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}" class="col-12 feature_image" alt="">
+                        <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='donation';">GO IN</p>
+
+                        <!--
+                        <div class="col-12">
+                          <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}"class="img-fluid" alt="">
+                        </div>
+                        -->
+                      </div>  
+
+                    </div>
+                  </section>
+
+                  <section id="merchandise-room" class="general island-page d-flex my-4">
+                    <div class="container">
+
+                      <div class="row d-flex justify-content-center mt-4">
+                        <div class="col-12">
+                          <h1 class="text-center blue-title">Merchandise Room</h1>
+                        </div>
+                        <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}" class="col-12 feature_image" alt="">
+                        <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='merchandise';">GO IN</p>
+
+                        <!--
+                        <div class="col-12">
+                          <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}"class="img-fluid" alt="">
+                        </div>
+                        -->
+                      </div>  
+
+                    </div>
+                  </section>
                 </div>
               </div>
-
-              <!--
-              <section id="talkshow-room">
-              </section>
-              <section id="games-room">
-              </section>
-              <section id="ngo-room">
-              </section>
-              <section id="medpart-room">
-              </section>
-              <section id="donation-room">
-              </section>
-              <section id="merchandise-room">
-              </section>
-            -->
-
-
-            <!--
-              <div class="row d-flex justify-content-center mt-4">
-                <div class="col-12">
-                  <h1 class="blue-title">Main Room</h1>
-                </div>
-                <div class="col-lg-10 mt-4">
-                  <div class="content row d-flex justify-content-stretch">
-                    <div class="col-12 d-flex justify-content-stretch">
-                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='talkshow';">Talkshow Room</p>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='ngo';">NGO Room</p>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='medpart';">Medpart Room</p>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='donation';">Donation Room</p>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                      <p class="btn-general text-center blue-strong" style="font-size: 20px;" onclick="location.href='merchandise';">Merchandise Room</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            -->
-
             </div>
-          </section><!-- End Island Main Section -->
-
-          <section id="talkshow-room" class="general island-page d-flex my-4">
-            <div class="container">
-
-              <div class="row d-flex justify-content-center talkshow-page-move mt-4">
-                <div class="col-12">
-                  <h1 class="text-center blue-title">Talkshow Room</h1>
-                </div>
-
-                <!-- <div class="image"></div> -->
-                <img src="{{ asset ('assets/img/all_general_main_page/talkshow.png') }}" class="col-12 feature_image" alt="">
-                <p class="col-3 btn-general talkshow-btn text-center blue-title" onclick="location.href='talkshow';">GO IN</p>
-              </div>
-
-          
-
-            </div>
-          </section>
-
-          <section id="games-room" class="general island-page d-flex my-4">
-            <div class="container">
-
-              <div class="row d-flex justify-content-center mt-4">
-                <div class="col-12">
-                  <h1 class="text-center blue-title">Games Room</h1>
-                </div>
-                <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}" class="col-12 feature_image" alt="">
-                <p class="col-3 btn-general games-btn text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='games';">GO IN</p>
-
-                <!--
-                <div class="col-12">
-                  <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}"class="img-fluid" alt="">
-                </div>
-                -->
-
-              </div>  
-
-            </div>
-          </section>
-          
-          <section id="ngo-room" class="general island-page d-flex my-4">
-            <div class="container">
-
-              <div class="row d-flex justify-content-center mt-4">
-                <div class="col-12">
-                  <h1 class="text-center blue-title">NGO Room</h1>
-                </div>
-                <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}" class="col-12 feature_image" alt="">
-                <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='ngo';">GO IN</p>
-                
-                <!--
-                <div class="col-12">
-                  <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
-                </div>
-                -->
-
-              </div>  
-
-            </div>
-          </section>
-
-          <section id="medpart-room" class="general island-page d-flex my-4">
-            <div class="container">
-
-              <div class="row d-flex justify-content-center mt-4">
-                <div class="col-12">
-                  <h1 class="text-center blue-title">Medpart Room</h1>
-                </div>
-                <img src="{{ asset ('assets/img/all_general_main_page/medpart.png') }}" class="col-12 feature_image" alt="">
-                <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='medpart';">GO IN</p>
-                
-                <!--
-                <div class="col-12">
-                  <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
-                </div>
-                -->
-
-              </div>  
-
-            </div>
-          </section>
-
-          <section id="donation-room" class="general island-page d-flex my-4">
-            <div class="container">
-
-              <div class="row d-flex justify-content-center mt-4">
-                <div class="col-12">
-                  <h1 class="text-center blue-title">Donation Room</h1>
-                </div>
-                <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}" class="col-12 feature_image" alt="">
-                <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='donation';">GO IN</p>
-
-                <!--
-                <div class="col-12">
-                  <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}"class="img-fluid" alt="">
-                </div>
-                -->
-              </div>  
-
-            </div>
-          </section>
-
-          <section id="merchandise-room" class="general island-page d-flex my-4">
-            <div class="container">
-
-              <div class="row d-flex justify-content-center mt-4">
-                <div class="col-12">
-                  <h1 class="text-center blue-title">Merchandise Room</h1>
-                </div>
-                <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}" class="col-12 feature_image" alt="">
-                <p class="col-3 btn-general text-center blue-title" style="margin: 240px 0px 0px 90px;" onclick="location.href='merchandise';">GO IN</p>
-
-                <!--
-                <div class="col-12">
-                  <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}"class="img-fluid" alt="">
-                </div>
-                -->
-              </div>  
-
-            </div>
-          </section>
+          </div>
         @endif
 
           
@@ -2093,6 +2087,10 @@
   </footer> End Footer -->
 </body>
 
+<script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+</script>
 @include('default_footer')
 
 </html>

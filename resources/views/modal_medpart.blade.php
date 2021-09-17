@@ -48,7 +48,7 @@
                       <div class="col-12 d-flex">
                         <h4 class="text-start white-title">INFO</h4>
                       </div>
-                      <div class="col-12 d-flex">
+                      <div class="col-12 d-flex content">
                         <p class="text-start white-regular" id="info_section"></p>
                       </div>
                     </div>

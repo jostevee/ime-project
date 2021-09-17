@@ -34,7 +34,6 @@
 <!-- Template Main CSS File -->
 <link href="{{ asset ('assets/css/style.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset ('assets/css/modals.css') }}" rel="stylesheet" type="text/css">
-<!-- <link href="{{ asset ('assets/css/zoom.css') }}" rel="stylesheet" type="text/css"> -->
 
 
 <!-- Zoom and Maps CSS -->

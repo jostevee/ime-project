@@ -11,6 +11,8 @@
 <script src="{{ asset ('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
 
 <!-- <script src="{{ asset ('assets/vendor/swiper/swiper-bundle.min.js') }}"></script> -->
 <!-- <script src="{{ asset ('assets/vendor/php-email-form/validate.js') }}"></script> -->
@@ -24,7 +26,6 @@
 <script src="{{ asset ('assets/js/cloud.js') }}"></script>
 
 <!-- <script src="{{ asset ('assets/js/games.js') }}"></script> -->
-<!-- <script src="{{ asset ('assets/js/zoom.js') }}"></script> -->
 <!-- <script src="{{ asset ('assets/js/maps.js') }}"></script> -->
 
 <script>

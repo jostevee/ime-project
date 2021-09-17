@@ -41,9 +41,9 @@
                   <div class="col-6 row d-flex justify-content-center align-items-center mt-4">
                     <div class="col-12 yellow-background-box row d-flex justify-content-center align-items-center">
                       <img src="{{ asset('assets/img/games/gartic.png') }}" class="games-box"/>
-                      <p class="text-center blue-strong">
+                      <h2 class="text-center blue-strong">
                         {{ $data_games->time }}  
-                      </p>
+                      </h2>
                     </div>               
                     <div class="col-12 d-flex justify-content-center mt-3">
                       <div class="name-box d-flex justify-content-center">
@@ -61,9 +61,9 @@
                 <div class="col-6 row d-flex justify-content-center align-items-center mt-4">
                   <div class="col-12 yellow-background-box row d-flex justify-content-center align-items-center">
                     <img src="{{ asset('assets/img/games/quizizz.png') }}" class="games-box"/>
-                    <p class="text-center blue-strong">
+                    <h2 class="text-center blue-strong">
                       {{ $data_games->time }}  
-                    </p>
+                    </h2>
                   </div>               
                   <div class="col-12 d-flex justify-content-center mt-3">
                     <div class="name-box d-flex justify-content-center">

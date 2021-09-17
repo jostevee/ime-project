@@ -120,10 +120,10 @@ class FrontEndController extends Controller
         return view('games', compact('data')); //, compact('event')
     }
 
-    public function misatoto(){
+    public function zoom(){
         //$event = Event::orderByDesc('created_at')->take(4)->get();
 
-        return view('misatoto'); //, compact('event')
+        return view('zoom'); //, compact('event')
     }
 
     // Login landing page

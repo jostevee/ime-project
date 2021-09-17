@@ -1337,7 +1337,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .island-page {
   /* position: relative; */
-  width: 100%;
+  width: 200px;
   height: fit-content; /* 95vh */ /* fit-content */
   /* background: url("../img/all_general_main_page/talkshow.png"); */
   margin-bottom: 0px;
@@ -1443,16 +1443,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Talkshow Button */
 @media (min-width: 1024px) {
-  .island-page .talkshow-btn {
+  /* .island-page .talkshow-btn {
     margin: 320px 0px 0px 90px;
     font-size: 26px;
+  } */
+
+  .talkshow-btn {
+    margin: 0px 0px 0px 0px;
+    font-size: 26px;
+    position: absolute;
   }
 }
 
 @media (max-width: 992px) {
-  .island-page .talkshow-btn {
+  /* .island-page .talkshow-btn {
     margin: 90px 0px 0px 90px;
     font-size: 16px;
+  } */
+
+  .island-page .talkshow-btn {
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+    position: absolute;
   }
 }
 
