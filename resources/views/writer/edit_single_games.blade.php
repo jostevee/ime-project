@@ -52,7 +52,7 @@
   <main id="main">
 
     <!-- Edit Post -->
-    <section id="talkshow-speaker" class="services general-form bg-light py-4">
+    <section id="games" class="services general-form bg-light py-4">
       <div class="container">
       <!-- container-fluid -->
 
@@ -77,12 +77,16 @@
                     </div>
                   @endif
                     <div class="form-group">
-                      <label for="title">Name</label>
-                      <input type="text" name="name" id="name" class="form-control" value="{{ $talkshow_speaker->name }}" required>
+                      <label for="title">Platform</label>
+                      <input type="text" name="platform" id="platform" class="form-control" value="{{ $games->platform }}" required disabled>
                     </div>
                     <div class="form-group mt-4">
-                      <label for="title">Organization</label>
-                      <input type="text" name="organization" id="organization" class="form-control" value="{{ $talkshow_speaker->organization }}" required>
+                      <label for="title">Link</label>
+                      <input type="text" name="link" id="link" class="form-control" value="{{ $games->link }}">
+                    </div>
+                    <div class="form-group mt-4">
+                      <label for="title">Time</label>
+                      <input type="time" name="time" id="time" value="{{ $games->time }}" class="form-control timepicker" placeholder="Enter games end time here" required>
                     </div>
 
                     <!--
@@ -93,9 +97,10 @@
                     <div class="form-group mt-2">
                       <input type="file" name="img_link_update" id="img_link" class="form-control-file">
                     </div> -->
-                    <div class="mt-4">
+
+                    <div class="my-4">
                       <button type="submit">Save</button>
-                      <a class="cancel" onclick="location.href='/writer/talkshow-speaker/list';">Cancel</a>
+                      <a class="cancel" onclick="location.href='/writer/games/list';">Cancel</a>
                       <!-- <button type="cancel" onclick="window.history.back();">Cancel</button> -->
                     </div>
 			            </form>

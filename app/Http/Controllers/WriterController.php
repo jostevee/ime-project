@@ -12,6 +12,7 @@ use App\Models\TalkshowDay;
 use App\Models\TalkshowDetail;
 use App\Models\TalkshowSpeaker;
 use App\Models\FAQ;
+use App\Models\Games;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 

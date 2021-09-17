@@ -39,6 +39,11 @@
                 <li><a class="nav-link" href="/writer/talkshow-detail/list">List Talkshow Detail</a></li>
               </ul>
             </li>
+            <li class="dropdown"><a class="nav-link scrollto" href="#games">Game</a>
+              <ul>
+                <li><a class="nav-link" href="/writer/games/list">List Game</a></li>
+              </ul>
+            </li>
             <li class="dropdown"><a class="nav-link scrollto" href="#payment-user">Payment User</a>
               <ul>
                 <!-- <li><a class="nav-link" href="/writer/payment-user/add">Add Payment User</a></li> -->

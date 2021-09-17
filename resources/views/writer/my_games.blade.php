@@ -53,7 +53,7 @@
   <main id="main">
 
     <!-- Postingan Saya -->
-    <section id="merchandise" class="mypost bg-light py-4">
+    <section id="games" class="mypost bg-light py-4">
       <div class="container">
 
         <div class="section-title my-4">
@@ -75,7 +75,6 @@
                 </div>
               @endif
               <!-- <a href="/dashboard" class="mb-3 btn btn-primary">Dashboard</a> -->
-              <a href="/writer/merchandise/add" class="mb-3 btn-general ml-2" style="font-size: 18px;">Add Merchandise</a>
               <p style="text-align: right;">Games total =
                 {{ $games->count() }}
               </p>
