@@ -248,10 +248,10 @@
     speed: 600,
     loop: false,
     centeredSlides: true,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false
-    // },
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false
+    },
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination-schedule',
@@ -274,7 +274,7 @@
 
       768: {
         slidesPerView: 1,
-        spaceBetween: 10, //20
+        spaceBetween: 40, //20
         // centeredSlides: false
       },
 

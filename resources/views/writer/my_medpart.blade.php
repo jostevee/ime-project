@@ -112,9 +112,11 @@
                       <form action="delete/{{ $data->id }}" method="POST">@csrf
                         <button class="btn btn-general-static" style="width: 100%;" type="submit">Delete</button>
                       </form>
+                      <!-- 
                       <form action="notify/{{ $data->id }}" method="POST">@csrf
                         <button class="btn btn-general-static" style="width: 100%;" type="submit">Ask new image</button>
                       </form>
+                      -->
                     </td>
 
                     <!--
