@@ -812,6 +812,75 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 
+/*--------------------------------------------------------------
+# Main Page
+--------------------------------------------------------------*/
+.main-page-all-room {
+  position: relative;
+  width: 100%;
+  height: fit-content; /*95vh*/
+  background: url("../img/all_general_main_page/background_blue.png");
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 38px 0px 0px 0px;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .main-page-all-room {
+    background-attachment: fixed;
+    
+    /* background-cover */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-page-all-room {
+     /* 54vh */
+     background-attachment: fixed;
+     max-height: fit-content;
+     
+     /* background-cover */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
+     background-repeat: no-repeat;
+     background-position: center center;
+     padding-top: 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  .main-page-all-room {
+    background-attachment: fixed;
+    height: fit-content;
+
+    /* background-cover */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-cover */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 20px;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Main Page
@@ -1337,7 +1406,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .island-page {
   /* position: relative; */
-  width: 200px;
+  /* width: 200px; */
   height: fit-content; /* 95vh */ /* fit-content */
   /* background: url("../img/all_general_main_page/talkshow.png"); */
   margin-bottom: 0px;
@@ -1443,29 +1512,29 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Talkshow Button */
 @media (min-width: 1024px) {
-  /* .island-page .talkshow-btn {
+  .island-page .talkshow-btn {
     margin: 320px 0px 0px 90px;
     font-size: 26px;
-  } */
+  }
 
-  .talkshow-btn {
+  /* .talkshow-btn {
     margin: 0px 0px 0px 0px;
     font-size: 26px;
     position: absolute;
-  }
+  } */
 }
 
 @media (max-width: 992px) {
-  /* .island-page .talkshow-btn {
+  .island-page .talkshow-btn {
     margin: 90px 0px 0px 90px;
     font-size: 16px;
-  } */
+  }
 
-  .island-page .talkshow-btn {
+  /* .island-page .talkshow-btn {
     margin: 0px 0px 0px 0px;
     font-size: 16px;
     position: absolute;
-  }
+  } */
 }
 
 /*

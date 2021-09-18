@@ -33,6 +33,7 @@ Route::get('about', [FrontEndController::class, 'about']);
 Route::get('speaker', [FrontEndController::class, 'speaker']);
 Route::get('schedule', [FrontEndController::class, 'schedule']);
 Route::get('home', [FrontEndController::class, 'home']);
+Route::get('all-room', [FrontEndController::class, 'allRoom']);
 Route::get('talkshow', [FrontEndController::class, 'talkshow']);
 Route::get('talkshow/{id}', [FrontEndController::class, 'talkshowDetails']);
 Route::get('games', [FrontEndController::class, 'games']);

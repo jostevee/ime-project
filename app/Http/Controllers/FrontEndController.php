@@ -28,6 +28,12 @@ class FrontEndController extends Controller
         return view('home', compact('data_speaker', 'data_day', 'data_detail')); //, compact('event')
     }
 
+    public function allRoom(){
+        // $event = Event::orderByDesc('created_at')->take(4)->get();
+
+        return view('all_room'); //, compact('event')
+    }
+
     public function savePayment(Request $request){
         $user = User::where('id', $request->input('id'))->firstOrFail();
 
