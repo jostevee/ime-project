@@ -114,10 +114,10 @@
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
     $(".video_id").attr("id", video_id);
-    $("#script_id").html(script_id);
+    $("#script_id").html(str(script_id));
 
     console.log(video_id);
-    console.log(script_id);
+    console.log(str(script_id));
     
   });
 
