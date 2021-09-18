@@ -104,7 +104,7 @@
     var ig = $(event.relatedTarget).data('ig');
     var fb = $(event.relatedTarget).data('fb');
     var video_id = $(event.relatedTarget).data('video-id');
-    var script_id = $(event.relatedTarget).data('script-id');
+    // var script_id = $(event.relatedTarget).data('script-id');
 
     $("#id_section").html(id);
     $("#name_section").html(name);
@@ -113,11 +113,10 @@
     $("#ig_section").attr("href", ig);
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
-    $(".video_id").attr("id", video_id);
-    $("#script_id").html(JSON.stringify(script_id));
+    // $(".video_id").attr("id", video_id);
 
+    $("#video_id").replaceWith(video_id);
     console.log(video_id);
-    console.log(JSON.stringify(script_id));
     
   });
 
