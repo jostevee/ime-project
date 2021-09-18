@@ -67,6 +67,7 @@
     var vid = $(event.relatedTarget).data('vid');
     var ig = $(event.relatedTarget).data('ig');
     var fb = $(event.relatedTarget).data('fb');
+    var video_id = $(event.relatedTarget).data('video-id');
 
     // $(this).find(".modal-content").text(myVal);
 
@@ -83,6 +84,7 @@
     $("#ig_section").attr("href", ig);
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
+    $("#video_id").replaceWith(video_id);
 
     // document.getElementById("video_url").href="https://google.com";
     // $("#video_url").href(video);
@@ -113,9 +115,9 @@
     $("#ig_section").attr("href", ig);
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
-    // $(".video_id").attr("id", video_id);
-
     $("#video_id").replaceWith(video_id);
+
+    // $(".video_id").attr("id", video_id);
     console.log(video_id);
     
   });

@@ -46,6 +46,7 @@
                     data-name="{{$data_per_logo->name}}"
                     data-info="{{$data_per_logo->info}}"
                     data-vid="{{$data_per_logo->video}}"
+                    data-video-id="{{ $data_per_logo->video_id }}"
                     data-ig="{{$data_per_logo->ig}}"
                     data-fb="{{$data_per_logo->fb}}"
                     data-bs-target="#ngoModal"

@@ -24,7 +24,9 @@
 
               <div class="col-12 d-flex justify-content-center row">
                 <div class="col-md-5 col-lg-5 d-flex justify-content-center">
-                  <div class="comment-box"></div>
+                  <div class="comment-box">
+                    <div id="video_id"></div>
+                  </div>
                 </div>
 
                 <div class="col-md-7 col-lg-7 d-flex justify-content-center row">
