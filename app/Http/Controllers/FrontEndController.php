@@ -107,9 +107,9 @@ class FrontEndController extends Controller
 
     public function merchandise(){
         // $data = Merchandise::orderByDesc('created_at')->take(4)->get();
-        $data = Merchandise::all();
+        // $data = Merchandise::all();
 
-        return view('merchandise', compact('data')); //, compact('event')
+        return view('merchandise'); //, compact('data')
     }
 
     public function games(){

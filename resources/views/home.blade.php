@@ -853,6 +853,7 @@
                     </div>
                   </section><!-- End Island Main Section -->
 
+                  <!--
                   <section id="talkshow-room" class="general island-page d-flex my-4">
                     <div class="container">
 
@@ -862,14 +863,15 @@
                         </div>
 
                         <!-- <div class="image"></div> -->
-                        <img src="{{ asset ('assets/img/all_general_main_page/talkshow.png') }}" class="col-12 feature_image" alt="">
+                        <!-- <img src="{{ asset ('assets/img/all_general_main_page/talkshow.png') }}" class="col-12 feature_image" alt=""> -->
+                        <!--
                       </div>
-
-                  
 
                     </div>
                   </section>
+                  -->
 
+                  <!--
                   <section id="games-room" class="general island-page d-flex my-4">
                     <div class="container">
 
@@ -884,13 +886,15 @@
                         <div class="col-12">
                           <img src="{{ asset ('assets/img/all_general_main_page/games.png') }}"class="img-fluid" alt="">
                         </div>
-                        -->
+                        
 
                       </div>  
 
                     </div>
                   </section>
+                  -->
                   
+                  <!--
                   <section id="ngo-room" class="general island-page d-flex my-4">
                     <div class="container">
 
@@ -905,13 +909,14 @@
                         <div class="col-12">
                           <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
                         </div>
-                        -->
-
+                        
                       </div>  
 
                     </div>
                   </section>
+                  -->
 
+                  <!--
                   <section id="medpart-room" class="general island-page d-flex my-4">
                     <div class="container">
 
@@ -926,13 +931,15 @@
                         <div class="col-12">
                           <img src="{{ asset ('assets/img/all_general_main_page/ngo.png') }}"class="img-fluid" alt="">
                         </div>
-                        -->
+                        
 
                       </div>  
 
                     </div>
                   </section>
+                  -->
 
+                  <!--
                   <section id="donation-room" class="general island-page d-flex my-4">
                     <div class="container">
 
@@ -947,12 +954,14 @@
                         <div class="col-12">
                           <img src="{{ asset ('assets/img/all_general_main_page/donation.png') }}"class="img-fluid" alt="">
                         </div>
-                        -->
+                        
                       </div>  
 
                     </div>
                   </section>
+                  -->
 
+                  <!--
                   <section id="merchandise-room" class="general island-page d-flex my-4">
                     <div class="container">
 
@@ -967,11 +976,12 @@
                         <div class="col-12">
                           <img src="{{ asset ('assets/img/all_general_main_page/merchandise.png') }}"class="img-fluid" alt="">
                         </div>
-                        -->
+                        
                       </div>  
 
                     </div>
                   </section>
+                  -->
                 </div>
               </div>
             </div>
