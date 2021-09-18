@@ -103,8 +103,8 @@
     var vid = $(event.relatedTarget).data('vid');
     var ig = $(event.relatedTarget).data('ig');
     var fb = $(event.relatedTarget).data('fb');
-    var video_id = $(event.relatedTarget).data('video_id');
-    var script_id = $(event.relatedTarget).data('script_id');
+    var video_id = $(event.relatedTarget).data('video-id');
+    var script_id = $(event.relatedTarget).data('script-id');
 
     $("#id_section").html(id);
     $("#name_section").html(name);
