@@ -93,7 +93,7 @@
 
                   <div class="row col-12 col-lg-9 col-md-9 d-flex justify-content-center">
                     <div class="col-lg-12 my-2">
-                      <h6 class="yellow-title">1262855961 a.n Sylvie Siskawati (BNI)</h6>
+                      <p class="yellow-title" style="font-size: 16px;">1262855961 a.n. Sylvie Siskawati (BNI)</p>
                     </div>
                   </div>
                 </div>
@@ -115,7 +115,7 @@
 
                   <div class="row col-12 col-lg-9 col-md-9 d-flex justify-content-center">
                     <div class="col-lg-12 my-2">
-                      <h6 class="yellow-title">085939231789 (Sylvie Siskawati)</h6>
+                      <p class="yellow-title" style="font-size: 16px;">085939231789 (Sylvie Siskawati)</p>
                     </div>
                   </div>
                 </div>

@@ -142,6 +142,16 @@
               </div>
             </div>
 
+            <div class="col-12 row d-flex justify-content-stretch mt-4">
+              <h5 class="yellow-regular">Contact here to buy</h5>
+              <div class="col-3">
+                <img src="{{ asset('assets/img/donation/whatsapp_icon.png') }}">
+              </div>
+              <div class="col-9">
+                <h6 class="yellow-title">CP : 081584886530 (Gabriel)</h6>
+              </div>
+            </div>
+
             <!--
             <div class="col-12 row d-flex justify-content-center align-items-center mt-4">
               <div class="col-6 row d-flex justify-content-center align-items-center mt-4">
