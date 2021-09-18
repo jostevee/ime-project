@@ -59,7 +59,7 @@
                     <div class="swiper-container talkshow-room-swiper col-9 d-flex align-items-center justify-content-stretch">
                       <div class="swiper-wrapper d-flex">
 
-                        <a href="talkshow/1" class="swiper-slide">
+                        <a href="talkshow/2" class="swiper-slide">
                           <div class="row talkshow-room-day-box">
                             <div class="d-flex justify-content-center">
                               <div class="talkshow-room-pic-box">
@@ -77,7 +77,7 @@
                           </div>
                         </a><!-- End Talkshow item -->
 
-                        <a href="talkshow/2" class="swiper-slide">
+                        <a href="talkshow/3" class="swiper-slide">
                           <div class="row talkshow-room-day-box">
                             <div class="d-flex justify-content-center">
                               <div class="talkshow-room-pic-box">
