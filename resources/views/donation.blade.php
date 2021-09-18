@@ -34,6 +34,7 @@
             <div class="col-12">
               <h1 class="blue-title">Donation Room</h1>
             </div>
+
             <div class="col-lg-9 content-transparent mt-4">
               <p class="blue-strong" style="text-align: justify; padding: 10px;">
               Kelompok Smiling Coral Indonesia (SCI) adalah Kelompok Masyarakat peduli lingkungan 
@@ -42,6 +43,7 @@
               Kelurahan Pulau Panggang, Nomor : BA.01/SCI/VIII/2010, Tanggal 10 Agustus 2010. Pembentukan Kelompok Smiling Coral Indonesia melalui surat Keputusan Lurah Kelurahan Pulau Panggang Nomor : SK. 28 Tahun 2010 Tanggal 13 Juli 2020. 
               </p>
             </div>
+
             <div class="col-9 mt-4">
               <div class="content">
                 <!-- <h3>IME</h3> -->
@@ -72,7 +74,50 @@
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-12 row d-flex justify-content-center mt-4">
+              <div class="content col-6">
+                <!-- <h3>IME</h3> -->
+                <div class="row d-flex justify-content-center align-items-center">
+
+                  <div class="row col-12 col-lg-3 col-md-3 d-flex justify-content-center">
+                    <div class="col-12 d-flex justify-content-center">
+                      <div class="donation-room-logo-box d-flex justify-content-center align-items-center">
+                        <img src="{{ asset('assets/img/donation/donation_icon.png') }}">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row col-12 col-lg-9 col-md-9 d-flex justify-content-center">
+                    <div class="col-lg-12 my-2">
+                      <h6 class="yellow-title">1262855961 a.n Sylvie Siskawati (BNI)</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 row d-flex justify-content-center mt-4">
+              <div class="content col-6">
+                <!-- <h3>IME</h3> -->
+                <div class="row d-flex justify-content-center align-items-center">
+
+                  <div class="row col-12 col-lg-3 col-md-3 d-flex justify-content-center">
+                    <div class="col-12 d-flex justify-content-center">
+                      <div class="donation-room-logo-box d-flex justify-content-center align-items-center">
+                        <img src="{{ asset('assets/img/donation/whatsapp_icon.png') }}">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row col-12 col-lg-9 col-md-9 d-flex justify-content-center">
+                    <div class="col-lg-12 my-2">
+                      <h6 class="yellow-title">085939231789 (Sylvie Siskawati)</h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
