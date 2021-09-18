@@ -30,7 +30,7 @@
   var talkshowRoomSwiper = new Swiper('.talkshow-room-swiper', {
     speed: 600,
     loop: false,
-    centeredSlides: true,
+    centeredSlides: false,
     // autoplay: {
     //   delay: 5000,
     //   disableOnInteraction: false
@@ -59,12 +59,12 @@
       768: {
         slidesPerView: 2,
         spaceBetween: 10, //20
-        centeredSlides: false
+        // centeredSlides: false
       },
 
       1024: {
-        slidesPerView: 3,
-        spaceBetween: 10 //20
+        slidesPerView: 2,
+        spaceBetween: 40 //20
       }
     }
   });

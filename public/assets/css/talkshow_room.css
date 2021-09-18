@@ -135,3 +135,11 @@
   width: 150px;
   height: 150px;
 }
+
+.talkshow-room-page .talkshow-room-day-box .talkshow-room-pic-box img {
+  margin: 20px 0px;
+  /* background: #FFF; */
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+}

@@ -59,7 +59,44 @@
                     <div class="swiper-container talkshow-room-swiper col-9 d-flex align-items-center justify-content-stretch">
                       <div class="swiper-wrapper d-flex">
 
-                      @foreach($data as $data)
+                        <a href="talkshow/1" class="swiper-slide">
+                          <div class="row talkshow-room-day-box">
+                            <div class="d-flex justify-content-center">
+                              <div class="talkshow-room-pic-box">
+                                <img src="{{ asset('assets/img/maskot/day_1.png') }}"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row talkshow-room-day-text-box d-flex justify-content-start">
+                            <div class="talkshow-room-day-which-box">
+                              <h3 class="text-start yellow-strong">DAY 1</h3>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center my-2">
+                              <p class="text-center blue-strong">Potrait Of Our Wonderful Indonesia Maritime</p>
+                            </div>
+                          </div>
+                        </a><!-- End Talkshow item -->
+
+                        <a href="talkshow/2" class="swiper-slide">
+                          <div class="row talkshow-room-day-box">
+                            <div class="d-flex justify-content-center">
+                              <div class="talkshow-room-pic-box">
+                                <img src="{{ asset('assets/img/maskot/day_2.png') }}"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row talkshow-room-day-text-box d-flex justify-content-start">
+                            <div class="talkshow-room-day-which-box">
+                              <h3 class="text-start yellow-strong">DAY 2</h3>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center my-2">
+                              <p class="text-center blue-strong">Potensi Kekayaan Laut Indonesia sebagai Identitas Bangsa</p>
+                            </div>
+                          </div>
+                        </a><!-- End Talkshow item -->
+
+                      <!--
+                      // @foreach($data as $data)
                         <a href="talkshow/{{$data->id}}" class="swiper-slide">
                           <div class="row talkshow-room-day-box">
                             <div class="d-flex justify-content-center">
@@ -75,8 +112,9 @@
                               <p class="text-center blue-strong">{{ $data->theme }}</p>
                             </div>
                           </div>
-                        </a><!-- End Talkshow item -->
-                      @endforeach
+                        </a><!-- End Talkshow item
+                      // @endforeach
+                      -->
 
                       </div>
 
