@@ -36,7 +36,7 @@
               <div class="col-12 d-flex justify-content-center row">
                 <div class="col-5 d-flex justify-content-center">
                   <div class="comment-box d-flex justify-content-center align-items-center">
-                    <script class="video_id" id="" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 80%;height: 80%;"><div class="script_id"></div></script>
+                    <script class="video_id" id="" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 80%;height: 80%;"><div class="script_id"> </div></script>
                   </div>
                 </div>
 

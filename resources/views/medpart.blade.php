@@ -47,7 +47,7 @@
                     data-info="{{ $data_per_logo->info }}"
                     data-vid="{{ $data_per_logo->video }}"
                     data-video-id="{{ $data_per_logo->video_id }}"
-                    data-index="{{ $data_per_logo->script_id }}"
+                    data-script-id="{{ $data_per_logo->script_id }}"
                     data-ig="{{ $data_per_logo->ig }}"
                     data-fb="{{ $data_per_logo->fb }}"
                     data-bs-target="#medpartModal"
