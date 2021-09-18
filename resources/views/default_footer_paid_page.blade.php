@@ -103,6 +103,8 @@
     var vid = $(event.relatedTarget).data('vid');
     var ig = $(event.relatedTarget).data('ig');
     var fb = $(event.relatedTarget).data('fb');
+    var video_id = $(event.relatedTarget).data('video_id');
+    var script_id = $(event.relatedTarget).data('script_id');
 
     $("#id_section").html(id);
     $("#name_section").html(name);
@@ -111,6 +113,12 @@
     $("#ig_section").attr("href", ig);
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
+    $(".video_id").attr("id", video_id);
+    $(".video_id").html(script_id);
+
+    console.log(video_id);
+    console.log(script_id);
+    
   });
 
   $('#medpartModal').on('hidden.bs.modal', function (event) {
