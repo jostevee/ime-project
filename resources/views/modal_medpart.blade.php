@@ -34,7 +34,7 @@
               </div>
 
               <div class="col-12 d-flex justify-content-center row">
-                <div class="col-5 d-flex justify-content-center">
+                <div class="col-md-5 col-lg-5 d-flex justify-content-center">
                   <div class="comment-box d-flex justify-content-center align-items-center">
                     <!-- <iframe frameborder="0" width="100%" height="100%" class="iframe" id="b585270020000292932573134" allow="autoplay" src="https://st.chatango.com/h5/gz/r0817211056/id.html"></iframe> -->
                     <!-- <script id="cid0020000292932573134" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%;height: 100%;">{"handle":"ime-medpart-c","arch":"js","styles":{"a":"1C3B51","b":100,"c":"FFFFFF","d":"FFFFFF","k":"1C3B51","l":"1C3B51","m":"1C3B51","n":"FFFFFF","p":"10","q":"1C3B51","r":100,"cnrs":"0.35"}}</script> -->
