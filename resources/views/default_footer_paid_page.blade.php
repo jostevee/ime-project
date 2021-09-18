@@ -117,7 +117,7 @@
     $("#script_id").html(script_id);
 
     console.log(video_id);
-    console.log(str(script_id));
+    console.log(String(script_id));
     
   });
 
