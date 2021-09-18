@@ -93,6 +93,14 @@ class FrontEndController extends Controller
         return view('talkshow_details', compact('data', 'data_root')); //, compact('event')
     }
 
+    public function talkshowDetailDayOne(){
+        return view('talkshow_detail_day_one'); //, compact('event')
+    }
+
+    public function talkshowDetailDayTwo(){
+        return view('talkshow_detail_day_two'); //, compact('event')
+    }
+
     public function ngo(){
         $data = NGO::orderByDesc('created_at')->get();
 

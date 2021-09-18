@@ -35,6 +35,9 @@ Route::get('schedule', [FrontEndController::class, 'schedule']);
 Route::get('home', [FrontEndController::class, 'home']);
 Route::get('all-room', [FrontEndController::class, 'allRoom']);
 Route::get('talkshow', [FrontEndController::class, 'talkshow']);
+Route::get('talkshow-day-one', [FrontEndController::class, 'talkshowDetailDayOne']);
+Route::get('talkshow-day-two', [FrontEndController::class, 'talkshowDetailDayTwo']);
+
 Route::get('talkshow/{id}', [FrontEndController::class, 'talkshowDetails']);
 Route::get('games', [FrontEndController::class, 'games']);
 Route::get('ngo', [FrontEndController::class, 'ngo']);
