@@ -64,6 +64,20 @@
                     </div>
                   </div>
                 @endforeach
+                <div class="col-4 row d-flex justify-content-center align-items-center">
+                  <div class="col-12 d-flex justify-content-stretch">
+                    <img src="{{ asset('assets/img/talkshow/speaker_icon.png') }}"/>
+                    <!-- <div class="talkshow-details-pic-box"></div> -->
+                  </div>
+                  <div class="col-12 col-lg-3 row talkshow-details-people-box justify-content-stretch mb-2">
+                    <h4 class="text-center blue-title">Aaron Matthew - Agnes Felicia Gesi Romauli</h4>
+                    <h4 class="text-center blue-regular">11.25 -- 12.45</h4>
+                    <!-- <a class="youtube d-flex align-items-center justify-content-center"></a> -->
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <a href="{{ $data_per_day->zoom }}" class="zoom d-flex align-items-center justify-content-center"></a>
+                  </div>
+                </div>
               @endif
             </div>
           </div>
