@@ -55,8 +55,8 @@
                       <!-- <div class="talkshow-details-pic-box"></div> -->
                     </div>
                     <div class="col-12 col-lg-3 row talkshow-details-people-box justify-content-stretch mb-2">
-                      <h4 class="text-center blue-title">{{ $data_per_day->speaker->name }}</h4>
-                      <h4 class="text-center blue-regular">{{ $data_per_day->from_time }} -- {{ $data_per_day->to_time }}</h4>
+                      <h6 class="text-center blue-title">{{ $data_per_day->speaker->name }}</h6>
+                      <h6 class="text-center blue-regular">{{ $data_per_day->from_time }} -- {{ $data_per_day->to_time }}</h6>
                       <!-- <a class="youtube d-flex align-items-center justify-content-center"></a> -->
                     </div>
                     <div class="col-12 d-flex justify-content-center">
@@ -70,8 +70,8 @@
                     <!-- <div class="talkshow-details-pic-box"></div> -->
                   </div>
                   <div class="col-12 col-lg-3 row talkshow-details-people-box justify-content-stretch mb-2">
-                    <h4 class="text-center blue-title">Aaron Matthew - Agnes Felicia Gesi Romauli</h4>
-                    <h4 class="text-center blue-regular">11.25 -- 12.45</h4>
+                    <h6 class="text-center blue-title">Aaron Matthew - Agnes Felicia Gesi Romauli</h6>
+                    <h6 class="text-center blue-regular">11.25 -- 12.45</h6>
                     <!-- <a class="youtube d-flex align-items-center justify-content-center"></a> -->
                   </div>
                   <div class="col-12 d-flex justify-content-center">
