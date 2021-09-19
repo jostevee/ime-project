@@ -77,6 +77,8 @@
     var str_video = "You Have Entered " + "VIDEO: " + vid;
     var str_ig = "You Have Entered " + "IG: " + ig;
 
+    console.log(video_id);
+
     $("#id_section").html(id);
     $("#name_section").html(name);
     $("#info_section").html(info);
