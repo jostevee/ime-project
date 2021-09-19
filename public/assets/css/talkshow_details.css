@@ -72,8 +72,8 @@
   padding: 25px 0px;
   border-radius: 20px;
   background: #F3EC9E;
-  /* min-height: 300px; */
-  width: 240px;
+  min-height: 210px;
+  width: 250px;
   /* box-shadow: 35px 0px 0px -10px #173963, -35px 0px 0px -10px #173963; */
   /* color: #fff; */
 }
