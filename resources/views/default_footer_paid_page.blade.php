@@ -92,7 +92,7 @@
 
   $('#ngoModal').on('hidden.bs.modal', function (event) {
     $('#videoFrame').attr('src', '');
-    $('.liveChat').replaceWith('<div id="script_id"></div>');
+    $('.liveChat').replaceWith('<div id="video-id"></div>');
 
     // $('#videoFrame').get(0).stopVideo();
   });
@@ -125,7 +125,7 @@
 
   $('#medpartModal').on('hidden.bs.modal', function (event) {
     $('#videoFrame').attr('src', '');
-    $('.liveChat').replaceWith('<div id="script_id"></div>');
+    $('.liveChat').replaceWith('<div id="video-id"></div>');
 
   });
 
