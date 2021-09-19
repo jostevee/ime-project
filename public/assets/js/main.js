@@ -289,7 +289,7 @@
   var totalScheduleSwiper = $('.swiper-pagination-schedule .swiper-pagination-bullet').length;
 
   // Get index(es)
-  var idx_schedule = scheduleSwiper.realIndex;
+  var idx_schedule = scheduleSwiper.activeIndex;
   console.log('*** scheduleSwiper.realIndex', idx);
   if (idx_schedule == 0  && totalScheduleSwiper > 1){
     $(".schedule-btn-prev").css("visibility", "hidden");
