@@ -124,6 +124,8 @@
 
   $('#medpartModal').on('hidden.bs.modal', function (event) {
     $('#videoFrame').attr('src', '');
+    $('#video_id').replaceWith('');
+
   });
 
 
