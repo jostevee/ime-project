@@ -73,7 +73,7 @@
   border-radius: 20px;
   background: #F3EC9E;
   /* min-height: 300px; */
-  max-width: 240px;
+  width: 240px;
   /* box-shadow: 35px 0px 0px -10px #173963, -35px 0px 0px -10px #173963; */
   /* color: #fff; */
 }

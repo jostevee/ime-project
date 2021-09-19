@@ -49,12 +49,12 @@
                 </div>
               @else
                 @foreach($data as $data_per_day)
-                  <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-12 d-flex justify-content-center">
+                  <div class="col-4 row d-flex justify-content-center align-items-center">
+                    <div class="col-12 d-flex justify-content-stretch">
                       <img src="{{ asset('assets/img/talkshow/speaker_icon.png') }}"/>
                       <!-- <div class="talkshow-details-pic-box"></div> -->
                     </div>
-                    <div class="col-12 col-lg-3 row talkshow-details-people-box justify-content-center mb-2">
+                    <div class="col-12 col-lg-3 row talkshow-details-people-box justify-content-stretch mb-2">
                       <h4 class="text-center blue-title">{{ $data_per_day->speaker->name }}</h4>
                       <h4 class="text-center blue-regular">{{ $data_per_day->from_time }} -- {{ $data_per_day->to_time }}</h4>
                       <!-- <a class="youtube d-flex align-items-center justify-content-center"></a> -->
