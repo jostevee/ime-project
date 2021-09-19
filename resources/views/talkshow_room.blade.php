@@ -77,7 +77,7 @@
                           </div>
                         </a><!-- End Talkshow item -->
 
-                        <a href="talkshow-day-two" class="swiper-slide">
+                        <a href="/talkshow/3" class="swiper-slide">
                           <div class="row talkshow-room-day-box">
                             <div class="d-flex justify-content-center">
                               <div class="talkshow-room-pic-box">
