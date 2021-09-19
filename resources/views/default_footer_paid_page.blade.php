@@ -92,6 +92,7 @@
 
   $('#ngoModal').on('hidden.bs.modal', function (event) {
     $('#videoFrame').attr('src', '');
+    $('.liveChat').replaceWith('<div id="script_id"></div>');
 
     // $('#videoFrame').get(0).stopVideo();
   });
@@ -115,7 +116,7 @@
     $("#ig_section").attr("href", ig);
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
-    $("#video_id").replaceWith(video_id);
+    $("#video_id").html(video_id);
 
     // $(".video_id").attr("id", video_id);
     console.log(video_id);
