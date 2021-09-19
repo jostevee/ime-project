@@ -86,7 +86,7 @@
     $("#ig_section").attr("href", ig);
     $("#fb_section").attr("href", fb);
     $("#videoFrame").attr("src", vid);
-    $("#video_id").replaceWith(video_id);
+    $("#video_id").html(video_id);
 
     // document.getElementById("video_url").href="https://google.com";
     // $("#video_url").href(video);
@@ -94,7 +94,7 @@
 
   $('#ngoModal').on('hidden.bs.modal', function (event) {
     $('#videoFrame').attr('src', '');
-    $('.liveChatNGO').replaceWith('<div id="video_id"></div>');
+    $('.liveChatNGO').replaceWith('<div id="video-id"></div>');
 
     // $('#videoFrame').get(0).stopVideo();
   });
