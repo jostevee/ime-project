@@ -92,7 +92,7 @@
 
   $('#ngoModal').on('hidden.bs.modal', function (event) {
     $('#videoFrame').attr('src', '');
-    $('.liveChat').replaceWith('<div id="video-id"></div>');
+    $('.liveChatNGO').replaceWith('<div id="video-id"></div>');
 
     // $('#videoFrame').get(0).stopVideo();
   });
