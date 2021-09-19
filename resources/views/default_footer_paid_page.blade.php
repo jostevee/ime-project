@@ -124,7 +124,7 @@
 
   $('#medpartModal').on('hidden.bs.modal', function (event) {
     $('#videoFrame').attr('src', '');
-    $('#video_id').replaceWith('<div id="script_id"></div>');
+    $('.liveChat').replaceWith('<div id="script_id"></div>');
 
   });
 
