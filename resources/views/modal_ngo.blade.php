@@ -1,6 +1,6 @@
     <!-- Modal NGO -->
     <div class="modal fade" id="ngoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered"> <!--  modal-fullscreen-md-down -->
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-lg-down"> <!--  modal-fullscreen-md-down -->
         <div class="modal-content modal-signin-signup-menu">
 
           <!-- <div class="modal-header"> -->
